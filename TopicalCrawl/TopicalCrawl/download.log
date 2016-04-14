@@ -1,0 +1,1492 @@
+2016-03-21 17:03:33+0800 [scrapy] INFO: Scrapy 0.24.6 started (bot: TopicalCrawl)
+2016-03-21 17:03:33+0800 [scrapy] INFO: Optional features available: ssl, http11
+2016-03-21 17:03:33+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'TopicalCrawl.spiders', 'CLOSESPIDER_ITEMCOUNT': 20000, 'SPIDER_MODULES': ['TopicalCrawl.spiders'], 'BOT_NAME': 'TopicalCrawl', 'COOKIES_ENABLED': False, 'CLOSESPIDER_PAGECOUNT': 1000, 'DOWNLOAD_DELAY': 3}
+2016-03-21 17:03:33+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2016-03-21 17:03:34+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-03-21 17:03:34+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-03-21 17:03:34+0800 [scrapy] INFO: Enabled item pipelines: TopicalcrawlPipeline
+2016-03-21 17:03:34+0800 [download] INFO: Spider opened
+2016-03-21 17:03:34+0800 [download] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-03-21 17:03:34+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6024
+2016-03-21 17:03:34+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6081
+2016-03-21 17:03:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/> (referer: None)
+2016-03-21 17:03:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/>
+	{'count': 0, 'response': <200 http://news.qq.com/>}
+2016-03-21 17:03:34+0800 [download] DEBUG: Filtered duplicate request: <GET http://news.qq.com/a/20160321/000638.htm#p=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-03-21 17:03:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/china_index.shtml> (referer: http://news.qq.com/)
+2016-03-21 17:03:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/china_index.shtml>
+	{'count': 1, 'response': <200 http://news.qq.com/china_index.shtml>}
+2016-03-21 17:03:41+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160318/032073.htm> (referer: http://news.qq.com/)
+2016-03-21 17:03:41+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160318/032073.htm>
+	{'count': 2, 'response': <200 http://news.qq.com/a/20160318/032073.htm>}
+2016-03-21 17:03:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160321/009161.htm#p=8> (referer: http://news.qq.com/)
+2016-03-21 17:03:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160321/009161.htm>
+	{'count': 3, 'response': <200 http://news.qq.com/a/20160321/009161.htm>}
+2016-03-21 17:03:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160319/033324.htm> (referer: http://news.qq.com/)
+2016-03-21 17:03:48+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160319/033324.htm>
+	{'count': 4, 'response': <200 http://news.qq.com/a/20160319/033324.htm>}
+2016-03-21 17:03:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160320/012520.htm> (referer: http://news.qq.com/)
+2016-03-21 17:03:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160320/012520.htm>
+	{'count': 5, 'response': <200 http://news.qq.com/a/20160320/012520.htm>}
+2016-03-21 17:03:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160321/023212.htm> (referer: http://news.qq.com/)
+2016-03-21 17:03:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160321/023212.htm>
+	{'count': 6, 'response': <200 http://news.qq.com/a/20160321/023212.htm>}
+2016-03-21 17:04:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/zt2016/2016lh/index.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/zt2016/2016lh/index.htm>
+	{'count': 7, 'response': <200 http://news.qq.com/zt2016/2016lh/index.htm>}
+2016-03-21 17:04:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/newspedia/all.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/newspedia/all.htm>
+	{'count': 8, 'response': <200 http://news.qq.com/newspedia/all.htm>}
+2016-03-21 17:04:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/photo.shtml> (referer: http://news.qq.com/)
+2016-03-21 17:04:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/photo.shtml>
+	{'count': 9, 'response': <200 http://news.qq.com/photo.shtml>}
+2016-03-21 17:04:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/society_index.shtml> (referer: http://news.qq.com/)
+2016-03-21 17:04:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/society_index.shtml>
+	{'count': 10, 'response': <200 http://news.qq.com/society_index.shtml>}
+2016-03-21 17:04:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/world_index.shtml> (referer: http://news.qq.com/)
+2016-03-21 17:04:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/world_index.shtml>
+	{'count': 11, 'response': <200 http://news.qq.com/world_index.shtml>}
+2016-03-21 17:04:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160321/003906.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160321/003906.htm>
+	{'count': 12, 'response': <200 http://news.qq.com/a/20160321/003906.htm>}
+2016-03-21 17:04:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160321/000638.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160321/000638.htm>
+	{'count': 13, 'response': <200 http://news.qq.com/a/20160321/000638.htm>}
+2016-03-21 17:04:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/012188.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/012188.htm>
+	{'count': 14, 'response': <200 http://news.qq.com/a/20160316/012188.htm>}
+2016-03-21 17:04:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160303/031348.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160303/031348.htm>
+	{'count': 15, 'response': <200 http://news.qq.com/a/20160303/031348.htm>}
+2016-03-21 17:04:34+0800 [download] INFO: Crawled 16 pages (at 16 pages/min), scraped 16 items (at 16 items/min)
+2016-03-21 17:04:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160314/034454.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160314/034454.htm>
+	{'count': 16, 'response': <200 http://news.qq.com/a/20160314/034454.htm>}
+2016-03-21 17:04:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/we.htm> (referer: http://news.qq.com/)
+2016-03-21 17:04:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/we.htm>
+	{'count': 17, 'response': <200 http://news.qq.com/we.htm>}
+2016-03-21 17:04:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150516/000812.htm> (referer: http://news.qq.com/china_index.shtml)
+2016-03-21 17:04:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150516/000812.htm>
+	{'count': 18, 'response': <200 http://news.qq.com/a/20150516/000812.htm>}
+2016-03-21 17:04:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/living/l558.html> (referer: http://news.qq.com/a/20160318/032073.htm)
+2016-03-21 17:04:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/living/l558.html>
+	{'count': 19, 'response': <200 http://news.qq.com/original/living/l558.html>}
+2016-03-21 17:04:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/zt2015/wxghz/index.htm> (referer: http://news.qq.com/a/20160318/032073.htm)
+2016-03-21 17:04:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/zt2015/wxghz/index.htm>
+	{'count': 20, 'response': <200 http://news.qq.com/zt2015/wxghz/index.htm>}
+2016-03-21 17:04:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160317/003942.htm> (referer: http://news.qq.com/a/20160319/033324.htm)
+2016-03-21 17:04:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160317/003942.htm>
+	{'count': 21, 'response': <200 http://news.qq.com/a/20160317/003942.htm>}
+2016-03-21 17:04:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/038513.htm> (referer: http://news.qq.com/a/20160320/012520.htm)
+2016-03-21 17:04:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/038513.htm>
+	{'count': 22, 'response': <200 http://news.qq.com/a/20160316/038513.htm>}
+2016-03-21 17:05:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160307/060793.htm> (referer: http://news.qq.com/a/20160321/023212.htm)
+2016-03-21 17:05:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160307/060793.htm>
+	{'count': 23, 'response': <200 http://news.qq.com/a/20160307/060793.htm>}
+2016-03-21 17:05:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160309/044942.htm> (referer: http://news.qq.com/zt2016/2016lh/index.htm)
+2016-03-21 17:05:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160309/044942.htm>
+	{'count': 24, 'response': <200 http://news.qq.com/a/20160309/044942.htm>}
+2016-03-21 17:05:11+0800 [download] DEBUG: Crawled (404) <GET http://news.qq.com/cross/20160308/8y4o6v67.html> (referer: http://news.qq.com/newspedia/all.htm)
+2016-03-21 17:05:11+0800 [download] DEBUG: Ignoring response <404 http://news.qq.com/cross/20160308/8y4o6v67.html>: HTTP status code is not handled or not allowed
+2016-03-21 17:05:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/zt2016/dashidi/index.htm> (referer: http://news.qq.com/photo.shtml)
+2016-03-21 17:05:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/zt2016/dashidi/index.htm>
+	{'count': 25, 'response': <200 http://news.qq.com/zt2016/dashidi/index.htm>}
+2016-03-21 17:05:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150515/064415.htm> (referer: http://news.qq.com/society_index.shtml)
+2016-03-21 17:05:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150515/064415.htm>
+	{'count': 26, 'response': <200 http://news.qq.com/a/20150515/064415.htm>}
+2016-03-21 17:05:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150515/004073.htm> (referer: http://news.qq.com/world_index.shtml)
+2016-03-21 17:05:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150515/004073.htm>
+	{'count': 27, 'response': <200 http://news.qq.com/a/20150515/004073.htm>}
+2016-03-21 17:05:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160320/010308.htm> (referer: http://news.qq.com/a/20160321/003906.htm)
+2016-03-21 17:05:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160320/010308.htm>
+	{'count': 28, 'response': <200 http://news.qq.com/a/20160320/010308.htm>}
+2016-03-21 17:05:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160320/010954.htm> (referer: http://news.qq.com/a/20160321/003906.htm)
+2016-03-21 17:05:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160320/010954.htm>
+	{'count': 29, 'response': <200 http://news.qq.com/a/20160320/010954.htm>}
+2016-03-21 17:05:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160320/015450.htm> (referer: http://news.qq.com/a/20160321/003906.htm)
+2016-03-21 17:05:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160320/015450.htm>
+	{'count': 30, 'response': <200 http://news.qq.com/a/20160320/015450.htm>}
+2016-03-21 17:05:34+0800 [download] INFO: Crawled 32 pages (at 16 pages/min), scraped 31 items (at 15 items/min)
+2016-03-21 17:05:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160321/003706.htm> (referer: http://news.qq.com/a/20160321/003906.htm)
+2016-03-21 17:05:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160321/003706.htm>
+	{'count': 31, 'response': <200 http://news.qq.com/a/20160321/003706.htm>}
+2016-03-21 17:05:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150516/004165.htm> (referer: http://news.qq.com/world_index.shtml)
+2016-03-21 17:05:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150516/004165.htm>
+	{'count': 32, 'response': <200 http://news.qq.com/a/20150516/004165.htm>}
+2016-03-21 17:05:41+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/newinfo.htm> (referer: http://news.qq.com/we.htm)
+2016-03-21 17:05:41+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/newinfo.htm>
+	{'count': 33, 'response': <200 http://news.qq.com/newinfo.htm>}
+2016-03-21 17:05:45+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140622/002890.htm> (referer: http://news.qq.com/a/20150516/000812.htm)
+2016-03-21 17:05:45+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140622/002890.htm>
+	{'count': 34, 'response': <200 http://news.qq.com/a/20140622/002890.htm>}
+2016-03-21 17:05:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2274.html> (referer: http://news.qq.com/original/living/l558.html)
+2016-03-21 17:05:48+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2274.html>
+	{'count': 35, 'response': <200 http://news.qq.com/original/oneday/2274.html>}
+2016-03-21 17:05:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150625/028671.htm> (referer: http://news.qq.com/zt2015/wxghz/index.htm)
+2016-03-21 17:05:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150625/028671.htm>
+	{'count': 36, 'response': <200 http://news.qq.com/a/20150625/028671.htm>}
+2016-03-21 17:05:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160317/003870.htm> (referer: http://news.qq.com/a/20160317/003942.htm)
+2016-03-21 17:05:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160317/003870.htm>
+	{'count': 37, 'response': <200 http://news.qq.com/a/20160317/003870.htm>}
+2016-03-21 17:05:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160317/003910.htm> (referer: http://news.qq.com/a/20160317/003942.htm)
+2016-03-21 17:05:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160317/003910.htm>
+	{'count': 38, 'response': <200 http://news.qq.com/a/20160317/003910.htm>}
+2016-03-21 17:06:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/025953.htm> (referer: http://news.qq.com/a/20160307/060793.htm)
+2016-03-21 17:06:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/025953.htm>
+	{'count': 39, 'response': <200 http://news.qq.com/a/20160305/025953.htm>}
+2016-03-21 17:06:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/028266.htm> (referer: http://news.qq.com/a/20160307/060793.htm)
+2016-03-21 17:06:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/028266.htm>
+	{'count': 40, 'response': <200 http://news.qq.com/a/20160305/028266.htm>}
+2016-03-21 17:06:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/028312.htm> (referer: http://news.qq.com/a/20160307/060793.htm)
+2016-03-21 17:06:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/028312.htm>
+	{'count': 41, 'response': <200 http://news.qq.com/a/20160305/028312.htm>}
+2016-03-21 17:06:12+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160127/032861.htm> (referer: http://news.qq.com/zt2016/dashidi/index.htm)
+2016-03-21 17:06:12+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160127/032861.htm>
+	{'count': 42, 'response': <200 http://news.qq.com/a/20160127/032861.htm>}
+2016-03-21 17:06:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150516/004191.htm> (referer: http://news.qq.com/a/20150515/064415.htm)
+2016-03-21 17:06:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150516/004191.htm>
+	{'count': 43, 'response': <200 http://news.qq.com/a/20150516/004191.htm>}
+2016-03-21 17:06:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150514/043468.htm> (referer: http://news.qq.com/a/20150515/004073.htm)
+2016-03-21 17:06:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150514/043468.htm>
+	{'count': 44, 'response': <200 http://news.qq.com/a/20150514/043468.htm>}
+2016-03-21 17:06:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160319/016795.htm> (referer: http://news.qq.com/a/20160320/010308.htm)
+2016-03-21 17:06:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160319/016795.htm>
+	{'count': 45, 'response': <200 http://news.qq.com/a/20160319/016795.htm>}
+2016-03-21 17:06:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160318/051958.htm> (referer: http://news.qq.com/a/20160320/010954.htm)
+2016-03-21 17:06:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160318/051958.htm>
+	{'count': 46, 'response': <200 http://news.qq.com/a/20160318/051958.htm>}
+2016-03-21 17:06:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140504/018138.htm> (referer: http://news.qq.com/a/20160320/015450.htm)
+2016-03-21 17:06:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140504/018138.htm>
+	{'count': 47, 'response': <200 http://news.qq.com/a/20140504/018138.htm>}
+2016-03-21 17:06:34+0800 [download] INFO: Crawled 49 pages (at 17 pages/min), scraped 48 items (at 17 items/min)
+2016-03-21 17:06:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140516/008619.htm> (referer: http://news.qq.com/a/20160320/015450.htm)
+2016-03-21 17:06:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140516/008619.htm>
+	{'count': 48, 'response': <200 http://news.qq.com/a/20140516/008619.htm>}
+2016-03-21 17:06:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150419/017895.htm> (referer: http://news.qq.com/a/20150516/004165.htm)
+2016-03-21 17:06:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150419/017895.htm>
+	{'count': 49, 'response': <200 http://news.qq.com/a/20150419/017895.htm>}
+2016-03-21 17:06:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150423/023837.htm> (referer: http://news.qq.com/a/20150516/004165.htm)
+2016-03-21 17:06:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150423/023837.htm>
+	{'count': 50, 'response': <200 http://news.qq.com/a/20150423/023837.htm>}
+2016-03-21 17:06:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140408/013068.htm> (referer: http://news.qq.com/a/20140622/002890.htm)
+2016-03-21 17:06:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140408/013068.htm>
+	{'count': 51, 'response': <200 http://news.qq.com/a/20140408/013068.htm>}
+2016-03-21 17:06:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2268.html> (referer: http://news.qq.com/original/oneday/2274.html)
+2016-03-21 17:06:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2268.html>
+	{'count': 52, 'response': <200 http://news.qq.com/original/oneday/2268.html>}
+2016-03-21 17:06:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140409/001504.htm> (referer: http://news.qq.com/a/20140622/002890.htm)
+2016-03-21 17:06:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140409/001504.htm>
+	{'count': 53, 'response': <200 http://news.qq.com/a/20140409/001504.htm>}
+2016-03-21 17:06:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/055896.htm> (referer: http://news.qq.com/a/20160317/003870.htm)
+2016-03-21 17:06:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/055896.htm>
+	{'count': 54, 'response': <200 http://news.qq.com/a/20160316/055896.htm>}
+2016-03-21 17:07:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/055964.htm> (referer: http://news.qq.com/a/20160317/003870.htm)
+2016-03-21 17:07:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/055964.htm>
+	{'count': 55, 'response': <200 http://news.qq.com/a/20160316/055964.htm>}
+2016-03-21 17:07:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160317/002507.htm> (referer: http://news.qq.com/a/20160317/003870.htm)
+2016-03-21 17:07:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160317/002507.htm>
+	{'count': 56, 'response': <200 http://news.qq.com/a/20160317/002507.htm>}
+2016-03-21 17:07:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160317/002646.htm> (referer: http://news.qq.com/a/20160317/003870.htm)
+2016-03-21 17:07:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160317/002646.htm>
+	{'count': 57, 'response': <200 http://news.qq.com/a/20160317/002646.htm>}
+2016-03-21 17:07:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/021085.htm> (referer: http://news.qq.com/a/20160305/028312.htm)
+2016-03-21 17:07:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/021085.htm>
+	{'count': 58, 'response': <200 http://news.qq.com/a/20160305/021085.htm>}
+2016-03-21 17:07:12+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/025267.htm> (referer: http://news.qq.com/a/20160305/028312.htm)
+2016-03-21 17:07:12+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/025267.htm>
+	{'count': 59, 'response': <200 http://news.qq.com/a/20160305/025267.htm>}
+2016-03-21 17:07:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/newsgn/gdxw/gedixinwen.htm> (referer: http://news.qq.com/a/20150516/004191.htm)
+2016-03-21 17:07:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/newsgn/gdxw/gedixinwen.htm>
+	{'count': 60, 'response': <200 http://news.qq.com/newsgn/gdxw/gedixinwen.htm>}
+2016-03-21 17:07:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150510/021149.htm> (referer: http://news.qq.com/a/20150514/043468.htm)
+2016-03-21 17:07:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150510/021149.htm>
+	{'count': 61, 'response': <200 http://news.qq.com/a/20150510/021149.htm>}
+2016-03-21 17:07:24+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160304/043178.htm> (referer: http://news.qq.com/a/20160319/016795.htm)
+2016-03-21 17:07:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160304/043178.htm>
+	{'count': 62, 'response': <200 http://news.qq.com/a/20160304/043178.htm>}
+2016-03-21 17:07:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150801/010203.htm> (referer: http://news.qq.com/a/20160318/051958.htm)
+2016-03-21 17:07:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150801/010203.htm>
+	{'count': 63, 'response': <200 http://news.qq.com/a/20150801/010203.htm>}
+2016-03-21 17:07:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140504/011225.htm> (referer: http://news.qq.com/a/20140504/018138.htm)
+2016-03-21 17:07:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140504/011225.htm>
+	{'count': 64, 'response': <200 http://news.qq.com/a/20140504/011225.htm>}
+2016-03-21 17:07:34+0800 [download] INFO: Crawled 66 pages (at 17 pages/min), scraped 65 items (at 17 items/min)
+2016-03-21 17:07:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140412/001039.htm> (referer: http://news.qq.com/a/20140516/008619.htm)
+2016-03-21 17:07:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140412/001039.htm>
+	{'count': 65, 'response': <200 http://news.qq.com/a/20140412/001039.htm>}
+2016-03-21 17:07:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140828/032166.htm> (referer: http://news.qq.com/a/20150419/017895.htm)
+2016-03-21 17:07:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140828/032166.htm>
+	{'count': 66, 'response': <200 http://news.qq.com/a/20140828/032166.htm>}
+2016-03-21 17:07:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150313/030577.htm> (referer: http://news.qq.com/a/20150423/023837.htm)
+2016-03-21 17:07:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150313/030577.htm>
+	{'count': 67, 'response': <200 http://news.qq.com/a/20150313/030577.htm>}
+2016-03-21 17:07:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140405/001482.htm> (referer: http://news.qq.com/a/20140408/013068.htm)
+2016-03-21 17:07:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140405/001482.htm>
+	{'count': 68, 'response': <200 http://news.qq.com/a/20140405/001482.htm>}
+2016-03-21 17:07:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2254.html> (referer: http://news.qq.com/original/oneday/2268.html)
+2016-03-21 17:07:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2254.html>
+	{'count': 69, 'response': <200 http://news.qq.com/original/oneday/2254.html>}
+2016-03-21 17:07:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140407/006389.htm> (referer: http://news.qq.com/a/20140409/001504.htm)
+2016-03-21 17:07:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140407/006389.htm>
+	{'count': 70, 'response': <200 http://news.qq.com/a/20140407/006389.htm>}
+2016-03-21 17:07:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/033531.htm> (referer: http://news.qq.com/a/20160316/055896.htm)
+2016-03-21 17:07:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/033531.htm>
+	{'count': 71, 'response': <200 http://news.qq.com/a/20160316/033531.htm>}
+2016-03-21 17:08:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/035781.htm> (referer: http://news.qq.com/a/20160316/055964.htm)
+2016-03-21 17:08:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/035781.htm>
+	{'count': 72, 'response': <200 http://news.qq.com/a/20160316/035781.htm>}
+2016-03-21 17:08:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160316/056001.htm> (referer: http://news.qq.com/a/20160317/002507.htm)
+2016-03-21 17:08:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160316/056001.htm>
+	{'count': 73, 'response': <200 http://news.qq.com/a/20160316/056001.htm>}
+2016-03-21 17:08:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160314/013062.htm> (referer: http://news.qq.com/a/20160317/002646.htm)
+2016-03-21 17:08:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160314/013062.htm>
+	{'count': 74, 'response': <200 http://news.qq.com/a/20160314/013062.htm>}
+2016-03-21 17:08:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/020940.htm> (referer: http://news.qq.com/a/20160305/021085.htm)
+2016-03-21 17:08:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/020940.htm>
+	{'count': 75, 'response': <200 http://news.qq.com/a/20160305/020940.htm>}
+2016-03-21 17:08:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160303/016225.htm> (referer: http://news.qq.com/a/20160305/025267.htm)
+2016-03-21 17:08:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160303/016225.htm>
+	{'count': 76, 'response': <200 http://news.qq.com/a/20160303/016225.htm>}
+2016-03-21 17:08:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2187.html> (referer: http://news.qq.com/newsgn/gdxw/gedixinwen.htm)
+2016-03-21 17:08:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2187.html>
+	{'count': 77, 'response': <200 http://news.qq.com/original/oneday/2187.html>}
+2016-03-21 17:08:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150510/013833.htm> (referer: http://news.qq.com/a/20150510/021149.htm)
+2016-03-21 17:08:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150510/013833.htm>
+	{'count': 78, 'response': <200 http://news.qq.com/a/20150510/013833.htm>}
+2016-03-21 17:08:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160304/043068.htm> (referer: http://news.qq.com/a/20160304/043178.htm)
+2016-03-21 17:08:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160304/043068.htm>
+	{'count': 79, 'response': <200 http://news.qq.com/a/20160304/043068.htm>}
+2016-03-21 17:08:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150723/009196.htm> (referer: http://news.qq.com/a/20150801/010203.htm)
+2016-03-21 17:08:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150723/009196.htm>
+	{'count': 80, 'response': <200 http://news.qq.com/a/20150723/009196.htm>}
+2016-03-21 17:08:33+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150728/057309.htm> (referer: http://news.qq.com/a/20150801/010203.htm)
+2016-03-21 17:08:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150728/057309.htm>
+	{'count': 81, 'response': <200 http://news.qq.com/a/20150728/057309.htm>}
+2016-03-21 17:08:34+0800 [download] INFO: Crawled 83 pages (at 17 pages/min), scraped 82 items (at 17 items/min)
+2016-03-21 17:08:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140402/011207.htm> (referer: http://news.qq.com/a/20140412/001039.htm)
+2016-03-21 17:08:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140402/011207.htm>
+	{'count': 82, 'response': <200 http://news.qq.com/a/20140402/011207.htm>}
+2016-03-21 17:08:41+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140723/053650.htm> (referer: http://news.qq.com/a/20140828/032166.htm)
+2016-03-21 17:08:41+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140723/053650.htm>
+	{'count': 83, 'response': <200 http://news.qq.com/a/20140723/053650.htm>}
+2016-03-21 17:08:45+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150204/034591.htm> (referer: http://news.qq.com/a/20150313/030577.htm)
+2016-03-21 17:08:45+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150204/034591.htm>
+	{'count': 84, 'response': <200 http://news.qq.com/a/20150204/034591.htm>}
+2016-03-21 17:08:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140402/000841.htm> (referer: http://news.qq.com/a/20140405/001482.htm)
+2016-03-21 17:08:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140402/000841.htm>
+	{'count': 85, 'response': <200 http://news.qq.com/a/20140402/000841.htm>}
+2016-03-21 17:08:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2250.html> (referer: http://news.qq.com/original/oneday/2254.html)
+2016-03-21 17:08:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2250.html>
+	{'count': 86, 'response': <200 http://news.qq.com/original/oneday/2250.html>}
+2016-03-21 17:08:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140403/000105.htm> (referer: http://news.qq.com/a/20140405/001482.htm)
+2016-03-21 17:08:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140403/000105.htm>
+	{'count': 87, 'response': <200 http://news.qq.com/a/20140403/000105.htm>}
+2016-03-21 17:08:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140403/000479.htm> (referer: http://news.qq.com/a/20140405/001482.htm)
+2016-03-21 17:08:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140403/000479.htm>
+	{'count': 88, 'response': <200 http://news.qq.com/a/20140403/000479.htm>}
+2016-03-21 17:09:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140403/020832.htm> (referer: http://news.qq.com/a/20140405/001482.htm)
+2016-03-21 17:09:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140403/020832.htm>
+	{'count': 89, 'response': <200 http://news.qq.com/a/20140403/020832.htm>}
+2016-03-21 17:09:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150226/026936.htm> (referer: http://news.qq.com/a/20150313/030577.htm)
+2016-03-21 17:09:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150226/026936.htm>
+	{'count': 90, 'response': <200 http://news.qq.com/a/20150226/026936.htm>}
+2016-03-21 17:09:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160305/031235.htm> (referer: http://news.qq.com/a/20160314/013062.htm)
+2016-03-21 17:09:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160305/031235.htm>
+	{'count': 91, 'response': <200 http://news.qq.com/a/20160305/031235.htm>}
+2016-03-21 17:09:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160311/019185.htm> (referer: http://news.qq.com/a/20160314/013062.htm)
+2016-03-21 17:09:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160311/019185.htm>
+	{'count': 92, 'response': <200 http://news.qq.com/a/20160311/019185.htm>}
+2016-03-21 17:09:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160311/003505.htm> (referer: http://news.qq.com/a/20160314/013062.htm)
+2016-03-21 17:09:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160311/003505.htm>
+	{'count': 93, 'response': <200 http://news.qq.com/a/20160311/003505.htm>}
+2016-03-21 17:09:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2184.html> (referer: http://news.qq.com/original/oneday/2187.html)
+2016-03-21 17:09:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2184.html>
+	{'count': 94, 'response': <200 http://news.qq.com/original/oneday/2184.html>}
+2016-03-21 17:09:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140718/033606.htm> (referer: http://news.qq.com/a/20150510/013833.htm)
+2016-03-21 17:09:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140718/033606.htm>
+	{'count': 95, 'response': <200 http://news.qq.com/a/20140718/033606.htm>}
+2016-03-21 17:09:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141117/042651.htm> (referer: http://news.qq.com/a/20150510/013833.htm)
+2016-03-21 17:09:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141117/042651.htm>
+	{'count': 96, 'response': <200 http://news.qq.com/a/20141117/042651.htm>}
+2016-03-21 17:09:33+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150709/037880.htm> (referer: http://news.qq.com/a/20150723/009196.htm)
+2016-03-21 17:09:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150709/037880.htm>
+	{'count': 97, 'response': <200 http://news.qq.com/a/20150709/037880.htm>}
+2016-03-21 17:09:34+0800 [download] INFO: Crawled 99 pages (at 16 pages/min), scraped 98 items (at 16 items/min)
+2016-03-21 17:09:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150727/001944.htm> (referer: http://news.qq.com/a/20150728/057309.htm)
+2016-03-21 17:09:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150727/001944.htm>
+	{'count': 98, 'response': <200 http://news.qq.com/a/20150727/001944.htm>}
+2016-03-21 17:09:41+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/019483.htm> (referer: http://news.qq.com/a/20140402/011207.htm)
+2016-03-21 17:09:41+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/019483.htm>
+	{'count': 99, 'response': <200 http://news.qq.com/a/20140331/019483.htm>}
+2016-03-21 17:09:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140416/002080.htm> (referer: http://news.qq.com/a/20140723/053650.htm)
+2016-03-21 17:09:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140416/002080.htm>
+	{'count': 100, 'response': <200 http://news.qq.com/a/20140416/002080.htm>}
+2016-03-21 17:09:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150105/013478.htm> (referer: http://news.qq.com/a/20150204/034591.htm)
+2016-03-21 17:09:48+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150105/013478.htm>
+	{'count': 101, 'response': <200 http://news.qq.com/a/20150105/013478.htm>}
+2016-03-21 17:09:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/001985.htm> (referer: http://news.qq.com/a/20140402/000841.htm)
+2016-03-21 17:09:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/001985.htm>
+	{'count': 102, 'response': <200 http://news.qq.com/a/20140331/001985.htm>}
+2016-03-21 17:09:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2257.html> (referer: http://news.qq.com/original/oneday/2250.html)
+2016-03-21 17:09:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2257.html>
+	{'count': 103, 'response': <200 http://news.qq.com/original/oneday/2257.html>}
+2016-03-21 17:09:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130719/001950.htm> (referer: http://news.qq.com/a/20140403/000105.htm)
+2016-03-21 17:09:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130719/001950.htm>
+	{'count': 104, 'response': <200 http://news.qq.com/a/20130719/001950.htm>}
+2016-03-21 17:10:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/004094.htm> (referer: http://news.qq.com/a/20140403/000479.htm)
+2016-03-21 17:10:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/004094.htm>
+	{'count': 105, 'response': <200 http://news.qq.com/a/20140321/004094.htm>}
+2016-03-21 17:10:06+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/000321.htm> (referer: http://news.qq.com/a/20140403/020832.htm)
+2016-03-21 17:10:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/000321.htm>
+	{'count': 106, 'response': <200 http://news.qq.com/a/20140331/000321.htm>}
+2016-03-21 17:10:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/017652.htm> (referer: http://news.qq.com/a/20140403/020832.htm)
+2016-03-21 17:10:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/017652.htm>
+	{'count': 107, 'response': <200 http://news.qq.com/a/20140331/017652.htm>}
+2016-03-21 17:10:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160226/056931.htm> (referer: http://news.qq.com/a/20160305/031235.htm)
+2016-03-21 17:10:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160226/056931.htm>
+	{'count': 108, 'response': <200 http://news.qq.com/a/20160226/056931.htm>}
+2016-03-21 17:10:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160311/007769.htm> (referer: http://news.qq.com/a/20160311/019185.htm)
+2016-03-21 17:10:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160311/007769.htm>
+	{'count': 109, 'response': <200 http://news.qq.com/a/20160311/007769.htm>}
+2016-03-21 17:10:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140308/000707.htm> (referer: http://news.qq.com/a/20160311/003505.htm)
+2016-03-21 17:10:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140308/000707.htm>
+	{'count': 110, 'response': <200 http://news.qq.com/a/20140308/000707.htm>}
+2016-03-21 17:10:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2180.html> (referer: http://news.qq.com/original/oneday/2184.html)
+2016-03-21 17:10:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2180.html>
+	{'count': 111, 'response': <200 http://news.qq.com/original/oneday/2180.html>}
+2016-03-21 17:10:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20131202/003487.htm> (referer: http://news.qq.com/a/20140718/033606.htm)
+2016-03-21 17:10:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20131202/003487.htm>
+	{'count': 112, 'response': <200 http://news.qq.com/a/20131202/003487.htm>}
+2016-03-21 17:10:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20131203/010129.htm> (referer: http://news.qq.com/a/20140718/033606.htm)
+2016-03-21 17:10:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20131203/010129.htm>
+	{'count': 113, 'response': <200 http://news.qq.com/a/20131203/010129.htm>}
+2016-03-21 17:10:34+0800 [download] INFO: Crawled 115 pages (at 16 pages/min), scraped 114 items (at 16 items/min)
+2016-03-21 17:10:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150629/019563.htm> (referer: http://news.qq.com/a/20150709/037880.htm)
+2016-03-21 17:10:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150629/019563.htm>
+	{'count': 114, 'response': <200 http://news.qq.com/a/20150629/019563.htm>}
+2016-03-21 17:10:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150725/025712.htm> (referer: http://news.qq.com/a/20150727/001944.htm)
+2016-03-21 17:10:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150725/025712.htm>
+	{'count': 115, 'response': <200 http://news.qq.com/a/20150725/025712.htm>}
+2016-03-21 17:10:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/003802.htm> (referer: http://news.qq.com/a/20140331/019483.htm)
+2016-03-21 17:10:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/003802.htm>
+	{'count': 116, 'response': <200 http://news.qq.com/a/20140331/003802.htm>}
+2016-03-21 17:10:45+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/005414.htm> (referer: http://news.qq.com/a/20140331/019483.htm)
+2016-03-21 17:10:45+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/005414.htm>
+	{'count': 117, 'response': <200 http://news.qq.com/a/20140331/005414.htm>}
+2016-03-21 17:10:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/007938.htm> (referer: http://news.qq.com/a/20140331/019483.htm)
+2016-03-21 17:10:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/007938.htm>
+	{'count': 118, 'response': <200 http://news.qq.com/a/20140331/007938.htm>}
+2016-03-21 17:10:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140327/010622.htm> (referer: http://news.qq.com/a/20140331/001985.htm)
+2016-03-21 17:10:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140327/010622.htm>
+	{'count': 119, 'response': <200 http://news.qq.com/a/20140327/010622.htm>}
+2016-03-21 17:10:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2256.html> (referer: http://news.qq.com/original/oneday/2257.html)
+2016-03-21 17:10:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2256.html>
+	{'count': 120, 'response': <200 http://news.qq.com/original/oneday/2256.html>}
+2016-03-21 17:11:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130306/000795.htm> (referer: http://news.qq.com/a/20130719/001950.htm)
+2016-03-21 17:11:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130306/000795.htm>
+	{'count': 121, 'response': <200 http://news.qq.com/a/20130306/000795.htm>}
+2016-03-21 17:11:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130628/000711.htm> (referer: http://news.qq.com/a/20140321/004094.htm)
+2016-03-21 17:11:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130628/000711.htm>
+	{'count': 122, 'response': <200 http://news.qq.com/a/20130628/000711.htm>}
+2016-03-21 17:11:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140327/003203.htm> (referer: http://news.qq.com/a/20140331/000321.htm)
+2016-03-21 17:11:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140327/003203.htm>
+	{'count': 123, 'response': <200 http://news.qq.com/a/20140327/003203.htm>}
+2016-03-21 17:11:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140327/006116.htm> (referer: http://news.qq.com/a/20140331/000321.htm)
+2016-03-21 17:11:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140327/006116.htm>
+	{'count': 124, 'response': <200 http://news.qq.com/a/20140327/006116.htm>}
+2016-03-21 17:11:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160221/028125.htm> (referer: http://news.qq.com/a/20160226/056931.htm)
+2016-03-21 17:11:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160221/028125.htm>
+	{'count': 125, 'response': <200 http://news.qq.com/a/20160221/028125.htm>}
+2016-03-21 17:11:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130803/004662.htm> (referer: http://news.qq.com/a/20160311/007769.htm)
+2016-03-21 17:11:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130803/004662.htm>
+	{'count': 126, 'response': <200 http://news.qq.com/a/20130803/004662.htm>}
+2016-03-21 17:11:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140313/010290.htm> (referer: http://news.qq.com/a/20140308/000707.htm)
+2016-03-21 17:11:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140313/010290.htm>
+	{'count': 127, 'response': <200 http://news.qq.com/a/20140313/010290.htm>}
+2016-03-21 17:11:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2179.html> (referer: http://news.qq.com/original/oneday/2180.html)
+2016-03-21 17:11:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2179.html>
+	{'count': 128, 'response': <200 http://news.qq.com/original/oneday/2179.html>}
+2016-03-21 17:11:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130111/001115.htm> (referer: http://news.qq.com/a/20131202/003487.htm)
+2016-03-21 17:11:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130111/001115.htm>
+	{'count': 129, 'response': <200 http://news.qq.com/a/20130111/001115.htm>}
+2016-03-21 17:11:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130220/001406.htm> (referer: http://news.qq.com/a/20131202/003487.htm)
+2016-03-21 17:11:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130220/001406.htm>
+	{'count': 130, 'response': <200 http://news.qq.com/a/20130220/001406.htm>}
+2016-03-21 17:11:34+0800 [download] INFO: Crawled 132 pages (at 17 pages/min), scraped 131 items (at 17 items/min)
+2016-03-21 17:11:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150629/003114.htm> (referer: http://news.qq.com/a/20150629/019563.htm)
+2016-03-21 17:11:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150629/003114.htm>
+	{'count': 131, 'response': <200 http://news.qq.com/a/20150629/003114.htm>}
+2016-03-21 17:11:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150725/020684.htm> (referer: http://news.qq.com/a/20150725/025712.htm)
+2016-03-21 17:11:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150725/020684.htm>
+	{'count': 132, 'response': <200 http://news.qq.com/a/20150725/020684.htm>}
+2016-03-21 17:11:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140330/009122.htm> (referer: http://news.qq.com/a/20140331/003802.htm)
+2016-03-21 17:11:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140330/009122.htm>
+	{'count': 133, 'response': <200 http://news.qq.com/a/20140330/009122.htm>}
+2016-03-21 17:11:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140330/004590.htm> (referer: http://news.qq.com/a/20140331/005414.htm)
+2016-03-21 17:11:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140330/004590.htm>
+	{'count': 134, 'response': <200 http://news.qq.com/a/20140330/004590.htm>}
+2016-03-21 17:11:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140331/003388.htm> (referer: http://news.qq.com/a/20140331/007938.htm)
+2016-03-21 17:11:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140331/003388.htm>
+	{'count': 135, 'response': <200 http://news.qq.com/a/20140331/003388.htm>}
+2016-03-21 17:11:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130411/001144.htm> (referer: http://news.qq.com/a/20140327/010622.htm)
+2016-03-21 17:11:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130411/001144.htm>
+	{'count': 136, 'response': <200 http://news.qq.com/a/20130411/001144.htm>}
+2016-03-21 17:11:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2246.html> (referer: http://news.qq.com/original/oneday/2256.html)
+2016-03-21 17:11:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2246.html>
+	{'count': 137, 'response': <200 http://news.qq.com/original/oneday/2246.html>}
+2016-03-21 17:12:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2245.html> (referer: http://news.qq.com/original/oneday/2256.html)
+2016-03-21 17:12:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2245.html>
+	{'count': 138, 'response': <200 http://news.qq.com/original/oneday/2245.html>}
+2016-03-21 17:12:06+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130625/005087.htm> (referer: http://news.qq.com/a/20130628/000711.htm)
+2016-03-21 17:12:06+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130625/005087.htm>
+	{'count': 139, 'response': <200 http://news.qq.com/a/20130625/005087.htm>}
+2016-03-21 17:12:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/016633.htm> (referer: http://news.qq.com/a/20140327/003203.htm)
+2016-03-21 17:12:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/016633.htm>
+	{'count': 140, 'response': <200 http://news.qq.com/a/20140321/016633.htm>}
+2016-03-21 17:12:12+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140219/011666.htm> (referer: http://news.qq.com/a/20140327/006116.htm)
+2016-03-21 17:12:12+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140219/011666.htm>
+	{'count': 141, 'response': <200 http://news.qq.com/a/20140219/011666.htm>}
+2016-03-21 17:12:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160212/001576.htm> (referer: http://news.qq.com/a/20160221/028125.htm)
+2016-03-21 17:12:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160212/001576.htm>
+	{'count': 142, 'response': <200 http://news.qq.com/a/20160212/001576.htm>}
+2016-03-21 17:12:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130802/006873.htm> (referer: http://news.qq.com/a/20130803/004662.htm)
+2016-03-21 17:12:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130802/006873.htm>
+	{'count': 143, 'response': <200 http://news.qq.com/a/20130802/006873.htm>}
+2016-03-21 17:12:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140312/023274.htm> (referer: http://news.qq.com/a/20140313/010290.htm)
+2016-03-21 17:12:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140312/023274.htm>
+	{'count': 144, 'response': <200 http://news.qq.com/a/20140312/023274.htm>}
+2016-03-21 17:12:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2175.html> (referer: http://news.qq.com/original/oneday/2179.html)
+2016-03-21 17:12:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2175.html>
+	{'count': 145, 'response': <200 http://news.qq.com/original/oneday/2175.html>}
+2016-03-21 17:12:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121025/001741.htm> (referer: http://news.qq.com/a/20130111/001115.htm)
+2016-03-21 17:12:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121025/001741.htm>
+	{'count': 146, 'response': <200 http://news.qq.com/a/20121025/001741.htm>}
+2016-03-21 17:12:34+0800 [download] INFO: Crawled 148 pages (at 16 pages/min), scraped 147 items (at 16 items/min)
+2016-03-21 17:12:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121219/001065.htm> (referer: http://news.qq.com/a/20130111/001115.htm)
+2016-03-21 17:12:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121219/001065.htm>
+	{'count': 147, 'response': <200 http://news.qq.com/a/20121219/001065.htm>}
+2016-03-21 17:12:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150626/026585.htm> (referer: http://news.qq.com/a/20150629/003114.htm)
+2016-03-21 17:12:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150626/026585.htm>
+	{'count': 148, 'response': <200 http://news.qq.com/a/20150626/026585.htm>}
+2016-03-21 17:12:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150724/007393.htm> (referer: http://news.qq.com/a/20150725/020684.htm)
+2016-03-21 17:12:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150724/007393.htm>
+	{'count': 149, 'response': <200 http://news.qq.com/a/20150724/007393.htm>}
+2016-03-21 17:12:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140330/005996.htm> (referer: http://news.qq.com/a/20140330/009122.htm)
+2016-03-21 17:12:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140330/005996.htm>
+	{'count': 150, 'response': <200 http://news.qq.com/a/20140330/005996.htm>}
+2016-03-21 17:12:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140327/008813.htm> (referer: http://news.qq.com/a/20140330/004590.htm)
+2016-03-21 17:12:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140327/008813.htm>
+	{'count': 151, 'response': <200 http://news.qq.com/a/20140327/008813.htm>}
+2016-03-21 17:12:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140330/005610.htm> (referer: http://news.qq.com/a/20140331/003388.htm)
+2016-03-21 17:12:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140330/005610.htm>
+	{'count': 152, 'response': <200 http://news.qq.com/a/20140330/005610.htm>}
+2016-03-21 17:12:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120809/000163.htm> (referer: http://news.qq.com/a/20130411/001144.htm)
+2016-03-21 17:12:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120809/000163.htm>
+	{'count': 153, 'response': <200 http://news.qq.com/a/20120809/000163.htm>}
+2016-03-21 17:13:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2241.html> (referer: http://news.qq.com/original/oneday/2246.html)
+2016-03-21 17:13:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2241.html>
+	{'count': 154, 'response': <200 http://news.qq.com/original/oneday/2241.html>}
+2016-03-21 17:13:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2240.html> (referer: http://news.qq.com/original/oneday/2245.html)
+2016-03-21 17:13:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2240.html>
+	{'count': 155, 'response': <200 http://news.qq.com/original/oneday/2240.html>}
+2016-03-21 17:13:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130507/000605.htm> (referer: http://news.qq.com/a/20130625/005087.htm)
+2016-03-21 17:13:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130507/000605.htm>
+	{'count': 156, 'response': <200 http://news.qq.com/a/20130507/000605.htm>}
+2016-03-21 17:13:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130602/000119.htm> (referer: http://news.qq.com/a/20130625/005087.htm)
+2016-03-21 17:13:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130602/000119.htm>
+	{'count': 157, 'response': <200 http://news.qq.com/a/20130602/000119.htm>}
+2016-03-21 17:13:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140212/013847.htm> (referer: http://news.qq.com/a/20140219/011666.htm)
+2016-03-21 17:13:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140212/013847.htm>
+	{'count': 158, 'response': <200 http://news.qq.com/a/20140212/013847.htm>}
+2016-03-21 17:13:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160211/017990.htm> (referer: http://news.qq.com/a/20160212/001576.htm)
+2016-03-21 17:13:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160211/017990.htm>
+	{'count': 159, 'response': <200 http://news.qq.com/a/20160211/017990.htm>}
+2016-03-21 17:13:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160211/023885.htm> (referer: http://news.qq.com/a/20160212/001576.htm)
+2016-03-21 17:13:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160211/023885.htm>
+	{'count': 160, 'response': <200 http://news.qq.com/a/20160211/023885.htm>}
+2016-03-21 17:13:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160211/024499.htm> (referer: http://news.qq.com/a/20160212/001576.htm)
+2016-03-21 17:13:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160211/024499.htm>
+	{'count': 161, 'response': <200 http://news.qq.com/a/20160211/024499.htm>}
+2016-03-21 17:13:33+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2172.html> (referer: http://news.qq.com/original/oneday/2175.html)
+2016-03-21 17:13:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2172.html>
+	{'count': 162, 'response': <200 http://news.qq.com/original/oneday/2172.html>}
+2016-03-21 17:13:34+0800 [download] INFO: Crawled 164 pages (at 16 pages/min), scraped 163 items (at 16 items/min)
+2016-03-21 17:13:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140505/039295.htm> (referer: http://news.qq.com/a/20121025/001741.htm)
+2016-03-21 17:13:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140505/039295.htm>
+	{'count': 163, 'response': <200 http://news.qq.com/a/20140505/039295.htm>}
+2016-03-21 17:13:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140505/030401.htm> (referer: http://news.qq.com/a/20121025/001741.htm)
+2016-03-21 17:13:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140505/030401.htm>
+	{'count': 164, 'response': <200 http://news.qq.com/a/20140505/030401.htm>}
+2016-03-21 17:13:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150626/009871.htm> (referer: http://news.qq.com/a/20150626/026585.htm)
+2016-03-21 17:13:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150626/009871.htm>
+	{'count': 165, 'response': <200 http://news.qq.com/a/20150626/009871.htm>}
+2016-03-21 17:13:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150722/016502.htm> (referer: http://news.qq.com/a/20150724/007393.htm)
+2016-03-21 17:13:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150722/016502.htm>
+	{'count': 166, 'response': <200 http://news.qq.com/a/20150722/016502.htm>}
+2016-03-21 17:13:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150722/026615.htm> (referer: http://news.qq.com/a/20150724/007393.htm)
+2016-03-21 17:13:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150722/026615.htm>
+	{'count': 167, 'response': <200 http://news.qq.com/a/20150722/026615.htm>}
+2016-03-21 17:13:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140326/012492.htm> (referer: http://news.qq.com/a/20140327/008813.htm)
+2016-03-21 17:13:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140326/012492.htm>
+	{'count': 168, 'response': <200 http://news.qq.com/a/20140326/012492.htm>}
+2016-03-21 17:13:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140326/013819.htm> (referer: http://news.qq.com/a/20140327/008813.htm)
+2016-03-21 17:13:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140326/013819.htm>
+	{'count': 169, 'response': <200 http://news.qq.com/a/20140326/013819.htm>}
+2016-03-21 17:14:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110101/000580.htm> (referer: http://news.qq.com/a/20120809/000163.htm)
+2016-03-21 17:14:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110101/000580.htm>
+	{'count': 170, 'response': <200 http://news.qq.com/a/20110101/000580.htm>}
+2016-03-21 17:14:06+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2242.html> (referer: http://news.qq.com/original/oneday/2241.html)
+2016-03-21 17:14:06+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2242.html>
+	{'count': 171, 'response': <200 http://news.qq.com/original/oneday/2242.html>}
+2016-03-21 17:14:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2238.html> (referer: http://news.qq.com/original/oneday/2240.html)
+2016-03-21 17:14:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2238.html>
+	{'count': 172, 'response': <200 http://news.qq.com/original/oneday/2238.html>}
+2016-03-21 17:14:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130505/000015.htm> (referer: http://news.qq.com/a/20130507/000605.htm)
+2016-03-21 17:14:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130505/000015.htm>
+	{'count': 173, 'response': <200 http://news.qq.com/a/20130505/000015.htm>}
+2016-03-21 17:14:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130530/015614.htm> (referer: http://news.qq.com/a/20130602/000119.htm)
+2016-03-21 17:14:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130530/015614.htm>
+	{'count': 174, 'response': <200 http://news.qq.com/a/20130530/015614.htm>}
+2016-03-21 17:14:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130926/014700.htm> (referer: http://news.qq.com/a/20140212/013847.htm)
+2016-03-21 17:14:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130926/014700.htm>
+	{'count': 175, 'response': <200 http://news.qq.com/a/20130926/014700.htm>}
+2016-03-21 17:14:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130926/015072.htm> (referer: http://news.qq.com/a/20140212/013847.htm)
+2016-03-21 17:14:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130926/015072.htm>
+	{'count': 176, 'response': <200 http://news.qq.com/a/20130926/015072.htm>}
+2016-03-21 17:14:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160211/015905.htm> (referer: http://news.qq.com/a/20160211/023885.htm)
+2016-03-21 17:14:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160211/015905.htm>
+	{'count': 177, 'response': <200 http://news.qq.com/a/20160211/015905.htm>}
+2016-03-21 17:14:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20160211/020122.htm> (referer: http://news.qq.com/a/20160211/023885.htm)
+2016-03-21 17:14:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20160211/020122.htm>
+	{'count': 178, 'response': <200 http://news.qq.com/a/20160211/020122.htm>}
+2016-03-21 17:14:34+0800 [download] INFO: Crawled 180 pages (at 16 pages/min), scraped 179 items (at 16 items/min)
+2016-03-21 17:14:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2168.html> (referer: http://news.qq.com/original/oneday/2172.html)
+2016-03-21 17:14:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2168.html>
+	{'count': 179, 'response': <200 http://news.qq.com/original/oneday/2168.html>}
+2016-03-21 17:14:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20131231/000508.htm> (referer: http://news.qq.com/a/20140505/039295.htm)
+2016-03-21 17:14:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20131231/000508.htm>
+	{'count': 180, 'response': <200 http://news.qq.com/a/20131231/000508.htm>}
+2016-03-21 17:14:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/006961.htm> (referer: http://news.qq.com/a/20140505/039295.htm)
+2016-03-21 17:14:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/006961.htm>
+	{'count': 181, 'response': <200 http://news.qq.com/a/20140322/006961.htm>}
+2016-03-21 17:14:45+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150407/010341.htm> (referer: http://news.qq.com/a/20150626/009871.htm)
+2016-03-21 17:14:45+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150407/010341.htm>
+	{'count': 182, 'response': <200 http://news.qq.com/a/20150407/010341.htm>}
+2016-03-21 17:14:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150521/021483.htm> (referer: http://news.qq.com/a/20150626/009871.htm)
+2016-03-21 17:14:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150521/021483.htm>
+	{'count': 183, 'response': <200 http://news.qq.com/a/20150521/021483.htm>}
+2016-03-21 17:14:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150621/003163.htm> (referer: http://news.qq.com/a/20150626/009871.htm)
+2016-03-21 17:14:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150621/003163.htm>
+	{'count': 184, 'response': <200 http://news.qq.com/a/20150621/003163.htm>}
+2016-03-21 17:14:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/015355.htm> (referer: http://news.qq.com/a/20140326/012492.htm)
+2016-03-21 17:14:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/015355.htm>
+	{'count': 185, 'response': <200 http://news.qq.com/a/20140324/015355.htm>}
+2016-03-21 17:15:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/016335.htm> (referer: http://news.qq.com/a/20140326/013819.htm)
+2016-03-21 17:15:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/016335.htm>
+	{'count': 186, 'response': <200 http://news.qq.com/a/20140324/016335.htm>}
+2016-03-21 17:15:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20101231/001867.htm> (referer: http://news.qq.com/a/20110101/000580.htm)
+2016-03-21 17:15:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20101231/001867.htm>
+	{'count': 187, 'response': <200 http://news.qq.com/a/20101231/001867.htm>}
+2016-03-21 17:15:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20101231/001879.htm> (referer: http://news.qq.com/a/20110101/000580.htm)
+2016-03-21 17:15:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20101231/001879.htm>
+	{'count': 188, 'response': <200 http://news.qq.com/a/20101231/001879.htm>}
+2016-03-21 17:15:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2234.html> (referer: http://news.qq.com/original/oneday/2238.html)
+2016-03-21 17:15:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2234.html>
+	{'count': 189, 'response': <200 http://news.qq.com/original/oneday/2234.html>}
+2016-03-21 17:15:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130429/000097.htm> (referer: http://news.qq.com/a/20130505/000015.htm)
+2016-03-21 17:15:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130429/000097.htm>
+	{'count': 190, 'response': <200 http://news.qq.com/a/20130429/000097.htm>}
+2016-03-21 17:15:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110915/000099.htm> (referer: http://news.qq.com/a/20130530/015614.htm)
+2016-03-21 17:15:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110915/000099.htm>
+	{'count': 191, 'response': <200 http://news.qq.com/a/20110915/000099.htm>}
+2016-03-21 17:15:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130717/013860.htm> (referer: http://news.qq.com/a/20130926/014700.htm)
+2016-03-21 17:15:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130717/013860.htm>
+	{'count': 192, 'response': <200 http://news.qq.com/a/20130717/013860.htm>}
+2016-03-21 17:15:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130926/002825.htm> (referer: http://news.qq.com/a/20130926/015072.htm)
+2016-03-21 17:15:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130926/002825.htm>
+	{'count': 193, 'response': <200 http://news.qq.com/a/20130926/002825.htm>}
+2016-03-21 17:15:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150318/062437.htm> (referer: http://news.qq.com/a/20160211/015905.htm)
+2016-03-21 17:15:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150318/062437.htm>
+	{'count': 194, 'response': <200 http://news.qq.com/a/20150318/062437.htm>}
+2016-03-21 17:15:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140708/032484.htm> (referer: http://news.qq.com/a/20160211/020122.htm)
+2016-03-21 17:15:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140708/032484.htm>
+	{'count': 195, 'response': <200 http://news.qq.com/a/20140708/032484.htm>}
+2016-03-21 17:15:34+0800 [download] INFO: Crawled 197 pages (at 17 pages/min), scraped 196 items (at 17 items/min)
+2016-03-21 17:15:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2164.html> (referer: http://news.qq.com/original/oneday/2168.html)
+2016-03-21 17:15:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2164.html>
+	{'count': 196, 'response': <200 http://news.qq.com/original/oneday/2164.html>}
+2016-03-21 17:15:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20131217/000908.htm> (referer: http://news.qq.com/a/20131231/000508.htm)
+2016-03-21 17:15:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20131217/000908.htm>
+	{'count': 197, 'response': <200 http://news.qq.com/a/20131217/000908.htm>}
+2016-03-21 17:15:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/016583.htm> (referer: http://news.qq.com/a/20140322/006961.htm)
+2016-03-21 17:15:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/016583.htm>
+	{'count': 198, 'response': <200 http://news.qq.com/a/20140321/016583.htm>}
+2016-03-21 17:15:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150407/005116.htm> (referer: http://news.qq.com/a/20150407/010341.htm)
+2016-03-21 17:15:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150407/005116.htm>
+	{'count': 199, 'response': <200 http://news.qq.com/a/20150407/005116.htm>}
+2016-03-21 17:15:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150521/010981.htm> (referer: http://news.qq.com/a/20150521/021483.htm)
+2016-03-21 17:15:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150521/010981.htm>
+	{'count': 200, 'response': <200 http://news.qq.com/a/20150521/010981.htm>}
+2016-03-21 17:15:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141206/025674.htm> (referer: http://news.qq.com/a/20150621/003163.htm)
+2016-03-21 17:15:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141206/025674.htm>
+	{'count': 201, 'response': <200 http://news.qq.com/a/20141206/025674.htm>}
+2016-03-21 17:15:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/014073.htm> (referer: http://news.qq.com/a/20140324/015355.htm)
+2016-03-21 17:15:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/014073.htm>
+	{'count': 202, 'response': <200 http://news.qq.com/a/20140324/014073.htm>}
+2016-03-21 17:16:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/008498.htm> (referer: http://news.qq.com/a/20140324/016335.htm)
+2016-03-21 17:16:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/008498.htm>
+	{'count': 203, 'response': <200 http://news.qq.com/a/20140324/008498.htm>}
+2016-03-21 17:16:06+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100905/000565.htm> (referer: http://news.qq.com/a/20101231/001867.htm)
+2016-03-21 17:16:06+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100905/000565.htm>
+	{'count': 204, 'response': <200 http://news.qq.com/a/20100905/000565.htm>}
+2016-03-21 17:16:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20101116/000502.htm> (referer: http://news.qq.com/a/20101231/001879.htm)
+2016-03-21 17:16:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20101116/000502.htm>
+	{'count': 205, 'response': <200 http://news.qq.com/a/20101116/000502.htm>}
+2016-03-21 17:16:12+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2231.html> (referer: http://news.qq.com/original/oneday/2234.html)
+2016-03-21 17:16:12+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2231.html>
+	{'count': 206, 'response': <200 http://news.qq.com/original/oneday/2231.html>}
+2016-03-21 17:16:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120727/000203.htm> (referer: http://news.qq.com/a/20130429/000097.htm)
+2016-03-21 17:16:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120727/000203.htm>
+	{'count': 207, 'response': <200 http://news.qq.com/a/20120727/000203.htm>}
+2016-03-21 17:16:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110913/001098.htm> (referer: http://news.qq.com/a/20110915/000099.htm)
+2016-03-21 17:16:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110913/001098.htm>
+	{'count': 208, 'response': <200 http://news.qq.com/a/20110913/001098.htm>}
+2016-03-21 17:16:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130123/000439.htm> (referer: http://news.qq.com/a/20130717/013860.htm)
+2016-03-21 17:16:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130123/000439.htm>
+	{'count': 209, 'response': <200 http://news.qq.com/a/20130123/000439.htm>}
+2016-03-21 17:16:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130920/004737.htm> (referer: http://news.qq.com/a/20130926/002825.htm)
+2016-03-21 17:16:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130920/004737.htm>
+	{'count': 210, 'response': <200 http://news.qq.com/a/20130920/004737.htm>}
+2016-03-21 17:16:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150310/048989.htm> (referer: http://news.qq.com/a/20150318/062437.htm)
+2016-03-21 17:16:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150310/048989.htm>
+	{'count': 211, 'response': <200 http://news.qq.com/a/20150310/048989.htm>}
+2016-03-21 17:16:33+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121022/000919.htm> (referer: http://news.qq.com/a/20140708/032484.htm)
+2016-03-21 17:16:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121022/000919.htm>
+	{'count': 212, 'response': <200 http://news.qq.com/a/20121022/000919.htm>}
+2016-03-21 17:16:34+0800 [download] INFO: Crawled 214 pages (at 17 pages/min), scraped 213 items (at 17 items/min)
+2016-03-21 17:16:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2162.html> (referer: http://news.qq.com/original/oneday/2164.html)
+2016-03-21 17:16:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2162.html>
+	{'count': 213, 'response': <200 http://news.qq.com/original/oneday/2162.html>}
+2016-03-21 17:16:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100907/000057.htm> (referer: http://news.qq.com/a/20131217/000908.htm)
+2016-03-21 17:16:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100907/000057.htm>
+	{'count': 214, 'response': <200 http://news.qq.com/a/20100907/000057.htm>}
+2016-03-21 17:16:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/014778.htm> (referer: http://news.qq.com/a/20140321/016583.htm)
+2016-03-21 17:16:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/014778.htm>
+	{'count': 215, 'response': <200 http://news.qq.com/a/20140321/014778.htm>}
+2016-03-21 17:16:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150117/005453.htm> (referer: http://news.qq.com/a/20150407/005116.htm)
+2016-03-21 17:16:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150117/005453.htm>
+	{'count': 216, 'response': <200 http://news.qq.com/a/20150117/005453.htm>}
+2016-03-21 17:16:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150516/028125.htm> (referer: http://news.qq.com/a/20150521/010981.htm)
+2016-03-21 17:16:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150516/028125.htm>
+	{'count': 217, 'response': <200 http://news.qq.com/a/20150516/028125.htm>}
+2016-03-21 17:16:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141203/016590.htm> (referer: http://news.qq.com/a/20141206/025674.htm)
+2016-03-21 17:16:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141203/016590.htm>
+	{'count': 218, 'response': <200 http://news.qq.com/a/20141203/016590.htm>}
+2016-03-21 17:16:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141204/011675.htm> (referer: http://news.qq.com/a/20141206/025674.htm)
+2016-03-21 17:16:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141204/011675.htm>
+	{'count': 219, 'response': <200 http://news.qq.com/a/20141204/011675.htm>}
+2016-03-21 17:17:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/006390.htm> (referer: http://news.qq.com/a/20140324/008498.htm)
+2016-03-21 17:17:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/006390.htm>
+	{'count': 220, 'response': <200 http://news.qq.com/a/20140324/006390.htm>}
+2016-03-21 17:17:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100716/002275.htm> (referer: http://news.qq.com/a/20100905/000565.htm)
+2016-03-21 17:17:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100716/002275.htm>
+	{'count': 221, 'response': <200 http://news.qq.com/a/20100716/002275.htm>}
+2016-03-21 17:17:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20101115/001588.htm> (referer: http://news.qq.com/a/20101116/000502.htm)
+2016-03-21 17:17:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20101115/001588.htm>
+	{'count': 222, 'response': <200 http://news.qq.com/a/20101115/001588.htm>}
+2016-03-21 17:17:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2223.html> (referer: http://news.qq.com/original/oneday/2231.html)
+2016-03-21 17:17:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2223.html>
+	{'count': 223, 'response': <200 http://news.qq.com/original/oneday/2223.html>}
+2016-03-21 17:17:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120127/000073.htm> (referer: http://news.qq.com/a/20120727/000203.htm)
+2016-03-21 17:17:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120127/000073.htm>
+	{'count': 224, 'response': <200 http://news.qq.com/a/20120127/000073.htm>}
+2016-03-21 17:17:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100915/001810.htm> (referer: http://news.qq.com/a/20110913/001098.htm)
+2016-03-21 17:17:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100915/001810.htm>
+	{'count': 225, 'response': <200 http://news.qq.com/a/20100915/001810.htm>}
+2016-03-21 17:17:24+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121217/001795.htm> (referer: http://news.qq.com/a/20130123/000439.htm)
+2016-03-21 17:17:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121217/001795.htm>
+	{'count': 226, 'response': <200 http://news.qq.com/a/20121217/001795.htm>}
+2016-03-21 17:17:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130917/013847.htm> (referer: http://news.qq.com/a/20130920/004737.htm)
+2016-03-21 17:17:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130917/013847.htm>
+	{'count': 227, 'response': <200 http://news.qq.com/a/20130917/013847.htm>}
+2016-03-21 17:17:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130917/013918.htm> (referer: http://news.qq.com/a/20130920/004737.htm)
+2016-03-21 17:17:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130917/013918.htm>
+	{'count': 228, 'response': <200 http://news.qq.com/a/20130917/013918.htm>}
+2016-03-21 17:17:34+0800 [download] INFO: Crawled 230 pages (at 16 pages/min), scraped 229 items (at 16 items/min)
+2016-03-21 17:17:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120611/001606.htm> (referer: http://news.qq.com/a/20121022/000919.htm)
+2016-03-21 17:17:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120611/001606.htm>
+	{'count': 229, 'response': <200 http://news.qq.com/a/20120611/001606.htm>}
+2016-03-21 17:17:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2159.html> (referer: http://news.qq.com/original/oneday/2162.html)
+2016-03-21 17:17:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2159.html>
+	{'count': 230, 'response': <200 http://news.qq.com/original/oneday/2159.html>}
+2016-03-21 17:17:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100830/000126.htm> (referer: http://news.qq.com/a/20100907/000057.htm)
+2016-03-21 17:17:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100830/000126.htm>
+	{'count': 231, 'response': <200 http://news.qq.com/a/20100830/000126.htm>}
+2016-03-21 17:17:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141219/012217.htm> (referer: http://news.qq.com/a/20150117/005453.htm)
+2016-03-21 17:17:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141219/012217.htm>
+	{'count': 232, 'response': <200 http://news.qq.com/a/20141219/012217.htm>}
+2016-03-21 17:17:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150511/008471.htm> (referer: http://news.qq.com/a/20150516/028125.htm)
+2016-03-21 17:17:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150511/008471.htm>
+	{'count': 233, 'response': <200 http://news.qq.com/a/20150511/008471.htm>}
+2016-03-21 17:17:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100903/000170.htm> (referer: http://news.qq.com/a/20100907/000057.htm)
+2016-03-21 17:17:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100903/000170.htm>
+	{'count': 234, 'response': <200 http://news.qq.com/a/20100903/000170.htm>}
+2016-03-21 17:17:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120829/000577.htm> (referer: http://news.qq.com/a/20141203/016590.htm)
+2016-03-21 17:17:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120829/000577.htm>
+	{'count': 235, 'response': <200 http://news.qq.com/a/20120829/000577.htm>}
+2016-03-21 17:18:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141130/014989.htm> (referer: http://news.qq.com/a/20141204/011675.htm)
+2016-03-21 17:18:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141130/014989.htm>
+	{'count': 236, 'response': <200 http://news.qq.com/a/20141130/014989.htm>}
+2016-03-21 17:18:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140324/004899.htm> (referer: http://news.qq.com/a/20140324/006390.htm)
+2016-03-21 17:18:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140324/004899.htm>
+	{'count': 237, 'response': <200 http://news.qq.com/a/20140324/004899.htm>}
+2016-03-21 17:18:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/guestbook.htm> (referer: http://news.qq.com/a/20100716/002275.htm)
+2016-03-21 17:18:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/guestbook.htm>
+	{'count': 238, 'response': <200 http://news.qq.com/guestbook.htm>}
+2016-03-21 17:18:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100917/001274.htm> (referer: http://news.qq.com/a/20101115/001588.htm)
+2016-03-21 17:18:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100917/001274.htm>
+	{'count': 239, 'response': <200 http://news.qq.com/a/20100917/001274.htm>}
+2016-03-21 17:18:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2220.html> (referer: http://news.qq.com/original/oneday/2223.html)
+2016-03-21 17:18:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2220.html>
+	{'count': 240, 'response': <200 http://news.qq.com/original/oneday/2220.html>}
+2016-03-21 17:18:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111109/000041.htm> (referer: http://news.qq.com/a/20120127/000073.htm)
+2016-03-21 17:18:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111109/000041.htm>
+	{'count': 241, 'response': <200 http://news.qq.com/a/20111109/000041.htm>}
+2016-03-21 17:18:24+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100823/000445.htm> (referer: http://news.qq.com/a/20100915/001810.htm)
+2016-03-21 17:18:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100823/000445.htm>
+	{'count': 242, 'response': <200 http://news.qq.com/a/20100823/000445.htm>}
+2016-03-21 17:18:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121214/001033.htm> (referer: http://news.qq.com/a/20121217/001795.htm)
+2016-03-21 17:18:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121214/001033.htm>
+	{'count': 243, 'response': <200 http://news.qq.com/a/20121214/001033.htm>}
+2016-03-21 17:18:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130904/005404.htm> (referer: http://news.qq.com/a/20130917/013847.htm)
+2016-03-21 17:18:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130904/005404.htm>
+	{'count': 244, 'response': <200 http://news.qq.com/a/20130904/005404.htm>}
+2016-03-21 17:18:34+0800 [download] INFO: Crawled 246 pages (at 16 pages/min), scraped 245 items (at 16 items/min)
+2016-03-21 17:18:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130904/007119.htm> (referer: http://news.qq.com/a/20130917/013918.htm)
+2016-03-21 17:18:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130904/007119.htm>
+	{'count': 245, 'response': <200 http://news.qq.com/a/20130904/007119.htm>}
+2016-03-21 17:18:41+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130906/012206.htm> (referer: http://news.qq.com/a/20130917/013918.htm)
+2016-03-21 17:18:41+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130906/012206.htm>
+	{'count': 246, 'response': <200 http://news.qq.com/a/20130906/012206.htm>}
+2016-03-21 17:18:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2157.html> (referer: http://news.qq.com/original/oneday/2159.html)
+2016-03-21 17:18:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2157.html>
+	{'count': 247, 'response': <200 http://news.qq.com/original/oneday/2157.html>}
+2016-03-21 17:18:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2155.html> (referer: http://news.qq.com/original/oneday/2159.html)
+2016-03-21 17:18:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2155.html>
+	{'count': 248, 'response': <200 http://news.qq.com/original/oneday/2155.html>}
+2016-03-21 17:18:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141130/007489.htm> (referer: http://news.qq.com/a/20141219/012217.htm)
+2016-03-21 17:18:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141130/007489.htm>
+	{'count': 249, 'response': <200 http://news.qq.com/a/20141130/007489.htm>}
+2016-03-21 17:18:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150509/003407.htm> (referer: http://news.qq.com/a/20150511/008471.htm)
+2016-03-21 17:18:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150509/003407.htm>
+	{'count': 250, 'response': <200 http://news.qq.com/a/20150509/003407.htm>}
+2016-03-21 17:18:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150510/022023.htm> (referer: http://news.qq.com/a/20150511/008471.htm)
+2016-03-21 17:18:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150510/022023.htm>
+	{'count': 251, 'response': <200 http://news.qq.com/a/20150510/022023.htm>}
+2016-03-21 17:19:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150511/005502.htm> (referer: http://news.qq.com/a/20150511/008471.htm)
+2016-03-21 17:19:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150511/005502.htm>
+	{'count': 252, 'response': <200 http://news.qq.com/a/20150511/005502.htm>}
+2016-03-21 17:19:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20141129/012060.htm> (referer: http://news.qq.com/a/20141130/014989.htm)
+2016-03-21 17:19:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20141129/012060.htm>
+	{'count': 253, 'response': <200 http://news.qq.com/a/20141129/012060.htm>}
+2016-03-21 17:19:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140323/005335.htm> (referer: http://news.qq.com/a/20140324/004899.htm)
+2016-03-21 17:19:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140323/005335.htm>
+	{'count': 254, 'response': <200 http://news.qq.com/a/20140323/005335.htm>}
+2016-03-21 17:19:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140323/004877.htm> (referer: http://news.qq.com/a/20140324/004899.htm)
+2016-03-21 17:19:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140323/004877.htm>
+	{'count': 255, 'response': <200 http://news.qq.com/a/20140323/004877.htm>}
+2016-03-21 17:19:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100428/002387.htm> (referer: http://news.qq.com/a/20100917/001274.htm)
+2016-03-21 17:19:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100428/002387.htm>
+	{'count': 256, 'response': <200 http://news.qq.com/a/20100428/002387.htm>}
+2016-03-21 17:19:16+0800 [download] ERROR: Spider error processing <GET http://news.qq.com/a/20100428/002387.htm>
+	Traceback (most recent call last):
+	  File "/usr/lib/python2.7/dist-packages/twisted/internet/base.py", line 824, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/usr/lib/python2.7/dist-packages/twisted/internet/task.py", line 638, in _tick
+	    taskObj._oneWorkUnit()
+	  File "/usr/lib/python2.7/dist-packages/twisted/internet/task.py", line 484, in _oneWorkUnit
+	    result = next(self._iterator)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 57, in <genexpr>
+	    work = (callable(elem, *args, **named) for elem in iterable)
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/defer.py", line 96, in iter_errback
+	    yield next(it)
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/spidermiddleware/offsite.py", line 26, in process_spider_output
+	    for x in result:
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/spidermiddleware/referer.py", line 22, in <genexpr>
+	    return (_set_referer(r) for r in result or ())
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/spidermiddleware/urllength.py", line 33, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "/usr/local/lib/python2.7/dist-packages/scrapy/contrib/spidermiddleware/depth.py", line 50, in <genexpr>
+	    return (r for r in result or () if _filter(r))
+	  File "/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/spiders/baseline.py", line 61, in parse
+	    for url in collect_urls(response.body, response.url, response.encoding):
+	  File "/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/url.py", line 134, in collect_urls
+	    doctree = h.create_doc(html, encoding)
+	  File "/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/api.py", line 594, in create_doc
+	    html = EncodeHelper.get_unicode(html, encoding).encode('utf-8')
+	exceptions.AttributeError: 'NoneType' object has no attribute 'encode'
+	
+2016-03-21 17:19:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2218.html> (referer: http://news.qq.com/original/oneday/2220.html)
+2016-03-21 17:19:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2218.html>
+	{'count': 257, 'response': <200 http://news.qq.com/original/oneday/2218.html>}
+2016-03-21 17:19:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111029/000137.htm> (referer: http://news.qq.com/a/20111109/000041.htm)
+2016-03-21 17:19:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111029/000137.htm>
+	{'count': 258, 'response': <200 http://news.qq.com/a/20111029/000137.htm>}
+2016-03-21 17:19:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111031/000461.htm> (referer: http://news.qq.com/a/20111109/000041.htm)
+2016-03-21 17:19:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111031/000461.htm>
+	{'count': 259, 'response': <200 http://news.qq.com/a/20111031/000461.htm>}
+2016-03-21 17:19:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121214/000779.htm> (referer: http://news.qq.com/a/20121214/001033.htm)
+2016-03-21 17:19:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121214/000779.htm>
+	{'count': 260, 'response': <200 http://news.qq.com/a/20121214/000779.htm>}
+2016-03-21 17:19:34+0800 [download] INFO: Crawled 262 pages (at 16 pages/min), scraped 261 items (at 16 items/min)
+2016-03-21 17:19:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130821/003068.htm> (referer: http://news.qq.com/a/20130904/005404.htm)
+2016-03-21 17:19:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130821/003068.htm>
+	{'count': 261, 'response': <200 http://news.qq.com/a/20130821/003068.htm>}
+2016-03-21 17:19:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130823/002875.htm> (referer: http://news.qq.com/a/20130904/005404.htm)
+2016-03-21 17:19:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130823/002875.htm>
+	{'count': 262, 'response': <200 http://news.qq.com/a/20130823/002875.htm>}
+2016-03-21 17:19:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130828/010625.htm> (referer: http://news.qq.com/a/20130904/005404.htm)
+2016-03-21 17:19:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130828/010625.htm>
+	{'count': 263, 'response': <200 http://news.qq.com/a/20130828/010625.htm>}
+2016-03-21 17:19:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2154.html> (referer: http://news.qq.com/original/oneday/2157.html)
+2016-03-21 17:19:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2154.html>
+	{'count': 264, 'response': <200 http://news.qq.com/original/oneday/2154.html>}
+2016-03-21 17:19:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2151.html> (referer: http://news.qq.com/original/oneday/2155.html)
+2016-03-21 17:19:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2151.html>
+	{'count': 265, 'response': <200 http://news.qq.com/original/oneday/2151.html>}
+2016-03-21 17:19:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2152.html> (referer: http://news.qq.com/original/oneday/2155.html)
+2016-03-21 17:19:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2152.html>
+	{'count': 266, 'response': <200 http://news.qq.com/original/oneday/2152.html>}
+2016-03-21 17:19:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150504/041449.htm> (referer: http://news.qq.com/a/20150509/003407.htm)
+2016-03-21 17:19:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150504/041449.htm>
+	{'count': 267, 'response': <200 http://news.qq.com/a/20150504/041449.htm>}
+2016-03-21 17:20:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150428/023651.htm> (referer: http://news.qq.com/a/20150510/022023.htm)
+2016-03-21 17:20:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150428/023651.htm>
+	{'count': 268, 'response': <200 http://news.qq.com/a/20150428/023651.htm>}
+2016-03-21 17:20:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140904/050042.htm> (referer: http://news.qq.com/a/20150511/005502.htm)
+2016-03-21 17:20:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140904/050042.htm>
+	{'count': 269, 'response': <200 http://news.qq.com/a/20140904/050042.htm>}
+2016-03-21 17:20:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121222/000227.htm> (referer: http://news.qq.com/a/20141129/012060.htm)
+2016-03-21 17:20:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121222/000227.htm>
+	{'count': 270, 'response': <200 http://news.qq.com/a/20121222/000227.htm>}
+2016-03-21 17:20:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/001428.htm> (referer: http://news.qq.com/a/20140323/005335.htm)
+2016-03-21 17:20:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/001428.htm>
+	{'count': 271, 'response': <200 http://news.qq.com/a/20140322/001428.htm>}
+2016-03-21 17:20:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140323/003460.htm> (referer: http://news.qq.com/a/20140323/004877.htm)
+2016-03-21 17:20:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140323/003460.htm>
+	{'count': 272, 'response': <200 http://news.qq.com/a/20140323/003460.htm>}
+2016-03-21 17:20:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140323/004729.htm> (referer: http://news.qq.com/a/20140323/004877.htm)
+2016-03-21 17:20:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140323/004729.htm>
+	{'count': 273, 'response': <200 http://news.qq.com/a/20140323/004729.htm>}
+2016-03-21 17:20:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2212.html> (referer: http://news.qq.com/original/oneday/2218.html)
+2016-03-21 17:20:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2212.html>
+	{'count': 274, 'response': <200 http://news.qq.com/original/oneday/2212.html>}
+2016-03-21 17:20:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111028/001091.htm> (referer: http://news.qq.com/a/20111029/000137.htm)
+2016-03-21 17:20:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111028/001091.htm>
+	{'count': 275, 'response': <200 http://news.qq.com/a/20111028/001091.htm>}
+2016-03-21 17:20:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111031/000008.htm> (referer: http://news.qq.com/a/20111031/000461.htm)
+2016-03-21 17:20:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111031/000008.htm>
+	{'count': 276, 'response': <200 http://news.qq.com/a/20111031/000008.htm>}
+2016-03-21 17:20:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121214/000316.htm> (referer: http://news.qq.com/a/20121214/000779.htm)
+2016-03-21 17:20:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121214/000316.htm>
+	{'count': 277, 'response': <200 http://news.qq.com/a/20121214/000316.htm>}
+2016-03-21 17:20:33+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/003750.htm> (referer: http://news.qq.com/a/20130821/003068.htm)
+2016-03-21 17:20:33+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/003750.htm>
+	{'count': 278, 'response': <200 http://news.qq.com/a/20130818/003750.htm>}
+2016-03-21 17:20:34+0800 [download] INFO: Crawled 280 pages (at 18 pages/min), scraped 279 items (at 18 items/min)
+2016-03-21 17:20:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130709/010504.htm> (referer: http://news.qq.com/a/20130823/002875.htm)
+2016-03-21 17:20:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130709/010504.htm>
+	{'count': 279, 'response': <200 http://news.qq.com/a/20130709/010504.htm>}
+2016-03-21 17:20:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130802/016872.htm> (referer: http://news.qq.com/a/20130828/010625.htm)
+2016-03-21 17:20:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130802/016872.htm>
+	{'count': 280, 'response': <200 http://news.qq.com/a/20130802/016872.htm>}
+2016-03-21 17:20:45+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2150.html> (referer: http://news.qq.com/original/oneday/2154.html)
+2016-03-21 17:20:45+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2150.html>
+	{'count': 281, 'response': <200 http://news.qq.com/original/oneday/2150.html>}
+2016-03-21 17:20:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2148.html> (referer: http://news.qq.com/original/oneday/2151.html)
+2016-03-21 17:20:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2148.html>
+	{'count': 282, 'response': <200 http://news.qq.com/original/oneday/2148.html>}
+2016-03-21 17:20:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2149.html> (referer: http://news.qq.com/original/oneday/2151.html)
+2016-03-21 17:20:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2149.html>
+	{'count': 283, 'response': <200 http://news.qq.com/original/oneday/2149.html>}
+2016-03-21 17:20:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150409/048546.htm> (referer: http://news.qq.com/a/20150504/041449.htm)
+2016-03-21 17:20:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150409/048546.htm>
+	{'count': 284, 'response': <200 http://news.qq.com/a/20150409/048546.htm>}
+2016-03-21 17:20:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150428/009578.htm> (referer: http://news.qq.com/a/20150428/023651.htm)
+2016-03-21 17:20:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150428/009578.htm>
+	{'count': 285, 'response': <200 http://news.qq.com/a/20150428/009578.htm>}
+2016-03-21 17:21:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140904/003481.htm> (referer: http://news.qq.com/a/20140904/050042.htm)
+2016-03-21 17:21:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140904/003481.htm>
+	{'count': 286, 'response': <200 http://news.qq.com/a/20140904/003481.htm>}
+2016-03-21 17:21:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120727/000453.htm> (referer: http://news.qq.com/a/20121222/000227.htm)
+2016-03-21 17:21:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120727/000453.htm>
+	{'count': 287, 'response': <200 http://news.qq.com/a/20120727/000453.htm>}
+2016-03-21 17:21:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/022122.htm> (referer: http://news.qq.com/a/20140322/001428.htm)
+2016-03-21 17:21:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/022122.htm>
+	{'count': 288, 'response': <200 http://news.qq.com/a/20140321/022122.htm>}
+2016-03-21 17:21:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/006057.htm> (referer: http://news.qq.com/a/20140323/003460.htm)
+2016-03-21 17:21:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/006057.htm>
+	{'count': 289, 'response': <200 http://news.qq.com/a/20140322/006057.htm>}
+2016-03-21 17:21:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/007897.htm> (referer: http://news.qq.com/a/20140323/003460.htm)
+2016-03-21 17:21:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/007897.htm>
+	{'count': 290, 'response': <200 http://news.qq.com/a/20140322/007897.htm>}
+2016-03-21 17:21:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2208.html> (referer: http://news.qq.com/original/oneday/2212.html)
+2016-03-21 17:21:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2208.html>
+	{'count': 291, 'response': <200 http://news.qq.com/original/oneday/2208.html>}
+2016-03-21 17:21:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111028/000454.htm> (referer: http://news.qq.com/a/20111028/001091.htm)
+2016-03-21 17:21:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111028/000454.htm>
+	{'count': 292, 'response': <200 http://news.qq.com/a/20111028/000454.htm>}
+2016-03-21 17:21:24+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111014/001141.htm> (referer: http://news.qq.com/a/20111031/000008.htm)
+2016-03-21 17:21:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111014/001141.htm>
+	{'count': 293, 'response': <200 http://news.qq.com/a/20111014/001141.htm>}
+2016-03-21 17:21:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121210/000429.htm> (referer: http://news.qq.com/a/20121214/000316.htm)
+2016-03-21 17:21:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121210/000429.htm>
+	{'count': 294, 'response': <200 http://news.qq.com/a/20121210/000429.htm>}
+2016-03-21 17:21:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/003027.htm> (referer: http://news.qq.com/a/20130818/003750.htm)
+2016-03-21 17:21:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/003027.htm>
+	{'count': 295, 'response': <200 http://news.qq.com/a/20130818/003027.htm>}
+2016-03-21 17:21:34+0800 [download] INFO: Crawled 297 pages (at 17 pages/min), scraped 296 items (at 17 items/min)
+2016-03-21 17:21:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/003209.htm> (referer: http://news.qq.com/a/20130818/003750.htm)
+2016-03-21 17:21:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/003209.htm>
+	{'count': 296, 'response': <200 http://news.qq.com/a/20130818/003209.htm>}
+2016-03-21 17:21:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130711/015333.htm> (referer: http://news.qq.com/a/20130802/016872.htm)
+2016-03-21 17:21:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130711/015333.htm>
+	{'count': 297, 'response': <200 http://news.qq.com/a/20130711/015333.htm>}
+2016-03-21 17:21:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2146.html> (referer: http://news.qq.com/original/oneday/2150.html)
+2016-03-21 17:21:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2146.html>
+	{'count': 298, 'response': <200 http://news.qq.com/original/oneday/2146.html>}
+2016-03-21 17:21:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2145.html> (referer: http://news.qq.com/original/oneday/2148.html)
+2016-03-21 17:21:48+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2145.html>
+	{'count': 299, 'response': <200 http://news.qq.com/original/oneday/2145.html>}
+2016-03-21 17:21:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2144.html> (referer: http://news.qq.com/original/oneday/2148.html)
+2016-03-21 17:21:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2144.html>
+	{'count': 300, 'response': <200 http://news.qq.com/original/oneday/2144.html>}
+2016-03-21 17:21:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150409/005874.htm> (referer: http://news.qq.com/a/20150409/048546.htm)
+2016-03-21 17:21:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150409/005874.htm>
+	{'count': 301, 'response': <200 http://news.qq.com/a/20150409/005874.htm>}
+2016-03-21 17:21:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150325/053661.htm> (referer: http://news.qq.com/a/20150428/009578.htm)
+2016-03-21 17:21:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150325/053661.htm>
+	{'count': 302, 'response': <200 http://news.qq.com/a/20150325/053661.htm>}
+2016-03-21 17:22:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140903/074245.htm> (referer: http://news.qq.com/a/20140904/003481.htm)
+2016-03-21 17:22:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140903/074245.htm>
+	{'count': 303, 'response': <200 http://news.qq.com/a/20140903/074245.htm>}
+2016-03-21 17:22:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120209/000352.htm> (referer: http://news.qq.com/a/20120727/000453.htm)
+2016-03-21 17:22:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120209/000352.htm>
+	{'count': 304, 'response': <200 http://news.qq.com/a/20120209/000352.htm>}
+2016-03-21 17:22:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/001842.htm> (referer: http://news.qq.com/a/20140321/022122.htm)
+2016-03-21 17:22:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/001842.htm>
+	{'count': 305, 'response': <200 http://news.qq.com/a/20140321/001842.htm>}
+2016-03-21 17:22:12+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/001397.htm> (referer: http://news.qq.com/a/20140322/006057.htm)
+2016-03-21 17:22:12+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/001397.htm>
+	{'count': 306, 'response': <200 http://news.qq.com/a/20140322/001397.htm>}
+2016-03-21 17:22:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140322/002463.htm> (referer: http://news.qq.com/a/20140322/007897.htm)
+2016-03-21 17:22:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140322/002463.htm>
+	{'count': 307, 'response': <200 http://news.qq.com/a/20140322/002463.htm>}
+2016-03-21 17:22:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2205.html> (referer: http://news.qq.com/original/oneday/2208.html)
+2016-03-21 17:22:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2205.html>
+	{'count': 308, 'response': <200 http://news.qq.com/original/oneday/2205.html>}
+2016-03-21 17:22:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111027/001161.htm> (referer: http://news.qq.com/a/20111028/000454.htm)
+2016-03-21 17:22:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111027/001161.htm>
+	{'count': 309, 'response': <200 http://news.qq.com/a/20111027/001161.htm>}
+2016-03-21 17:22:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110824/000315.htm> (referer: http://news.qq.com/a/20111014/001141.htm)
+2016-03-21 17:22:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110824/000315.htm>
+	{'count': 310, 'response': <200 http://news.qq.com/a/20110824/000315.htm>}
+2016-03-21 17:22:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121209/000577.htm> (referer: http://news.qq.com/a/20121210/000429.htm)
+2016-03-21 17:22:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121209/000577.htm>
+	{'count': 311, 'response': <200 http://news.qq.com/a/20121209/000577.htm>}
+2016-03-21 17:22:34+0800 [download] INFO: Crawled 313 pages (at 16 pages/min), scraped 312 items (at 16 items/min)
+2016-03-21 17:22:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/001174.htm> (referer: http://news.qq.com/a/20130818/003027.htm)
+2016-03-21 17:22:34+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/001174.htm>
+	{'count': 312, 'response': <200 http://news.qq.com/a/20130818/001174.htm>}
+2016-03-21 17:22:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/002786.htm> (referer: http://news.qq.com/a/20130818/003209.htm)
+2016-03-21 17:22:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/002786.htm>
+	{'count': 313, 'response': <200 http://news.qq.com/a/20130818/002786.htm>}
+2016-03-21 17:22:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130701/014762.htm> (referer: http://news.qq.com/a/20130711/015333.htm)
+2016-03-21 17:22:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130701/014762.htm>
+	{'count': 314, 'response': <200 http://news.qq.com/a/20130701/014762.htm>}
+2016-03-21 17:22:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2142.html> (referer: http://news.qq.com/original/oneday/2146.html)
+2016-03-21 17:22:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2142.html>
+	{'count': 315, 'response': <200 http://news.qq.com/original/oneday/2142.html>}
+2016-03-21 17:22:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2141.html> (referer: http://news.qq.com/original/oneday/2145.html)
+2016-03-21 17:22:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2141.html>
+	{'count': 316, 'response': <200 http://news.qq.com/original/oneday/2141.html>}
+2016-03-21 17:22:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2140.html> (referer: http://news.qq.com/original/oneday/2145.html)
+2016-03-21 17:22:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2140.html>
+	{'count': 317, 'response': <200 http://news.qq.com/original/oneday/2140.html>}
+2016-03-21 17:22:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150408/069307.htm> (referer: http://news.qq.com/a/20150409/005874.htm)
+2016-03-21 17:22:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150408/069307.htm>
+	{'count': 318, 'response': <200 http://news.qq.com/a/20150408/069307.htm>}
+2016-03-21 17:23:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20150214/005227.htm> (referer: http://news.qq.com/a/20150325/053661.htm)
+2016-03-21 17:23:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20150214/005227.htm>
+	{'count': 319, 'response': <200 http://news.qq.com/a/20150214/005227.htm>}
+2016-03-21 17:23:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140903/072597.htm> (referer: http://news.qq.com/a/20140903/074245.htm)
+2016-03-21 17:23:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140903/072597.htm>
+	{'count': 320, 'response': <200 http://news.qq.com/a/20140903/072597.htm>}
+2016-03-21 17:23:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111008/000675.htm> (referer: http://news.qq.com/a/20120209/000352.htm)
+2016-03-21 17:23:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111008/000675.htm>
+	{'count': 321, 'response': <200 http://news.qq.com/a/20111008/000675.htm>}
+2016-03-21 17:23:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/000085.htm> (referer: http://news.qq.com/a/20140321/001842.htm)
+2016-03-21 17:23:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/000085.htm>
+	{'count': 322, 'response': <200 http://news.qq.com/a/20140321/000085.htm>}
+2016-03-21 17:23:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/023328.htm> (referer: http://news.qq.com/a/20140322/001397.htm)
+2016-03-21 17:23:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/023328.htm>
+	{'count': 323, 'response': <200 http://news.qq.com/a/20140321/023328.htm>}
+2016-03-21 17:23:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/023047.htm> (referer: http://news.qq.com/a/20140322/001397.htm)
+2016-03-21 17:23:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/023047.htm>
+	{'count': 324, 'response': <200 http://news.qq.com/a/20140321/023047.htm>}
+2016-03-21 17:23:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2200.html> (referer: http://news.qq.com/original/oneday/2205.html)
+2016-03-21 17:23:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2200.html>
+	{'count': 325, 'response': <200 http://news.qq.com/original/oneday/2200.html>}
+2016-03-21 17:23:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111027/000964.htm> (referer: http://news.qq.com/a/20111027/001161.htm)
+2016-03-21 17:23:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111027/000964.htm>
+	{'count': 326, 'response': <200 http://news.qq.com/a/20111027/000964.htm>}
+2016-03-21 17:23:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111027/000816.htm> (referer: http://news.qq.com/a/20111027/001161.htm)
+2016-03-21 17:23:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111027/000816.htm>
+	{'count': 327, 'response': <200 http://news.qq.com/a/20111027/000816.htm>}
+2016-03-21 17:23:34+0800 [download] INFO: Crawled 329 pages (at 16 pages/min), scraped 328 items (at 16 items/min)
+2016-03-21 17:23:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121208/001015.htm> (referer: http://news.qq.com/a/20121209/000577.htm)
+2016-03-21 17:23:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121208/001015.htm>
+	{'count': 328, 'response': <200 http://news.qq.com/a/20121208/001015.htm>}
+2016-03-21 17:23:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130815/016084.htm> (referer: http://news.qq.com/a/20130818/001174.htm)
+2016-03-21 17:23:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130815/016084.htm>
+	{'count': 329, 'response': <200 http://news.qq.com/a/20130815/016084.htm>}
+2016-03-21 17:23:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130818/001898.htm> (referer: http://news.qq.com/a/20130818/002786.htm)
+2016-03-21 17:23:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130818/001898.htm>
+	{'count': 330, 'response': <200 http://news.qq.com/a/20130818/001898.htm>}
+2016-03-21 17:23:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130618/016911.htm> (referer: http://news.qq.com/a/20130701/014762.htm)
+2016-03-21 17:23:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130618/016911.htm>
+	{'count': 331, 'response': <200 http://news.qq.com/a/20130618/016911.htm>}
+2016-03-21 17:23:48+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2136.html> (referer: http://news.qq.com/original/oneday/2142.html)
+2016-03-21 17:23:48+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2136.html>
+	{'count': 332, 'response': <200 http://news.qq.com/original/oneday/2136.html>}
+2016-03-21 17:23:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2139.html> (referer: http://news.qq.com/original/oneday/2141.html)
+2016-03-21 17:23:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2139.html>
+	{'count': 333, 'response': <200 http://news.qq.com/original/oneday/2139.html>}
+2016-03-21 17:23:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2138.html> (referer: http://news.qq.com/original/oneday/2141.html)
+2016-03-21 17:23:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2138.html>
+	{'count': 334, 'response': <200 http://news.qq.com/original/oneday/2138.html>}
+2016-03-21 17:24:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2133.html> (referer: http://news.qq.com/original/oneday/2142.html)
+2016-03-21 17:24:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2133.html>
+	{'count': 335, 'response': <200 http://news.qq.com/original/oneday/2133.html>}
+2016-03-21 17:24:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130819/012385.htm> (referer: http://news.qq.com/a/20150214/005227.htm)
+2016-03-21 17:24:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130819/012385.htm>
+	{'count': 336, 'response': <200 http://news.qq.com/a/20130819/012385.htm>}
+2016-03-21 17:24:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140128/015882.htm> (referer: http://news.qq.com/a/20150214/005227.htm)
+2016-03-21 17:24:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140128/015882.htm>
+	{'count': 337, 'response': <200 http://news.qq.com/a/20140128/015882.htm>}
+2016-03-21 17:24:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100223/002156.htm> (referer: http://news.qq.com/a/20111008/000675.htm)
+2016-03-21 17:24:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100223/002156.htm>
+	{'count': 338, 'response': <200 http://news.qq.com/a/20100223/002156.htm>}
+2016-03-21 17:24:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/014565.htm> (referer: http://news.qq.com/a/20140321/000085.htm)
+2016-03-21 17:24:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/014565.htm>
+	{'count': 339, 'response': <200 http://news.qq.com/a/20140320/014565.htm>}
+2016-03-21 17:24:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/019955.htm> (referer: http://news.qq.com/a/20140321/023328.htm)
+2016-03-21 17:24:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/019955.htm>
+	{'count': 340, 'response': <200 http://news.qq.com/a/20140321/019955.htm>}
+2016-03-21 17:24:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140321/020321.htm> (referer: http://news.qq.com/a/20140321/023328.htm)
+2016-03-21 17:24:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140321/020321.htm>
+	{'count': 341, 'response': <200 http://news.qq.com/a/20140321/020321.htm>}
+2016-03-21 17:24:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2197.html> (referer: http://news.qq.com/original/oneday/2200.html)
+2016-03-21 17:24:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2197.html>
+	{'count': 342, 'response': <200 http://news.qq.com/original/oneday/2197.html>}
+2016-03-21 17:24:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/001378.htm> (referer: http://news.qq.com/a/20111027/000964.htm)
+2016-03-21 17:24:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/001378.htm>
+	{'count': 343, 'response': <200 http://news.qq.com/a/20110829/001378.htm>}
+2016-03-21 17:24:34+0800 [download] INFO: Crawled 345 pages (at 16 pages/min), scraped 344 items (at 16 items/min)
+2016-03-21 17:24:34+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111018/000685.htm> (referer: http://news.qq.com/a/20111027/000816.htm)
+2016-03-21 17:24:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111018/000685.htm>
+	{'count': 344, 'response': <200 http://news.qq.com/a/20111018/000685.htm>}
+2016-03-21 17:24:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111019/001610.htm> (referer: http://news.qq.com/a/20111027/000816.htm)
+2016-03-21 17:24:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111019/001610.htm>
+	{'count': 345, 'response': <200 http://news.qq.com/a/20111019/001610.htm>}
+2016-03-21 17:24:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130812/008939.htm> (referer: http://news.qq.com/a/20130815/016084.htm)
+2016-03-21 17:24:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130812/008939.htm>
+	{'count': 346, 'response': <200 http://news.qq.com/a/20130812/008939.htm>}
+2016-03-21 17:24:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130813/001372.htm> (referer: http://news.qq.com/a/20130815/016084.htm)
+2016-03-21 17:24:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130813/001372.htm>
+	{'count': 347, 'response': <200 http://news.qq.com/a/20130813/001372.htm>}
+2016-03-21 17:24:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130407/000503.htm> (referer: http://news.qq.com/a/20130618/016911.htm)
+2016-03-21 17:24:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130407/000503.htm>
+	{'count': 348, 'response': <200 http://news.qq.com/a/20130407/000503.htm>}
+2016-03-21 17:24:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2130.html> (referer: http://news.qq.com/original/oneday/2136.html)
+2016-03-21 17:24:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2130.html>
+	{'count': 349, 'response': <200 http://news.qq.com/original/oneday/2130.html>}
+2016-03-21 17:24:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2128.html> (referer: http://news.qq.com/original/oneday/2139.html)
+2016-03-21 17:24:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2128.html>
+	{'count': 350, 'response': <200 http://news.qq.com/original/oneday/2128.html>}
+2016-03-21 17:24:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2132.html> (referer: http://news.qq.com/original/oneday/2136.html)
+2016-03-21 17:24:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2132.html>
+	{'count': 351, 'response': <200 http://news.qq.com/original/oneday/2132.html>}
+2016-03-21 17:25:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2127.html> (referer: http://news.qq.com/original/oneday/2133.html)
+2016-03-21 17:25:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2127.html>
+	{'count': 352, 'response': <200 http://news.qq.com/original/oneday/2127.html>}
+2016-03-21 17:25:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130516/005164.htm> (referer: http://news.qq.com/a/20130618/016911.htm)
+2016-03-21 17:25:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130516/005164.htm>
+	{'count': 353, 'response': <200 http://news.qq.com/a/20130516/005164.htm>}
+2016-03-21 17:25:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140127/009246.htm> (referer: http://news.qq.com/a/20140128/015882.htm)
+2016-03-21 17:25:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140127/009246.htm>
+	{'count': 354, 'response': <200 http://news.qq.com/a/20140127/009246.htm>}
+2016-03-21 17:25:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20100113/002617.htm> (referer: http://news.qq.com/a/20100223/002156.htm)
+2016-03-21 17:25:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20100113/002617.htm>
+	{'count': 355, 'response': <200 http://news.qq.com/a/20100113/002617.htm>}
+2016-03-21 17:25:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/010331.htm> (referer: http://news.qq.com/a/20140320/014565.htm)
+2016-03-21 17:25:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/010331.htm>
+	{'count': 356, 'response': <200 http://news.qq.com/a/20140320/010331.htm>}
+2016-03-21 17:25:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140316/005817.htm> (referer: http://news.qq.com/a/20140321/019955.htm)
+2016-03-21 17:25:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140316/005817.htm>
+	{'count': 357, 'response': <200 http://news.qq.com/a/20140316/005817.htm>}
+2016-03-21 17:25:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140317/014699.htm> (referer: http://news.qq.com/a/20140321/019955.htm)
+2016-03-21 17:25:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140317/014699.htm>
+	{'count': 358, 'response': <200 http://news.qq.com/a/20140317/014699.htm>}
+2016-03-21 17:25:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2194.html> (referer: http://news.qq.com/original/oneday/2197.html)
+2016-03-21 17:25:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2194.html>
+	{'count': 359, 'response': <200 http://news.qq.com/original/oneday/2194.html>}
+2016-03-21 17:25:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/001222.htm> (referer: http://news.qq.com/a/20110829/001378.htm)
+2016-03-21 17:25:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/001222.htm>
+	{'count': 360, 'response': <200 http://news.qq.com/a/20110829/001222.htm>}
+2016-03-21 17:25:34+0800 [download] INFO: Crawled 362 pages (at 17 pages/min), scraped 361 items (at 17 items/min)
+2016-03-21 17:25:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/001267.htm> (referer: http://news.qq.com/a/20110829/001378.htm)
+2016-03-21 17:25:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/001267.htm>
+	{'count': 361, 'response': <200 http://news.qq.com/a/20110829/001267.htm>}
+2016-03-21 17:25:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111018/000214.htm> (referer: http://news.qq.com/a/20111019/001610.htm)
+2016-03-21 17:25:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111018/000214.htm>
+	{'count': 362, 'response': <200 http://news.qq.com/a/20111018/000214.htm>}
+2016-03-21 17:25:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130810/005052.htm> (referer: http://news.qq.com/a/20130812/008939.htm)
+2016-03-21 17:25:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130810/005052.htm>
+	{'count': 363, 'response': <200 http://news.qq.com/a/20130810/005052.htm>}
+2016-03-21 17:25:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130810/005472.htm> (referer: http://news.qq.com/a/20130812/008939.htm)
+2016-03-21 17:25:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130810/005472.htm>
+	{'count': 364, 'response': <200 http://news.qq.com/a/20130810/005472.htm>}
+2016-03-21 17:25:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121009/000117.htm> (referer: http://news.qq.com/a/20130407/000503.htm)
+2016-03-21 17:25:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121009/000117.htm>
+	{'count': 365, 'response': <200 http://news.qq.com/a/20121009/000117.htm>}
+2016-03-21 17:25:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2126.html> (referer: http://news.qq.com/original/oneday/2130.html)
+2016-03-21 17:25:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2126.html>
+	{'count': 366, 'response': <200 http://news.qq.com/original/oneday/2126.html>}
+2016-03-21 17:25:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2124.html> (referer: http://news.qq.com/original/oneday/2128.html)
+2016-03-21 17:25:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2124.html>
+	{'count': 367, 'response': <200 http://news.qq.com/original/oneday/2124.html>}
+2016-03-21 17:26:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2125.html> (referer: http://news.qq.com/original/oneday/2130.html)
+2016-03-21 17:26:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2125.html>
+	{'count': 368, 'response': <200 http://news.qq.com/original/oneday/2125.html>}
+2016-03-21 17:26:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2123.html> (referer: http://news.qq.com/original/oneday/2127.html)
+2016-03-21 17:26:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2123.html>
+	{'count': 369, 'response': <200 http://news.qq.com/original/oneday/2123.html>}
+2016-03-21 17:26:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130516/000807.htm> (referer: http://news.qq.com/a/20130516/005164.htm)
+2016-03-21 17:26:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130516/000807.htm>
+	{'count': 370, 'response': <200 http://news.qq.com/a/20130516/000807.htm>}
+2016-03-21 17:26:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140124/009710.htm> (referer: http://news.qq.com/a/20140127/009246.htm)
+2016-03-21 17:26:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140124/009710.htm>
+	{'count': 371, 'response': <200 http://news.qq.com/a/20140124/009710.htm>}
+2016-03-21 17:26:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/photon/act/zhongguorendeyitian/36.htm> (referer: http://news.qq.com/a/20100113/002617.htm)
+2016-03-21 17:26:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/photon/act/zhongguorendeyitian/36.htm>
+	{'count': 372,
+	 'response': <200 http://news.qq.com/photon/act/zhongguorendeyitian/36.htm>}
+2016-03-21 17:26:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/010174.htm> (referer: http://news.qq.com/a/20140320/010331.htm)
+2016-03-21 17:26:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/010174.htm>
+	{'count': 373, 'response': <200 http://news.qq.com/a/20140320/010174.htm>}
+2016-03-21 17:26:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140314/011512.htm> (referer: http://news.qq.com/a/20140316/005817.htm)
+2016-03-21 17:26:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140314/011512.htm>
+	{'count': 374, 'response': <200 http://news.qq.com/a/20140314/011512.htm>}
+2016-03-21 17:26:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140314/010011.htm> (referer: http://news.qq.com/a/20140316/005817.htm)
+2016-03-21 17:26:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140314/010011.htm>
+	{'count': 375, 'response': <200 http://news.qq.com/a/20140314/010011.htm>}
+2016-03-21 17:26:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2192.html> (referer: http://news.qq.com/original/oneday/2194.html)
+2016-03-21 17:26:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2192.html>
+	{'count': 376, 'response': <200 http://news.qq.com/original/oneday/2192.html>}
+2016-03-21 17:26:34+0800 [download] INFO: Crawled 378 pages (at 16 pages/min), scraped 377 items (at 16 items/min)
+2016-03-21 17:26:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/000386.htm> (referer: http://news.qq.com/a/20110829/001222.htm)
+2016-03-21 17:26:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/000386.htm>
+	{'count': 377, 'response': <200 http://news.qq.com/a/20110829/000386.htm>}
+2016-03-21 17:26:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/000156.htm> (referer: http://news.qq.com/a/20110829/001267.htm)
+2016-03-21 17:26:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/000156.htm>
+	{'count': 378, 'response': <200 http://news.qq.com/a/20110829/000156.htm>}
+2016-03-21 17:26:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111011/001403.htm> (referer: http://news.qq.com/a/20111018/000214.htm)
+2016-03-21 17:26:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111011/001403.htm>
+	{'count': 379, 'response': <200 http://news.qq.com/a/20111011/001403.htm>}
+2016-03-21 17:26:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/013887.htm> (referer: http://news.qq.com/a/20130810/005052.htm)
+2016-03-21 17:26:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/013887.htm>
+	{'count': 380, 'response': <200 http://news.qq.com/a/20130809/013887.htm>}
+2016-03-21 17:26:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130810/005194.htm> (referer: http://news.qq.com/a/20130810/005472.htm)
+2016-03-21 17:26:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130810/005194.htm>
+	{'count': 381, 'response': <200 http://news.qq.com/a/20130810/005194.htm>}
+2016-03-21 17:26:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120912/000871.htm> (referer: http://news.qq.com/a/20121009/000117.htm)
+2016-03-21 17:26:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120912/000871.htm>
+	{'count': 382, 'response': <200 http://news.qq.com/a/20120912/000871.htm>}
+2016-03-21 17:26:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2122.html> (referer: http://news.qq.com/original/oneday/2126.html)
+2016-03-21 17:26:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2122.html>
+	{'count': 383, 'response': <200 http://news.qq.com/original/oneday/2122.html>}
+2016-03-21 17:27:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2120.html> (referer: http://news.qq.com/original/oneday/2124.html)
+2016-03-21 17:27:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2120.html>
+	{'count': 384, 'response': <200 http://news.qq.com/original/oneday/2120.html>}
+2016-03-21 17:27:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2118.html> (referer: http://news.qq.com/original/oneday/2125.html)
+2016-03-21 17:27:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2118.html>
+	{'count': 385, 'response': <200 http://news.qq.com/original/oneday/2118.html>}
+2016-03-21 17:27:08+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2119.html> (referer: http://news.qq.com/original/oneday/2125.html)
+2016-03-21 17:27:08+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2119.html>
+	{'count': 386, 'response': <200 http://news.qq.com/original/oneday/2119.html>}
+2016-03-21 17:27:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130515/016389.htm> (referer: http://news.qq.com/a/20130516/000807.htm)
+2016-03-21 17:27:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130515/016389.htm>
+	{'count': 387, 'response': <200 http://news.qq.com/a/20130515/016389.htm>}
+2016-03-21 17:27:16+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120718/001347.htm> (referer: http://news.qq.com/a/20140124/009710.htm)
+2016-03-21 17:27:16+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120718/001347.htm>
+	{'count': 388, 'response': <200 http://news.qq.com/a/20120718/001347.htm>}
+2016-03-21 17:27:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/zt2011/oneday/index.htm> (referer: http://news.qq.com/photon/act/zhongguorendeyitian/36.htm)
+2016-03-21 17:27:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/zt2011/oneday/index.htm>
+	{'count': 389, 'response': <200 http://news.qq.com/zt2011/oneday/index.htm>}
+2016-03-21 17:27:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/003337.htm> (referer: http://news.qq.com/a/20140320/010174.htm)
+2016-03-21 17:27:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/003337.htm>
+	{'count': 390, 'response': <200 http://news.qq.com/a/20140320/003337.htm>}
+2016-03-21 17:27:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/003338.htm> (referer: http://news.qq.com/a/20140320/010174.htm)
+2016-03-21 17:27:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/003338.htm>
+	{'count': 391, 'response': <200 http://news.qq.com/a/20140320/003338.htm>}
+2016-03-21 17:27:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/004296.htm> (referer: http://news.qq.com/a/20140320/010174.htm)
+2016-03-21 17:27:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/004296.htm>
+	{'count': 392, 'response': <200 http://news.qq.com/a/20140320/004296.htm>}
+2016-03-21 17:27:34+0800 [download] INFO: Crawled 394 pages (at 16 pages/min), scraped 393 items (at 16 items/min)
+2016-03-21 17:27:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2189.html> (referer: http://news.qq.com/original/oneday/2192.html)
+2016-03-21 17:27:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2189.html>
+	{'count': 393, 'response': <200 http://news.qq.com/original/oneday/2189.html>}
+2016-03-21 17:27:38+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2188.html> (referer: http://news.qq.com/original/oneday/2192.html)
+2016-03-21 17:27:38+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2188.html>
+	{'count': 394, 'response': <200 http://news.qq.com/original/oneday/2188.html>}
+2016-03-21 17:27:42+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110829/000034.htm> (referer: http://news.qq.com/a/20110829/000156.htm)
+2016-03-21 17:27:42+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110829/000034.htm>
+	{'count': 395, 'response': <200 http://news.qq.com/a/20110829/000034.htm>}
+2016-03-21 17:27:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20111006/000116.htm> (referer: http://news.qq.com/a/20111011/001403.htm)
+2016-03-21 17:27:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20111006/000116.htm>
+	{'count': 396, 'response': <200 http://news.qq.com/a/20111006/000116.htm>}
+2016-03-21 17:27:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/007688.htm> (referer: http://news.qq.com/a/20130809/013887.htm)
+2016-03-21 17:27:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/007688.htm>
+	{'count': 397, 'response': <200 http://news.qq.com/a/20130809/007688.htm>}
+2016-03-21 17:27:53+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/007851.htm> (referer: http://news.qq.com/a/20130809/013887.htm)
+2016-03-21 17:27:53+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/007851.htm>
+	{'count': 398, 'response': <200 http://news.qq.com/a/20130809/007851.htm>}
+2016-03-21 17:27:57+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120723/000759.htm> (referer: http://news.qq.com/a/20120912/000871.htm)
+2016-03-21 17:27:57+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120723/000759.htm>
+	{'count': 399, 'response': <200 http://news.qq.com/a/20120723/000759.htm>}
+2016-03-21 17:28:01+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120723/000881.htm> (referer: http://news.qq.com/a/20120912/000871.htm)
+2016-03-21 17:28:01+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120723/000881.htm>
+	{'count': 400, 'response': <200 http://news.qq.com/a/20120723/000881.htm>}
+2016-03-21 17:28:04+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2117.html> (referer: http://news.qq.com/original/oneday/2120.html)
+2016-03-21 17:28:04+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2117.html>
+	{'count': 401, 'response': <200 http://news.qq.com/original/oneday/2117.html>}
+2016-03-21 17:28:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2115.html> (referer: http://news.qq.com/original/oneday/2118.html)
+2016-03-21 17:28:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2115.html>
+	{'count': 402, 'response': <200 http://news.qq.com/original/oneday/2115.html>}
+2016-03-21 17:28:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2113.html> (referer: http://news.qq.com/original/oneday/2118.html)
+2016-03-21 17:28:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2113.html>
+	{'count': 403, 'response': <200 http://news.qq.com/original/oneday/2113.html>}
+2016-03-21 17:28:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130515/010087.htm> (referer: http://news.qq.com/a/20130515/016389.htm)
+2016-03-21 17:28:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130515/010087.htm>
+	{'count': 404, 'response': <200 http://news.qq.com/a/20130515/010087.htm>}
+2016-03-21 17:28:19+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130515/013757.htm> (referer: http://news.qq.com/a/20130515/016389.htm)
+2016-03-21 17:28:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130515/013757.htm>
+	{'count': 405, 'response': <200 http://news.qq.com/a/20130515/013757.htm>}
+2016-03-21 17:28:23+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/zt2011/qiren/liming.htm> (referer: http://news.qq.com/zt2011/oneday/index.htm)
+2016-03-21 17:28:23+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/zt2011/qiren/liming.htm>
+	{'count': 406, 'response': <200 http://news.qq.com/zt2011/qiren/liming.htm>}
+2016-03-21 17:28:27+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/000224.htm> (referer: http://news.qq.com/a/20140320/003337.htm)
+2016-03-21 17:28:27+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/000224.htm>
+	{'count': 407, 'response': <200 http://news.qq.com/a/20140320/000224.htm>}
+2016-03-21 17:28:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/000298.htm> (referer: http://news.qq.com/a/20140320/003337.htm)
+2016-03-21 17:28:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/000298.htm>
+	{'count': 408, 'response': <200 http://news.qq.com/a/20140320/000298.htm>}
+2016-03-21 17:28:34+0800 [download] INFO: Crawled 410 pages (at 16 pages/min), scraped 409 items (at 16 items/min)
+2016-03-21 17:28:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/003185.htm> (referer: http://news.qq.com/a/20140320/003337.htm)
+2016-03-21 17:28:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/003185.htm>
+	{'count': 409, 'response': <200 http://news.qq.com/a/20140320/003185.htm>}
+2016-03-21 17:28:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2186.html> (referer: http://news.qq.com/original/oneday/2189.html)
+2016-03-21 17:28:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2186.html>
+	{'count': 410, 'response': <200 http://news.qq.com/original/oneday/2186.html>}
+2016-03-21 17:28:44+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2185.html> (referer: http://news.qq.com/original/oneday/2189.html)
+2016-03-21 17:28:44+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2185.html>
+	{'count': 411, 'response': <200 http://news.qq.com/original/oneday/2185.html>}
+2016-03-21 17:28:49+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110828/000644.htm> (referer: http://news.qq.com/a/20110829/000034.htm)
+2016-03-21 17:28:49+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110828/000644.htm>
+	{'count': 412, 'response': <200 http://news.qq.com/a/20110828/000644.htm>}
+2016-03-21 17:28:52+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110930/000538.htm> (referer: http://news.qq.com/a/20111006/000116.htm)
+2016-03-21 17:28:52+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110930/000538.htm>
+	{'count': 413, 'response': <200 http://news.qq.com/a/20110930/000538.htm>}
+2016-03-21 17:28:56+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/002242.htm> (referer: http://news.qq.com/a/20130809/007688.htm)
+2016-03-21 17:28:56+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/002242.htm>
+	{'count': 414, 'response': <200 http://news.qq.com/a/20130809/002242.htm>}
+2016-03-21 17:29:00+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/005758.htm> (referer: http://news.qq.com/a/20130809/007851.htm)
+2016-03-21 17:29:00+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/005758.htm>
+	{'count': 415, 'response': <200 http://news.qq.com/a/20130809/005758.htm>}
+2016-03-21 17:29:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130809/005983.htm> (referer: http://news.qq.com/a/20130809/007851.htm)
+2016-03-21 17:29:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130809/005983.htm>
+	{'count': 416, 'response': <200 http://news.qq.com/a/20130809/005983.htm>}
+2016-03-21 17:29:07+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120626/000017.htm> (referer: http://news.qq.com/a/20120723/000881.htm)
+2016-03-21 17:29:07+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120626/000017.htm>
+	{'count': 417, 'response': <200 http://news.qq.com/a/20120626/000017.htm>}
+2016-03-21 17:29:11+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2110.html> (referer: http://news.qq.com/original/oneday/2117.html)
+2016-03-21 17:29:11+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2110.html>
+	{'count': 418, 'response': <200 http://news.qq.com/original/oneday/2110.html>}
+2016-03-21 17:29:15+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2112.html> (referer: http://news.qq.com/original/oneday/2115.html)
+2016-03-21 17:29:15+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2112.html>
+	{'count': 419, 'response': <200 http://news.qq.com/original/oneday/2112.html>}
+2016-03-21 17:29:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2111.html> (referer: http://news.qq.com/original/oneday/2115.html)
+2016-03-21 17:29:19+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2111.html>
+	{'count': 420, 'response': <200 http://news.qq.com/original/oneday/2111.html>}
+2016-03-21 17:29:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130514/017147.htm> (referer: http://news.qq.com/a/20130515/010087.htm)
+2016-03-21 17:29:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130514/017147.htm>
+	{'count': 421, 'response': <200 http://news.qq.com/a/20130514/017147.htm>}
+2016-03-21 17:29:26+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130515/012573.htm> (referer: http://news.qq.com/a/20130515/013757.htm)
+2016-03-21 17:29:26+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130515/012573.htm>
+	{'count': 422, 'response': <200 http://news.qq.com/a/20130515/012573.htm>}
+2016-03-21 17:29:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110810/001437.htm#p=2> (referer: http://news.qq.com/zt2011/qiren/liming.htm)
+2016-03-21 17:29:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110810/001437.htm>
+	{'count': 423, 'response': <200 http://news.qq.com/a/20110810/001437.htm>}
+2016-03-21 17:29:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/020759.htm> (referer: http://news.qq.com/a/20140320/000224.htm)
+2016-03-21 17:29:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/020759.htm>
+	{'count': 424, 'response': <200 http://news.qq.com/a/20140319/020759.htm>}
+2016-03-21 17:29:34+0800 [download] INFO: Crawled 426 pages (at 16 pages/min), scraped 425 items (at 16 items/min)
+2016-03-21 17:29:36+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022192.htm> (referer: http://news.qq.com/a/20140320/000224.htm)
+2016-03-21 17:29:36+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022192.htm>
+	{'count': 425, 'response': <200 http://news.qq.com/a/20140319/022192.htm>}
+2016-03-21 17:29:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022133.htm> (referer: http://news.qq.com/a/20140320/003185.htm)
+2016-03-21 17:29:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022133.htm>
+	{'count': 426, 'response': <200 http://news.qq.com/a/20140319/022133.htm>}
+2016-03-21 17:29:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022343.htm> (referer: http://news.qq.com/a/20140320/003185.htm)
+2016-03-21 17:29:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022343.htm>
+	{'count': 427, 'response': <200 http://news.qq.com/a/20140319/022343.htm>}
+2016-03-21 17:29:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022413.htm> (referer: http://news.qq.com/a/20140320/003185.htm)
+2016-03-21 17:29:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022413.htm>
+	{'count': 428, 'response': <200 http://news.qq.com/a/20140319/022413.htm>}
+2016-03-21 17:29:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140320/000340.htm> (referer: http://news.qq.com/a/20140320/003185.htm)
+2016-03-21 17:29:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140320/000340.htm>
+	{'count': 429, 'response': <200 http://news.qq.com/a/20140320/000340.htm>}
+2016-03-21 17:29:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110916/000561.htm> (referer: http://news.qq.com/a/20110930/000538.htm)
+2016-03-21 17:29:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110916/000561.htm>
+	{'count': 430, 'response': <200 http://news.qq.com/a/20110916/000561.htm>}
+2016-03-21 17:29:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110916/000557.htm> (referer: http://news.qq.com/a/20110930/000538.htm)
+2016-03-21 17:29:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110916/000557.htm>
+	{'count': 431, 'response': <200 http://news.qq.com/a/20110916/000557.htm>}
+2016-03-21 17:30:03+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130727/003430.htm> (referer: http://news.qq.com/a/20130809/005758.htm)
+2016-03-21 17:30:03+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130727/003430.htm>
+	{'count': 432, 'response': <200 http://news.qq.com/a/20130727/003430.htm>}
+2016-03-21 17:30:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130804/003342.htm> (referer: http://news.qq.com/a/20130809/005758.htm)
+2016-03-21 17:30:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130804/003342.htm>
+	{'count': 433, 'response': <200 http://news.qq.com/a/20130804/003342.htm>}
+2016-03-21 17:30:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120625/000129.htm> (referer: http://news.qq.com/a/20120626/000017.htm)
+2016-03-21 17:30:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120625/000129.htm>
+	{'count': 434, 'response': <200 http://news.qq.com/a/20120625/000129.htm>}
+2016-03-21 17:30:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2108.html> (referer: http://news.qq.com/original/oneday/2110.html)
+2016-03-21 17:30:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2108.html>
+	{'count': 435, 'response': <200 http://news.qq.com/original/oneday/2108.html>}
+2016-03-21 17:30:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2106.html> (referer: http://news.qq.com/original/oneday/2110.html)
+2016-03-21 17:30:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2106.html>
+	{'count': 436, 'response': <200 http://news.qq.com/original/oneday/2106.html>}
+2016-03-21 17:30:20+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2107.html> (referer: http://news.qq.com/original/oneday/2110.html)
+2016-03-21 17:30:20+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2107.html>
+	{'count': 437, 'response': <200 http://news.qq.com/original/oneday/2107.html>}
+2016-03-21 17:30:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120625/000846.htm> (referer: http://news.qq.com/a/20120626/000017.htm)
+2016-03-21 17:30:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120625/000846.htm>
+	{'count': 438, 'response': <200 http://news.qq.com/a/20120625/000846.htm>}
+2016-03-21 17:30:29+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130417/000656.htm> (referer: http://news.qq.com/a/20130515/012573.htm)
+2016-03-21 17:30:29+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130417/000656.htm>
+	{'count': 439, 'response': <200 http://news.qq.com/a/20130417/000656.htm>}
+2016-03-21 17:30:32+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130502/000603.htm> (referer: http://news.qq.com/a/20130515/012573.htm)
+2016-03-21 17:30:32+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130502/000603.htm>
+	{'count': 440, 'response': <200 http://news.qq.com/a/20130502/000603.htm>}
+2016-03-21 17:30:34+0800 [download] INFO: Crawled 442 pages (at 16 pages/min), scraped 441 items (at 16 items/min)
+2016-03-21 17:30:37+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/015667.htm> (referer: http://news.qq.com/a/20140319/020759.htm)
+2016-03-21 17:30:37+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/015667.htm>
+	{'count': 441, 'response': <200 http://news.qq.com/a/20140319/015667.htm>}
+2016-03-21 17:30:40+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/019746.htm> (referer: http://news.qq.com/a/20140319/022192.htm)
+2016-03-21 17:30:40+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/019746.htm>
+	{'count': 442, 'response': <200 http://news.qq.com/a/20140319/019746.htm>}
+2016-03-21 17:30:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/021159.htm> (referer: http://news.qq.com/a/20140319/022133.htm)
+2016-03-21 17:30:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/021159.htm>
+	{'count': 443, 'response': <200 http://news.qq.com/a/20140319/021159.htm>}
+2016-03-21 17:30:47+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/020499.htm> (referer: http://news.qq.com/a/20140319/022192.htm)
+2016-03-21 17:30:47+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/020499.htm>
+	{'count': 444, 'response': <200 http://news.qq.com/a/20140319/020499.htm>}
+2016-03-21 17:30:51+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022147.htm> (referer: http://news.qq.com/a/20140319/022413.htm)
+2016-03-21 17:30:51+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022147.htm>
+	{'count': 445, 'response': <200 http://news.qq.com/a/20140319/022147.htm>}
+2016-03-21 17:30:55+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/022259.htm> (referer: http://news.qq.com/a/20140319/022413.htm)
+2016-03-21 17:30:55+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/022259.htm>
+	{'count': 446, 'response': <200 http://news.qq.com/a/20140319/022259.htm>}
+2016-03-21 17:30:59+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/016726.htm> (referer: http://news.qq.com/a/20140319/020759.htm)
+2016-03-21 17:30:59+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/016726.htm>
+	{'count': 447, 'response': <200 http://news.qq.com/a/20140319/016726.htm>}
+2016-03-21 17:31:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/018031.htm> (referer: http://news.qq.com/a/20140319/020759.htm)
+2016-03-21 17:31:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/018031.htm>
+	{'count': 448, 'response': <200 http://news.qq.com/a/20140319/018031.htm>}
+2016-03-21 17:31:05+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130726/011806.htm> (referer: http://news.qq.com/a/20130727/003430.htm)
+2016-03-21 17:31:05+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130726/011806.htm>
+	{'count': 449, 'response': <200 http://news.qq.com/a/20130726/011806.htm>}
+2016-03-21 17:31:09+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130804/001002.htm> (referer: http://news.qq.com/a/20130804/003342.htm)
+2016-03-21 17:31:09+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130804/001002.htm>
+	{'count': 450, 'response': <200 http://news.qq.com/a/20130804/001002.htm>}
+2016-03-21 17:31:13+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120331/000398.htm> (referer: http://news.qq.com/a/20120625/000129.htm)
+2016-03-21 17:31:13+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120331/000398.htm>
+	{'count': 451, 'response': <200 http://news.qq.com/a/20120331/000398.htm>}
+2016-03-21 17:31:17+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2104.html> (referer: http://news.qq.com/original/oneday/2108.html)
+2016-03-21 17:31:17+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2104.html>
+	{'count': 452, 'response': <200 http://news.qq.com/original/oneday/2104.html>}
+2016-03-21 17:31:21+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2102.html> (referer: http://news.qq.com/original/oneday/2106.html)
+2016-03-21 17:31:21+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2102.html>
+	{'count': 453, 'response': <200 http://news.qq.com/original/oneday/2102.html>}
+2016-03-21 17:31:24+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2103.html> (referer: http://news.qq.com/original/oneday/2106.html)
+2016-03-21 17:31:24+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2103.html>
+	{'count': 454, 'response': <200 http://news.qq.com/original/oneday/2103.html>}
+2016-03-21 17:31:28+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120625/000111.htm> (referer: http://news.qq.com/a/20120625/000846.htm)
+2016-03-21 17:31:28+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120625/000111.htm>
+	{'count': 455, 'response': <200 http://news.qq.com/a/20120625/000111.htm>}
+2016-03-21 17:31:31+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130409/000401.htm> (referer: http://news.qq.com/a/20130417/000656.htm)
+2016-03-21 17:31:31+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130409/000401.htm>
+	{'count': 456, 'response': <200 http://news.qq.com/a/20130409/000401.htm>}
+2016-03-21 17:31:34+0800 [download] INFO: Crawled 458 pages (at 16 pages/min), scraped 457 items (at 16 items/min)
+2016-03-21 17:31:35+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20120703/000975.htm> (referer: http://news.qq.com/a/20130502/000603.htm)
+2016-03-21 17:31:35+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20120703/000975.htm>
+	{'count': 457, 'response': <200 http://news.qq.com/a/20120703/000975.htm>}
+2016-03-21 17:31:39+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20121222/000618.htm> (referer: http://news.qq.com/a/20130502/000603.htm)
+2016-03-21 17:31:39+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20121222/000618.htm>
+	{'count': 458, 'response': <200 http://news.qq.com/a/20121222/000618.htm>}
+2016-03-21 17:31:43+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/018933.htm> (referer: http://news.qq.com/a/20140319/019746.htm)
+2016-03-21 17:31:43+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/018933.htm>
+	{'count': 459, 'response': <200 http://news.qq.com/a/20140319/018933.htm>}
+2016-03-21 17:31:46+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/018457.htm> (referer: http://news.qq.com/a/20140319/019746.htm)
+2016-03-21 17:31:46+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/018457.htm>
+	{'count': 460, 'response': <200 http://news.qq.com/a/20140319/018457.htm>}
+2016-03-21 17:31:50+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/018318.htm> (referer: http://news.qq.com/a/20140319/019746.htm)
+2016-03-21 17:31:50+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/018318.htm>
+	{'count': 461, 'response': <200 http://news.qq.com/a/20140319/018318.htm>}
+2016-03-21 17:31:54+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130427/000590.htm> (referer: http://news.qq.com/a/20130502/000603.htm)
+2016-03-21 17:31:54+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130427/000590.htm>
+	{'count': 462, 'response': <200 http://news.qq.com/a/20130427/000590.htm>}
+2016-03-21 17:31:58+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130427/000627.htm> (referer: http://news.qq.com/a/20130502/000603.htm)
+2016-03-21 17:31:58+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130427/000627.htm>
+	{'count': 463, 'response': <200 http://news.qq.com/a/20130427/000627.htm>}
+2016-03-21 17:32:02+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/014985.htm> (referer: http://news.qq.com/a/20140319/016726.htm)
+2016-03-21 17:32:02+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/014985.htm>
+	{'count': 464, 'response': <200 http://news.qq.com/a/20140319/014985.htm>}
+2016-03-21 17:32:06+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20140319/015508.htm> (referer: http://news.qq.com/a/20140319/016726.htm)
+2016-03-21 17:32:06+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20140319/015508.htm>
+	{'count': 465, 'response': <200 http://news.qq.com/a/20140319/015508.htm>}
+2016-03-21 17:32:10+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130725/016645.htm> (referer: http://news.qq.com/a/20130726/011806.htm)
+2016-03-21 17:32:10+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130725/016645.htm>
+	{'count': 466, 'response': <200 http://news.qq.com/a/20130725/016645.htm>}
+2016-03-21 17:32:14+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20130725/016598.htm> (referer: http://news.qq.com/a/20130726/011806.htm)
+2016-03-21 17:32:14+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20130725/016598.htm>
+	{'count': 467, 'response': <200 http://news.qq.com/a/20130725/016598.htm>}
+2016-03-21 17:32:18+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/a/20110418/000496.htm> (referer: http://news.qq.com/a/20120331/000398.htm)
+2016-03-21 17:32:18+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/a/20110418/000496.htm>
+	{'count': 468, 'response': <200 http://news.qq.com/a/20110418/000496.htm>}
+2016-03-21 17:32:22+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2101.html> (referer: http://news.qq.com/original/oneday/2104.html)
+2016-03-21 17:32:22+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2101.html>
+	{'count': 469, 'response': <200 http://news.qq.com/original/oneday/2101.html>}
+2016-03-21 17:32:25+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2098.html> (referer: http://news.qq.com/original/oneday/2102.html)
+2016-03-21 17:32:25+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2098.html>
+	{'count': 470, 'response': <200 http://news.qq.com/original/oneday/2098.html>}
+2016-03-21 17:32:25+0800 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2016-03-21 17:32:25+0800 [download] INFO: Closing spider (shutdown)
+2016-03-21 17:32:30+0800 [download] DEBUG: Crawled (200) <GET http://news.qq.com/original/oneday/2099.html> (referer: http://news.qq.com/original/oneday/2102.html)
+2016-03-21 17:32:30+0800 [download] DEBUG: Scraped from <200 http://news.qq.com/original/oneday/2099.html>
+	{'count': 471, 'response': <200 http://news.qq.com/original/oneday/2099.html>}
+2016-03-21 17:32:30+0800 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+download start--------------

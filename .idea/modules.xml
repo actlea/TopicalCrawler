@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../graduate/SVM代码实现/SVMTK-Multiclass-Classifier-master/.idea/SVMTK-Multiclass-Classifier-master.iml" filepath="$PROJECT_DIR$/../graduate/SVM代码实现/SVMTK-Multiclass-Classifier-master/.idea/SVMTK-Multiclass-Classifier-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TextGrocery-master/.idea/TextGrocery-master.iml" filepath="$PROJECT_DIR$/../TextGrocery-master/.idea/TextGrocery-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TopicalCrawl.iml" filepath="$PROJECT_DIR$/.idea/TopicalCrawl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../graduate/nbsvm-master-python/.idea/nbsvm-master-python.iml" filepath="$PROJECT_DIR$/../graduate/nbsvm-master-python/.idea/nbsvm-master-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nbsvm-master-python/.idea/nbsvm-master-python.iml" filepath="$PROJECT_DIR$/../nbsvm-master-python/.idea/nbsvm-master-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../graduate/nbsvm-run/.idea/nbsvm-run.iml" filepath="$PROJECT_DIR$/../graduate/nbsvm-run/.idea/nbsvm-run.iml" />
+      <module fileurl="file://D:/MMM/nbsvm-run/.idea/nbsvm-run.iml" filepath="D:/MMM/nbsvm-run/.idea/nbsvm-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tmsvm-master/.idea/tmsvm-master.iml" filepath="$PROJECT_DIR$/../tmsvm-master/.idea/tmsvm-master.iml" />
+    </modules>
+  </component>
+</project>
