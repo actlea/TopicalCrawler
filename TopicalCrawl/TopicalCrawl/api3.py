@@ -12,7 +12,6 @@ import collections
 import copy
 import lxml
 from lxml.html.clean import Cleaner
-import chardet
 
 try:
     from cStringIO import StringIO as BytesIO
@@ -85,8 +84,6 @@ def is_set_attribute_valid(element):
         return True
     except:
         return False
-    # set_element_attribute(element, 1, [1])
-    # return True
 
 def is_elements_belong_para(elements):
     for node in elements:
@@ -180,8 +177,7 @@ def cluster_text_number(cluster):
 
 
 def is_cluster_all_links(cluster):
-    """ #p判断是否是链接节点的集合。1.如果该集合中所有的文本节点都是链接节点，则属于链接噪声<a> text </a>或<li><a>text</a></li>的形式
-    if all tags which contain links are <a> tag, then return True
+    """ if all tags which contain links are <a> tag, then return True
     For example:
         <a> link </a>
         OR
@@ -222,12 +218,6 @@ def is_link_node_with_text(element):
         return True
     return False
 
-def is_none_link_node_with_text(element):
-    if not ElementHelper.is_element_text_none(element) and element.tag!='a':
-        return True
-    return False
-
-
 def is_cluster_contain_user_comments(cluster):
     """ identify whether element or its children contain comment content, only consider <a> tag
     1.each node in cluster, at least has 3 children
@@ -242,10 +232,7 @@ def is_cluster_contain_user_comments(cluster):
     for node in cluster:
         children = ElementHelper.get_children(node)
         link_nodes_contain_text = [n for n in children if is_link_node_with_text(n)]
-        non_link_nodes_contain_text = [n for n in children if is_none_link_node_with_text(n)]
-
         if len(link_nodes_contain_text)<3: return False
-        if len(non_link_nodes_contain_text)<2: return False
 
         for n in link_nodes_contain_text:
             text = ElementHelper.element_text_content(n)
@@ -254,8 +241,7 @@ def is_cluster_contain_user_comments(cluster):
             else:
                 text_number_mapping[text] = 1
     #去除标点符号，出数字，空的文本
-    tmp = copy.deepcopy(text_number_mapping)
-    for text in tmp:
+    for text in text_number_mapping:
         if len(text)==0 or StringHelper.is_digits(text) :
             del text_number_mapping[text]
 
@@ -268,7 +254,7 @@ def is_cluster_contain_user_comments(cluster):
     text_number_counter = collections.Counter(text_number).most_common()
 
     for number, counter in text_number_counter:
-        if number > 1 and number==len(cluster) and counter>=2: #ToDo 2016/03/08  old:counter>=2 --> new:counter>=1
+        if number > 1 and number==len(cluster) and counter>=1: #ToDo 2016/03/08  old:counter>=2 --> new:counter>=1
             print 'find comment!'
             return True
     return False
@@ -301,7 +287,6 @@ def get_biggest_cluster(clusters):
     return maxCluster
 
 def set_text_mark(element, s, t):
-    '''设置正文区域的标记'''
     for child in element:
         set_text_mark(child, s, t)
 
@@ -320,59 +305,52 @@ def remove_nontext_element(element):
     for child in element:
         remove_nontext_element(child)
 
-def clean_body(clusters, doctree, title_node=None, debug = False):
-    #filter user comments and all link records
+def get_article_wish(clusters, doctree, title_node=None, debug = False):
+    #filter
     clusters = filter_cluster(clusters)
-    if len(clusters) == 0:
-        title = ElementHelper.element_text_content(title_node)
-        return title, title
 
-    #choose cluster which has most texts
+    if len(clusters) == 0:
+        return ElementHelper.element_text_content(title_node)
+
     maxCluster = get_biggest_cluster(clusters)
+
     nodes = clusters[maxCluster]
 
-    # m = {}
-    # m[maxCluster] = nodes
-    # filter_cluster(m)
+    m = {}
+    m[maxCluster] = nodes
+    filter_cluster(m)
 
+    #============================================
+    if debug:
+    # for test
+        print 'maxCluster: %s' %maxCluster
+        for n in nodes:
+            print ElementHelper.get_xpath_by_element(n, doctree)
 
-    #get all children of max cluster record
     allnodes = []
+
     for node in nodes:
         children = ElementHelper.get_children(node)
         allnodes.extend(children)
 
-    #sort max cluster nodes by its preorder index
     allnodes.sort(lambda p,q:ElementHelper.get_element_preorder_num(p)-ElementHelper.get_element_preorder_num(q))
-    # debug=True
-    if debug:
-        print 'maxCluster: %s' % maxCluster
-        for n in allnodes:
-            print ElementHelper.get_xpath_by_element(n, doctree), n.get(py)
     s = ElementHelper.get_element_preorder_num(allnodes[0])
     t = ElementHelper.get_element_preorder_num(allnodes[-1])
-
-    #correct start position by title node
     title_text = ''
-    #====================================================================
-    #在实验时借助title纠正正文文本的起始位置可以提高recall,但是实际过程中不需要
     if title_node is not None:
         index = ElementHelper.get_element_preorder_num(title_node)
         if index < s:
-            s = index #ToDo:add 2016/03/09
+            s = index
             title_text = ElementHelper.element_text_content(title_node)
-    #====================================================================
 
     body = ElementHelper.get_body(doctree)
-    # remove nodes which not belong to main text
+
     set_text_mark(body, s, t)
+
     remove_nontext_element(body)
 
-    return body, title_text
+    # ElementHelper.print_element(body)
 
-
-def get_article_wish(clusters, doctree, title_node=None, debug = False):
-    body, title_text = clean_body(clusters, doctree, title_node, debug)
     return ElementHelper.element_text_content_list(body), title_text
 
 
@@ -407,7 +385,7 @@ class WISH:
 
         #check distinct tag is same？
         for tag in dA:
-            if tag not in ('em', 'b', 'br','i', 'font') and tag not in dB:
+            if tag not in ('em', 'b', 'br','i') and tag not in dB:
                 return False
 
         sumA = sum([len(StringHelper.unique(rA[A])) for A in rA])
@@ -457,86 +435,53 @@ class WISH:
             return True
         return False
 
-    # @classmethod
-    # def correct_record_mark(cls, element):
-    #     """ if element's children are squence records, like: [1] [2][4] [5], then mark [3] as record
-    #     """
-    #     if len(element) < 1:
-    #         return
-    #
-    #     node_index_mapping, index_node_mapping = {}, {}
-    #     cnt = 1
-    #
-    #     for child in element:
-    #         node_index_mapping[child] = cnt
-    #         index_node_mapping[cnt] = child
-    #
-    #         cnt += 1
-    #
-    #     for i in range(2, cnt-1):
-    #         left_mark = index_node_mapping[i-1].get(kg_record_mark)
-    #         right_mark = index_node_mapping[i+1].get(kg_record_mark)
-    #         mark = index_node_mapping[i].get(kg_record_mark)
-    #
-    #         if mark=='0' and left_mark=='1' and right_mark=='1' \
-    #             and not cls.is_node_or_children_record(index_node_mapping[i]):
-    #             index_node_mapping[i].set(kg_record_mark, '1')
     @classmethod
-    def correct_record_mark(cls, levelnodes, cluster):
-        '''修正levelnods中的记录标记,然后将连续的数据记录放入到一个集合中
-        1.首先将同层次相同的节点放入一个集合中，假设为A
-        2.然后遍历该集合，如果某一个节点A[i]，A[i-1]和A[i+1]均为数据记录，而A[i]不是数据记录；
-        那么此时，如果A[i]的孩子节点中没有数据记录，就将A[i]标记为数据记录；
-        如果A[i]的孩子节点中有数据记录，则不对A[i]进行修正
-        '''
-        def should_add(node, cluster):
-            '''判断是否应该放入某个集合中
-            找到与node处于同一层次，且标签相同的节点的集合，判断修正后的节点是否应该放入到该集合中
-            '''
-            if node.get(kg_record_mark)=='0':
-                return
-            level = node.get(py)
-            for n, others in cluster.items():
-                if n.get(py)==level and n.tag==node.tag:
-                    cluster[n].add(node)
+    def correct_record_mark(cls, element):
+        """ if element's children are squence records, like: [1] [2][4] [5], then mark [3] as record
+        """
+        if len(element) < 1:
+            return
 
-        # tag_names=set([node.getparent() for node in levelnodes])
-        # tmp={}
-        # for tag in tag_names:
-        #     for node in levelnodes:
-        #         tmp.setdefault(tag,[]).append(node)
-        tmp = cls.segement(levelnodes)
-        for k, nodes in tmp.items():
-            for i in range(len(nodes)):
-                mark =  nodes[i].get(kg_record_mark)
-                if mark == '0' and not cls.is_node_or_children_record(nodes[i]):
-                    if len(nodes)-1>i>0:
-                        if nodes[i-1].get(kg_record_mark) and nodes[i+1].get(kg_record_mark)=='1':
-                            nodes[i].set(kg_record_mark, '1')
-                            should_add(nodes[i],cluster)
-                    else:#位于边缘时放宽条件
-                        if nodes[i-1].get(kg_record_mark) or nodes[i+1].get(kg_record_mark)=='1':
-                            nodes[i].set(kg_record_mark, '1')
-                            should_add(nodes[i], cluster)
+        node_index_mapping, index_node_mapping = {}, {}
+        cnt = 1
+
+        for child in element:
+            node_index_mapping[child] = cnt
+            index_node_mapping[cnt] = child
+
+            cnt += 1
+
+        for i in range(2, cnt-1):
+            left_mark = index_node_mapping[i-1].get(kg_record_mark)
+            right_mark = index_node_mapping[i+1].get(kg_record_mark)
+            mark = index_node_mapping[i].get(kg_record_mark)
+
+            if mark=='0' and left_mark=='1' and right_mark=='1' \
+                and not cls.is_node_or_children_record(index_node_mapping[i]):
+                index_node_mapping[i].set(kg_record_mark, '1')
 
     @classmethod
-    def segement(cls, levelnodes):
-        #将同一层词具有相同父节点，且名称相同的标签聚集到一块，进行比较
-        parents=set([node.getparent() for node in levelnodes])
-        atoms = {}
-        index=0
-        for p in parents:
-            tagnames=set([node.tag for node in p])
-            if len(tagnames)==1:
-                atoms[index]=p
-                index += 1
+    def find_first_sibling_record_node(cls, element, doctree):
+        parent = element.getparent()
+        if len(parent)<2:
+            return element
+
+        element_xpath = ElementHelper.get_xpath_by_element(element, doctree)
+        # print 'xpath: %s' %element_xpath
+        element_last_index = StringHelper.get_digits(element_xpath.split('/')[-1])
+
+        if element_last_index < 2:
+            return element
+
+        index = element_last_index - 2
+        # print 'parent length:%d' %len(parent)
+        while index >= 0:
+            # print index
+            if parent[index].get(kg_record_mark) == '1':
+                index -= 1
             else:
-                for tag in tagnames:
-                    tmp=[n for n in p if n.tag==tag]
-                    atoms[index]=tmp
-                    index += 1
-        return atoms
-
+                break
+        return parent[index+1]
 
     @classmethod
     def get_clustered_records(cls, doctree):
@@ -550,83 +495,54 @@ class WISH:
         upper_bound = int(ElementHelper.get_element_depth(root))+1
         low_bound = int(body.get(px))+1
 
-        #记录相似的节点
-        cluster={}
-
         for level in range(low_bound, upper_bound):
 
             level_nodes = all_level_nodes[level]
-
             #if parent is record node, then do not consider its children
             level_nodes = [node for node in level_nodes if not cls.is_node_or_ancestor_record(node)]
-            #在同一个父亲节点下进行比较
-            # tag_names = set([node.getparent() for node in level_nodes])
-            # tmp = {}
-            # for tag in tag_names:
-            #     for node in level_nodes:
-            #         tmp.setdefault(tag, []).append(node)
-            tmp = cls.segement(level_nodes)
 
-            for k, nodes in tmp.items():
-                # if len(nodes)==1:break
-                first = None
-                node_set = set()
-                for i in range(1,len(nodes)):
-                    if nodes[i].get(kg_record_mark)=='1':
-                        continue
-                    left_node = nodes[i-1]
-                    # 和集合类的所有元素比较，查看是否有相同的
-                    right_nodes=nodes[i:]
-                    for node in right_nodes:
-                        if cls.similar_check(left_node, node):
-                            if first is None:
-                                first = left_node
-                                node_set.add(nodes[i-1])
-                            left_node.set(kg_record_mark, '1')
-                            node.set(kg_record_mark, '1')
-                            node_set.add(node)
-                if first is not None:
-                    cluster[first]=node_set
+            for j in range(1,len(level_nodes)-1):
+                left_node = level_nodes[j-1]
+                #横向比较
+                right_bound = min(len(level_nodes), j+5)
+                right_nodes = level_nodes[j:right_bound]
 
-        record_groups = cls.merger_sibling_record_node(doctree, cluster)
-        # record_groups = cluster
-        record_groups = {k:v for k,v in record_groups.items() if k.get(kg_record_mark)=='1'}
+                #纵向比较
+                down_nodes = right_nodes[0]
+                right_nodes.extend(down_nodes)
 
+                for right_node in right_nodes:
+                    if cls.similar_check(left_node, right_node):
+                        left_node.set(kg_record_mark,'1')
+                        right_node.set(kg_record_mark, '1')
+                        break
+
+        record_groups = cls.merger_sibling_record_node(doctree)
         return record_groups
 
     @classmethod
-    def merger_sibling_record_node(cls, doctree, cluster):
-        ''' 融合数据记录
-        1.首先对数据记录进行修正，然后将连续的数据记录放入到一个集合中
-        将同层次相同标签的节点的节点放入一个集合中,然后在就行纠正，具体详见correct_record_mark
-        :param doctree: 经过了初步的相似度比较之后标记了的DOM树
-        :param cluster: 初步的相似的数据记录的集合
-        :return:
-        '''
+    def merger_sibling_record_node(cls, doctree):
         node_record_mapping = {}
 
         body = ElementHelper.get_body(doctree)
         thislevel = []
         thislevel.extend(body)
-        # while thislevel:
-        #     nextlevel = list()
-        #     for node in thislevel:
-        #         # correct nodes which
-        #         cls.correct_record_mark(node)
-        #
-        #         if cls.is_node_or_ancestor_record(node):
-        #             first_record_sibling = cls.find_first_sibling_record_node(node, doctree)
-        #             node_record_mapping.setdefault(first_record_sibling, []).append(node)
-        #ToDo 2016-04-20
         while thislevel:
             nextlevel = list()
-            cls.correct_record_mark(thislevel, cluster)
+            for node in thislevel:
+                # correct nodes which
+                cls.correct_record_mark(node)
+
+                if cls.is_node_or_ancestor_record(node):
+                    first_record_sibling = cls.find_first_sibling_record_node(node, doctree)
+                    node_record_mapping.setdefault(first_record_sibling, []).append(node)
+
             for node in thislevel:
                 if len(node) > 0:
                     nextlevel.extend([child for child in node if not cls.is_node_or_ancestor_record(node)])
             thislevel = nextlevel
 
-        return cluster
+        return node_record_mapping
 
     @classmethod
     def print_cluster_record(cls, clusters, doctree):
@@ -636,7 +552,7 @@ class WISH:
                 print '===='*10
                 nodes = clusters[cluster]
                 for node in nodes:
-                    print ElementHelper.get_xpath_by_element(node, doctree), node.get(py)
+                    print ElementHelper.get_xpath_by_element(node, doctree)
 
 #=======================================================
 # extract page main context
@@ -653,13 +569,6 @@ class HtmlHelper(object):
         #     content = HTML_CLEANER.clean_html(content)
         # except:
         #     content = tmp
-        try:
-            if not isinstance(content, unicode):
-                content = content.decode('utf-8')
-        except UnicodeDecodeError:
-            encoding = chardet.detect(tmp)['encoding']
-            content = tmp.decode(encoding,'ignore')
-        content = content.lower()
         content = replaceAll(r'(?s)<!--.*?-->', '', content)
         content = replaceAll(r'(?s)<script.*?>.*?</script>', '', content)
         content = replaceAll(r'(?s)<noscript.*?>.*?</noscript>', '', content)
@@ -668,7 +577,7 @@ class HtmlHelper(object):
         # content = replaceAll(r'(?s)<form.*?>.*?</form>', '', content)
         content = replaceAll(r'(?s)<fieldset.*?>.*?</fieldset>', '', content)
         content = replaceAll(r'[\r,\n]\s*\n+', '', content) #去除空行
-        return content.encode('utf-8')
+        return content
 
     @staticmethod
     def is_valid_html(html, encoding=None):
@@ -682,13 +591,10 @@ class HtmlHelper(object):
             html = EncodeHelper.get_unicode(html, encoding).encode('utf-8')
 
         content = HtmlHelper.get_cleaned_html(html)
-        try:
-            doctree = lxml.html.parse(BytesIO(content),
-                                      lxml.html.HTMLParser(encoding='utf-8',
-                                                           remove_blank_text=True))
-            return doctree
-        except lxml.etree.XMLSyntaxError:
-            return None
+        doctree = lxml.html.parse(BytesIO(content),
+                                  lxml.html.HTMLParser(encoding='utf-8',
+                                                       remove_blank_text=True))
+        return doctree
 
 
     @staticmethod
@@ -708,7 +614,6 @@ class HtmlHelper(object):
             return doctree.find('.//title')
         except AttributeError:
             return None
-
 
     @staticmethod
     def get_article_title_element(doctree):
@@ -735,58 +640,17 @@ class HtmlHelper(object):
         if debug:
             w.print_cluster_record(clusters, doctree)
 
-        articles, title_text = get_article_wish(clusters, doctree, title, debug)
-        if title_text is None or len(title_text)==0:
-            title_text = ElementHelper.element_text_content(HtmlHelper.get_title(doctree))
-
-        return articles, title_text
-
-    @staticmethod
-    def get_meta_content(doctree, metaAttrName, value):
-        """Extract a given meta content form document.
-        Example metaNames:
-        (name, description)
-        (name, keyword)
-        (property, og:type)
-        """
-        meta  = ElementHelper.get_element_by_tag_attr(doctree, 'meta',metaAttrName, value)
-        content = None
-        if meta is not None and len(meta)>0:
-            content = ElementHelper.get_attribute(meta[0], 'content')
-        if content is not None:
-            return normalize_word(content)
-        return ''
-
-    @staticmethod
-    def get_meta_description(doctree):
-        return HtmlHelper.get_meta_content(doctree, 'name', 'description')
-
-    @staticmethod
-    def get_meta_keywords(doctree):
-        return HtmlHelper.get_meta_content(doctree, 'name', 'keywords')
-
-    @staticmethod
-    def get_headline_content_in_cleaned_body(body):
-        headlin_tag = ['h1', 'h2', 'h3', 'h4']
-
-        headline_contents = [ElementHelper.element_text_content(node)
-                             for node in ElementHelper.get_elements_by_tagnames(body, headlin_tag)
-                             if not ElementHelper.is_element_content_none(node)]
-
-        return '\n'.join(headline_contents)
+        articles = get_article_wish(clusters, doctree, title, debug)
+        return articles
 
 
 html1 = """
 <div kg_x="1">
-    <p kg_x="2"> this is example </p>
     <div kg_x="2"> this is example
         <a kg_x="3"> links </a>
     </div>
     <div kg_x="2"> this is example</div>
     <div kg_x="2"> this is example</div>
-    <p kg_x="2"> this is example </p>
-    <p kg_x="2"> this is example </p>
-    <p kg_x="2"> this is example </p>
 </div>
 """
 
@@ -805,33 +669,25 @@ html2 = """
 
 
 if __name__ == '__main__':
-    # import lxml.etree as etree
-    # doc1 = etree.fromstring(html1)
-    # doc2 = etree.fromstring(html2)
-    #
-    # root1 = ElementHelper.get_root(doc1)
-    # root2 = ElementHelper.get_root(doc2)
-    # w = WISH()
-    # # print w.similar_check(root1, root2)
-    # w.get_clustered_records(doc1)
+    import lxml.etree as etree
+    doc1 = etree.fromstring(html1)
+    doc2 = etree.fromstring(html2)
 
-    dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/ifeng/original/other_neg_524.html'
-    dir = '/mnt/UbutunShare/graduate/DataSet/PageClassification/Test1/yule/yule (55).html'
-    dir = '/mnt/UbutunShare/graduate/DataSet/1.txt'
-    dir = 'classifier/sample-data/1.html'
-    dir = '/mnt/UbutunShare/Work/CETD_DATA/Test/original/0.htm'
-    dir = '/mnt/UbutunShare/Work/CETD_DATA/wiki/original/23.htm'
+    root1 = ElementHelper.get_root(doc1)
+    root2 = ElementHelper.get_root(doc2)
+    w = WISH()
+    # print w.similar_check(root1, root2)
+    dir = 'D:/OtherWork/CETD_DATA/BBC/original/0.htm'
+    dir = '/mnt/UbutunShare/Work/CETD_DATA/BBC/original/71.htm'
     dir = '/mnt/UbutunShare/Work/CETD_DATA/Final/original/60.html'
+    # dir = '/mnt/UbutunShare/Work/CETD_DATA/wiki/original/1.htm'
     from util import FileHelper
     content = FileHelper.readUTF8File(dir)
     doc = HtmlHelper.create_doc(content, 'utf-8')
     doc = HtmlHelper.pre_process_domtree(doc)
-    article, title = HtmlHelper.get_article(doc, True)
-    # for c in article.splitlines():
-    #     print c.encode('utf-8')
+    article,title = HtmlHelper.get_article(doc, False)
+    ElementHelper.print_element(doc)
     print article.encode('utf-8')
-
-
 
 
 

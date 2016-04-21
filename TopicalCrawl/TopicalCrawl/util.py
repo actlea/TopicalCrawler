@@ -182,7 +182,8 @@ class StringHelper(object):
                 word = word.decode('utf-8', 'ignore')
 
             word = re.sub(r'\t', ' ', word)
-            word = re.sub(r'[\r,\n]\s','',word) #去除行
+            # word = re.sub(r'[\r,\n]\s','',word) #去除行 #ToDo 2016-04-20
+            word = re.sub(r'[\r,\n]\s*[\n,\t]+', '\n', word)  # 去除空行
             word =  u' '.join([x.strip() for x in word.split(' ') if len(x.strip())!=0])
 
             return word

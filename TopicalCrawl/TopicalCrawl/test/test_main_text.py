@@ -12,9 +12,12 @@
 import sys
 import re
 import os
+import copy
 
 from TopicalCrawl.util import StringHelper, FileHelper
 from api import HtmlHelper
+from cetd import get_aricle_cetd
+
 
 def chinese_segment(content):
     return StringHelper.chinese_segment(content)
@@ -177,63 +180,165 @@ class Score:
 
         score = 1.0*len(result)/(len(contestant)+len(benchmark)-len(result))
 
-        print 'result:','======'*15
         print "Cont:%s, Benc:%s" %(self.contestant_file.split('/')[-1], self.benchmark_file.split('/')[-1]),
         print "Precision: %.4f; Recall: %.4f; F1: %.4f; Score: %.4f" %(P, R, F1, score)
 
+        return P, R, F1, score
+
 def get_score(benchmark_file, contestant_file):
     s = Score(benchmark_file, contestant_file)
-    s.longest_common_sequence_score()
+    return s.longest_common_sequence_score()
 
-def test():
-    contestant_dir = 'D:/OtherWork/CETD_DATA/BBC/TTTT/'
-    gold_dir = 'D:/OtherWork/CETD_DATA/BBC/gold/'
-    origin_dir = 'D:/OtherWork/CETD_DATA/BBC/original/'
 
+def csvout(src_file):
+    pres, recall,fscore, escore, d = [], [], [], [], {}
+    with open(src_file) as fr:
+        lines = fr.readlines()
+        lines = lines[1:]
+        for line in lines:
+            line = line.strip()
+            line = line.split()
+            pres.append(line[2])
+            recall.append(line[3])
+            fscore.append(line[4])
+            escore.append(line[5])
+            d[line[0]] = (float(line[2]),float(line[3]), float(line[4]), float(line[5]))
+
+    with open(src_file.split('.')[0] + '_P.csv', 'w') as P:
+        P.write(','.join(pres))
+    with open(src_file.split('.')[0] + '_R.csv', 'w') as R:
+        R.write(','.join(recall))
+    with open(src_file.split('.')[0] + '_F.csv', 'w') as F:
+        F.write(','.join(fscore))
+    with open(src_file.split('.')[0] + '_S.csv', 'w') as S:
+        S.write(','.join(escore))
+
+    float_epsilon = 0.01
+
+    ipres = [float(i) for i in pres if float(i) > float_epsilon]
+    irres = [float(i) for i in recall if float(i) > float_epsilon]
+    ifres = [float(i) for i in fscore if float(i) > float_epsilon]
+    iscore = [float(i) for i in escore if float(i) > float_epsilon]
+
+    ipres.sort()
+    irres.sort()
+    ifres.sort()
+    iscore.sort()
+    p_avg = sum(ipres[1:-1]) / (len(ipres) - 2)
+    r_avg = sum(irres[1:-1]) / (len(irres) - 2)
+    f_avg = sum(ifres[1:-1]) / (len(ifres) - 2)
+    s_avg = sum(iscore[1:-1]) / (len(iscore) - 2)
+
+    with open(src_file.split('.')[0] + '_AVG.txt', 'w') as f:
+        f.write('pavg:%.2f\travg:%.2f\tfavg:%.2f\tsavg:%.2f\n' %(p_avg, r_avg, f_avg, s_avg));
+
+
+
+def compute(t_dir): #cetd/
+    contestant_dir = t_dir+'cerd/'
+    origin_dir = t_dir + 'original/'
+    contestant_dir1 = t_dir + 'cetd/'
+
+    ext=lambda x: int(x.split('.')[0])
+
+    origin_list = os.listdir(origin_dir)#网页原码
+    origin_list.sort(cmp=lambda x,y:ext(x)-ext(y))
     if not os.path.exists(contestant_dir):
         os.mkdir(contestant_dir)
-
-    gold_file_list = os.listdir(gold_dir)
-    origin_list = os.listdir(origin_dir)
-    contestant_dir_list = os.listdir(contestant_dir)
+    if not os.path.exists(contestant_dir1):
+        os.mkdir(contestant_dir1)
 
 
-
-    flag = False
+    # flag = False
     for _file in origin_list:
-        if file=='72.html': flag = True
-        if not flag: continue
+        # if file=='72.html': flag = True
+        # if not flag: continue
         print '%s is parsing....' %_file
         filename = origin_dir+_file
         content = FileHelper.readFile(filename)
 
+
         doctree = HtmlHelper.create_doc(content, 'utf-8')
+        cetd_doc = copy.deepcopy(doctree)
+
+        # cetr算法抽取网页正文
         doctree = HtmlHelper.pre_process_domtree(doctree)
-
-        articles = HtmlHelper.get_article(doctree)
-
+        article,title_text = HtmlHelper.get_article(doctree)
+        article = title_text+' '+article
         outFile = contestant_dir + 'C_'+_file.split('.')[0]+'.txt'
-        FileHelper.WriteInUTF8(outFile, articles)
+        FileHelper.WriteInUTF8(outFile, article)
+
+        # cetd算法抽取网页正文
+        article_c = get_aricle_cetd(cetd_doc)
+        outFile = contestant_dir1 + 'C_' + _file.split('.')[0] + '.txt'
+        FileHelper.WriteInUTF8(outFile, article_c)
 
 
-
-    ig, ir = 0,0
+def mapping(cetr_list, gold_file_list):
+    ig, ir = 0, 0
     mapping_files = []
-    for ir in range(len(contestant_dir_list)):
-        if 'C_'+gold_file_list[ig]==contestant_dir_list[ir] and ig<len(gold_file_list):
-            mapping_files.append((gold_file_list[ig], contestant_dir_list[ir]))
+    for ir in range(len(cetr_list)):
+        if 'C_' + gold_file_list[ig] == cetr_list[ir] and ig < len(gold_file_list):
+            mapping_files.append((gold_file_list[ig], cetr_list[ir]))
             ig += 1
+    return mapping_files
 
 
-    import time
-    start = time.time()
+def check_result(t_dir):
+    gold_dir = t_dir + 'gold/'
+    cerd = t_dir+'cerd/'
+    cetd = t_dir + 'cetd/'
+    result = t_dir + 'result/'
+    if not os.path.exists(result):
+        os.mkdir(result)
 
-    for files in mapping_files:
-        print files[1]
-        gold_file= gold_dir + files[0]
-        ori_file = contestant_dir + files[1]
-        get_score(gold_file,ori_file )
-    print time.time()-start
+    gold_file_list = os.listdir(gold_dir)  # 手动标记的数据集
+    cerd_list = os.listdir(cerd)
+    cetd_list = os.listdir(cetd)
+    # 将手动标注和算法抽取的文件名一一对应
+
+    mapping_cerd = mapping(cerd_list, gold_file_list)
+    mapping_cetd = mapping(cetd_list, gold_file_list)
+
+
+
+    ##计算算法抽取的文本与手动标注的文本的lsc score
+    print '=============================='
+    print 'cerd'
+    with open(result+'cerd.txt', 'w') as f1:
+        headers = '{:<10} {:<15} {:^15} {:^15} {:^15} {:^15}\n'.format(
+            'Gold', 'Origin', 'Precision', 'Recall', 'F1', 'Score')
+        f1.write(headers)
+        for files in mapping_cerd:
+            print files[1]
+            gold_file= gold_dir + files[0]
+            cont_file = cerd + files[1]
+            P, R, F1, score = get_score(gold_file,cont_file )
+            data = '{:<10} {:<15} {:^15.4} {:^15.4} {:^15.4} {:^15.4}\n'.format(files[0], files[1],P, R, F1, score)
+            f1.write(data)
+    print '=============================='
+    print 'cetd'
+    with open(result + 'cetd.txt', 'w') as f2:
+        headers = '{:<10} {:<15} {:^15} {:^15} {:^15} {:^15}\n'.format(
+            'Gold', 'Origin', 'Precision', 'Recall', 'F1', 'Score')
+        f2.write(headers)
+        for files in mapping_cetd:
+            print files[1]
+            gold_file = gold_dir + files[0]
+            cont_file = cetd + files[1]
+            P, R, F1, score = get_score(gold_file, cont_file)
+            data = '{:<10} {:<15} {:^15.4} {:^15.4} {:^15.4} {:^15.4}\n'.format(gold_file, cont_file, P, R, F1, score)
+            f2.write(data)
+
+    csvout(result+'cetr.txt')
+    csvout(result + 'cetd.txt')
+
+
 
 if __name__ == '__main__':
-    test()
+    home = '/mnt/UbutunShare/Work/CETD_DATA/'
+    files = ['arstechnica/','BBC/', 'Chaos/', 'nytimes/', 'wiki/', 'YAHOO!/', 'Test/']
+
+    compute(home+files[6])
+    check_result(home+files[6])
+

@@ -136,7 +136,7 @@ def url_tokenize(url, grams = '12',splitLen=4):
     return ret
 
 
-def url_tokenize2(url, grams = '3',splitLen=4):
+def url_tokenize2(url, grams = 3):
     """ 假如gram=4,http://www.allwatchers.com/Topics/Info_3922.asp,
     那么长度不超过4的如htpp, www,com等都直接保留，而长度超过4的allwatchers则会
     被分割为allw llwa, lwat, watc, ...等以4为长度的单位
@@ -144,9 +144,6 @@ def url_tokenize2(url, grams = '3',splitLen=4):
     :param gram:
     :return:
     """
-
-
-    #1.先处理英文
     url = url_decode(url)
     tmp=stripNonAlphaNum ( url )
     if tmp is None:
@@ -155,14 +152,12 @@ def url_tokenize2(url, grams = '3',splitLen=4):
     toks = [tok.strip() for tok in toks if len(tok.strip())!=0]
     ret = []
     for tok in toks:
-        if len(tok) > splitLen and tok not in None_Split_Tokens:
-            for i in range(len(tok)-int(splitLen)+1):
-                ret += tok[i:i+splitLen]
-    #2.然后处理中文
-    zh_url = stripNoneZh(url)
-    toks = zh_tokenize(zh_url)
+        if len(tok) > grams and tok not in None_Split_Tokens:
+            for i in range(len(tok)-int(grams)+1):
+                ret += tok[i:i+grams]
     ret += toks
     return ret
+
 
 
 

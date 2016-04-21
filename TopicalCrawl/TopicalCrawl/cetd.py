@@ -326,6 +326,7 @@ if __name__=='__main__':
     # dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/other_neg/original/42.html'
     # dir = '/mnt/UbutunShare/graduate/DataSet/original/0.htm'
     dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/ifeng/image/24.html'
+    dir = '/mnt/UbutunShare/Work/CETD_DATA/wiki/original/23.htm'
     from api import HtmlHelper
     from util import FileHelper
     content = FileHelper.readUTF8File(dir)
