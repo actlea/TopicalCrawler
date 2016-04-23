@@ -517,6 +517,8 @@ def del_dic(dic, key):
     if key in dic:
         del dic[key]
 
+
+
 def result(name):
     from TopicalCrawl.classifier.base import TestResult
     import numpy
@@ -588,23 +590,7 @@ def result(name):
     rt_result.show_result()
 
 
-def get_document(path):
-    content = FileHelper.readUTF8File(path)
-    if content is None:
-        return None
-    try:
-        base_url = content.splitlines()[0]
-    except IndexError or AttributeError:
-        return None
 
-    docstring = content.lower()
-    doctree = HtmlHelper.create_doc(docstring, 'utf-8')
-
-    if doctree is None: return None
-
-    document = html2words(docstring, base_url)
-
-    return document
 
 
 

@@ -1,0 +1,22 @@
+http://yule.sohu.com/album.html?pic=http://photo.sohu.com/96/52/img164695296.jpg
+<script>
+//Javascript ÌáÈ¡µØÖ·À¸²ÎÊý²¢¸³Öµ
+var num=5;
+url     = document.location.href;
+
+pp      = url.split("?")[1];
+
+para    = null;
+if(pp!=null && pp.length>0){
+   para = pp.split("&");
+}
+
+var str="";
+for(i=0; para!=null && i<para.length;i++){
+        aa = para[i].split("=");
+        str+=aa[0]+" µÄÖµÊÇ£º"+aa[1]+"\r\n";
+        eval("var "+aa[0] +"='"+aa[1]+"'");
+}
+if(typeof(pic)!='undefined' && pic!='') location.href=pic;
+if(typeof(photo)!='undefined' && photo!='') location.href=photo;
+</script>

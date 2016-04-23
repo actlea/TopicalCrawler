@@ -376,10 +376,12 @@ if __name__=='__main__':
     train_file = 'sample-data/train-6-zh.txt'
     test_file = 'sample-data/test-6-zh.txt'
     # compute_tfidf(path, 'tmp')
-    # compute_idf(files,'idf.pkl','idf.txt')
-    # compute_ldc(files, 'ldc.pkl', 'ldc.txt')
-    # compute_tf(files,'tf.pkl','tf.txt')
-    select_keyword('dic/idf.pkl','dic/tf.pkl','dic/ldc.pkl')
+
+    f='/mnt/UbutunShare/graduate/DataSet/dic/soccer_news.txt'
+    compute_idf([f],'idf.pkl','idf.txt')
+    compute_ldc([f], 'ldc.pkl', 'ldc.txt')
+    compute_tf([f],'tf.pkl','tf.txt')
+    # select_keyword('dic/idf.pkl','dic/tf.pkl','dic/ldc.pkl')
     # chi_feature_select(path, path)
     # S = u"我到北京清华园，学习"
     # for i in zh_tokenize(S):

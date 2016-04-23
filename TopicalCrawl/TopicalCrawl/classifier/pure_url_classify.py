@@ -14,7 +14,7 @@ from base import *
 from urllib import unquote
 import re
 
-None_Split_Tokens=[ 'http', 'https', 'www', 'com', 'cn', 'asp', 'ftp' ]
+None_Split_Tokens=[ 'http', 'https', 'www', 'com', 'cn', 'asp', 'ftp', 'net']
 
 re_han_default = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._]+)", re.U)
 
@@ -113,16 +113,15 @@ def url_tokenize(url, grams = '12',splitLen=4):
     if tmp is None:
         return None
     toks= tmp.split ( ' ' )
-    toks = [tok.strip() for tok in toks if len(tok.strip())!=0]
+    toks = [tok.strip() for tok in toks if len(tok.strip())!=0 and tok not in None_Split_Tokens]
     ret = []
     for tok in toks:
-        if len ( tok ) > splitLen and tok not in None_Split_Tokens:
+        if len ( tok ) > splitLen :
             en_words = word_break(tok, word_dict)
             if en_words is not None:
                 ret += en_words.split(' ')
             else:
                 ret.append(tok)
-
             # whether it is pinyin
             # pinyin_words = word_break(tok, pinYin_dic) #ToDo 2016-04-19
             # if pinyin_words is not None:
@@ -149,15 +148,42 @@ def url_tokenize2(url, grams = 3):
     if tmp is None:
         return None
     toks= tmp.split ( ' ' )
-    toks = [tok.strip() for tok in toks if len(tok.strip())!=0]
+    toks = [tok.strip() for tok in toks if len(tok.strip()) != 0 and tok not in None_Split_Tokens]
     ret = []
     for tok in toks:
-        if len(tok) > grams and tok not in None_Split_Tokens:
+        if len(tok) > grams:
             for i in range(len(tok)-int(grams)+1):
                 ret += tok[i:i+grams]
     ret += toks
     return ret
 
+
+def is_in_dic(words, dic):
+    for w in words:
+        if stem_words(w) in dic:
+            return True
+    return False
+
+def url_predict(url, model, pos_label='0', neg_label='1',pos_words=None, neg_words=None):
+    '''
+
+    :param url:
+    :param model: url分类器
+    :param pos_dic:包含正样本关键字的词典
+    :param neg_dic: 包含负样本关键字的词典
+    :return: 预测标签，预测概率
+    '''
+    #1.能否借助关键词判断
+    toks = url_tokenize(url)
+    if neg_words is not None:
+        if is_in_dic(toks, neg_words):
+            return neg_label, 1.0
+    if pos_words is not None:
+        if is_in_dic(toks, pos_words):
+            return pos_label,1.0
+
+    pred, prob = model.predict(url)
+    return pred, prob
 
 
 

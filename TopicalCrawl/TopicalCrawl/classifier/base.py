@@ -7,13 +7,13 @@
 @time: 16-3-17 上午9:46
 @description:
 """
-from TopicalCrawl.text import seg_text
+from TopicalCrawl.text import seg_text, load_keywords, load_stopwords
 from TopicalCrawl.dependence import porter2
 import math
 import shutil
 import os
 import cPickle
-import measure
+# import measure
 import re
 import numpy as np
 from collections import  Counter
@@ -22,6 +22,10 @@ from scipy.sparse import csr_matrix
 
 # stopword_path = 'D:\\OtherWork\\PythonProject\\TopicalCrawl\\TopicalCrawl\\resources\\text\\stopwords-zh.txt'
 stopword_path = '/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/resources/text/stopwords-zh.txt'
+keyword_path = '/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/resources/text/tf-idf.txt'
+
+
+
 
 def read_stopword_dic(stopword_file):
     """ term:index
@@ -177,7 +181,7 @@ def convert(tables, global_weight_dic, class2id, local_fun, output):
 
 
 def zh_tokenize(text):
-    words=term_seg ( text )
+    words=term_seg (text)
     # return [ stem_words ( word ) for word in words if is_bad_tok ( word ) ]
     return [ word for word in words if is_bad_tok ( word ) ]
 
@@ -222,9 +226,18 @@ class TextPreProcess ( object ):
 
 
     def convert_text(self, sentence, grams):
+        # grams = [int(i) for i in grams]
+        # toks = self.text_preprocessor(sentence)
+        # ret = []
+        # for gram in grams:
+        #     for i in range(len(toks) - gram + 1):
+        #         ret.append(tuple(toks[i:i + gram]))
+        # return ret
         grams=[ int ( i ) for i in grams ]
         toks=self.text_preprocessor ( sentence )
-        ret=[ ]
+        if len(grams)==1:
+            return toks
+
         return self.bgram(toks)
         # for gram in grams:
         #     for i in range ( len ( toks ) - gram + 1 ):

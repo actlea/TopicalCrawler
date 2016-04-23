@@ -16,11 +16,15 @@ from scrapy.http import Request
 from TopicalCrawl.items import ResponseItem
 from TopicalCrawl.url import *
 from TopicalCrawl.util import Random
-from TopicalCrawl.classifier.multiclassifier import MultiClassifier
+from TopicalCrawl.classifier.multiclassifier import load_classifier
+from TopicalCrawl.link_relevance import *
+from TopicalCrawl.parse import *
 
-from TopicalCrawl.htmlParse import html2words
 
-"""
+
+
+
+
 
 class Apprentice(CrawlSpider):
     name = 'apprentice'
@@ -50,39 +54,52 @@ class Apprentice(CrawlSpider):
         Rule(SgmlLinkExtractor(unique=True), callback='parse', follow=False),
     )
 
+    level0 = {}
+    level1 = {}
+    graph = {}
+    url_relevance = {}
+
     print '-----------load supervisior ----------------'
-    supervisior = MultiClassifier('test-zh-logreg')
     model_path = '/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/classifier'
-    supervisior.load(path=model_path)
+    classifiers = load_classifier(model_path)
 
 
     def parse(self, response):
-        item = ResponseItem()
-        item['response'] = response
-        item['count'] = self.count
-        yield  item
+        response_item = ResponseItem()
+        response_item['response'] = response
+        response_item['count'] = self.count
+        response_item['graph'] = self.graph
+        response_item['level0'] = self.level0
+        response_item['level1'] = self.level1
+        response_item['url_relevance'] = self.url_relevance
+        response_item['classifiers'] = self.classifiers
+        yield  response_item
 
         self.count += 1
         if self.count > self.maxPageNumbers:
             return
 
-        #深度优先的爬虫
-        # for url in collect_urls(response.body, response.url, response.encoding):
-        #     if is_url_visited(url, visited_url_set):
-        #         continue
-        #     yield Request(url, callback=self.parse, headers=self.headers)
-        for urlitem in get_link_word_by_pair(response.body. response.url , response.encoding):
-            url = urlitem['url']
-            label, priority = urlitem['label'], urlitem['interestness']
-            priority = priority*1000
-
-            if is_url_visited(url, visited_url_set) or int(label)==-1:
-                continue
+        for url, priority in get_next_url(self.level0, self.level1,self.graph, self.url_relevance):
+            priority = priority * 1000
             req = Request(url, callback=self.parse, headers=self.headers, priority=priority)
-            req.meta['link'] = urlitem
+
+            # req.meta['classifiers'] = self.classifiers
+
             yield req
 
-"""
+
+        # for urlitem in get_link_word_by_pair(response.body. response.url , response.encoding):
+        #     url = urlitem['url']
+        #     label, priority = urlitem['label'], urlitem['interestness']
+        #     priority = priority*1000
+        #
+        #     if is_url_visited(url, visited_url_set) or int(label)==-1:
+        #         continue
+        #     req = Request(url, callback=self.parse, headers=self.headers, priority=priority)
+        #     req.meta['link'] = urlitem
+        #     yield req
+
+
 
 if __name__ == '__main__':
     pass

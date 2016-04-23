@@ -1,0 +1,1569 @@
+http://guba.sina.com.cn
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312" />
+    <title>新浪股吧_财经_新浪网</title>
+    <meta name="keywords" content="股吧,新浪股吧,股票讨论,新浪股吧" />
+    <meta name="description" content="新浪财经 - 股吧,为关注股票的股民提供交流互动的平台,个股微博提供最新股评,资金流向,最热新闻讨论分析." />
+    <meta name="stencil" content="PGLS000933" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="baidu-site-verification" content="IQQLjXiCoY" />
+            <link rel="stylesheet" type="text/css" href="http://guba.sina.com.cn/css/style_v2.css?t=4">
+    	<script charset="utf-8" id="seajsnode" src="http://i2.sinaimg.cn/jslib/modules2/seajs/1.3.0/sea.js"></script>
+        <script src="http://news.sina.com.cn/268/2015/0112/jquery.newest.js" charset="utf-8"></script>
+        <script src="http://guba.sina.com.cn/app/www/js/face.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		var sinaSSOConfig = {
+			entry: 'tieba',
+			service: 'finance',
+			setDomain: true
+		};
+                var pageConfig = {
+			bid:'',
+            tid: ''
+		};
+		document.domain = 'sina.com.cn';
+		seajs.config({
+			charset: function(url) {
+                if (url.indexOf('http://i.sso.sina.com.cn') === 0) {
+                  return 'utf-8';
+                }
+                if (url.indexOf('http://n.sinaimg.cn/finance/guba-pc/js/friendships.js') === 0) {
+                  return 'utf-8';
+                }
+                return '';
+            },
+			base: 'http://finance.sina.com.cn/guba/',
+			alias: {
+				'$': 'http://finance.sina.com.cn/guba/js/jquery.js',
+				'suggestServer': 'http://finance.sina.com.cn/basejs/suggestServer.js',
+				'tool': 'http://finance.sina.com.cn/basejs/tool.js',
+				'dataDrawer': 'http://finance.sina.com.cn/basejs/dataDrawer.js',
+				'hq': 'http://finance.sina.com.cn/basejs/hq.js',
+				'proxy': 'http://finance.sina.com.cn/basejs/proxy_v1.2.js',
+				'sso': 'http://i.sso.sina.com.cn/js/ssologin.js',
+                                'user_panel': 'http://i.sso.sina.com.cn/js/user_panel.js',
+                                'outlogin_layer': 'http://i.sso.sina.com.cn/js/outlogin_layer.js',
+				'sys_time': 'http://hq.sinajs.cn/?list=sys_time',
+				'swfupload': 'http://finance.sina.com.cn/guba/js/swfupload.js',
+				'SFK': 'http://finance.sina.com.cn/guba/js/SFK.js',
+				'favorites': 'http://finance.sina.com.cn/guba/js/favorites.js',
+				'friendships': 'http://n.sinaimg.cn/finance/guba-pc/js/friendships.js?t=5',
+				'portfolio': 'http://finance.sina.com.cn/guba/js/portfolio.js',
+				'posts': 'http://guba.sina.com.cn/app/www/js/posts.js?t=2',
+				'bar.attention': 'http://n.sinaimg.cn/finance/guba-pc/js/bar_attention.js?v=20140302',
+				'common': 'http://finance.sina.com.cn/guba/js/common.js',
+				'baseTop': 'http://n.sinaimg.cn/finance/guba-pc/js/base_top.js?t=1',
+				'recommend': 'http://n.sinaimg.cn/finance/guba-pc/js/recommend.js?t=1',
+				'ads': 'http://n.sinaimg.cn/finance/guba-pc/js/ads.js?t=1',
+				'dongmi': 'http://www.sinaimg.cn/cj/deco/2015/0225/dongmi1514.js?t=1'
+			}
+		});
+	</script>
+    <style>
+    .gubaimg_small{max-width:120px;}
+    .gubaimg_middle,.js_origin{max-width:440px;}
+    .gubaimg_big{max-width:550px;}
+    .gubaimg_original{}
+    </style>
+
+
+
+</head>
+<body>
+<!-- first screen begin -->
+<div class='topNav'>
+    <div class='banner clearfix'>
+        <div class='gb_logo'>
+            <div>
+                <a href="/"><img src="/app/www/images/0510_finance_zyc_logo.gif" alt="新浪股吧"></a>
+                <span>中国最主流的投资者社区</span>
+            </div>
+        </div>
+        <div class="gb_search">
+            <form name="searchForm" action="/" method="get" id="topSearchForm">
+                <input type="hidden" name="type" value="2" id="search_type">
+                <input type="hidden" name="s" value="search">
+                <div class='clearfix'>
+                    <ul class="gb_tab clearfix" id="search_option">
+                        <li  class="selected" search_type="2">
+                            <a href="javascript:void(0)">进入吧</a>
+                        </li>
+                        <li   search_type="1">
+                            <a href="javascript:void(0)" >帖子搜索</a>
+                        </li>
+                        <li  search_type="3">
+                            <a href="javascript:void(0)">作者搜索</a>
+                        </li>
+                    </ul>
+                    <div class="sHLinks">
+                        <a href="javascript:void(0)" id="addFavorites">加入收藏</a>|<a href="http://finance.sina.com.cn/" target="_blank">新浪财经</a>|<a href="http://finance.sina.com.cn/stock/" target="_blank">新浪股票</a>|<a href="http://www.sina.com.cn/" target="_blank">新浪首页</a>
+                    </div>
+                </div>
+                    
+				<div class="searea">
+					<input type="text" class="txt" id="key0" name="key2" maxlength="100" autocomplete="off"  value="请输入拼音/代码/名称" />
+					<input type="text" class="txt" id="key1" name="key1" maxlength="100" style="display:none" value="请输入帖子关键字" onfocus="if(this.value == '请输入帖子关键字')this.value='';" onblur="if(this.value == '')this.value='请输入帖子关键字';"/>
+					<input type="text" class="txt" id="key2" name="key3" maxlength="100" style="display:none" value="请输入作者关键字" onfocus="if(this.value == '请输入作者关键字')this.value='';" onblur="if(this.value == '')this.value='请输入作者关键字';" />
+					<input type="submit" class="sub" value="" />
+				</div>
+                                <ul class="gb_tabB clearfix">
+    <li><a target="_blank" class="tit02" title="热门吧：" href="http://guba.sina.com.cn/?s=channel&chid=1" style="color:black;font-weight:bold">热门吧：</a></li>
+    <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&bid=2285" title="题材挖掘机">题材挖掘机</a></li>
+    <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz300431" title="暴风科技">暴风科技</a></li>
+    <li><a target="_blank" class="tit02" title="中国中车" href="http://guba.sina.com.cn/?s=bar&bid=1660" style="color:red;font-weight:bold">中国中车</a></li>
+    <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz300104" title="乐视网">乐视网</a></li>
+    <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sh000001" title="上证指数">上证指数</a></li>
+    <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%D5%C7%CD%A3%D4%E7%D6%AA%B5%C0" title="涨停早知道">涨停早知道</a></li>
+</ul>			</form>
+        </div>
+        <div class='gb_login'>
+            <div class="blk_login" id="topNotLogin">
+                <div class="login_tips">最活跃的散户都在这里</div>
+                <div class="gb_signin" id="userLogin"></div>
+                <a class="gb_signup" href="https://login.sina.com.cn/signup/signup.php?entry=tieba" target="_blank">注册</a>
+            </div>
+            <div class='blk_logined' id="topLogined">
+                <div class='login_pt clearfix'>
+                    <div class='login_pic fl_left'><a target='_blank' id="topHead"><img width='60' height='60'></a><a class="msg_unread" target="_blank"></a></div>
+                    <div class='login_txt fl_left'>
+                        <p style="line-height:20px;margin-bottom:5px;"><span>欢迎你：</span></p>
+                        <p><a target='_blank' class='bl_name' id="topNick"></a></p>
+                        <p><a target='_blank' id="topUserCenter">个人中心</a></p>
+                    </div>
+                </div>
+                <div class='login_top_menu pop_shadow' id="topNickHover">
+                    <ul>
+                        <li><a href="/?s=user&a=nick" target='_blank'>个人资料</a></li
+                        ><li><a href="/?s=user&a=privacy" target='_blank'>隐私设置</a></li
+                        ><li><a style='border-bottom:0' href='javascript:void(0)' id="topLogOutBtn">退出</a></li>
+                    </ul>
+                </div>
+                <div class='pop_msgWran clearfix' id="hasNew">
+                    <span>有新回复，<a href="http://guba.sina.com.cn/?s=home&type=reply" target="_blank" id="seeNew">点击查看</a></span><em class='icon_em em_close' id="cancelNew">X</em>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript">
+		seajs.use('baseTop');
+	</script>
+    <div class='banner_shadow'></div>
+</div>	<!--merge 总 0 start-->
+		<!--merge! 面包屑 start--><!--merge! 面包屑 end-->
+		<div class="wrap main clearfix">
+		<!--merge 横通 0 start-->
+			<div class='part_04 clearfix'>
+			<!--part_04 start-->
+				<div class='p_left'>
+				<!--left_part start-->
+					<div class="blk_20" style='margin-top:10px;'>
+					<!--热门推荐 start-->
+						<!--<div class='tit_01 clearfix'>
+			                <div class='tit_span'><span><a href="http://guba.sina.com.cn/?s=bar&bid=14247" target='blank'>名家论市</a></span></div>
+			            </div>-->
+			            <div class="tit_tab_06 clearfix">
+							<span class="span_01  selected"><a href="http://guba.sina.com.cn/?s=bar&bid=14247" target='blank'>名家论市</a></span><a href="http://guba.sina.com.cn/?s=bar&name=%B9%C9%CA%D0%CA%B5%D5%BD#post" id='wantPost' target='_blank'><span class="span_02 ">我要发帖</span></a>
+						</div>
+						<script type="text/javascript">
+						seajs.use(['sso','tool'],function(){
+							LoginManager.add({
+								onLoginSuccess:function(user){
+									document.getElementById('wantPost').href='http://guba.sina.com.cn/u/'+user.uid;	
+								},
+								onLogoutSuccess: function(){
+									document.getElementById('wantPost').href='http://guba.sina.com.cn/?s=bar&name=%B9%C9%CA%D0%CA%B5%D5%BD#post';
+								}
+							})
+						});
+						</script>
+			            <div class='b_cont'>
+				            				            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/5113677399" target="_blank"><img class="js_show_hoverCard"  uid="5113677399" src="http://tp4.sinaimg.cn/5113677399/180/40087928423/1" width="58" height="58" alt="名家金鼎财讯"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=1106277&bid=9279&dpc=1" target="_blank">金鼎财讯：主力频频诱空暗示拉升在即</a></h4>
+									<p>昨日沪指小幅高开拉升后，便进入缓慢震荡走低的走势，2点之后，持续小幅跳水，翻绿...<a href="/?s=thread&tid=1106277&bid=9279&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+								
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/3176871814" target="_blank"><img class="js_show_hoverCard"  uid="3176871814" src="http://tp3.sinaimg.cn/3176871814/180/40016888176/1" width="58" height="58"  alt="名家狼头看盘"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=517283&bid=2260&dpc=1" target="_blank">狼头看盘：尾盘跳水 反弹是否结束？</a></h4>
+									<p>美国三大股指收盘窄幅波动，纳指跌0.14%，纽约黄金期货收盘小幅走低0.1%，报1222美...<a href="/?s=thread&tid=517283&bid=2260&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/5124779237" target="_blank"><img class="js_show_hoverCard"  uid="5124779237" src="http://tp2.sinaimg.cn/5124779237/180/5702617514/1" width="58" height="58"  alt="名家涨停火线"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=1106622&bid=9279&dpc=1" target="_blank">市场反弹格局未变 震荡只是让你进场</a></h4>
+									<p>昨日两市小幅高开，短暂走高后震荡回落，沪指3000点得而复失，午后沪指跳水跌1%，...<a href="/?s=thread&tid=1106622&bid=9279&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/5072807994" target="_blank"><img class="js_show_hoverCard"  uid="5072807994" src="http://tp3.sinaimg.cn/5072807994/180/40059158213/1" width="58" height="58"  alt="名家大满贯股"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=240182&bid=14247&dpc=1" target="_blank">变盘期 今日必须出现力度阳线</a></h4>
+									<p>昨日大盘再度呈现震荡整理的格局，面对3000点整数关这道坎依然没有顺利冲关，由于...<a href="/?s=thread&tid=240182&bid=14247&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/1581557932" target="_blank"><img class="js_show_hoverCard"  uid="1581557932" src="http://tp1.sinaimg.cn/1581557932/180/1290130821/1" width="58" height="58"  alt="名家荷叶"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=2326&bid=13474&dpc=1" target="_blank">社保基金加盟  进军蓝筹别迟疑</a></h4>
+									<p>3月28日，国务院印发《全国社会保障基金条例》，5月1日起施行。股市期待了N年之久...<a href="/?s=thread&tid=2326&bid=13474&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/5484501262" target="_blank"><img class="js_show_hoverCard"  uid="5484501262" src="http://tp3.sinaimg.cn/5484501262/180/5750503408/1" width="58" height="58"  alt="名家谈股论今者"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=240181&bid=14247&dpc=1" target="_blank">指数调整会影响反弹行情吗?</a></h4>
+									<p>周一早受周末消息面偏暖导致四大指数全线高开，拉升无力后出现冲高回落，尽管创业...<a href="/?s=thread&tid=240181&bid=14247&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/5115355783" target="_blank"><img class="js_show_hoverCard"  uid="5115355783" src="http://tp4.sinaimg.cn/5115355783/180/40061777745/1" width="58" height="58"  alt="名家飞杨看市"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=240188&bid=14247&dpc=1" target="_blank">飞杨看市：量能或成反弹的拦路虎</a></h4>
+									<p>中国养老金有望很快直接进入股市投资，养老金入市步伐的加快对市场稳定有大帮助！<a href="/?s=thread&tid=240188&bid=14247&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/2660746581" target="_blank"><img class="js_show_hoverCard"  uid="2660746581" src="http://tp2.sinaimg.cn/2660746581/180/40041878561/1" width="58" height="58"  alt="名家老朱看市1"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=86964&bid=2285&dpc=1" target="_blank">3000点争夺大战 吃饭行情呼之欲出</a></h4>
+									<p>上周五虽然有所回升但最终未能收复3000点关口。量能在上周一之后开始逐步回落，至...<a href="/?s=thread&tid=86964&bid=2285&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+											            <div class="ct_pt_01  clearfix">
+								<div class="ct_pic"><a href="/u/2027022562" target="_blank"><img class="js_show_hoverCard"  uid="2027022562" src="http://tp3.sinaimg.cn/2027022562/180/40065903612/1" width="58" height="58"  alt="名家金眼论市"></a></div>
+								<div class="ct_txt">
+									<h4><a href="/?s=thread&tid=1106607&bid=9279&dpc=1" target="_blank">金眼论市：冲高诱多 隐藏大动作？</a></h4>
+									<p>周一沪深两市跳空高开之后快速冲高，随后维持震荡一段时间，临近早收盘左右形成双...<a href="/?s=thread&tid=1106607&bid=9279&dpc=1" target="_blank">[详细]</a></p>
+								</div>
+							</div>
+														
+			            </div>
+					<!--热门推荐 end-->
+					</div>	
+				<!--left_part start-->	
+				</div>
+				<div class='p_center'>
+				<!--center_part start-->
+					<div class="blk_21">
+					<!--首页中部要闻 start-->
+						<div class='color_border_01'><div class='blue_p'></div></div>
+<div class='tit_04'><a href="http://guba.sina.com.cn/?s=thread&bid=9279&tid=1106521&pid=1&dpc=1" target='_blank'>利好拉开年度反弹行情 市场信心倍增</a></div>
+<div class='b_cont'>
+	<p class='p_detail'>社保基金的到来是在市场预料之中的事情，但却没有想到来的这么快。社保基金的到来，给市场...<a href="http://guba.sina.com.cn/?s=thread&bid=9279&tid=1106521&pid=1&dpc=1" target="_blank">[详细]</a></p>	<div class='sp_18'></div>
+	<ul class="list_05">
+				    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sz002607" target="_blank">亚夏汽车</a><a href="http://guba.sina.com.cn/?s=thread&tid=106630&bid=10233&dpc=1" target="_blank">二手车迎重大利好 两类上市标的受益</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sz002588" target="_blank">史丹利</a><a href="http://guba.sina.com.cn/?s=thread&tid=112698&bid=10186&dpc=1" target="_blank">春耕来临 复合肥销售全面回暖(附股)</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sz300494" target="_blank">盛天网络</a><a href="http://guba.sina.com.cn/?s=thread&tid=1902&bid=16790&dpc=1" target="_blank">阿法狗或挑战《星际争霸2》(附股)</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sz002378" target="_blank">章源钨业</a><a href="http://guba.sina.com.cn/?s=thread&tid=114022&bid=1851&dpc=1" target="_blank">神奇材料望破可再生储能难题 钨概念股</a></li>
+    	</ul><div class='dotLine_05'></div><ul class="list_05">    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=%CC%E2%B2%C4%CD%DA%BE%F2%BB%FA" target="_blank">题材挖掘机</a><a href="http://guba.sina.com.cn/?s=thread&tid=86959&bid=2285&dpc=1" target="_blank">涨价主题投资风继续 关注弹性大品种(股)</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sz002063" target="_blank">远光软件</a><a href="http://guba.sina.com.cn/?s=thread&tid=135856&bid=345&dpc=1" target="_blank">全球能源互联网大会将在北京召开 6股或受益</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/?s=bar&name=sh600136" target="_blank">道博股份</a><a href="http://guba.sina.com.cn/?s=thread&tid=118166&bid=1069&dpc=1" target="_blank">国务院同意成立二零二二年亚运组委会(附股)</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/5844026906" target="_blank">猴赛雷</a><a href="http://guba.sina.com.cn/?s=thread&bid=2260&tid=517210&dpc=1" target="_blank">业绩三连增+低估值 险资追捧这26股(名单)</a></li>
+    	    	            </ul>
+</div>
+<div class='color_border_02'><div class='blue_p'></div></div>
+<div class='tit_04'><a href="http://guba.sina.com.cn/?s=thread&bid=14247&tid=240156&t=1459207077&dpc=1" target='_blank'>主力连日大幅洗盘酝酿大级别行情！</a></div>
+<div class='b_cont'>
+	<p class='p_detail'>昨日沪深两市早盘纷纷高开，开盘后继续在部分二线权重板块的带动下快速冲高，并再一次站上3...<a href="http://guba.sina.com.cn/?s=thread&bid=14247&tid=240156&t=1459207077&dpc=1" target="_blank">[详细]</a></p>	<div class='sp_18'></div>
+	<ul class="list_05">
+				    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/5214246178" target="_blank">股坛</a><a href="http://guba.sina.com.cn/?s=thread&bid=13837&tid=98250&dpc=1" target="_blank">公告透露利好：19只个股有潜力</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/2910812187" target="_blank">北京红竹</a><a href="http://guba.sina.com.cn/?s=thread&bid=14247&tid=240238&dpc=1" target="_blank">周二，操作计划与异动个股</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/3749287882" target="_blank">严焰茗</a><a href="http://guba.sina.com.cn/?s=thread&bid=2260&tid=517191&dpc=1" target="_blank">后市的翻倍机会在何板块？</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/3763751562" target="_blank">思维观势</a><a href="http://guba.sina.com.cn/?s=thread&bid=9279&tid=1106275&pid=1&dpc=1" target="_blank">周二操盘策略早知道</a></li>
+    	</ul><div class='dotLine_05'></div><ul class="list_05">    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/2475315627" target="_blank">殷晨翔</a><a href="http://guba.sina.com.cn/?s=thread&bid=9279&tid=1106417&pid=1&dpc=1" target="_blank">早盘企稳午后上扬 周三继续涨</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/1587965421" target="_blank">买卖点</a><a href="http://guba.sina.com.cn/?s=thread&bid=14247&tid=240122&pid=1&dpc=1" target="_blank">3.29早盘热点及最新资讯</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/5050482956" target="_blank">天翊看盘</a><a href="http://guba.sina.com.cn/?s=thread&bid=13837&tid=98189&t=1459206368&dpc=1" target="_blank">涨停早知道：这些股有望迎多个涨停</a></li>
+    	    	    		        <li><a class="link_source" href="http://guba.sina.com.cn/u/2361595240" target="_blank">股海灯塔I1</a><a href="http://guba.sina.com.cn/?s=thread&bid=9279&tid=1106487&dpc=1" target="_blank">开盘前参考提示！</a></li>
+    	    	            </ul>
+</div>					<!--首页中部要闻 end-->
+					</div>
+				<!--center_part start-->	
+				</div>
+				<div class='p_right'>
+                				<!--right_part start-->
+					<div class="blk_22">
+					<!--blk_22 最近访问吧，我关注的吧 start-->
+						<div class='tit_tab_05 clearfix'>
+							<span class='span_01 selected' id='tab_bar_01'>最近访问吧</span><span class='span_02' id='tab_bar_02'>我关注的吧</span>
+						</div>
+						<div class='b_cont'>
+							<table class='table_05' cellspacing="0" cellpadding="0" width='100%' id='blk_bar_01'>
+								<thead>
+								<tr>
+									<th>股吧名称</th>
+									<th class='ta_left'>最新价</th>
+									<th class='ta_left'>涨跌幅</th>
+									<th>股吧</th>
+								</tr>
+								<tr>
+									<td colspan='4' class='tr_12'></td>
+								</tr>
+								</thead>
+								<tbody id="visitedBar"></tbody>
+							</table>
+							<table class='table_05' cellspacing="0" cellpadding="0" width='100%' id='blk_bar_02'>
+								<thead>
+								<tr>
+									<th>股吧名称</th>
+									<th class='ta_left'>最新价</th>
+									<th class='ta_left'>涨跌幅</th>
+									<th>股吧</th>
+								</tr>
+								<tr>
+									<td colspan='4' class='tr_12'></td>
+								</tr>
+								</thead>
+								<tbody id="myAttentionbar"></tbody>
+							</table>
+							<table class='table_05' cellspacing="0" cellpadding="0" width='100%'>
+								<thead>
+								<tr>
+									<th colspan="4">以下是热门股吧</th>
+								</tr>
+								</thead>
+								<tbody id="hotBarHq"></tbody>
+							</table>
+						</div>
+                   <script type="text/javascript">
+					var userVisitBar = [];
+					var userFollowBar = [];
+					var hotBar = [{"symbol":"","name":"bu0","bid":"14301","market":"other"},{"symbol":"","name":"cl","bid":"10479","market":"other"},{"symbol":"","name":"\u7406\u8d22","bid":"2224","market":"other"},{"symbol":"","name":"au0","bid":"9111","market":"other"},{"symbol":"","name":"ag0","bid":"10415","market":"other"},{"symbol":"","name":"\u5916\u6c47","bid":"2222","market":"other"},{"symbol":"","name":"cu0","bid":"9112","market":"other"},{"symbol":"","name":"\u671f\u8d27","bid":"2220","market":"other"},{"symbol":"","name":"\u57fa\u91d1","bid":"2219","market":"other"},{"symbol":"sh000001","name":"\u4e0a\u8bc1\u6307\u6570","bid":"9279","market":"cn"}];
+					seajs.use('http://finance.sina.com.cn/guba/js/visited_attention.js');
+				</script>
+						<script type="text/javascript">
+		            	seajs.use('common',function()
+		            	{
+		            		var Sub_Show = new SFK.common.SubShowClass("none","onmouseover");
+		            		Sub_Show.addLabel("tab_bar_01","blk_bar_01");
+		            		Sub_Show.addLabel("tab_bar_02","blk_bar_02");
+		            	});
+		            	</script>
+					<!--blk_22 最近访问吧，我关注的吧 end-->
+					</div>
+					<!--<div class="blk_23">-->
+					<!--blk_23 访问吧精华帖，关注吧精华帖 start-->
+						<!--<div class='tit_tab_05 clearfix'>
+							<span class='span_01 selected' id='tab_sbar_01'>访问吧精华帖</span><span class='span_02' id='tab_sbar_02'>关注吧精华帖</span>
+						</div>
+						<div class='b_cont'>
+							<ul class="list_06"  id='blk_sbar_01'>
+                                <li><a href="?s=thread&bid=14301&tid=281457" target="_blank" title="【远征金途】如果你的资金一直在缩水，就过来看看！">【远征金途】如果你的资金一直在缩水，就过来看看！</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=271608" target="_blank" title="【远征金途】学习均线五大好方法（技术贴）">【远征金途】学习均线五大好方法（技术贴）</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=274485" target="_blank" title="【远征金途】心态调整好再投资">【远征金途】心态调整好再投资</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=290282" target="_blank" title="【远征金途】你保持心态，我把握技术！">【远征金途】你保持心态，我把握技术！</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1944789" target="_blank" title="★荐★精帖★【云冲论金】赚的总是不痛不痒，亏的却是伤筋动骨">★荐★精帖★【云冲论金】赚的总是不痛不痒，亏的却是伤筋动骨</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1944311" target="_blank" title="【金市全威】站得高才能望得远，唯有心静如水，方能气贯长虹">【金市全威】站得高才能望得远，唯有心静如水，方能气贯长虹</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1922774" target="_blank" title="金铭玉络：磕了药！多头回归，油价或有新高！">金铭玉络：磕了药！多头回归，油价或有新高！</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1929991" target="_blank" title="【文博解盘】为你揭开布林带神秘的面纱">【文博解盘】为你揭开布林带神秘的面纱</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=346014" target="_blank" title="仅此一次机会，利润130个点">仅此一次机会，利润130个点</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=348081" target="_blank" title="金惠解盘：3.28 冻产实际意义不大，但是会影响市场的心里变化">金惠解盘：3.28 冻产实际意义不大，但是会影响市场的心里变化</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=344654" target="_blank" title="【非凡霸金】投资路上，心态很重要!">【非凡霸金】投资路上，心态很重要!</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=344698" target="_blank" title="【轩辕道金】投资市场亏损的原因，实力在这，我在这等你">【轩辕道金】投资市场亏损的原因，实力在这，我在这等你</a></li>
+                            </ul>
+                            <ul class="list_06"  id='blk_sbar_02'>
+                                <li><a href="?s=thread&bid=14301&tid=281457" target="_blank" title="【远征金途】如果你的资金一直在缩水，就过来看看！">【远征金途】如果你的资金一直在缩水，就过来看看！</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=271608" target="_blank" title="【远征金途】学习均线五大好方法（技术贴）">【远征金途】学习均线五大好方法（技术贴）</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=274485" target="_blank" title="【远征金途】心态调整好再投资">【远征金途】心态调整好再投资</a></li>
+                                <li><a href="?s=thread&bid=14301&tid=290282" target="_blank" title="【远征金途】你保持心态，我把握技术！">【远征金途】你保持心态，我把握技术！</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1944789" target="_blank" title="★荐★精帖★【云冲论金】赚的总是不痛不痒，亏的却是伤筋动骨">★荐★精帖★【云冲论金】赚的总是不痛不痒，亏的却是伤筋动骨</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1944311" target="_blank" title="【金市全威】站得高才能望得远，唯有心静如水，方能气贯长虹">【金市全威】站得高才能望得远，唯有心静如水，方能气贯长虹</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1922774" target="_blank" title="金铭玉络：磕了药！多头回归，油价或有新高！">金铭玉络：磕了药！多头回归，油价或有新高！</a></li>
+                                <li><a href="?s=thread&bid=10479&tid=1929991" target="_blank" title="【文博解盘】为你揭开布林带神秘的面纱">【文博解盘】为你揭开布林带神秘的面纱</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=346014" target="_blank" title="仅此一次机会，利润130个点">仅此一次机会，利润130个点</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=348081" target="_blank" title="金惠解盘：3.28 冻产实际意义不大，但是会影响市场的心里变化">金惠解盘：3.28 冻产实际意义不大，但是会影响市场的心里变化</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=344654" target="_blank" title="【非凡霸金】投资路上，心态很重要!">【非凡霸金】投资路上，心态很重要!</a></li>
+                                <li><a href="?s=thread&bid=2224&tid=344698" target="_blank" title="【轩辕道金】投资市场亏损的原因，实力在这，我在这等你">【轩辕道金】投资市场亏损的原因，实力在这，我在这等你</a></li>
+                            </ul>
+						</div>
+						<script type="text/javascript">
+		            	seajs.use('common',function()
+		            	{
+		            		var Sub_Show = new SFK.common.SubShowClass("none","onmouseover");
+		            		Sub_Show.addLabel("tab_sbar_01","blk_sbar_01");
+		            		Sub_Show.addLabel("tab_sbar_02","blk_sbar_02");
+		            	});
+		            	</script>-->
+					<!--blk_23 访问吧精华帖，关注吧精华帖 end-->
+					<!--</div>-->
+				<!--right_part start-->	                <div class="blk_14 blk_14_1106">
+    <div class="p04_r02">
+        <!-- publish_helper name='热门股吧' p_id='31' t_id='437' d_id='161' f_id='sp_f11283' -->
+        <h2 class="tit02"><span class="tit02_s">热门股吧</span><a href="http://guba.sina.com.cn/?s=channel&chid=1" target="_blank" class="a_more margin-right:1cm;" >更多</a></h2>
+        <div class="p04_r02_c">
+        <!-- publish_helper name='热门股吧'li中的<a>放的是数据 -->
+            <ul class="clearfix" style="padding-top:10px">
+		<li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sh000001">上证指数</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3">股民学校</a></li>
+                <li><a class="up" target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%D5%C7%CD%A3%D4%E7%D6%AA%B5%C0">涨停早知道</a></li>
+                
+                <li><a class="up" target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0&barType=2">名家论市</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%B9%C9%CA%D0%CA%B5%D5%BD">股市实战</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%B8%F6%B9%C9%BD%E2%B6%C1">个股解读</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%C4%DA%C4%BB%B4%AB%CE%C5">内幕传闻</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=ag0">白银期货</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%B9%C9%CA%D0%D0%A6%BB%B0">股市笑话</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%BA%CB%D0%C4%C4%DA%B2%CE">核心内参</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&bid=14668">股民故事</a></li>
+                <li><a class="up" target="_blank" href="http://guba.sina.com.cn/?s=bar&bid=15331">10倍牛股</a></li>
+
+                
+                <li><a class="up" target="_blank" href="http://guba.sina.com.cn/?s=bar&name=%CC%E2%B2%C4%CD%DA%BE%F2%BB%FA">题材挖掘机</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz002673%CE%F7%B2%BF%D6%A4%C8%AF">西部证券</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sh600519">贵州茅台</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sh601628">中国人寿</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz300002%C9%F1%D6%DD%CC%A9%D4%C0">神州泰岳</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/5072807994">大满贯股</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz300228">富瑞特装</a></li>
+                <li><a class="up" target="_blank" href="http://guba.sina.com.cn/u/1661526105">大盘的王者</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/2244291964">后知后觉</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/3731522652">獨醉深宵</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/5593667624">股艺汇</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/2484926557">红学堂</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1617732512">淘氣天尊	</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1434387020">玉名</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/3978463490">股市猛料</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/2964902827">股海牧童</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/3978567595">国君指仙</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sh600108">亚盛集团</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/3960628657">K线狙击手</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1777804832">飞马云天</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/5100562484">强子论市</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1561133085">天赋动力</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1581557932">荷叶</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz000680">山推股份</a></li>
+                
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1746704117">科德财经</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/u/1496992150">德财张晖</a></li>
+                <li><a target="_blank" href="http://guba.sina.com.cn/?s=bar&name=sz002344">海宁皮城</a></li>
+               
+
+
+                
+            </ul>
+        </div>
+        <!-- publish_helper_end -->
+    </div>
+</div>                </div>
+			<!--part_04 end-->
+			</div>
+			<div class='split_line_06'></div>
+                        <ins class="sinaads" data-ad-pdps="PDPS000000055134"></ins> <script> (function (d, s, id) { var s, n = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; s = d.createElement(s); s.id = id; s.setAttribute('charset', 'utf-8'); s.src = '//d' + Math.floor(0 + Math.random() * (9 - 0 + 1)) + '.sina.com.cn/litong/zhitou/sinaads/release/sinaads.js'; n.parentNode.insertBefore(s, n); })(document, 'script', 'sinaads-script'); (sinaads = window.sinaads || []).push({})</script>
+			<div class="blk_04">
+            <!--股吧牛人 start-->
+            <!--股吧牛人 start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span>新浪推荐</span></div></div>
+<div class='b_cont'>
+    <div class="weibo_list_01 clearfix" id='scroll_01'>
+    <!--焦点图片 start-->
+		    <!--焦点图片 end-->
+    </div>
+    <a href="javascript:;" title="上一个" class="arr_left" id="scroll_01_left"></a>
+    <a href="javascript:;" title="下一个" class="arr_right" id="scroll_01_right"></a>
+    <script type="text/javascript">
+	seajs.use('recommend');
+    	seajs.use('common',function()
+    	{
+    		var focusScroll_01 = new SFK.common.ScrollPic();
+    		focusScroll_01.scrollContId = "scroll_01"; //内容容器ID
+    		focusScroll_01.listType = "";//列表类型(number:数字，其它为空)
+    		focusScroll_01.listEvent = "onmouseover"; //切换事件
+    		focusScroll_01.frameWidth = 900;//显示框宽度
+    		focusScroll_01.pageWidth = 900; //翻页宽度
+    		focusScroll_01.upright = false; //垂直滚动
+    		focusScroll_01.speed = 10; //移动速度(单位毫秒，越小越快)
+    		focusScroll_01.space = 60; //每次移动像素(单位px，越大越快)
+    		focusScroll_01.autoPlay = false; //自动播放
+    		focusScroll_01.autoPlayTime = 5; //自动播放间隔时间(秒)
+    		focusScroll_01.circularly = true;
+    		focusScroll_01.initialize(); //初始化
+    		document.getElementById('scroll_01_left').onmousedown = function()
+    		{
+    			focusScroll_01.pre();
+    			return false;
+    		}
+    		document.getElementById('scroll_01_right').onmousedown = function()
+    		{
+    			focusScroll_01.next();
+    			return false;
+    		}
+    	})
+
+    	seajs.use('http://finance.sina.com.cn/guba/js/index.js');
+    </script>
+</div>    
+<!--股吧牛人 end-->    
+            <!--股吧牛人 end-->
+            </div>
+            <div class='part_05 clearfix'>
+            <!--part_05 start-->
+            	<div class='p_left'>
+            	<!--left_part start-->
+            		<div class="blk_05">
+                    <!--大盘走势 start-->
+                    <!--大盘走势 start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span><a href="http://finance.sina.com.cn/guba/dpfx/49.html" target='blank'>大盘走势</a></span></div><div class='tit_more'><span><a href="http://finance.sina.com.cn/guba/dpfx/49.html" target='blank'>更多>></a></span></div></div>
+<div class='b_cont'>
+    <ul class='list_02'>
+    	    	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%CA%D0%CA%B5%D5%BD" target='_blank'>[股市实战]</a>
+			<a href="/?s=thread&bid=2260&tid=517283&dpc=1" target='_blank'>尾盘跳水 反弹是否结束？</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh000001" target='_blank'>[上证指数]</a>
+			<a href="/?s=thread&bid=9279&tid=1106622&dpc=1" target='_blank'>市场反弹格局未变 震荡只是让你进场</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0" target='_blank'>[名家论市]</a>
+			<a href="/?s=thread&bid=14247&tid=240193&dpc=1" target='_blank'>振荡拉锯还将延续</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0" target='_blank'>[名家论市]</a>
+			<a href="/?s=thread&bid=14247&tid=240182&dpc=1" target='_blank'>变盘期 今日必须出现力度阳线</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%BA%C9%D2%B6%B2%CE%BF%BC" target='_blank'>[荷叶参考]</a>
+			<a href="/?s=thread&bid=13474&tid=2326&dpc=1" target='_blank'>社保基金加盟  进军蓝筹别迟疑</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0" target='_blank'>[名家论市]</a>
+			<a href="/?s=thread&bid=14247&tid=240181&dpc=1" target='_blank'>指数调整会影响反弹行情吗?</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0" target='_blank'>[名家论市]</a>
+			<a href="/?s=thread&bid=14247&tid=240188&dpc=1" target='_blank'>量能或成反弹的拦路虎</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%CC%E2%B2%C4%CD%DA%BE%F2%BB%FA" target='_blank'>[题材挖掘机]</a>
+			<a href="/?s=thread&bid=2285&tid=86964&dpc=1" target='_blank'>3000点争夺大战 吃饭行情呼之欲出</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh000001" target='_blank'>[上证指数]</a>
+			<a href="/?s=thread&bid=9279&tid=1106607&dpc=1" target='_blank'>冲高诱多 隐藏大动作？</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C3%FB%BC%D2%C2%DB%CA%D0" target='_blank'>[名家论市]</a>
+			<a href="/?s=thread&bid=14247&tid=240184&dpc=1" target='_blank'>短线还有回踩的必要</a>			
+		</li>
+		    </ul>
+</div>
+<!--大盘走势 end-->                    <!--大盘走势 end-->
+                    </div>
+                    <div class="blk_24">
+                    <!--板块题材 start-->
+                     <!--板块题材 start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span><a href="http://finance.sina.com.cn/guba/bktc/52.html" target='blank'>板块题材</a></span></div><div class='tit_more'><span><a href="http://finance.sina.com.cn/guba/bktc/52.html" target='blank'>更多>></a></span></div></div>
+<div class='b_cont'>
+    <ul class='list_02'>
+            	<li>
+			<a class='link_source' href="/?s=bar&name=%CC%E2%B2%C4%CD%DA%BE%F2%BB%FA" target='_blank'>[题材挖掘机]</a>
+			<a href="/?s=thread&bid=2285&tid=86997&dpc=1" target='_blank'>石化十三五系列规划下月发布 8股有望受益</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz000009" target='_blank'>[中国宝安]</a>
+			<a href="/?s=thread&bid=485&tid=344373&dpc=1" target='_blank'>石墨烯铅酸电池问世 电池行业迎来变革</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz300274" target='_blank'>[阳光电源]</a>
+			<a href="/?s=thread&bid=10285&tid=110376&dpc=1" target='_blank'>全球能源互联网大会将召开 彻底改变能源生态</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh600477" target='_blank'>[杭萧钢构]</a>
+			<a href="/?s=thread&bid=89&tid=196106&dpc=1" target='_blank'>杭州亚运会组委会将成立 当地公司或将受益</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh603611" target='_blank'>[诺力股份]</a>
+			<a href="/?s=thread&bid=16523&tid=34463&dpc=1" target='_blank'>菜鸟网络启动菜鸟联盟 智能物流成主要抓手</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz002607" target='_blank'>[亚夏汽车]</a>
+			<a href="/?s=thread&bid=10233&tid=106630&dpc=1" target='_blank'>汽车与零部件行业：二手车迎重大利好，两类上</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh600887" target='_blank'>[伊利股份]</a>
+			<a href="/?s=thread&bid=1482&tid=199236&dpc=1" target='_blank'>食品饮料行业周报：产业赢家价值显现</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz300027" target='_blank'>[华谊兄弟]</a>
+			<a href="/?s=thread&bid=1710&tid=345389&dpc=1" target='_blank'>传媒行业周报：腾讯互娱试水泛娱乐大集团模式</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh600195" target='_blank'>[中牧股份]</a>
+			<a href="/?s=thread&bid=1118&tid=125011&dpc=1" target='_blank'>农林牧渔行业：坚持养殖类主线，通胀预期下必</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz002672" target='_blank'>[东江环保]</a>
+			<a href="/?s=thread&bid=10392&tid=85209&dpc=1" target='_blank'>环保行业周报：博鳌论坛持续关注生态环保，治</a>			
+		</li>
+		    </ul>
+</div>
+<!--板块题材 end-->                    <!--板块题材 end-->
+                    </div>
+            	<!--left_part start-->	
+            	</div>
+            	<div class='p_center'>
+            	<!--center_part start-->
+            		<div class="blk_06">
+                    <!--个股精选 start-->
+                    <!--个股精选 start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span><a href="http://finance.sina.com.cn/guba/ggjh/1.html" target='blank'>个股精选</a></span></div><div class='tit_more'><span><a href="http://finance.sina.com.cn/guba/ggjh/1.html" target='blank'>更多>></a></span></div></div>
+<div class='b_cont'>
+    <ul class='list_02'>
+            	<li>
+			<a class='link_source' href="/?s=bar&name=sz002176" target='_blank'>[江特电机]</a>
+			<a href="/?s=thread&bid=1550&tid=148327&dpc=1" target='_blank'>江特电机年报净利微增 2016年目标净利增长13.</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz300291" target='_blank'>[华录百纳]</a>
+			<a href="/?s=thread&bid=10334&tid=111559&dpc=1" target='_blank'>华录百纳年报净利增长近八成 一季度预增三到</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh600055" target='_blank'>[华润万东]</a>
+			<a href="/?s=thread&bid=990&tid=122171&dpc=1" target='_blank'>华润万东旗下万里云获阿里健康增资2.25亿元</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz300111" target='_blank'>[向日葵]</a>
+			<a href="/?s=thread&bid=1996&tid=1077537&dpc=1" target='_blank'>向日葵定增募资12.5亿元 主投光伏电站项目</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz002616" target='_blank'>[长青集团]</a>
+			<a href="/?s=thread&bid=10265&tid=105343&dpc=1" target='_blank'>长青集团:机组加速投产,业绩持续高成长可期</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh600859" target='_blank'>[王府井]</a>
+			<a href="/?s=thread&bid=1454&tid=338235&dpc=1" target='_blank'>王府井:资产安全边际丰厚,关注定增及国企改革</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz000858" target='_blank'>[五粮液]</a>
+			<a href="/?s=thread&bid=869&tid=343002&dpc=1" target='_blank'>五粮液:预收账款创近两年新高,现金流同比高增</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh601601" target='_blank'>[中国太保]</a>
+			<a href="/?s=thread&bid=1584&tid=162269&dpc=1" target='_blank'>中国太保:利润高速增长,个险新保爆发</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sh601998" target='_blank'>[中信银行]</a>
+			<a href="/?s=thread&bid=393&tid=212893&dpc=1" target='_blank'>中信银行:贷款结构优化,拨备压力仍存</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=sz300373" target='_blank'>[扬杰科技]</a>
+			<a href="/?s=thread&bid=14783&tid=87528&dpc=1" target='_blank'>扬杰科技:战略布局碳化硅覆盖下游高增长新兴</a>			
+		</li>
+		    </ul>
+</div>
+<!--个股精选 end-->                    <!--个股精选 end-->
+                    </div>
+                    <div class="blk_25">
+                    <!--股民故事 start-->
+                    <!--股民故事 start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span><a href="http://finance.sina.com.cn/guba/gmgs/51.html" target='blank'>股民学校</a></span></div><div class='tit_more'><span><a href="http://finance.sina.com.cn/guba/gmgs/51.html" target='blank'>更多>></a></span></div></div>
+<div class='b_cont'>
+    <ul class='list_02'>
+            	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3" target='_blank'>[股民学校]</a>
+			<a href="/?s=thread&bid=13793&tid=84773&dpc=1" target='_blank'>“深套筹码”如何进行“坑底自救”</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C8%EB%CA%D0%D6%B8%C4%CF" target='_blank'>[入市指南]</a>
+			<a href="/?s=thread&bid=15799&tid=3081&dpc=1" target='_blank'>如何通过看基本面选出好股票</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C8%EB%CA%D0%D6%B8%C4%CF" target='_blank'>[入市指南]</a>
+			<a href="/?s=thread&bid=15799&tid=3080&dpc=1" target='_blank'>如何建立自己的股票池</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C8%EB%CA%D0%D6%B8%C4%CF" target='_blank'>[入市指南]</a>
+			<a href="/?s=thread&bid=15799&tid=3079&dpc=1" target='_blank'>小散在这个市场里一定要学的东西</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C8%EB%CA%D0%D6%B8%C4%CF" target='_blank'>[入市指南]</a>
+			<a href="/?s=thread&bid=15799&tid=3078&dpc=1" target='_blank'>如何判断股票走势</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%C8%EB%CA%D0%D6%B8%C4%CF" target='_blank'>[入市指南]</a>
+			<a href="/?s=thread&bid=15799&tid=3077&dpc=1" target='_blank'>股民必须牢记的十条法则</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3" target='_blank'>[股民学校]</a>
+			<a href="/?s=thread&bid=13793&tid=84711&dpc=1" target='_blank'>操作胜率最高的十条要领</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3" target='_blank'>[股民学校]</a>
+			<a href="/?s=thread&bid=13793&tid=84712&dpc=1" target='_blank'>怎么抓住超跌强势股?</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3" target='_blank'>[股民学校]</a>
+			<a href="/?s=thread&bid=13793&tid=84689&dpc=1" target='_blank'>高送转牛股的买入技巧</a>			
+		</li>
+		    	<li>
+			<a class='link_source' href="/?s=bar&name=%B9%C9%C3%F1%D1%A7%D0%A3" target='_blank'>[股民学校]</a>
+			<a href="/?s=thread&bid=13793&tid=84700&dpc=1" target='_blank'>10大出货最佳信号</a>			
+		</li>
+		    </ul>
+</div>
+<!--股民故事 end-->                    <!--股民故事 end-->
+                    </div>
+            	<!--center_part start-->	
+            	</div>
+            	<div class='p_right'>
+	            	<!--人气排行 start-->
+					<div class='blk_07'>
+    <div class='tit_01 clearfix'>
+        <div class='tit_span'><span>人气排行</span></div>
+        <div class='tit_tab'>
+            <span id='rank_tab_01'>总排行</span>|<span id='rank_tab_02'>日排行</span>
+        </div>
+    </div>
+        <div class='b_cont' id="popularityRanking">
+        <table width=100% cellpadding='0' cellspacing='0' class='table_01' id='rank_cont_01'>
+            <tr>
+                <th class='fisrt_th' width=25>作者</th>
+                <th width=90></th>
+                <th width=70 class='ta_left'>人气</th>
+                <th>关注</th>
+            </tr>
+            <tr><td colspan='4' class='tr_8'></td></tr>
+            			<tr>
+				<td><em class='number_em_01'>1</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="2244291964" href="/u/2244291964" target='_blank'>后知后觉股</a></td>
+	            <td class='color_gray ta_left'>193426454</td>
+	            <td><em class='icon_em em_focus_01' uid="2244291964">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_01'>2</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1654783185" href="/u/1654783185" target='_blank'>神光</a></td>
+	            <td class='color_gray ta_left'>63831551</td>
+	            <td><em class='icon_em em_focus_01' uid="1654783185">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_01'>3</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1830822897" href="/u/1830822897" target='_blank'>红利实战</a></td>
+	            <td class='color_gray ta_left'>36273076</td>
+	            <td><em class='icon_em em_focus_01' uid="1830822897">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>4</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1769851930" href="/u/1769851930" target='_blank'>量化博弈</a></td>
+	            <td class='color_gray ta_left'>28556270</td>
+	            <td><em class='icon_em em_focus_01' uid="1769851930">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>5</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1319941343" href="/u/1319941343" target='_blank'>牵牛尉</a></td>
+	            <td class='color_gray ta_left'>27021879</td>
+	            <td><em class='icon_em em_focus_01' uid="1319941343">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>6</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1661526105" href="/u/1661526105" target='_blank'>跑赢大盘的</a></td>
+	            <td class='color_gray ta_left'>25098395</td>
+	            <td><em class='icon_em em_focus_01' uid="1661526105">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>7</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1587965421" href="/u/1587965421" target='_blank'>买卖点吧老</a></td>
+	            <td class='color_gray ta_left'>18259784</td>
+	            <td><em class='icon_em em_focus_01' uid="1587965421">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>8</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3356839194" href="/u/3356839194" target='_blank'>新思维</a></td>
+	            <td class='color_gray ta_left'>16322707</td>
+	            <td><em class='icon_em em_focus_01' uid="3356839194">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>9</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5050482956" href="/u/5050482956" target='_blank'>天翊看盘</a></td>
+	            <td class='color_gray ta_left'>15092944</td>
+	            <td><em class='icon_em em_focus_01' uid="5050482956">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>10</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5591599037" href="/u/5591599037" target='_blank'>股市一枭雄</a></td>
+	            <td class='color_gray ta_left'>13726531</td>
+	            <td><em class='icon_em em_focus_01' uid="5591599037">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>11</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1680660801" href="/u/1680660801" target='_blank'>国强投资网</a></td>
+	            <td class='color_gray ta_left'>13030154</td>
+	            <td><em class='icon_em em_focus_01' uid="1680660801">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>12</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3603570725" href="/u/3603570725" target='_blank'>神光咨询</a></td>
+	            <td class='color_gray ta_left'>12498088</td>
+	            <td></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>13</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3731522652" href="/u/3731522652" target='_blank'>獨醉深宵</a></td>
+	            <td class='color_gray ta_left'>11447080</td>
+	            <td><em class='icon_em em_focus_01' uid="3731522652">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>14</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1434387020" href="/u/1434387020" target='_blank'>玉名</a></td>
+	            <td class='color_gray ta_left'>10811254</td>
+	            <td><em class='icon_em em_focus_01' uid="1434387020">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>15</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5124779237" href="/u/5124779237" target='_blank'>涨停火线</a></td>
+	            <td class='color_gray ta_left'>10757298</td>
+	            <td><em class='icon_em em_focus_01' uid="5124779237">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>16</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1986084535" href="/u/1986084535" target='_blank'>微操盘</a></td>
+	            <td class='color_gray ta_left'>10661450</td>
+	            <td><em class='icon_em em_focus_01' uid="1986084535">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>17</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3944545302" href="/u/3944545302" target='_blank'>黑马狙击手</a></td>
+	            <td class='color_gray ta_left'>9585291</td>
+	            <td><em class='icon_em em_focus_01' uid="3944545302">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>18</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3628137501" href="/u/3628137501" target='_blank'>神光投资内</a></td>
+	            <td class='color_gray ta_left'>9113393</td>
+	            <td><em class='icon_em em_focus_01' uid="3628137501">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>19</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1559760790" href="/u/1559760790" target='_blank'>一代天骄66</a></td>
+	            <td class='color_gray ta_left'>7897884</td>
+	            <td><em class='icon_em em_focus_01' uid="1559760790">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>20</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1239417764" href="/u/1239417764" target='_blank'>老乐说股</a></td>
+	            <td class='color_gray ta_left'>7769177</td>
+	            <td><em class='icon_em em_focus_01' uid="1239417764">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>21</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1658605145" href="/u/1658605145" target='_blank'>趋势引航</a></td>
+	            <td class='color_gray ta_left'>7190655</td>
+	            <td><em class='icon_em em_focus_01' uid="1658605145">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>22</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5072807994" href="/u/5072807994" target='_blank'>大满贯股</a></td>
+	            <td class='color_gray ta_left'>6783785</td>
+	            <td><em class='icon_em em_focus_01' uid="5072807994">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>23</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="2187572122" href="/u/2187572122" target='_blank'>小牛神</a></td>
+	            <td class='color_gray ta_left'>6579041</td>
+	            <td><em class='icon_em em_focus_01' uid="2187572122">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>24</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1420228292" href="/u/1420228292" target='_blank'>arh7766</a></td>
+	            <td class='color_gray ta_left'>6271233</td>
+	            <td><em class='icon_em em_focus_01' uid="1420228292">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>25</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1496992150" href="/u/1496992150" target='_blank'>德财张晖</a></td>
+	            <td class='color_gray ta_left'>5780246</td>
+	            <td><em class='icon_em em_focus_01' uid="1496992150">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>26</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1377494453" href="/u/1377494453" target='_blank'>盘古开天bl</a></td>
+	            <td class='color_gray ta_left'>5669720</td>
+	            <td><em class='icon_em em_focus_01' uid="1377494453">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>27</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1773146721" href="/u/1773146721" target='_blank'>财富哥</a></td>
+	            <td class='color_gray ta_left'>5560877</td>
+	            <td><em class='icon_em em_focus_01' uid="1773146721">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>28</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1293592040" href="/u/1293592040" target='_blank'>勤劳的农夫</a></td>
+	            <td class='color_gray ta_left'>5492470</td>
+	            <td><em class='icon_em em_focus_01' uid="1293592040">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>29</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3630640570" href="/u/3630640570" target='_blank'>东呈团队1</a></td>
+	            <td class='color_gray ta_left'>5474084</td>
+	            <td><em class='icon_em em_focus_01' uid="3630640570">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>30</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1230277940" href="/u/1230277940" target='_blank'>黄家茶社</a></td>
+	            <td class='color_gray ta_left'>5262621</td>
+	            <td><em class='icon_em em_focus_01' uid="1230277940">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>31</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1789788500" href="/u/1789788500" target='_blank'>範進入市</a></td>
+	            <td class='color_gray ta_left'>5144921</td>
+	            <td><em class='icon_em em_focus_01' uid="1789788500">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>32</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1891223733" href="/u/1891223733" target='_blank'>神仙看盘</a></td>
+	            <td class='color_gray ta_left'>5024943</td>
+	            <td><em class='icon_em em_focus_01' uid="1891223733">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>33</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1958200527" href="/u/1958200527" target='_blank'>旺角</a></td>
+	            <td class='color_gray ta_left'>5020891</td>
+	            <td><em class='icon_em em_focus_01' uid="1958200527">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>34</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1657143777" href="/u/1657143777" target='_blank'>东方老山羊</a></td>
+	            <td class='color_gray ta_left'>4989357</td>
+	            <td><em class='icon_em em_focus_01' uid="1657143777">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>35</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1561133085" href="/u/1561133085" target='_blank'>天赋动力</a></td>
+	            <td class='color_gray ta_left'>4981280</td>
+	            <td><em class='icon_em em_focus_01' uid="1561133085">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>36</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1503491352" href="/u/1503491352" target='_blank'>王彬看盘</a></td>
+	            <td class='color_gray ta_left'>4968332</td>
+	            <td><em class='icon_em em_focus_01' uid="1503491352">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>37</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3630134811" href="/u/3630134811" target='_blank'>问股堂</a></td>
+	            <td class='color_gray ta_left'>4832617</td>
+	            <td><em class='icon_em em_focus_01' uid="3630134811">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>38</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1306566320" href="/u/1306566320" target='_blank'>黄澜山</a></td>
+	            <td class='color_gray ta_left'>4819613</td>
+	            <td><em class='icon_em em_focus_01' uid="1306566320">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>39</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="3258701413" href="/u/3258701413" target='_blank'>涨停有道</a></td>
+	            <td class='color_gray ta_left'>4793538</td>
+	            <td><em class='icon_em em_focus_01' uid="3258701413">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>40</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5207057210" href="/u/5207057210" target='_blank'>源达主升浪</a></td>
+	            <td class='color_gray ta_left'>4431735</td>
+	            <td><em class='icon_em em_focus_01' uid="5207057210">+</em></td>
+			</tr>
+			        </table>
+        <table width=100% cellpadding='0' cellspacing='0' class='table_01' id='rank_cont_02'>
+            <tr>
+                <th class='fisrt_th' width=25>作者</th>
+                <th width=90></th>
+                <th width=70 class='ta_left'>人气</th>
+                <th>关注</th>
+            </tr>
+            <tr><td colspan='4' class='tr_8'></td></tr>
+            			<tr>
+				<td><em class='number_em_01'>1</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1658605145"  href="/u/1658605145" target='_blank'>趋势引航</a></td>
+	            <td class='color_gray ta_left'>15641</td>
+	            <td><em class='icon_em em_focus_01' uid="1658605145">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_01'>2</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5072807994"  href="/u/5072807994" target='_blank'>大满贯股</a></td>
+	            <td class='color_gray ta_left'>14977</td>
+	            <td><em class='icon_em em_focus_01' uid="5072807994">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_01'>3</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1043376640"  href="/u/1043376640" target='_blank'>平夫A</a></td>
+	            <td class='color_gray ta_left'>13201</td>
+	            <td><em class='icon_em em_focus_01' uid="1043376640">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>4</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1230277940"  href="/u/1230277940" target='_blank'>黄家茶社</a></td>
+	            <td class='color_gray ta_left'>12821</td>
+	            <td><em class='icon_em em_focus_01' uid="1230277940">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>5</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5615042452"  href="/u/5615042452" target='_blank'>颖颖加油20</a></td>
+	            <td class='color_gray ta_left'>11879</td>
+	            <td><em class='icon_em em_focus_01' uid="5615042452">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>6</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1716925395"  href="/u/1716925395" target='_blank'>金鹏</a></td>
+	            <td class='color_gray ta_left'>11363</td>
+	            <td><em class='icon_em em_focus_01' uid="1716925395">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>7</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="2828104114"  href="/u/2828104114" target='_blank'>叶玄论市</a></td>
+	            <td class='color_gray ta_left'>10858</td>
+	            <td><em class='icon_em em_focus_01' uid="2828104114">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>8</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750079124"  href="/u/5750079124" target='_blank'>把思念改变</a></td>
+	            <td class='color_gray ta_left'>10780</td>
+	            <td><em class='icon_em em_focus_01' uid="5750079124">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>9</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5617099525"  href="/u/5617099525" target='_blank'>论股者说</a></td>
+	            <td class='color_gray ta_left'>10730</td>
+	            <td><em class='icon_em em_focus_01' uid="5617099525">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>10</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751688777"  href="/u/5751688777" target='_blank'>满仓喜饮山</a></td>
+	            <td class='color_gray ta_left'>10126</td>
+	            <td><em class='icon_em em_focus_01' uid="5751688777">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>11</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751689385"  href="/u/5751689385" target='_blank'>千里故人说</a></td>
+	            <td class='color_gray ta_left'>10054</td>
+	            <td><em class='icon_em em_focus_01' uid="5751689385">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>12</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5617099339"  href="/u/5617099339" target='_blank'>股禅说市</a></td>
+	            <td class='color_gray ta_left'>9536</td>
+	            <td><em class='icon_em em_focus_01' uid="5617099339">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>13</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1789788500"  href="/u/1789788500" target='_blank'>範進入市</a></td>
+	            <td class='color_gray ta_left'>9049</td>
+	            <td><em class='icon_em em_focus_01' uid="1789788500">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>14</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750656074"  href="/u/5750656074" target='_blank'>为了孩子他</a></td>
+	            <td class='color_gray ta_left'>8594</td>
+	            <td><em class='icon_em em_focus_01' uid="5750656074">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>15</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1713769794"  href="/u/1713769794" target='_blank'>张中秦</a></td>
+	            <td class='color_gray ta_left'>8550</td>
+	            <td><em class='icon_em em_focus_01' uid="1713769794">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>16</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751706664"  href="/u/5751706664" target='_blank'>坚强妹子i</a></td>
+	            <td class='color_gray ta_left'>7854</td>
+	            <td><em class='icon_em em_focus_01' uid="5751706664">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>17</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750679607"  href="/u/5750679607" target='_blank'>夏洛股市特</a></td>
+	            <td class='color_gray ta_left'>7737</td>
+	            <td><em class='icon_em em_focus_01' uid="5750679607">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>18</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1596872871"  href="/u/1596872871" target='_blank'>先河论市</a></td>
+	            <td class='color_gray ta_left'>7421</td>
+	            <td><em class='icon_em em_focus_01' uid="1596872871">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>19</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1394379401"  href="/u/1394379401" target='_blank'>金鼎股战场</a></td>
+	            <td class='color_gray ta_left'>7289</td>
+	            <td><em class='icon_em em_focus_01' uid="1394379401">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>20</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="2423863464"  href="/u/2423863464" target='_blank'>呈点</a></td>
+	            <td class='color_gray ta_left'>7209</td>
+	            <td><em class='icon_em em_focus_01' uid="2423863464">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>21</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5803544806"  href="/u/5803544806" target='_blank'>用户580354</a></td>
+	            <td class='color_gray ta_left'>6902</td>
+	            <td><em class='icon_em em_focus_01' uid="5803544806">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>22</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750088914"  href="/u/5750088914" target='_blank'>大盘定人生</a></td>
+	            <td class='color_gray ta_left'>6681</td>
+	            <td><em class='icon_em em_focus_01' uid="5750088914">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>23</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1225004660"  href="/u/1225004660" target='_blank'>股海求生直</a></td>
+	            <td class='color_gray ta_left'>6492</td>
+	            <td><em class='icon_em em_focus_01' uid="1225004660">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>24</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750969753"  href="/u/5750969753" target='_blank'>寄情山水股</a></td>
+	            <td class='color_gray ta_left'>6299</td>
+	            <td><em class='icon_em em_focus_01' uid="5750969753">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>25</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5752018962"  href="/u/5752018962" target='_blank'>末红、未绿</a></td>
+	            <td class='color_gray ta_left'>6051</td>
+	            <td><em class='icon_em em_focus_01' uid="5752018962">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>26</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5752007092"  href="/u/5752007092" target='_blank'>欲尘清风来</a></td>
+	            <td class='color_gray ta_left'>5732</td>
+	            <td><em class='icon_em em_focus_01' uid="5752007092">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>27</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751998359"  href="/u/5751998359" target='_blank'>不听专家放</a></td>
+	            <td class='color_gray ta_left'>5660</td>
+	            <td><em class='icon_em em_focus_01' uid="5751998359">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>28</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751042520"  href="/u/5751042520" target='_blank'>清尊素影</a></td>
+	            <td class='color_gray ta_left'>5600</td>
+	            <td><em class='icon_em em_focus_01' uid="5751042520">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>29</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751012604"  href="/u/5751012604" target='_blank'>能力就是不</a></td>
+	            <td class='color_gray ta_left'>5577</td>
+	            <td><em class='icon_em em_focus_01' uid="5751012604">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>30</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750062511"  href="/u/5750062511" target='_blank'>闭上眼浮现</a></td>
+	            <td class='color_gray ta_left'>5437</td>
+	            <td><em class='icon_em em_focus_01' uid="5750062511">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>31</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1253930491"  href="/u/1253930491" target='_blank'>卜永明8</a></td>
+	            <td class='color_gray ta_left'>5426</td>
+	            <td><em class='icon_em em_focus_01' uid="1253930491">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>32</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751695917"  href="/u/5751695917" target='_blank'>诗情诗意湿</a></td>
+	            <td class='color_gray ta_left'>5417</td>
+	            <td><em class='icon_em em_focus_01' uid="5751695917">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>33</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750060559"  href="/u/5750060559" target='_blank'>股公子世无</a></td>
+	            <td class='color_gray ta_left'>5399</td>
+	            <td><em class='icon_em em_focus_01' uid="5750060559">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>34</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="1327359740"  href="/u/1327359740" target='_blank'>金池jinchi</a></td>
+	            <td class='color_gray ta_left'>5372</td>
+	            <td><em class='icon_em em_focus_01' uid="1327359740">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>35</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751028315"  href="/u/5751028315" target='_blank'>旧戏书牛市</a></td>
+	            <td class='color_gray ta_left'>5326</td>
+	            <td><em class='icon_em em_focus_01' uid="5751028315">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>36</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750990289"  href="/u/5750990289" target='_blank'>因为勇气所</a></td>
+	            <td class='color_gray ta_left'>5137</td>
+	            <td><em class='icon_em em_focus_01' uid="5750990289">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>37</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5616899289"  href="/u/5616899289" target='_blank'>疯狂的石头</a></td>
+	            <td class='color_gray ta_left'>5025</td>
+	            <td><em class='icon_em em_focus_01' uid="5616899289">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>38</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5750645394"  href="/u/5750645394" target='_blank'>一杯浊酒笑</a></td>
+	            <td class='color_gray ta_left'>4962</td>
+	            <td><em class='icon_em em_focus_01' uid="5750645394">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>39</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751689921"  href="/u/5751689921" target='_blank'>酒笙清栀等</a></td>
+	            <td class='color_gray ta_left'>4871</td>
+	            <td><em class='icon_em em_focus_01' uid="5751689921">+</em></td>
+			</tr>
+						<tr>
+				<td><em class='number_em_02'>40</em></td>
+				<td class='ta_left'><a  class="js_show_hoverCard" uid="5751702085"  href="/u/5751702085" target='_blank'>雁来音信无</a></td>
+	            <td class='color_gray ta_left'>4846</td>
+	            <td><em class='icon_em em_focus_01' uid="5751702085">+</em></td>
+			</tr>
+			        </table>
+    </div>
+    <script type="text/javascript">
+    	seajs.use('common',function()
+    	{
+    		var Sub_Show = new SFK.common.SubShowClass("none","onmouseover");
+    		Sub_Show.addLabel("rank_tab_01","rank_cont_01");
+    		Sub_Show.addLabel("rank_tab_02","rank_cont_02");
+    	});
+            	seajs.use('friendships',function()
+            	{
+            		var _btns = document.getElementById('popularityRanking').getElementsByTagName('em');
+            		var _uid;
+            		for(var i = 0,l = _btns.length;i < l;i++)
+            		{
+            			_uid = _btns[i].getAttribute('uid');
+            			if(_uid)
+            			{
+            				new SFK.friendships.widget.FollowBtn(_btns[i],_uid,{ cssY: 'em_focused_01',cssN: 'em_focus_01',cssM: 'em_focused_01' });
+            			}
+            		}
+            	});
+    </script>
+</div>	            	<!--人气排行end -->	
+            	</div>
+            	<div class='part_06 part_06_1106 clearfix'>
+	            <!--part_06 start-->
+	            	<div class='p_left p_left_1106'>
+	            	<!--left_part start-->
+	            		<div class='blk_P_01'>
+			                <div class='p_title_01'>
+			                    <h3>股吧风云榜</h3>
+			                </div>
+			                <div class='p_cont clearfix'>
+			                    <div class='pl_left'>
+			                        <div class='blk_08'>
+			                        <!--24小时回点击start-->
+			                        <!--24小时回点击start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span>24小时点击榜</span></div></div>
+<div class='b_cont'>
+	<table width=100% cellpadding='0' cellspacing='0' class='table_06'>
+    	<tr>
+        	<th width=35>排行</th>
+            <th class='ta_left'>标题</th>
+        </tr>
+        		<tr>
+			<td><em class='number_em_01'>1</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1104812&bid=9279" class="linkblack" target="_blank">暴风科技：VR龙头王者归来，将成新一代妖股</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_01'>2</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=381282&bid=134" class="linkblack" target="_blank">石墨烯可使肿瘤早期诊断效率提高10倍 5股或受</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_01'>3</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=98058&bid=13837" class="linkblack" target="_blank">挖掘即将爆发的牛股（03-28）</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>4</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=239379&bid=14247" class="linkblack" target="_blank">本周你可以这样操作</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>5</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1105518&bid=9279" class="linkblack" target="_blank">高送转行情未完 宝德股份有望再起一波</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>6</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=113548&bid=2160" class="linkblack" target="_blank">中海达：公司多项技术可运用在无人驾驶领域</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>7</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1105372&bid=9279" class="linkblack" target="_blank">热点快速切换 谁是下一个领头羊</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>8</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1104575&bid=9279" class="linkblack" target="_blank">金鼎财讯： 周末两重磅利好来袭，3000点志在</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>9</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=92394&bid=10457" class="linkblack" target="_blank">互联网+人工智能三年行动实施方案制订中 6股</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>10</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=239803&bid=14247" class="linkblack" target="_blank">调整到极致谁来打响反弹第一枪</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>11</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=86798&bid=2285" class="linkblack" target="_blank">恺英网络：正在准备上线VR游戏</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>12</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=7199&bid=2318" class="linkblack" target="_blank">淘气天尊：大盘回踩风险在午后！</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>13</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=115486&bid=10222" class="linkblack" target="_blank">全国职业教育工作会议30日召开 8股有望爆发</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>14</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1105258&bid=9279" class="linkblack" target="_blank">强子论市：金融股砸盘藏主力惊人意图 ！</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>15</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=86839&bid=2285" class="linkblack" target="_blank">神奇材料望破可再生储能难题 钨概念股站上风</a></td>
+		</tr>
+			</table>
+</div>
+<!--24小时回点击end-->				                    <!--24小时回点击end-->
+			                        </div>
+			                    </div>
+			                    <div class='pl_right'>
+			                        <div class='blk_09'>
+			                        <!--24小时回复榜start-->
+			                        <!--24小时回复榜start-->
+<div class='tit_01 clearfix'><div class='tit_span'><span>24小时回复榜</span></div></div>
+<div class='b_cont'>
+	<table width=100% cellpadding='0' cellspacing='0' class='table_06'>
+		<tr>
+			<th width=35>排行</th>
+			<th class='alignL'>标题</th>
+		</tr>
+				<tr>
+			<td><em class='number_em_01'>1</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=159497&bid=2229" class="linkblack" target="_blank">【证券机构建议：本轮上涨未结束 不要急于</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_01'>2</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=76827&bid=16600" class="linkblack" target="_blank">【第一妖股暴风科技复牌涨停 刘诗诗账面1</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_01'>3</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=159827&bid=2229" class="linkblack" target="_blank">【早盘特供】①石墨烯铅酸电池问世</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>4</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=158352&bid=2229" class="linkblack" target="_blank">大健康开始发力给题材新鲜血液</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>5</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=135818&bid=1504" class="linkblack" target="_blank">20160328/今年做张裕A不求人</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>6</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=159350&bid=2229" class="linkblack" target="_blank">【35股破净 23只市净率低于0.9】截</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>7</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=239641&bid=14247" class="linkblack" target="_blank">假突破后是否还有假突破？</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>8</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=158946&bid=2229" class="linkblack" target="_blank">A股主板越来越多的公司我不认识了</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>9</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1104575&bid=9279" class="linkblack" target="_blank">金鼎财讯： 周末两重磅利好来袭，3000点志在</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>10</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=1105302&bid=9279" class="linkblack" target="_blank">周二大盘走势预测及操作策略</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>11</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=757598&bid=95" class="linkblack" target="_blank">中国联通董事长王晓初和重庆市人民政府常务</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>12</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=76779&bid=16600" class="linkblack" target="_blank">3月28日</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>13</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=170460&bid=808" class="linkblack" target="_blank">广发证券首席经济学家刘煜辉表示：金融信用</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>14</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=76760&bid=16600" class="linkblack" target="_blank">暴风科技收购刘诗诗的稻草熊等三个公司之后</a></td>
+		</tr>
+				<tr>
+			<td><em class='number_em_02'>15</em></td>
+			<td class='alignL'><a href="/?s=thread&tid=159615&bid=2229" class="linkblack" target="_blank">影视娱乐:经过查证</a></td>
+		</tr>
+			</table>
+</div>
+<!--24小时回复榜end-->  
+			                        <!--24小时回复榜end-->
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+	            	<!--left_part start-->	
+	            	</div>
+	            <!--part_06 end-->
+	            </div>
+            <!--part_05 end-->
+            </div>
+		<!--merge 横通 0 end-->
+		</div>
+	<!--merge 总 0 end-->
+	<script type="text/javascript">
+			seajs.use('http://finance.sina.com.cn/guba/js/index.js');
+		</script>
+<!-- 二维码 begin --> 
+<script>
+/* 1,952,22 2013-09-17 18:18:52 */
+	(function(aClz,maxSize,co) {
+
+	// 添加样式
+	var loadStyle = function(s, id) {
+	    var doc = document;
+	    var sDom = doc.createElement("style");
+	    sDom.id = id;
+	    sDom.type = "text/css";
+	    sDom.styleSheet ? (sDom.styleSheet.cssText = s) : sDom.appendChild(doc.createTextNode(s));
+	    doc.getElementsByTagName("head")[0].appendChild(sDom);
+	    return sDom;
+	};
+	var newStyle = [];
+	newStyle.push('	.side-btns-2wm {width:110px;top: 350px;_top:expression(documentElement.scrollTop + 350);left: 50%;margin: 0 0 0 505px;position: fixed;_position:absolute;z-index: 0;overflow: hidden; font: 12px/22px Arial;color:#333;}');
+
+	newStyle.push('.side-btns-2wm em,.side-btns-2wm span{font-style: normal;font-weight: normal;line-height: 27px;}');
+	newStyle.push('.side-btns-2wm-img{color:#333; display:block;width:110px;background: #EBEBEB;line-height: 0;text-align: center;position: relative;zoom:1;}');
+	newStyle.push('.side-btns-2wm-img:link,.side-btns-2wm-img:visited{color:#333;text-decoration: none;}');
+	newStyle.push('.side-btns-2wm-img:hover,.side-btns-2wm-img:active{color:#333;text-decoration: none;background: #D1D1D1;}');
+	newStyle.push('.side-btns-2wm img{border: 0;display: block; margin:0 auto;padding: 0;}');
+	newStyle.push('.side-btns-2wm-close{width:40px;height: 18px;line-height: 80px;margin:0 0 0 70px;display:block;overflow: hidden;background: url(http://i0.sinaimg.cn/dy/deco/2013/0912/close.png) no-repeat;}');
+	newStyle.push('.side-btns-2wm-resize{display: none !important;}');
+	newStyle = newStyle.join('\n ');
+	loadStyle(newStyle,'style_dmcode');
+
+	var doc = document,
+		side = (function() {
+			var body = doc.body,
+				firstChild = body.firstChild,
+				wrap = doc.createElement('div');
+			wrap.className = 'side-btns-2wm';
+			wrap.style.display = 'none';
+			wrap.innerHTML = '<a class="side-btns-2wm-img"><em>扫描二维码</em> <img src="http://guba.sina.com.cn/images/h5.jpg" width="90"> <span>手机浏览新浪股吧</span> </a> <a href="javascript:;" class="side-btns-2wm-close" title="关闭" suda-uatrack="key=qr_code&value=finance_guba_qrcode_close">关闭</a>';
+			firstChild ? firstChild.parentNode.insertBefore(wrap, firstChild) : body.appendChild(wrap);
+			return wrap;
+		})(),
+		clz = side.className,
+		nClz = clz + ' ' + aClz,
+		cookieName = co.name || 'close_gubarightdmcode',
+		domain = co.domain || 'guba.sina.com.cn',
+		lnks = side.getElementsByTagName('a'),
+		close = lnks[lnks.length-1],
+		toggle = function(dis) {
+			side.style.display = dis;
+		}, addEvent = function(o, s, fn) {
+			if (o.attachEvent) {
+				o.attachEvent('on' + s, fn);
+			} else {
+				o.addEventListener(s, fn, false);
+			}
+			return o;
+		}, resize = function() {
+			var body = doc.documentElement || doc.body;
+			if (!body) {
+				return;
+			}
+			var width = body.offsetWidth;
+			if (width < maxSize) {
+				side.className = nClz;
+			} else {
+				side.className = clz;
+			}
+		};
+		// name, value, expire(hour), path, domain, secure
+		var cookie = (function() {var co = {}; co.getCookie = function(name) {name = name.replace(/([\.\[\]\$])/g, '\\\$1'); var rep = new RegExp(name + '=([^;]*)?;', 'i'); var co = document.cookie + ';'; var res = co.match(rep); if (res) {return unescape(res[1]) || ""; } else {return ""; } }; co.setCookie = function(name, value, expire, path, domain, secure) {var cstr = []; cstr.push(name + '=' + escape(value)); if (expire) {var dd = new Date(); var expires = dd.getTime() + expire * 3600000; dd.setTime(expires); cstr.push('expires=' + dd.toGMTString()); } if (path) {cstr.push('path=' + path); } if (domain) {cstr.push('domain=' + domain); } if (secure) {cstr.push(secure); } document.cookie = cstr.join(';'); }; co.deleteCookie = function(name) {document.cookie = name + '=;' + 'expires=Fri, 31 Dec 1999 23:59:59 GMT;'; }; return co; })();
+		var display = cookie.getCookie(cookieName);
+		if(display!=''){
+			toggle('none');
+			return;
+		}
+		toggle('block');
+		resize();
+		addEvent(window, 'resize', resize);
+		addEvent(close,'click',function(e){
+			toggle('none');
+			cookie.setCookie(cookieName,'1',15*24,'/',domain);
+			if(window.event){
+				window.event.returnValue = false;
+			}else{
+				e.preventDefault();
+			}
+		});
+
+	})('side-btns-2wm-resize',1230,{
+		name:'close_gubarightdmcode',				//cookie名
+		domain:'guba.sina.com.cn'		//domain 根据频道不同
+	});    
+    
+</script>    
+<!-- 二维码 end --> 
+<!-- 统计代码 -->
+<script type="text/javascript" src="http://www.sinaimg.cn/unipro/pub/suda_m_v629.js"></script>
+<script type="text/javascript">suds_init(1770,100.0000,1015,2);</script>
+<!-- 统计代码 -->
+<div class='footer'>
+    <div class="common_footer" id="common_footer">
+        <ul>
+            <li>客户服务热线：4006900000　　欢迎批评指正</li>
+            <li><a target="_blank" href="http://help.sina.com.cn/">常见问题解答</a>  <a target="_blank" href="http://net.china.cn/chinese/index.htm">互联网违法和不良信息举报</a> <a target="_blank" href="http://comment5.news.sina.com.cn/comment/skin/feedback.html?channel=ly&amp;newsid=237">新浪财经意见反馈留言板</a></li><li>
+            </li><li><a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://emarketing.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">会员注册</a> | <a href="http://help.sina.com.cn/">产品答疑</a></li>
+
+            <li>Copyright &copy;1996-2014 SINA Corporation, All Rights Reserved</li>
+            <li>新浪公司　<a target="_blank" href="http://www.sina.com.cn/intro/copyright.shtml">版权所有</a></li>
+        </ul>
+        <span class="mianze">新浪财经免费提供股票、基金、债券、外汇等行情数据以及其他资料均来自相关合作方，仅作为用户获取信息之目的，并不构成投资建议。<br>新浪财经以及其合作机构不为本页面提供信息的错误、残缺、延迟或因依靠此信息所采取的任何行动负责。市场有风险，投资需谨慎。</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+seajs.use('$',function()
+{
+  jQuery(document).ready(function(){
+     if(!jQuery.support.style&&jQuery.browser.msie&&(jQuery.browser.version==6.0)){
+        //ie6
+        var maxbWidth='550';
+          jQuery(".gubaimg_big").each(function(){
+                  var imgWidth=jQuery(this).width();
+                  if(imgWidth>maxbWidth){
+                      jQuery(this).css("width",maxbWidth);
+                    }
+              })
+          }
+      })
+})
+
+</script>
+<!-- SUDA_CODE_START -->
+<script type="text/javascript" charset="utf-8" src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script>
+<!-- SUDA_CODE_END -->
+<!--Adforward Begin:-->
+<IFRAME MARGINHEIGHT=0 MARGINWIDTH=0 FRAMEBORDER=0 WIDTH=1 HEIGHT=1 SCROLLING=NO SRC="http://1418.adsina.allyes.com/main/adfshow?user=AFP6_for_SINA|Finance|Finance_guba_zhengwen_pv&db=sina&border=0&local=yes">
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="http://1418.adsina.allyes.com/main/adfshow?user=AFP6_for_SINA|Finance|Finance_guba_zhengwen_pv&db=sina&local=yes&js=on"></SCRIPT>
+<NOSCRIPT><A HREF="http://1418.adsina.allyes.com/main/adfclick?user=AFP6_for_SINA|Finance|Finance_guba_zhengwen_pv&db=sina"><IMG SRC="http://1418.adsina.allyes.com/main/adfshow?user=AFP6_for_SINA|Finance|Finance_guba_zhengwen_pv&db=sina" WIDTH=1 HEIGHT=1 BORDER=0></a></NOSCRIPT></IFRAME>
+<!--Adforward End-->
+</body></html>

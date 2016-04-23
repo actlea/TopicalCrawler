@@ -28,6 +28,8 @@ supervisior7.load(path='/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/classifier')
 supervisior6=MultiClassifier('test-6-topic')
 supervisior6.load(path='/mnt/UbutunShare/TopicalCrawl/TopicalCrawl/classifier')
 
+
+'''
 class Downloader(CrawlSpider):
     name = 'download'
     headers = {
@@ -104,3 +106,4 @@ class Downloader(CrawlSpider):
 
 if __name__ == '__main__':
     pass
+'''

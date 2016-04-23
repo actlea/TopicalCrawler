@@ -57,8 +57,20 @@ class StopWords(object):
 import jieba
 # import jieba.analyse as analyse
 
-user_dict_path = os.path.join(resource_dir,'resources','text','user_dict.txt')
-stopwords_path = os.path.join(resource_dir,'resources','text','stopwords-zh.txt')
+
+def load_stopwords(stopword_path):
+    import jieba.analyse as analyse
+    stopwords_path = os.path.join(resource_dir, 'resources', 'text', 'stopwords-zh.txt')
+    analyse.set_stop_words(stopwords_path)
+
+
+def load_keywords(dic_path):
+    jieba.load_userdict(dic_path)
+
+
+# import jieba.analyse as analyse
+
+
 
 # jieba.load_userdict(user_dict_path)
 # analyse.set_stop_words(stopwords_path)
@@ -77,7 +89,7 @@ class StopWordsChinese(StopWords):
 
 
 def seg_text(content):
-    return jieba.cut(content, cut_all=False)
+    return jieba.cut(content, cut_all=True)
 
 
 

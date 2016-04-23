@@ -13,16 +13,22 @@ class TopicalcrawlItem(scrapy.Item):
     pass
 
 class UrlItem(Item):
-    parent_url = Field()
+    base_url = Field()
     url = Field()
     anchor_text = Field()
     neigb_text = Field()
-    interestness = Field()
-    label = Field()
+    priority = Field()
+    prob = Field()
+    node_weight = Field()
 
 class ResponseItem(Item):
     response = Field()
     count = Field()
+    level0 = Field()
+    level1 = Field()
+    graph = Field()
+    url_graph=Field()
+    classifiers=Field()
 
 class Document(Item):
     base_url = Field()

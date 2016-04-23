@@ -1,0 +1,1056 @@
+http://yule.sohu.com/drama.shtml
+
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<script type="text/javascript">
+  var pvinsight_page_ancestors = '204635152;219658521';
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=GBK" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="description" content="戏剧" />
+<meta name="keywords" content="戏剧" />
+<meta name="robots" content="all" />
+
+<title>戏剧 drama-搜狐娱乐</title>
+<script src="http://www.sohu.com/sohuflash_1.js" type="text/javascript"></script>
+<script src="http://www.sohu.com/sohuflash_1.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="http://css.sohu.com/upload/global1.3.css" />
+<link type="text/css" rel="stylesheet" href="http://tv.sohu.com/upload/drama110408/style.css" />
+<style>
+#logoFocus .center .l{background:url(http://i0.itc.cn/20150202/4c6_ec970b35_59e7_4f37_aa28_a283e80ea117_1.jpg)}
+
+#contentE .title{width:409px;height:41px;background:url(http://yule.sohu.com/upload/20100612dramacss/images/bg26.gif);padding:18px 0 0 316px}
+#contentE .left .boxA{background:#fff;width:723px;margin:0 auto;padding:22px 0}
+#contentE .left .boxA dl{width:720px;margin:0 auto;padding-bottom:15px;background:url(http://yule.sohu.com/upload/20100612dramacss/images/bg27.gif)}
+#contentE .left .boxA dd{width:180px;float:left}
+#contentE .left .boxA dd img{border:1px #fff solid;display:block;margin:0 auto 6px}
+#contentE .left .boxA dd a:hover img{border:1px #880014 solid}
+#contentE .left .listB{width:720px;margin:0 auto;background:url(http://yule.sohu.com/upload/20100612dramacss/images/bg27.gif)}
+#contentE .left .listB li{width:158px;padding-left:22px;float:left;line-height:26px;background-position:10px 1px}
+.listB{width:92%;margin:0 auto}
+.listB li{font:12px/22px '宋体';text-align:left;padding-left:12px;background:url(http://images.sohu.com/uiue/dot.gif) 0 -1px no-repeat;color:#333}
+#contentD .blockRA {margin: 3px auto 21px;}
+#contentD .blockRB {margin: 8px auto 9px;}
+#contentE{padding-bottom:0;}
+#contentA .tabs .wa {width: 111px;}
+#contentA .tabs .wb {width: 97px;}
+#contentA .tabs .wc {width: 68px;position:relative;}
+#contentA .tabs .wc a{position:absolute;right:0;top:16px;height:15px;line-height:15px;}
+</style>
+<script>var _sohuHD_page_ads= ['cp_1_1'];var category = "204635152;219658521";</script>
+<script type="text/javascript" src="http://js.tv.itc.cn/kao.js"></script>
+<script type="text/javascript" src="http://js.tv.itc.cn/gg.seed.js"></script>
+<script type="text/javascript" src="http://js.sohu.com/library/jquery1.4.2.js"></script>
+<script type="text/javascript" src=" http://js.sohu.com/focus/mdcfocus.min.js"></script>
+
+<script type="text/javascript">
+jQuery(function(jq){
+	//标签
+	function changeTab(lis, divs, nums){
+		lis.each(function(i){
+			var els = jq(this);
+			els.mouseenter(function(){
+				lis.removeClass("now");
+				divs.stop().hide();
+				jq(this).addClass("now");
+				divs.eq(i).show();
+			});
+		}).eq(nums).mouseenter();
+	}
+	var zxDivs = jq("#zxid");
+	changeTab(zxDivs.find(".menuB li"), zxDivs.find(".turn"), 0);
+	
+	var xjDivs = jq("#xjid");
+	changeTab(xjDivs.find(".menuC li"), xjDivs.find(".turn"), 0);
+	
+	//滚动
+	function autoScroll(rr, conr, lisr, btns, ts, unit, ft){
+		var conr0 = conr[0],
+			btnPr = btns.find('a.up'),
+			btnNr = btns.find('a.down'),
+			cls = "libg";
+		var ff = ft||false;
+		if (lisr.length <= 1) return;
+		
+		var pnumr = unit, numr = lisr.length;
+		if(numr <= pnumr) {btnWr.hide();return;}
+		
+		var owr = lisr[1].offsetLeft - lisr[0].offsetLeft, 
+			idxArear = [0, numr - pnumr],
+			idxr = 0;
+		
+		if(ff) owr = lisr[1].offsetTop - lisr[0].offsetTop;
+		
+		function updateNum(n){
+			if (n > idxArear[1] || n < idxArear[0]) {return;}
+			
+			btnPr[((n == 0)?'add':'remove') + 'Class']('uN');
+			btnNr[((n == idxArear[1])?'add':'remove') + 'Class']('dN');
+			
+			idxr = n;
+			if(ff){
+				conr.stop().animate({top: -n * owr},ts);
+			}else{
+				conr.stop().animate({left: -n * owr},ts);
+			}
+		}
+		
+		var scoll = function(){
+			if (idxr < idxArear[1]){
+				conr.stop().animate({left: owr * -(++idxr)},ts);
+			}
+			idxr = idxr>=idxArear[1] ? idxr=-1 : idxr;
+			var ss = window.setTimeout(function(){scoll()},5000);
+		}
+		var sss = window.setTimeout(function(){scoll()},2000);
+		
+		btnPr.click(function(ev){
+			updateNum(idxr - 1);
+			return false;
+		});
+		btnNr.click(function(ev){
+			updateNum(idxr + 1);
+			return false;
+		});
+	}
+	
+	var sa = jq("#scrollA");//id, 内容, 列表, 按钮, 时间, 个数
+	autoScroll(sa, sa.find(".con"), sa.find(".pic"), sa.find(".btns"), 300, 4);
+});
+</script>
+
+</head>
+<body>
+
+
+<div id="fullscreenad" style="DISPLAY: none">&nbsp;</div>
+<div class="area"><sohuadcode>
+</sohuadcode></div>
+<!-- 标准头 st -->
+<div class="area" id="channelNav"><a href="http://www.sohu.com/" target="_blank"><img src="http://images.sohu.com/uiue/sohu_logo/2005/sohu_logo2.gif" height="22" alt="搜狐网站" border="0" class="left" /></a><a href="http://yule.sohu.com/" target="_blank"><img src="http://images.sohu.com/uiue/sohu_logo/2006/yule_logo2.gif" height="22" alt="搜狐娱乐" border="0" class="left" /></a> <style>#channelNav ul {margin-right:5px;width:auto;clear:none}</style>
+<ul class="right">
+	<li><a href="http://www.sohu.com/">搜狐首页</a></li><li>-</li>
+	<li class="red"><a href="http://news.sohu.com/">新闻</a></li><li>-</li>
+	<li><a href="http://sports.sohu.com/">体育</a></li><li>-</li>
+	<li><a href="http://s.sohu.com/">S</a></li><li>-</li>
+	<li><a href="http://yule.sohu.com/">娱乐</a></li><li>-</li>
+	<li><a href="http://tv.sohu.com/yule/">V</a></li><li>-</li>
+	<li class="red"><a href="http://business.sohu.com/">财经</a></li><li>-</li>
+	<li><a href="http://it.sohu.com/">IT</a></li><li>-</li>
+	<li><a href="http://auto.sohu.com/">汽车</a></li><li>-</li>
+	<li><a href="http://www.focus.cn">房产</a></li><li>-</li>
+	<li><a href="http://women.sohu.com/">女人</a></li><li>-</li>
+	<li><a href="http://tv.sohu.com/">视频</a></li><li>-</li>
+	<li><a href="http://my.tv.sohu.com/">播客</a></li><li>-</li>
+	<li><a href="http://t.sohu.com/">微博</a></li><li>-</li>
+	<li><a href="http://login.mail.sohu.com/">邮件</a></li><li>-</li>
+	<li><a href="http://blog.sohu.com/">博客</a></li><li>-</li>
+	<li><a href="http://club.sohu.com/">BBS</a></li><li>-</li>
+	<li><a href="http://comment2.news.sohu.com/">我说两句</a></li><li>-</li>
+	<li class="end"><a href="http://www.sogou.com/">搜狗</a></li>
+</ul></div>
+<!-- 标准头 end -->
+
+<div id="cp_1_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('cp_1_1');
+</script>
+<div id="nav" class="area">
+	<ul>
+		<li><a href="http://yule.sohu.com/" target=_blank>首页</a></li>
+		<li><a href="http://yule.sohu.com/movie/" target=_blank>电影</a></li>
+		<li><a href="http://yule.sohu.com/tv/" target=_blank>电视</a></li>
+		<li><a href="http://music.yule.sohu.com/" target=_blank>音乐</a></li>
+		<li><a href="http://yule.sohu.com/drama.shtml" target=_blank>戏剧</a></li>
+		<li><a href="http://tv.sohu.com/" target=_blank>视频</a></li>
+		<li><a href="http://tv.sohu.com/show/" target=_blank>综艺</a></li>
+		<li><a href="http://blog.sohu.com/yule/" target=_blank>博客</a></li>
+		<li><a href="http://tv.sohu.com/s2013/yulebobao/" target=_blank>娱乐播报</a></li>
+		<li><a href="http://yule.sohu.com/hotpics/" target=_blank>大视野</a></li>
+		<li><a href="http://tv.sohu.com/live/" target=_blank>直播</a></li>
+		<li><a href="http://tv.sohu.com/hothdtv/" target=_blank>影视排行榜</a></li>
+		<li><a href="http://tv.sohu.com/hotmusic/" target=_blank>音乐榜</a></li>
+		<li><a href="http://yule.sohuhistory.com/" target=_blank>回顾</a></li>
+	</ul>
+</div>
+
+
+<div id="logoFocus" class="area">
+	<div class="left"><a href="#" target="_blank"><img src="http://tv.sohu.com/upload/drama110408/images/logo01.gif" width="155" height="45" alt="搜狐-戏剧频道" /></a></div>
+	<div class="center">
+		<div class="l">
+			<script>document.write(new Date().getDate())</script>
+		</div>
+		<div class="r">
+			<h3><a target="_blank" href="http://yule.sohu.com/20140428/n398902677.shtml">话剧搬上电视荧屏，你能接受么？</a></h3>
+<script type="text/javascript" language="javascript" src="http://club.survey.sohu.com/poll/result.php?poll_id=82835" ></script> 
+			<p><span><a href="http://club.survey.sohu.com/poll/single.php?p=82835&i=827592&t=156521&c=46&s=aef9f63eaddff4deb868" target="_blank">是</a></span><em>
+<!--选项1票数-->
+<script type="text/javascript">document.write(title["156521"]["item"]["827592"]["ballot"]);</script>
+<!--选项1票数end-->
+</em><span><a href="http://club.survey.sohu.com/poll/single.php?p=82835&i=827593&t=156521&c=46&s=9427d9df4cb2688ce7ba" target="_blank">否</a></span><em>
+<!--选项2票数-->
+<script type="text/javascript">document.write(title["156521"]["item"]["827593"]["ballot"]);</script>
+<!--选项2票数end-->
+</em><input type="button" onclick="window.open('http://club.survey.sohu.com/poll/result.php?poll_id=82835');" class="btn" value="我来点评" /></p>
+		</div>
+	</div>
+</div>
+
+<div id="subNav" class="area">
+<a href="http://yule.sohu.com/moderndrama.shtml" target=_blank>话剧</a>|<a href="http://yule.sohu.com/information.shtml" target=_blank>音乐会</a>|<a href="http://yule.sohu.com/traditionalopera.shtml" target=_blank>戏曲</a>|<a href="http://yule.sohu.com/dance/index.shtml" target=_blank>舞蹈</a>|<a href="http://yule.sohu.com/perform.shtml" target=_blank>综艺</a>|<a href="http://yule.sohu.com/wutsj/index.shtml" target=_blank>海外舞台</a>|<a href="http://yule.sohu.com/s2010/sohudramacehuahuizong/index.shtml" target=_blank>独家策划</a>|<a href="http://yule.sohu.com/commentary.shtml" target=_blank>评论</a>|<a href="http://so.tv.sohu.com/list_p1112_p2112202_p3_p4_p5_p6_p76_p8_p9.html" target=_blank>视频</a>|<a href="http://club.yule.sohu.com/l-drama-0-0-0-0.html" target=_blank>论坛</a>|<a href="http://yule.sohu.com/s2006/8555/s246599052/" target=_blank>专题</a>
+</div>
+
+<div id="contentA" class="area">
+	<div class="header"></div>
+	<div class="left">
+		<div id="flashcontent01">
+<embed type="application/x-shockwave-flash" src=" http://yule.sohu.com/upload/20100612dramacss/wm2.swf" width="662" height="359" id="sohuFlashID01" name="sohuFlashID01" bgcolor="#ffffff" quality="high" salign="t" flashvars="p= http://i2.itc.cn/20160105/29b_2f408533_a014_0395_83b9_358b324b4394_1.jpg|http://i0.itc.cn/20160310/29b_c6732fb7_e1b0_a235_3285_0f0bd4d4e5be_1.jpg|http://i0.itc.cn/20160201/29b_3b567ede_5072_7aae_cd20_1d8f12a03fa7_1.jpg|http://i1.itc.cn/20151116/29b_a844bea3_80fe_96c6_4d27_73c4420fd711_1.jpg|http://i2.itc.cn/20151119/29b_f5eb9a1a_3447_f5b1_d961_0112f9a6cdd3_1.jpg &amp;l=http://yule.sohu.com/s2015/cyjc2015/index.shtml|http://yule.sohu.com/20160310/n439972722.shtml|http://yule.sohu.com/s2016/ychs2016/index.shtml|http://yule.sohu.com/20151116/n426614113.shtml|http://yule.sohu.com/20151119/n427109916.shtml &amp;icon=舞剧《仓央嘉措》：以情作舞 以舞作传|陈忠实支持陕西人艺《白鹿原》|2016中国评剧院“迎春贺岁”演出季|《剧院魅影》媒体探班 舞台首次开放|将“演员”带回家的话剧《我们结婚吧》 &amp;icon2=中央民族歌舞团建团六十余年首部舞剧，真实还原仓央嘉措对家乡之爱、亲人之爱.....|话剧《白鹿原》，将于3月11日至13日在中国剧院演出，3月18日至20日在天桥艺术中心演出....|近年来，剧院坚持建院方针，继往开来，与时俱进。先后创作演出多部优秀剧目....|在经历了17个日夜后，《剧院魅影》终于完成了装台、调试、彩排等一系列动作，于11月15日组织了媒体探班....|《我们结婚吧》是一部关于爱、关于你我、关于婚姻的梦境、迷阵与真相的故事...."> </div>
+		<div class="l">
+			<div class="boxLA clear" id="colID">
+<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt01.gif" width="63" height="15" alt="重磅栏目" /></span></h2>
+<div class="menuA">
+<ul>
+<li class="now">戏剧专栏<em></em></li>
+<li>海外舞台<em></em></li>
+<li>独家策划<em></em></li>
+<li>行业人物<em></em></li>
+<li class="nobg">观演团<em></em></li>
+</ul>
+</div>
+<div class="cons">
+<div class="con">
+<div class="picF"><a href="http://yule.sohu.com/20140819/n403572198.shtml" target="_blank"><img src="http://i1.itc.cn/20140821/3072_71d80206_af5d_2052_ed7c_c41d7bb52f21_1.jpg
+" width="225" height="198" alt="" /></a></a><span><i></i><em><a href="http://yule.sohu.com/20140819/n403572198.shtml" target="_blank">解码国家大剧院的国际“朋友圈”
+</a></em></span></div>
+
+<div class="picF"><a href="http://yule.sohu.com/20140820/n403601888.shtml" target="_blank"><img src="http://i3.itc.cn/20140821/3072_99c88355_c118_c0d3_ae25_bbe4aca461c9_1.jpg" width="225" height="198" alt="" /></a><span><i></i><em><a href="http://yule.sohu.com/20140820/n403601888.shtml" target="_blank">阿尔巴尼斯：最温柔的蝴蝶夫人走了</a></em></span></div>
+
+<div class="picF"><a href="http://yule.sohu.com/s2014/2013shxjpd/index.shtml" target="_blank"><img src="http://i2.itc.cn/20140128/3072_c440c035_6943_32bc_b20d_0844add540b6_1.jpg
+
+" width="225" height="198" alt="" /></a><span><i></i><em><a href="http://yule.sohu.com/s2014/2013shxjpd/index.shtml" target="_blank">独家策划：2013演出行业盘点</a></em></span></div>
+
+<div class="picF"><a href="http://yule.sohu.com/s2010/sohuyulehangyerenwu/" target="_blank"><img src="http://i2.itc.cn/20140801/3072_7362cddf_ef93_7554_a43d_b17cb485ad38_1.jpg" width="225" height="198" alt="" /></a><span><i></i><em><a href="http://yule.sohu.com/s2010/sohuyulehangyerenwu/" target="_blank">专访：舞蹈界的“卡夫卡”侯莹</a></em></span></div>
+
+<div class="picF"><a href="http://yule.sohu.com/s2012/gyt/index.shtml" target="_blank"><img src=" http://i0.itc.cn/20120322/4c6_aea26590_37f0_3aab_2000_3a4717d4297e_4.jpg" width="225" height="198" alt="" /></a><span><i></i><em><a href="http://yule.sohu.com/s2012/gyt/index.shtml" target="_blank">《奔跑的灵魂》</a></em></span></div>
+</div>
+</div>
+</div>
+			<script type="text/javascript">
+			jQuery(function(jq){
+				var rr = jq("#colID"),
+					lis = rr.find(".menuA li"),
+					uls = rr.find(".con"),
+					p = 0, ph = 200;
+				
+				lis.each(function(idx, btn){
+					var  btn = jq(btn);
+					btn.mouseenter(function(){
+						if(idx!=p){
+							jq(lis[p]).removeClass("now");
+							btn.addClass("now");
+							p = idx;
+							uls.stop().animate({top:-ph*idx}, 300);
+						}
+					});
+				}).eq(0).mouseenter();
+			});
+			</script>
+			
+			<div class="boxLB box clear">
+				<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt02.gif" width="64" height="15" alt="行业人物" /></span><a href="http://yule.sohu.com/s2010/sohuyulehangyerenwu/" target="_blank">更多&gt;&gt;</a></h2>
+				<div class="pt">
+					<div><a href="http://yule.sohu.com/s2014/hyrwlqr/index.shtml" target="_blank"><img src="http://i3.itc.cn/20140801/4c6_9cf622af_63bf_cf5b_b030_b123c14cab72_1.jpg
+" width="95" height="77" alt="" /></a></div>
+                    <h4><a href="http://yule.sohu.com/s2014/hyrwlqr/index.shtml" target="_blank">动作音乐剧之父罗启仁：<br>开启舞台剧3D时代<br></a></h4>
+					<p>罗启仁曾经是美国丹佛著名的外科医生...<a href="http://yule.sohu.com/s2014/hyrwlqr/index.shtml" target="_blank">[详细]</a></p>
+				</div>
+                
+				<div class="list12">
+					<ul>
+						<li><a href="http://yule.sohu.com/s2014/hyrwhy/index.shtml" target="_blank">侯莹：《涂图》颠覆了世界对中国现代舞的认识</a></li>
+						<li><a href="http://yule.sohu.com/20140715/n402260492.shtml" target="_blank">刘大毅：中国人的视角诠释欢乐的《小王子》</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="boxLC box clear">
+				<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt03.gif" width="64" height="15" alt="观演活动" /></span></h2>
+				<h3>搜狐娱乐网友评审团 观演报告</h3>
+				<div class="pt">
+					<div><a href="http://yule.sohu.com/s2012/gyt/index.shtml" target="_blank"><img src="http://i0.itc.cn/20120308/2b08_8f817b3e_c35b_8334_208b_560f2c4e8f9c_1.jpg" width="95" height="70" alt="" /></a></div>
+					<h4>《奔跑的灵魂》：<span>8.5分</span></h4>
+					<p>倾听灵魂 别遗忘了爱情</p>
+					<p class="blank5"></p>
+                    <h4>《九种时刻》：<span>7.5分</span></h4>
+					<p>灵光一闪的九个创意灵感</p>
+					</div>
+				<div class="list12">
+					<ul>
+						<li><a href="http://yule.sohu.com/s2011/guanyantuan/index.shtml" target="_blank">《舞悦内蒙古》：浓缩蒙族舞蹈艺术史 8.5分</a></li>
+                        <li><a href="http://yule.sohu.com/s2011/guanyantuan/index.shtml" target="_blank">歌剧《红河谷》：《红河谷》再现经典 9分</a></li>
+						
+						
+					</ul>
+				</div>
+			</div>
+			
+			<div class="boxLD box clear">
+				<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt04.gif" width="64" height="15" alt="网友互助" /></span></h2>
+				<div class="list12">
+					<ul>
+
+<li><a href="http://t.sohu.com/event/50305" target="_blank">抢票开始：1月24日“新春之夜”综艺晚会<img src="http://tv.sohu.com/upload/drama110408/images/pic01.gif" width="26" height="11" alt="" /><em></em></a></li>
+
+<li><a href="http://t.sohu.com/event/49882?qq-pf-to=pcqq.group" target="_blank">抢票结束：12月30日《中国之声》新年音乐会<em></em></a></li>
+
+					</ul>
+				</div>
+				<div class="com clear">
+					<div class="comL">
+						<div class="pic"><a href="http://drama.t.sohu.com/" target="_blank"><img src="http://tv.sohu.com/upload/drama110408/images/logo02.gif" width="59" height="59" alt="搜狐戏剧演出" /></a></div>
+						<div class="gz"><a href="http://t.sohu.com/index.jsp?invid=58511730" target="_blank">关注 </a></div>
+					</div>
+					<div class="comR">
+					
+			<script type="text/javascript" src="http://js.sohu.com/passport/pp18030_25.js"></script>
+<script type="text/javascript" src="http://comment.news.sohu.com/upload/cmtfrag/login/news_comment_extention.js "></script>
+<div id="CMT_wrapper_right"></div>
+<script type="text/javascript">
+         CMT_extention.init({
+                   id: 'CMT_wrapper_right',//回填登陆评论的Node的ID
+                   topicId: '305621175'//专题ID
+         });
+</script>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="r">
+			<div class="news"> 
+
+ <h1><a href="http://yule.sohu.com/20150109/n407661650.shtml" target="_blank">辽宁人艺《祖传秘方》今日登中戏舞台</a></h1> 
+</div> 
+<div class="news">
+  <p>[<a href="http://yule.sohu.com/20150107/n407601114.shtml" target="_blank">辽艺打造关东版《大宅门》</a>][<a href="http://yule.sohu.com/20141224/n407235990.shtml" target="_blank">开年大戏引广泛关注</a>]</p> 
+ <p>[<a href="http://tv.sohu.com/20141224/n407237814.shtml" target="_blank">两年磨一剑排品牌大戏<img alt="Video" src="http://images.sohu.com/uiue/vd.gif " /></a>][<a href="http://yule.sohu.com/20141219/n407111987.shtml" target="_blank">“强势阵容”创新经典</a>]</p>
+</div>
+
+<div class="news"> 
+<h1><a href="http://yule.sohu.com/20150105/n407540231.shtml" target="_blank">[评论]查明哲：用激情与执着走向人民</a></h1> 
+ <p>[<a href="http://yule.sohu.com/20150104/n407510701.shtml" target="_blank">舞剧《红楼梦》评论：用诗意的舞蹈呈现人间绝唱</a>]</p>  
+</div> 
+<div class="news"> 
+<h1><a href="http://yule.sohu.com/20140729/n402857976.shtml" target="_blank">[海外]冈田将生首次演绎同性恋舞台剧</a></h1> 
+</div> 
+<div class="boxRA clear"> 
+ <strong><font color="#990000">视频</font></strong>[ 
+ <a href="http://tv.sohu.com/20140626/n401409106.shtml" target="_blank"><font color="#990000">俄罗斯国家大马戏团来袭 宣传片抢鲜看</font><img alt="Video" src="http://images.sohu.com/uiue/vd.gif " /></a>] 
+</div>
+			
+			<div class="boxRB clear">
+				<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt05.gif" width="64" height="15" alt="热点新闻" /></span><a href="http://yule.sohu.com/trends.shtml" target="_blank">更多&gt;&gt;</a></h2>
+				<div class="list14">
+					<ul><li><a href='http://yule.sohu.com/20160310/n439972722.shtml' target='_blank'>陈忠实不要一分版权费 支持陕西人艺《白鹿原》</a></li>
+<li><a href='http://yule.sohu.com/20160304/n439371789.shtml' target='_blank'>《兄弟别闹》开创先河 高晓攀诠释无兄弟不青春</a></li>
+<li><a href='http://yule.sohu.com/20160301/n439006409.shtml' target='_blank'>高晓攀潜心钻研作品 被迫身陷“兄弟互撕”</a></li>
+<li><a href='http://yule.sohu.com/20160229/n438858293.shtml' target='_blank'>专访人生冲动两部曲导演：说尽酸甜苦辣事</a></li>
+<li><a href='http://yule.sohu.com/20151230/n433012521.shtml' target='_blank'>苗阜王声携新段子“爆笑”京城 演出正式预售</a></li>
+<li><a href='http://yule.sohu.com/20151223/n432328370.shtml' target='_blank'>《小王子》陪你圣诞跨年 被誉书迷嘉年华</a></li>
+<li><a href='http://yule.sohu.com/20151221/n432041309.shtml' target='_blank'>《幸福年》圣诞开演 每个观众将为自己点赞</a></li>
+<li><a href='http://yule.sohu.com/20151124/n427905528.shtml' target='_blank'>粤剧快闪惊艳上海滩 游戏与传统结合大放异彩</a></li>
+<li><a href='http://yule.sohu.com/20151116/n426614113.shtml' target='_blank'>《剧院魅影》北京媒体探班 舞台首次对外开放</a></li>
+<li><a href='http://yule.sohu.com/20151110/n425931478.shtml' target='_blank'>《剧院魅影》北京装台用时缩短 开演进入倒计时</a></li>
+</ul>
+				</div>
+			</div>
+			
+			<div class="boxRC clear">
+				<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt06.gif" width="33" height="15" alt="评论" /></span><a href="http://yule.sohu.com/commentary.shtml" target="_blank">更多&gt;&gt;</a></h2>
+				<div class="list14">
+					<ul><li><a href='http://yule.sohu.com/20150717/n416984412.shtml' target='_blank'>制作人刘大毅：孩子们，拿什么拯救你？</a></li>
+<li><a href='http://yule.sohu.com/20150119/n407893013.shtml' target='_blank'>光明日报：话剧类型趋向多样 原创亟待突围</a></li>
+<li><a href='http://yule.sohu.com/20150119/n407892928.shtml' target='_blank'>国话三出经典剧目复排演出 话剧经典魅力永恒</a></li>
+<li><a href='http://yule.sohu.com/20150106/n407581619.shtml' target='_blank'>平和心态看待“粉丝戏剧”：别骂杀也别捧杀</a></li>
+<li><a href='http://yule.sohu.com/20150105/n407540589.shtml' target='_blank'>8版本《牡丹亭》：牡丹虽好是否“春色如许”</a></li>
+</ul>
+				</div>
+			</div>
+			
+			<div class="boxRD clear" id="scrollA">
+				<h2><span><img alt=合作联盟 src="http://tv.sohu.com/upload/drama110408/images/tt07.gif" width=64 height=15></span></h2>
+<div class="cons">
+<div class="con">
+<div class="pic"><a href="http://yule.sohu.com/s2010/baolijuyuan/index.shtml" target="_blank"><img alt="" src="http://i3.itc.cn/20110418/4c6_2d0a03cb_db68_8177_e5ef_95e4373fabfc_4.jpg" width=59 height=59></a><span><a href="http://yule.sohu.com/s2010/baolijuyuan/index.shtml" target="_blank">保利剧院</a></span></div>
+<div class="pic"><a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank"><img alt="" src="http://i2.itc.cn/20110418/4c6_2d0a03cb_db68_8177_e5ef_95e4373fabfc_3.jpg" width=59 height=59></a><span><a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank">国家大剧院</a></span></div>
+<div class="pic"><a href="http://yule.sohu.com/s2007/mlfdjy/" target="_blank"><img alt="" src="http://i1.itc.cn/20110418/4c6_2d0a03cb_db68_8177_e5ef_95e4373fabfc_5.jpg" width=59 height=59></a><span><a href="http://yule.sohu.com/s2007/mlfdjy/" target="_blank">梅兰芳大剧院</a></span></div>
+<div class="pic"><a href="http://yule.sohu.com/s2009/fanxingxijucun/" target="_blank"><img alt="" src="http://i3.itc.cn/20110418/4c6_2d0a03cb_db68_8177_e5ef_95e4373fabfc_6.jpg" width=59 height=59></a><span><a href="http://yule.sohu.com/s2009/fanxingxijucun/" target="_blank">繁星戏剧村</a></span></div>
+<div class="pic"><a href="http://www.228.com.cn/index.html" target="_blank"><img alt="" src="http://i0.itc.cn/20130805/3072_9b314279_8e48_28d2_2372_03e665e3998c_1.jpg" width=59 height=59></a><span><a href="http://www.228.com.cn/index.html" target="_blank">永乐票务</a></span></div>
+<div class="pic"><a href="http://yule.sohu.com/20100622/n272987635.shtml" target="_blank"><img alt="" src="http://i1.itc.cn/20110418/4c6_48a07247_24c1_45c4_d156_c05517f5adf2_4.jpg" width=59 height=59></a><span><a href="http://yule.sohu.com/20100622/n272987635.shtml" target="_blank">北展剧场</a></span></div>
+<div class="pic"><a href="http://www.puppetchina.com/" target="_blank"><img alt="" src="http://i3.itc.cn/20110418/4c6_48a07247_24c1_45c4_d156_c05517f5adf2_3.jpg" width=59 height=59></a><span><a href="http://www.puppetchina.com/" target="_blank">中国木偶剧院</a></span></div>
+<div class="pic"><a href="http://www.t3.com.cn/" target="_blank"><img alt="" src="http://i3.itc.cn/20130523/4c6_0585e18e_dd68_85db_0b36_76996f455eda_1.jpg" width=59 height=59></a><span><a href="http://www.t3.com.cn/" target="_blank">中演票务通</a></span></div>
+<div class="pic"><a href="http://www.changantheater.com/" target="_blank"><img alt="" src="http://i0.itc.cn/20110418/4c6_48a07247_24c1_45c4_d156_c05517f5adf2_2.jpg" width=59 height=59></a><span><a href="http://www.changantheater.com/" target="_blank">长安大戏院</a></span></div>
+<div class="pic"><a href="http://www.piaocn.com/" target="_blank"><img alt="" src="http://i3.itc.cn/20141216/4c6_5b0398cd_137e_613e_8b58_39451d82c1f9_1.jpg" width=59 height=59></a><span><a href="www.shpgt.com" target="_blank">上海保利剧院</a></span></div>
+<div class="pic"><a href="www.shpgt.com" target="_blank"><img alt="" src="http://i3.itc.cn/20110418/4c6_8de6047a_4da6_f1cb_c639_5d4b5dd35735_1.png" width=59 height=59></a><span><a href="http://www.cnquyi.org/cn/" target="_blank">中国曲协</a></span></div>
+<div class="pic"><a href="http://www.tjconcerthall.com/" target="_blank"><img alt="" src="http://i3.itc.cn/20110422/2b08_7365c769_e9e8_04df_9b35_9b457c73a283_1.jpg" width=59 height=59></a><span><a href="http://www.piaocn.com/" target="_blank">天津音乐厅</a></span></div>
+<div class="pic"><a href="http://www.fjdjy.com/" target="_blank"><img alt="" src="http://i1.itc.cn/20110421/2b08_a832f257_a6a8_f684_5032_463c254ce040_1.jpg" width=59 height=59></a><span><a href="http://www.fjdjy.com/" target="_blank">福建大剧院</a></span></div></div></div>
+<div class="btns"><a class="up" href="javascript:void(0)"></a><a class="down" href="javascript:void(0)"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="blockRA clear" id="zxid">
+			<div class="menuB">
+<ul>
+<li class="now">北京</li>
+<li>上海</li>
+<li>广东</li></ul></div>
+<div class="turn clear">
+<div class="tabs">
+<p><span>演出剧目</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>地点</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>时间</span></p>
+
+
+
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-66737896.html?source=shxj&ozs=226" target="_blank">中国圣诞《如梦之梦》</a></div>
+<div class="wb">保利剧院</div>
+<div class="wc">12.26-27<a href="http://www.228.com.cn/ticket-66737896.html?source=shxj&ozs=226" target="_blank">订</a></div>
+</div>
+
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-62782312.html?source=shxj&ozs=226" target="_blank">音乐剧《Q大道》</a></div>
+<div class="wb">海淀剧院</div>
+<div class="wc">10.30-11.1<a href="http://www.228.com.cn/ticket-62782312.html?source=shxj&ozs=226" target="_blank">订</a></div>
+</div>
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-68814237.html?source=shxj&ozs=226" target="_blank">《仙剑奇侠传》</a></div>
+<div class="wb">保利剧院</div>
+<div class="wc">10.14-17<a href="http://www.228.com.cn/ticket-68814237.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-62284326.html" target="_blank">《剧院魅影》</a></div>
+<div class="wb">天桥艺术中心</div>
+<div class="wc">11.17-12.20<a href="http://www.228.com.cn/ticket-62284326.html" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-72140204.html?source=shxj&ozs=226" target="_blank">《女仆》</a></div>
+<div class="wb">蜂巢剧场</div>
+<div class="wc">10.14-31<a href="http://www.228.com.cn/ticket-72140204.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-64543994.html?source=shxj&ozs=226" target="_blank">《台北上午零时》</a></div>
+<div class="wb">保利剧院</div>
+<div class="wc">10.28-31<a href="http://www.228.com.cn/ticket-64543994.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-71456045.html?source=shxj&ozs=226" target="_blank">话剧《桃姐》</a></div>
+<div class="wb">国家大剧院</div>
+<div class="wc">11.27-28<a href="http://www.228.com.cn/ticket-71456045.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+</div></div>
+
+
+
+<div class="turn clear">
+<div class="tabs">
+<p><span>演出剧目</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>地点</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>时间</span></p>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-62103452.html?source=shxj&ozs=2266" target="_blank">音乐剧《Q大道》</a></div>
+<div class="wb">ET聚场</div>
+<div class="wc">9.25-10.25<a href="http://www.228.com.cn/ticket-62103452.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-67044322.html?source=shxj&ozs=226" target="_blank">《万圣节游戏》</a></div>
+<div class="wb">兰心大戏院</div>
+<div class="wc">10.29-11.1<a href="http://www.228.com.cn/ticket-67044322.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-70569133.html?source=shxj&ozs=226" target="_blank">《最后14堂星期二的课》</a></div>
+<div class="wb">东方艺术中心</div>
+<div class="wc">11.27-28<a href="http://www.228.com.cn/ticket-70569133.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-70503539.html?source=shxj&ozs=226" target="_blank">莎士比亚《驯悍记》</a></div>
+<div class="wb">兰心大戏院</div>
+<div class="wc">10.27<a href="http://www.228.com.cn/ticket-70503539.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-63091619.html?source=shxj&ozs=226" target="_blank">《因味爱，所以爱》 
+</a></div>
+<div class="wb">ET聚场</div>
+<div class="wc">10.29-11.7<a href="http://www.228.com.cn/ticket-63091619.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-67042453.html?source=shxj&ozs=226" target="_blank">《致我们终将逝去的青春》</a></div>
+<div class="wb">东方艺术中心</div>
+<div class="wc">12.8-13<a href="http://www.228.com.cn/ticket-67042453.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-62131634.html?source=shxj&ozs=226" target="_blank">《捕鼠器》</a></div>
+<div class="wb">新光悬疑剧场</div>
+<div class="wc">9.2-12.6<a href="http://www.228.com.cn/ticket-62131634.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+
+
+
+
+
+
+
+
+</div></div>
+<div class="turn clear">
+<div class="tabs">
+<p><span>演出剧目</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>地点</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>时间</span></p>
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-62709596.html" target="_blank">《剧院魅影》</a></div>
+<div class="wb">广州大剧院</div>
+<div class="wc">9.22-10.10<a href="http://www.228.com.cn/ticket-62709596.html" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-70537975.html?source=shxj&ozs=226" target="_blank">话剧《金锁记》</a></div>
+<div class="wb">黄花岗剧院</div>
+<div class="wc">12.11-12<a href="http://www.228.com.cn/ticket-70537975.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-67217264.html?source=shxj&ozs=226" target="_blank">《冬之旅》</a></div>
+<div class="wb">友谊剧院</div>
+<div class="wc">11.6-7<a href="http://www.228.com.cn/ticket-67217264.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-69291258.html?source=shxj&ozs=226" target="_blank">《红楼梦》</a></div>
+<div class="wb">广州大剧院</div>
+<div class="wc">11.28-29<a href="http://www.228.com.cn/ticket-69291258.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-70285157.html?source=shxj&ozs=226" target="_blank">《弗兰肯斯坦》</a></div>
+<div class="wb">星海音乐厅</div>
+<div class="wc">11.27-28<a href="http://www.228.com.cn/ticket-70285157.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-70258060.html?source=shxj&ozs=227" target="_blank">《阿翔》</a></div>
+<div class="wb">友谊剧院</div>
+<div class="wc">10.30-31<a href="http://www.228.com.cn/ticket-70258060.html?source=shxj&ozs=227" target="_blank">订</a></div></div>
+
+
+<div class="tab clear">
+<div class="wa"><a href="http://www.228.com.cn/ticket-66331998.html?source=shxj&ozs=226" target="_blank">莫扎特歌剧《魔笛》</a></div>
+<div class="wb">广州大剧院</div>
+<div class="wc">10.30-11.1<a href="http://www.228.com.cn/ticket-66331998.html?source=shxj&ozs=226" target="_blank">订</a></div></div>
+
+
+
+</div></div>
+		</div>
+		<script>
+		jQuery(function(jq){
+			var lis = jq("#zxid .turn .tab");
+			lis.each(function(i){
+				var els = jq(this);
+				els.find(".wa em").css({"left":els.find(".wa a").html().length*12-12+"px"});
+			});
+		});
+		</script>
+		
+		<div class="blockRB clear">
+			<h2><span><img alt=独家策划 src="http://tv.sohu.com/upload/drama110408/images/tt08.gif" width=64 height=15></span><a href="http://yule.sohu.com/s2010/sohudramacehuahuizong/index.shtml" target="_blank">更多&gt;&gt;</a></h2>
+<div class="pic"><a href="http://yule.sohu.com/s2014/wzxjjgl/index.shtml" target="_blank"><img alt=2014乌镇戏剧节全攻略 src="http://i0.itc.cn/20141118/4c6_1a076079_f987_158f_195a_0774abccdf4a_1.jpg" width=262 height=131></a></div>
+<div class="list12">
+<ul>
+<li><a href="http://yule.sohu.com/s2014/fkdst2/index.shtml" target="_blank">策划：疯狂电视台2选秀风云</a></li>
+<li><a href="http://yule.sohu.com/s2014/chwsznhw/index.shtml" target="_blank">策划：两段“往事”：不止回味</a></li>
+</ul></div>
+		</div>
+		
+		<div class="blockRC clear" id="xjid">
+			<div class="menuC">
+				<ul>
+					<li class="now">独立剧评<em></em></li>
+					<li class="nobg">戏剧专栏<em></em></li>
+				</ul>
+			</div>
+			<div class="turn clear">
+				<div class="pt">
+					<div><a href="http://yule.sohu.com/20120131/n333330486.shtml" target="_blank"><img src="http://i1.itc.cn/20120213/4c6_c7a0afda_8be6_95c2_a85b_259cde603604_1.jpg" width="95" height="77" alt="" /></a></div>
+					<h4><a href="http://yule.sohu.com/20120131/n333330486.shtml" target="_blank">乐评人张喵哥<br></a><a href="http://yule.sohu.com/20120131/n333330486.shtml" target="_blank"> 郎朗李云迪：骂杀与捧杀</a></h4>
+					<p>近来网上打假诽谤传得沸沸扬扬，比如方...<a href="http://yule.sohu.com/20120131/n333330486.shtml" target="_blank">[详细]</a></p>
+				</div>
+				<div class="list12">
+					<ul>
+                        <li><a href="http://yule.sohu.com/20120202/n333548984.shtml" target="_blank">剧评人赵志勇：《尼金斯基》两个灵魂的相遇
+</a></li>
+                        <li><a href="http://yule.sohu.com/20120207/n334006535.shtml" target="_blank">剧评人徐健：《鸟人》现实人生的另类观照
+</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="turn clear">
+				<div class="pt">
+					<div><a href="http://yinanli.blog.sohu.com/196205124.html" target="_blank"><img src="http://i3.itc.cn/20111213/4c6_ae9ff0ac_4967_7432_0642_5b7d4a11a6a3_1.jpg" width="95" height="77" alt="" /></a></div>
+					<h4><a href="http://yinanli.blog.sohu.com/196205124.html" target="_blank">旅德戏剧人李亦男：<br />怀念布尔乔亚的慕尼黑</a></h4>
+					<p>Gift让我非常怀念布尔乔亚的慕尼黑。舞台...<a href="http://yinanli.blog.sohu.com/196205124.html" target="_blank">[详细]</a></p>
+				</div>
+				<div class="list12">
+					<ul>
+						<li><a href="http://yinanli.blog.sohu.com/197924547.html" target="_blank">李亦男：《来洛尼亚王国》来洛尼亚狐猴利亚</a></li>
+						<li><a href="http://yule.sohu.com/20111112/n325426788.shtml" target="_blank">陈乱乱：《理查三世》 死有余辜的理查三世</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="blockRD clear">
+			<h2><span><img alt=热点专题 src="http://tv.sohu.com/upload/drama110408/images/tt09.gif" width=64 height=15></span><a href="http://yule.sohu.com/s2006/8555/s246599052/" target="_blank">更多&gt;&gt;</a></h2>
+<div class="pp">
+<ul>
+<li><a href="http://yule.sohu.com/s2015/rgqwl/index.shtml" target="_blank"><img alt="" src="http://i2.itc.cn/20150206/4c6_10d5b0b0_6dc2_8f65_a1bc_1844a0c7fc9c_1.jpg" width=95 height=77></a><span><a href="http://yule.sohu.com/s2015/rgqwl/index.shtml" target="_blank">《人鬼情未了》</a></span></li>
+<li class="end"><a href="http://yule.sohu.com/s2014/dhzw20/index.shtml" target="_blank"><img alt="" src="http://i1.itc.cn/20141215/4c6_657b6cae_39ff_4251_e046_1a1a30d03c6f_1.jpg" width=95 height=77></a><span><a href="http://yule.sohu.com/s2014/dhzw20/index.shtml" target="_blank">《大河之舞》</a></span></li></ul>
+</div>
+<div class="list12">
+<ul>
+<li><a href="http://yule.sohu.com/s2014/wjmlf/index.shtml" target="_blank">舞剧《梅兰芳》</a> <a href="http://yule.sohu.com/s2014/6thxjalpk/index.shtml" target="_blank">戏剧奥林匹克</a></li>
+<li><a href="http://yule.sohu.com/s2014/yyzs/index.shtml" target="_blank">音乐剧《音乐之声》</a> <a href="http://yule.sohu.com/s2014/wzxjj/index.shtml" target="_blank">2014乌镇戏剧节</a></li>
+<li><a href="http://yule.sohu.com/s2014/wdmman/index.shtml" target="_blank">话剧《我的妹妹安娜》</a> <a href="http://yule.sohu.com/s2014/mbxjzpldh/index.shtml" target="_blank">孟冰戏剧作品朗读会</a> </li></ul></div>
+		</div>
+		
+		<div class="blockRE clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt10.gif" width="64" height="15" alt="热点视频" /></span><a href="http://tv.sohu.com/s2013/xjycxcp/index.shtml" target="_blank">更多&gt;&gt;</a></h2>
+			<div class="picA"><script type="text/javascript" src="http://tv.sohu.com/upload/swf/showVrsPlayer.js"></script><script type="text/javascript">showVrsPlayer({vid:'2185534',width: '232',height: '150',autoplay: 'false', 
+playercover:'http://i0.itc.cn/20150206/4c6_66eee0e3_c8a0_6c1a_f0a5_9464055c3284_1.jpg'});</script>
+			<span>·<a href="http://tv.sohu.com/20150108/n407638088.shtml" target="_blank">音乐剧《人鬼情未了》</a></span></div>
+		</div>
+	</div>
+</div>
+
+<div class="area adA">
+	<sohuadcode>
+</sohuadcode>
+</div>
+
+<div class="title area"><img src="http://tv.sohu.com/upload/drama110408/images/tt11.gif" width="114" height="32" alt="当月推荐" /></div>
+<div id="contentB" class="area">
+	<div class="left">
+<div class="picB"><a href="http://www.228.com.cn/s/update-%E5%86%AC%E4%B9%8B%E6%97%85/?source=shxj&ozs=226" target="_blank"><img alt="" src="http://i0.itc.cn/20150522/29b_0dec1818_6362_b5e6_550f_84be494ab740_1.jpg" width=170 height=136></a><span><a href="http://www.228.com.cn/s/update-%E5%86%AC%E4%B9%8B%E6%97%85/?source=shxj&ozs=226" target="_blank">舞台剧《冬之旅》</a></span></div>
+<div class="txt">
+<h4>时间：2015.6-2015.12</h4>
+<p>地点：保利剧院<br>
+  票价：80/180/380/580/680<br>
+  880/980/1280/1380/1800</p></div></div>
+    <div class="left">
+<div class="picB"><a href="http://www.228.com.cn/s/huajuwutaiju-play-怒海潜沙/?source=shxj&ozs=226" target="_blank"><img alt="" src="http://i0.itc.cn/20150805/29b_86c03e5f_f346_c5f2_9f1a_355d1ce895c3_1.jpg" width=170 height=136></a><span><a href="http://www.228.com.cn/s/huajuwutaiju-play-怒海潜沙/?source=shxj&ozs=226" target="_blank">《盗墓笔记II：怒海潜沙》</a></span></div>
+<div class="txt">
+<h4>时间： 2015.10</h4>
+<p>地点： 天桥剧场<br>
+  票价：180/280/380/580<br>
+680/880/1080</p></div></div>
+    <div class="left">
+<div class="picB"><a href="http://www.228.com.cn/s/huajuwutaiju-update-红楼梦/?source=shxj&ozs=226" target="_blank"><img alt="" src="http://i2.itc.cn/20150901/29b_db032eba_87bb_7cb2_3fbb_f15ba5e3466b_1.jpg" width=170 height=136></a><span><a href="http://www.228.com.cn/s/huajuwutaiju-update-红楼梦/?source=shxj&ozs=226" target="_blank">林奕华舞台剧《红楼梦》</a></span></div>
+<div class="txt">
+<h4>时间：2015.10</h4>
+<p>地点：上海文化广场<br>
+  票价：80,180,280,380<br>
+  480,580</p></div></div>
+    <div class="left">
+<div class="picB"><a href="http://www.228.com.cn/s/huajuwutaiju-战马/?source=shxj&ozs=226" target="_blank"><img alt="" src="http://i0.itc.cn/20151021/29b_e1fed6a5_7faf_4802_0f88_9295fd80e32a_1.jpg" width=170 height=136></a><span><a href="http://www.228.com.cn/s/huajuwutaiju-战马/?source=shxj&ozs=226" target="_blank">舞台剧《战马》中文版亚洲巡演</a></span></div>
+<div class="txt">
+<h4>时间： 2015.9.4-12.5</h4>
+<p>地点： 中国国家话剧院<br>
+  票价：200,280,340,360<br>
+420,1280,1680,2080</p></div></div>
+    <div class="left">
+<div class="picB"><a href="http://www.228.com.cn/ticket-63091619.html?source=shxj&ozs=226" target="_blank"><img alt="" src="http://i1.itc.cn/20151020/29b_adff986f_09de_8876_fdbd_d9c33edc5c44_1.jpg" width="170" height="136"></a><span><a href="http://www.228.com.cn/ticket-63091619.html?source=shxj&ozs=226" target="_blank">音乐剧《因味爱，所以爱》</a></span></div>
+<div class="txt">
+<h4>时间：2015.10.29-11.7</h4>
+<p>地点：ET聚场<br>
+  票价：80,180,280<br>
+320情侣套票(180*2),380</p></div></div>
+</div>
+
+<div id="contentC" class="area">
+	<div class="left" id="look">
+		<div class="s1"><img alt="" src="http://i0.itc.cn/20111121/2b08_b30ba4b9_8256_8d91_2353_7dc808006284_1.jpg" width=291 height=100></div>
+<div class="s2"><a href="http://pic.yule.sohu.com/detail-624924-8.shtml#8" target="_blank"><span>舞台剧《冬之旅》</span><span style="DISPLAY: none">舞台剧《冬之旅》</span><img src="http://i3.itc.cn/20141215/4c6_3750ce9c_72f6_c717_475c_b1a6480c5039_1.jpg" width=144 height=140 rel="舞台剧《冬之旅》"></a></div>
+<div class="s3"><a href="http://pic.yule.sohu.com/detail-627700-0.shtml#0" target="_blank"><span style="DISPLAY: none">2014喜剧论坛</span><span style="DISPLAY: none">2014喜剧论坛</span><img src="http://i3.itc.cn/20150105/4c6_62e31646_8910_caa3_7471_f10fec9fc3be_1.jpg" width=146 height=140 rel="2014喜剧论坛"></a></div>
+<div class="s4"><a href="http://pic.yule.sohu.com/detail-626229-12.shtml#12" target="_blank"><span style="DISPLAY: none">大剧院跨年演出</span><span style="DISPLAY: none">大剧院跨年演出</span><img src="http://i2.itc.cn/20141217/4c6_3892853d_8c2d_9c37_8973_c9ed2d05113d_1.jpg" width=431 height=241 rel="大剧院跨年演出"></a></span></div>
+<div class="s5"><a href="http://pic.yule.sohu.com/group-628974.shtml#0" target="_blank"><span style="DISPLAY: none">芭蕾演出季摄影大赛</span><span style="DISPLAY: none">芭蕾演出季摄影大赛</span><img src="http://i3.itc.cn/20150105/4c6_62e31646_8910_caa3_7471_f10fec9fc3be_4.jpg" width=219 height=187 rel="芭蕾演出季摄影大赛"></a></div>
+<div class="s6"><a href="http://pic.yule.sohu.com/group-628929.shtml#0" target="_blank"><span style="DISPLAY: none">话剧《如梦之梦》</span><span style="DISPLAY: none">话剧《如梦之梦》</span><img src="http://i0.itc.cn/20150105/4c6_62e31646_8910_caa3_7471_f10fec9fc3be_3.jpg" width=284 height=187 rel="话剧《如梦之梦》"></a></div>
+<div class="s7"><a href="http://pic.yule.sohu.com/detail-628372-7.shtml#7" target="_blank"><span style="DISPLAY: none">中国木偶剧院元月演出</span><span style="DISPLAY: none">中国木偶剧院元月演出</span><img src="http://i3.itc.cn/20150105/4c6_62e31646_8910_caa3_7471_f10fec9fc3be_2.jpg" width=219 height=187 rel="中国木偶剧院元月演出"></a></div>
+		<script type="text/javascript">
+		jQuery(function(jq){
+			var look=jq("#look");			
+			look.find("div a").each(function(){
+				if(jq(this).find("img").attr("rel")!=undefined){
+					jq(this).prepend("<span>"+jq(this).find("img").attr("rel")+"</span>");
+				}
+			}).hover(function(){
+				if(jq(this).find("img").attr("rel")!=undefined){
+					jq(this).find("span").stop(true,true).slideDown(300);
+				}
+			},function(){
+				if(jq(this).find("img").attr("rel")!=undefined){
+					jq(this).find("span").stop(true,true).slideUp(300);
+				}
+			});	
+		})		
+		</script>
+	</div>
+	<div class="right">
+		<div class="blockRA clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt13.gif" width="81" height="15" alt="演出会客厅" /></span></h2>
+			<div class="pic"><a href="http://tv.sohu.com/20140428/n398904260.shtml?qq-pf-to=pcqq.group" target="_blank"><img src="http://i1.itc.cn/20140428/3072_30e82900_dad8_b86b_51e4_c8121230bd1c_1.jpg
+             " width="190" height="110" alt="" /></a><span><a href="http://tv.sohu.com/20140428/n398904260.shtml?qq-pf-to=pcqq.group" target="_blank">方琼专访——上海老歌“新名片”</a></span></div>
+			<div class="list12">
+				<ul>
+					<li><a href="http://tv.sohu.com/20130603/n377786041.shtml" target="_blank">王喆专访：梦想在历练中成长</a></li>
+					<li><a href="http://tv.sohu.com/20130620/n379349509.shtml" target="_blank">张英席出演“最帅版勾践”</a></li>
+					<li><a href="http://tv.sohu.com/20131210/n391548503.shtml" target="_blank">胥拉齐畅谈音乐人生 力冲羊年春晚</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="blockRB clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt12.gif" width="82" height="15" alt="戏剧回忆录" /></span></h2>
+			<div class="list12">
+				<ul>
+					<li><a href="http://tv.sohu.com/20110512/n307382706.shtml" target="_blank">苏　民：谈人艺复排版《蔡文姬》</a></li>
+                    <li><a href="http://yule.sohu.com/20100707/n273353589.shtml" target="_blank">雷恪生：我凭“阿Q”一举成名</a></li>
+					<li><a href="http://yule.sohu.com/20110419/n306083110.shtml" target="_blank">顾　威：因《雷雨》走上戏剧之路</a></li>
+					<li><a href="http://yule.sohu.com/20110419/n306083113.shtml" target="_blank">梁秉堃：回忆老院长曹禺的故事</a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contentD" class="area">
+	<div class="left">
+		<div class="blockLA clear">
+			<div class="l">
+				<div class="boxLA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt14.gif" width="65" height="15" alt="话剧新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20150104/n407503487.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i3.itc.cn/20150105/4c6_bb9e9c81_30e5_587b_56ae_12c4ba679c8e_2.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20150104/n407503487.shtml" target="_blank">青春剧《只因单身在一起》将登舞台</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;搜狐娱乐讯 由郑元畅、汪东城、徐璐、张馨予等主演的青春爱情剧《只因单身在一起》1月4日准时...<a href="http://yule.sohu.com/20150104/n407503487.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20160321/n441339058.shtml' target='_blank'>赖声川何炅再度合作 打造快乐话剧《水中之书》</a></li>
+<li><a href='http://yule.sohu.com/20160318/n440975752.shtml' target='_blank'>“情色大师”作品首现中国 美女演员领衔《狐狸》</a></li>
+<li><a href='http://yule.sohu.com/20160318/n440966713.shtml' target='_blank'>话剧《兄弟，别闹》将亮相 原创IP下的兄弟情怀</a></li>
+<li><a href='http://yule.sohu.com/20160317/n440724313.shtml' target='_blank'>《学一学鸽子》迎春而来 体会如沐春风般的感动</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/moderndrama.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+			<div class="r">
+				<div class="boxRA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt15.gif" width="82" height="15" alt="音乐会新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20150104/n407499017.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i3.itc.cn/20150105/4c6_bb9e9c81_30e5_587b_56ae_12c4ba679c8e_4.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20150104/n407499017.shtml" target="_blank">侗族大歌《行歌坐月》8日将演</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;中央民族乐团是我国优秀的民族乐团，贵州省黔东南苗族侗族自治州歌舞团是一个有50多年历史...<a href="http://yule.sohu.com/20150104/n407499017.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20160317/n440782755.shtml' target='_blank'>音乐剧《烽火 冼星海》即将在京演出</a></li>
+<li><a href='http://yule.sohu.com/20160308/n439760748.shtml' target='_blank'>六十年传奇巨制登陆京城 没看过赫本还可以看她</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435161225.shtml' target='_blank'>《小王子》儿歌盛典获最受欢迎音乐剧大奖</a></li>
+<li><a href='http://yule.sohu.com/20160114/n434541444.shtml' target='_blank'>音乐剧《莎翁的情书》 叩响音乐剧殿堂的大门</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/information.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="blockLB clear">
+			<div class="l">
+				<div class="boxLA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt16.gif" width="65" height="15" alt="戏曲新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20150105/n407539237.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i3.itc.cn/20150105/4c6_bb9e9c81_30e5_587b_56ae_12c4ba679c8e_3.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20150105/n407539237.shtml" target="_blank">豫剧名家贾文龙赴京演唱主旋律</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;河南日报讯 年终岁尾，2015年新年戏曲晚会按照惯例在国家大剧院举行。党和国家领导人...<a href="http://yule.sohu.com/20150105/n407539237.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20160317/n440795424.shtml' target='_blank'>苏州评弹团“姑苏韵”启动 盛小云讲述上海情缘</a></li>
+<li><a href='http://yule.sohu.com/20160316/n440645841.shtml' target='_blank'>上海昆曲澎派艺术研习中心成立</a></li>
+<li><a href='http://yule.sohu.com/20160314/n440348441.shtml' target='_blank'>《穆桂英挂帅》传承千年将帅之范</a></li>
+<li><a href='http://yule.sohu.com/20151231/n433142689.shtml' target='_blank'>《灰阑记》北京汇演 沈铁梅赞吉克隽逸戏曲天赋</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/traditionalopera.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+			<div class="r">
+				<div class="boxRA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt17.gif" width="63" height="15" alt="舞蹈新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20150104/n407510701.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i1.itc.cn/20150105/4c6_bb9e9c81_30e5_587b_56ae_12c4ba679c8e_1.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20150104/n407510701.shtml" target="_blank">舞剧《红楼梦》用诗意呈现绝唱</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;早在2004年，军区战友文工团就排演了大型原创民族舞剧《红楼梦》。战友文工团为何要排演...<a href="http://yule.sohu.com/20150104/n407510701.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20160321/n441316381.shtml' target='_blank'>中国歌剧舞剧院创新舞台艺术惊艳京城</a></li>
+<li><a href='http://yule.sohu.com/20160303/n439252945.shtml' target='_blank'>歌舞中国大赛在京启动 推动少数民族文艺发展 </a></li>
+<li><a href='http://yule.sohu.com/20160223/n438251235.shtml' target='_blank'>舞剧《红色娘子军》“三八”节即将隆重上演</a></li>
+<li><a href='http://yule.sohu.com/20160121/n435360017.shtml' target='_blank'>鹤舞翩跹迎春送福 芭蕾舞《鹤魂》天桥剧场演出</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/dance/index.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="blockLC clear">
+			<div class="l">
+				<div class="boxLA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt18.gif" width="65" height="15" alt="综艺新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20150105/n407539455.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i2.itc.cn/20150105/4c6_bb9e9c81_30e5_587b_56ae_12c4ba679c8e_5.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20150105/n407539455.shtml" target="_blank">青岛话剧院2015演十二部儿童剧</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;青岛早报讯 青岛市话剧院昨日对外发布2015年全年演出季计划，经典作品、复排保留剧目和...<a href="http://yule.sohu.com/20150105/n407539455.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20160222/n438122184.shtml' target='_blank'>罗素-彼得斯几近成名世界巡演上海站 圆满结束</a></li>
+<li><a href='http://yule.sohu.com/20160203/n436750453.shtml' target='_blank'>校园文艺榜中榜落幕 谭晶赵丽颖获青少年最爱大奖</a></li>
+<li><a href='http://yule.sohu.com/20160201/n436558544.shtml' target='_blank'>李双江等艺术家被授予全国校园艺术爱心大使称号</a></li>
+<li><a href='http://yule.sohu.com/20160201/n436557740.shtml' target='_blank'>全国校园艺术周星光春晚暨青少年才艺展演举行</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/perform.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+			<div class="r">
+				<div class="boxRA clear">
+					<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt19.gif" width="97" height="15" alt="海外舞台新闻" /></span></h2>
+					<div class="pt"> 
+ <div><a href="http://yule.sohu.com/20141210/n406826475.shtml" target="_blank"><img width="97" height="79" alt="" src="http://i2.itc.cn/20141210/4c6_76aaf71d_9148_8193_38f7_4a9396ae5431_5.jpg"></a></div> 
+ <h4><a href="http://yule.sohu.com/20141210/n406826475.shtml" target="_blank">谭盾亮相澳门奏响《武侠三部曲》
+</a></h4> 
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;新京报讯 为庆祝澳门特别行政区成立15周年，昨晚，作曲家谭盾将其“十二年磨一剑”...<a href="http://yule.sohu.com/20141210/n406826475.shtml" target="_blank">[详细]</a></p> 
+</div>
+					<div class="list14">
+						<ul><li><a href='http://yule.sohu.com/20141210/n406826475.shtml' target='_blank'>谭盾亮相澳门威尼斯人剧场 奏响《武侠三部曲》</a></li>
+<li><a href='http://yule.sohu.com/20141127/n406434740.shtml' target='_blank'>大剧院弦乐团北美巡演成功 中国交响乐实力获赞</a></li>
+<li><a href='http://yule.sohu.com/20141119/n406169302.shtml' target='_blank'>“上海戏曲月”赴台演出结束 闻乡音老上海动情</a></li>
+<li><a href='http://yule.sohu.com/20141117/n406098986.shtml' target='_blank'>第三次赴台 中芭演绎芭蕾“快闪”“接地气”</a></li>
+</ul>
+					</div>
+					<div class="more"><a href="#" target="_blank"><a href="http://yule.sohu.com/wutsj/index.shtml" target="_blank">更多&gt;&gt;</a></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="blockRA clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt20.gif" width="65" height="15" alt="剧场传真" /></span></h2>
+			<div class="pic"><a href="http://yule.sohu.com/s2007/mlfdjy/" target="_blank"><img src="http://i0.itc.cn/20100618/4c6_9a376073_8952_4096_bb85_767296383f60_0.jpg" width="190" height="110" alt="" /></a><span><a href="http://yule.sohu.com/s2007/mlfdjy/" target="_blank">梅院昆曲京剧经典轮番上演</a></span></div>
+			<div class="list12">
+				<ul><li><a href='http://yule.sohu.com/20150107/n407600750.shtml' target='_blank'>民族宫大剧院5台剧目庆新春</a></li>
+<li><a href='http://yule.sohu.com/20150105/n407539455.shtml' target='_blank'>青岛话剧院12部剧酿艺术盛宴</a></li>
+<li><a href='http://yule.sohu.com/20141225/n407273377.shtml' target='_blank'>国家京剧院60周年院庆演出</a></li>
+<li><a href='http://yule.sohu.com/20141223/n407213880.shtml' target='_blank'>上海保利大剧院沪剧与越剧</a></li>
+</ul>
+			</div>
+		</div>
+		
+		<div class="blockRB clear">
+			<h2><span><img src="http://i0.itc.cn/20131114/3072_a4d659b4_d70a_6e5d_fb14_e4f4963d1e0e_1.jpg
+" width="106" height="18" alt="北京音乐厅专区" /></span></h2>
+			<div class="pic"><a href="http://yule.sohu.com/s2013/bjyyt/index.shtml" target="_blank"><img src="http://i1.itc.cn/20131114/4c6_b8cdb57a_b424_c672_3fda_b7206cd8f438_1.jpg
+" width="190" height="110" alt="" /></a><span><a href="http://yule.sohu.com/s2013/bjyyt/index.shtml" target="_blank">北京音乐厅</a></span></div>
+			<div class="list12">
+				<ul><li><a href='http://yule.sohu.com/20140801/n403008033.shtml' target='_blank'>音乐爱美丽推“双人芭蕾”   </a></li>
+<li><a href='http://tv.sohu.com/20140721/n402504773.shtml' target='_blank'>轻松舞步系列音乐会在京开幕</a></li>
+<li><a href='http://yule.sohu.com/20140630/n401550934.shtml' target='_blank'>《夏日里的轻舞飞扬》开票</a></li>
+<li><a href='http://yule.sohu.com/20140623/n401199368.shtml' target='_blank'>《四大名著》朗诵演唱会开票 </a></li>
+</ul>
+			</div>
+		</div>
+		
+		<div class="blockRC clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt22.gif" width="81" height="15" alt="大剧院专区" /></span></h2>
+			<div class="pic"><a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank"><img src="http://i1.itc.cn/20100613/4c6_da5ba090_5284_440c_8534_b6231d76b9dc_0.jpg" width="190" height="110" alt="" /></a><span><a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank">国家大剧院 演出季</a></span></div>
+			<div class="list12">
+				<ul><li><a href='http://yule.sohu.com/20150107/n407599847.shtml' target='_blank'>大剧院《阿依达》名演员集结</a></li>
+<li><a href='http://yule.sohu.com/20150105/n407548859.shtml' target='_blank'>大剧院寻找“那些年的旋律”</a></li>
+<li><a href='http://yule.sohu.com/20150104/n407496834.shtml' target='_blank'>五部“口碑大戏”登大剧院</a></li>
+<li><a href='http://yule.sohu.com/20141229/n407389745.shtml' target='_blank'>大剧院策划戏剧“两岸迎春”</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contentE" class="area">
+	<div class="left">
+		<div class="tt"><img src="http://tv.sohu.com/upload/drama110408/images/tt26.gif" width="114" height="32" alt="专题集锦" /></div>
+		
+		<div class="boxA">
+			<dl class="clear" >
+<dd ><a href="http://yule.sohu.com/s2014/dhzw20/index.shtml" target="_blank"><img alt="" src="http://i0.itc.cn/20141215/4c6_263e2ab9_3d3b_692e_dd57_c0169fc0fd12_1.jpg" width=150 height=107></a> <a href="http://yule.sohu.com/s2014/dhzw20/index.shtml" target="_blank">《大河之舞》20周年</a> </dd>
+
+<dd ><a href="http://yule.sohu.com/s2014/xjlt/index.shtml" target="_blank"><img alt="" src="http://i0.itc.cn/20141224/4c6_9b57bcef_2f3f_5f0b_e5e0_3f7cac1dce82_1.jpg" width=152 height=107></a> <a href="http://yule.sohu.com/s2014/xjlt/index.shtml" target="_blank">2014喜剧论坛</a> </dd>
+
+
+<dd ><a href="http://yule.sohu.com/s2014/zymz/index.shtml" target="_blank"><img alt="" src="http://i1.itc.cn/20141222/4c6_bcbb194e_767d_6b31_b3d7_5cda9e3a0bf9_2.jpg" width=150 height=105></a> <a href="http://yule.sohu.com/s2014/zymz/index.shtml" target="_blank">2014-冬季欢乐周演出季</a> </dd>
+<dd ><a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank"><img alt="" src="http://i1.itc.cn/20100613/4c6_47e1358e_adc5_4719_a51f_e71951a1de23_0.jpg" width=150 height=105></a> <a href="http://yule.sohu.com/s2007/gjdjy/" target="_blank">国家大剧院</a> </dd></dl>
+			<div class="listB clear">
+				<ul><li><a href='http://yule.sohu.com/20160203/n436773922.shtml' target='_blank'>北京市剧院运营服务平台试运营 圆满落幕</a></li>
+<li><a href='http://yule.sohu.com/20160203/n436772420.shtml' target='_blank'>京剧《大探二》 弘扬忠孝精神</a></li>
+<li><a href='http://yule.sohu.com/20160203/n436772227.shtml' target='_blank'>北京曲剧《四世同堂》 展现老舍笔下的京城故事</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435849270.shtml' target='_blank'>剧院平台|“霸王级”寒潮难挡观众热情的脚步</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435848354.shtml' target='_blank'>北京曲剧《骆驼祥子》还原真实的祥子</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435846460.shtml' target='_blank'>难得一见的京味儿儿童剧《胡同.com》</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435846275.shtml' target='_blank'>全新手法演绎曹禺经典话剧《原野》</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435846155.shtml' target='_blank'>剧院平台|三九四九剧场走，连番好戏看不够</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435844947.shtml' target='_blank'>豫剧《桃花庵》尽现桑派艺术魅力</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435842090.shtml' target='_blank'>《梅尚程荀》男旦专场再现“四大名旦”风韵</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435841821.shtml' target='_blank'>《红鬃烈马》彰显男旦魅力</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435841617.shtml' target='_blank'>打击乐音乐剧《木兰》打响浓浓中国风</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435841345.shtml' target='_blank'>剧院平台|三种不同风格演出的正确打开方式</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435839717.shtml' target='_blank'>话剧《那次奋不顾身的爱情》上演一出喜剧泪如雨</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435839136.shtml' target='_blank'>河北梆子《金铃记》上演杨六郎披甲报忠</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435839059.shtml' target='_blank'>《光影奇遇》领略捷克“国剧”魅力</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435838969.shtml' target='_blank'>陈佩斯话剧《戏台》 组团贺岁一票难求</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435838867.shtml' target='_blank'>音乐会《天空之城》带观众进入一个梦幻世界</a></li>
+<li><a href='http://yule.sohu.com/20160126/n435838799.shtml' target='_blank'>新创京剧《春日宴》温情贺岁</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435212488.shtml' target='_blank'>舞剧《仓央嘉措》首轮演出落幕 好评如潮</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435212188.shtml' target='_blank'>舞剧《仓央嘉措》：以舞蹈重述诗与史</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435211949.shtml' target='_blank'>舞剧《仓央嘉措》：孤独的舞者</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435211771.shtml' target='_blank'>舞剧《仓央嘉措》：最渴望亘古不变的情真</a></li>
+<li><a href='http://yule.sohu.com/20160120/n435211441.shtml' target='_blank'>舞剧《仓央嘉措》：不再误读这位传奇的活佛与诗人</a></li>
+</ul>
+			</div>
+		</div>
+		
+		<div class="blockLB clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt27.gif" width="65" height="17" alt="合作媒体" /></span></h2>
+			<div class="pp">
+				<ul>
+					<li><a href="http://www.polytheatre.com/" target="_blank"><img src="http://photocdn.sohu.com/20071121/Img253391272.jpg" width="95" height="70" alt="" /></a><span><a href="http://www.polytheatre.com/" target="_blank">保利剧院</a></span></li>
+                    <li><a href="http://yule.sohu.com/2004/05/09/98/article220059868.shtml" target="_blank"><img src="http://yule.sohu.com/upload/logogo/renminjuyuan.jpg" width="95" height="70" alt="" /></a><span><a href="http://yule.sohu.com/2004/05/09/98/article220059868.shtml" target="_blank">北京人民剧院</a></span></li>                    
+                    <li><a href="http://yule.sohu.com/20070516/n250059686.shtml" target="_blank"><img src="http://yule.sohu.com/upload/logogo/huaju.gif" width="95" height="70" alt="" /></a><span><a href="http://yule.sohu.com/20070516/n250059686.shtml" target="_blank">中国国家话剧院</a></span></li>
+					<li><a href="http://www.chinavista.com/experience/theatre/" target="_blank"><img src="http://yule.sohu.com/upload/logogo/xijujiaxiehui.jpg" width="95" height="70" alt="" /></a><span><a href="http://www.chinavista.com/experience/theatre/" target="_blank">中国戏剧家协会</a></span></li>
+					<li><a href="http://www.cnquyi.org/cn/" target="_blank"><img src="http://yule.sohu.com/upload/logogo/quyijia.gif" width="95" height="70" alt="" /></a><span><a href="http://www.cnquyi.org/cn/" target="_blank">中国曲艺家协会</a></span></li>
+					<li><a href="http://www.228.com.cn/index.html" target="_blank"><img src="http://i2.itc.cn/20130731/3072_87ee1257_1997_998b_a678_1e01c2f51050_1.jpg " width="95" height="70" alt="" /></a><span><a href="http://www.228.com.cn/index.html" target="_blank">永乐票务</a></span></li>
+				</ul>
+			</div>
+			<div class="line"></div>
+			<div class="txt">
+			<p><a href="http://www.jinghua.cn/" target=_blank>京华时报</a>|<a href="http://www.jinghua.cn/" target=_blank>法制晚报</a>|<a href="http://yule.sohu.com/#" target=_blank>完全娱乐</a> |<a href="http://www.yangtse.com/" target=_blank>扬子晚报</a>|<a href="http://nbweekly.oeeee.com/" target=_blank>南都周刊</a>|<a href="http://www.xxcb.com.cn/" target=_blank>潇湘晨报</a>|<a href="http://www.ynxxb.com/" target=_blank>云南信息报</a>|<a href="http://www.hxdsb.com/news/" target=_blank>海峡都市报</a>|<a href="http://www.wccdaily.com.cn/new/html/hxdsb/20071108/index.html" target=_blank>华西都市报</a>|<a href="http://www.dahedaily.com/" target=_blank>大河报</a>|<a href="http://yzdsb.hebnews.cn/" target=_blank>燕赵都市报</a>|<a href="http://www.sanqindaily.com/news/index.asp" target=_blank>三秦都市报</a>|<a href="http://www.ycwb.com/ycwb/2007-11/08/index.htm" target=_blank>羊城晚报</a>|<a href="http://newspaper.lndaily.com.cn/bdcb/" target=_blank>半岛晨报</a>|<a href="http://www.xwwb.com/" target=_blank>新闻午报</a>|<a href="http://www.gotoread.com/2002/magazine/?magid=4078" target=_blank>武汉晚报</a> |<a href="http://www.qnsb.com/" target=_blank>青年时报</a>|<a href="http://zaobao.qingdaonews.com/html/2007-11/08/node_182.htm" target=_blank>青岛早报</a>|<a href="http://www.jxnews.com.cn/" target=_blank>江南都市报</a>|<a href="http://www.cctv.com/program/zykb/01/index.shtml" target=_blank>综艺快报</a>|<a href="http://paper.sznews.com/szdsb/" target=_blank>深圳都市报</a>|<a href="http://v.gmw.cn/" target=_blank>光明电视
+</a>|<a href="http://newspaper.lndaily.com.cn/lswbn/" target=_blank>辽沈晚报</a>|<a href="http://www.tianjindaily.com.cn/epaper/cskb/cskb/2007-11/08/node_4625.htm" target=_blank>城市快报</a>|<a href="http://www.jizhezhan.com/meitihtml/bzmt1612/kanli.htm" target=_blank>黑龙江晨报</a>|<a href="http://kuaibao.xinhuanet.com/html/2007-11/05/node_626.htm" target=_blank>现代快报</a>|<a href="http://cqsb.huash.com/gb/cqsb/node_2558.htm" target=_blank>重庆时报</a>|<a href="http://www.bqweekly.com/" target=_blank>北京青年周刊</a>|<a href="http://e.gmw.cn/" target=_blank>互动-光明网</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="blockRA clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt23.gif" width="65" height="15" alt="新人推荐" /></span></h2>
+			<div class="pt">
+				<div><a href="http://yule.sohu.com/20120606/n344865069.shtml" target="_blank"><img src="http://i1.itc.cn/20120606/4c6_ba72aca3_52c8_f399_b393_1e0b8a0c7024_1.jpg" width="95" height="77" alt="" /></a></div>
+				<h4><a href="http://yule.sohu.com/20120606/n344865069.shtml" target="_blank">话剧新人 苗驰</a></h4>
+				<p>说苗驰是新人有点儿冤枉他，但说他是…<a href="http://yule.sohu.com/20120606/n344865069.shtml" target="_blank">[详细]</a></p>
+			</div>
+			<div class="list12">
+				<ul>
+					
+					<li><a href="http://yule.sohu.com/20110402/n305283440_1.shtml" target="_blank">《我爱桃花》古典美人-俞颖</a></li>
+                    <li><a href="http://yule.sohu.com/20110408/n305513341.shtml" target="_blank">《三个橘子》水瓶文艺女-黄湘丽</a></li>
+                    <li><a href="http://yule.sohu.com/20101115/n277639591.shtml" target="_blank">《疯狂电视台》长腿台妹-康茵茵</a></li>
+
+</ul>
+			</div>
+		</div>
+		
+		<div class="blockRB clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt24.gif" width="64" height="15" alt="在线听书" /></span></h2>
+			<div class="pic"><a href="http://ting.sohu.com/info/788/1788.html?product_id=1788&page=1" target="_blank"><img src="http://i2.itc.cn/20140611/3072_26952277_3f83_5e5d_a080_2d608f2dfc6c_1.jpg" width="190" height="110" alt="" /></a><span><a href="http://ting.sohu.com/info/788/1788.html?product_id=1788&page=1" target="_blank">《红色娘子军》60年别样青春</a></span></div>
+			<div class="list12">
+				<ul>
+					<li><a href="http://ting.sohu.com/info/607/1607.html?product_id=1607&page=1" target="_blank">故事：《流亡者肖邦》</a></li>
+					<li><a href="http://ting.sohu.com/info/483/1483.html?product_id=1483&page=1" target="_blank">文史：《钢琴之王李斯特》</a></li>
+					<li><a href="http://ting.sohu.com/info/874/1874.html?product_id=1874&page=1" target="_blank">相声：曹云金单口相声</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="blockRC clear">
+			<h2><span><img src="http://tv.sohu.com/upload/drama110408/images/tt25.gif" width="65" height="15" alt="联系我们" /></span></h2>
+			<div class="list12">
+				<ul>
+					<li>戏剧主编：崔延</li>
+					<li>联系电话：010-62726312</li>
+					<li>合作信箱：yancui@sohu-inc.com </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="foot" class="Area"> 
+Copyright &copy; 2016 Sohu.com Inc. All Rights Reserved. 搜狐公司 <span class="unline"><a href="http://corp.sohu.com/s2007/copyright/" target="_blank" rel="nofollow">版权所有</a> <a href="http://roll.sohu.com" target="_blank">全部新闻</a> <a href="http://blog.sohu.com/roll" target="_blank">全部博文</a></span><br />
+</div>
+<SCRIPT language=JavaScript src="http://a1.itc.cn/pv/js/spv.1309051632.js"></SCRIPT>
+<script language="javascript" src="http://js.sohu.com/wrating20120726.js"></script>
+<script language="javascript">
+var  _wratingId = null;
+try{
+_wratingId = _getAcc();
+}catch(e){}
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript" src="http://sohu.wrating.com/a1.js"></scr'+'ipt>');
+}
+</script>
+<script language="javascript">
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript">');
+document.write('var vjAcc="'+_wratingId+'";');
+document.write('var wrUrl="http://sohu.wrating.com/";');
+document.write('try{vjTrack();}catch(e){}');
+document.write('</scr'+'ipt>');
+}
+</script>
+<script> require(["sjs/matrix/ad/passion"]);</script>
+<!--SOHU:SUB_FOOT_DIV-->
+
+<sohuadcode></sohuadcode>
+<center></center>
+</body></html>
+
+</body>
+</html>
+

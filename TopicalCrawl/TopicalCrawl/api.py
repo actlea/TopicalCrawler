@@ -709,6 +709,17 @@ class HtmlHelper(object):
         except AttributeError:
             return None
 
+    @staticmethod
+    def get_title_text(doctree):
+
+        title_node = HtmlHelper.get_title(doctree)
+
+        if title_node is None:
+            return None
+
+        title_text = title_node.text
+        return title_text
+
 
     @staticmethod
     def get_article_title_element(doctree):
@@ -801,6 +812,27 @@ html2 = """
 </div>
 """
 
+import os
+from util import FileHelper
+
+def writefile(out, content):
+    if content is None or len(content)==0:
+        return
+    if isinstance(content, unicode):
+        content = content.encode('utf-8')
+    out.write('%s\n' %content)
+
+
+def create_train(src_dirs, destfile):
+    with open(destfile, 'a') as fw:
+        for f in os.listdir(src_dirs):
+            print f
+            path = src_dirs + f
+            content = FileHelper.readUTF8File(path)
+            doc = HtmlHelper.create_doc(content, 'utf-8')
+            doc = HtmlHelper.pre_process_domtree(doc)
+
+
 
 
 
@@ -815,13 +847,14 @@ if __name__ == '__main__':
     # # print w.similar_check(root1, root2)
     # w.get_clustered_records(doc1)
 
-    dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/ifeng/original/other_neg_524.html'
-    dir = '/mnt/UbutunShare/graduate/DataSet/PageClassification/Test1/yule/yule (55).html'
-    dir = '/mnt/UbutunShare/graduate/DataSet/1.txt'
-    dir = 'classifier/sample-data/1.html'
-    dir = '/mnt/UbutunShare/Work/CETD_DATA/Test/original/0.htm'
-    dir = '/mnt/UbutunShare/Work/CETD_DATA/wiki/original/23.htm'
-    dir = '/mnt/UbutunShare/Work/CETD_DATA/Final/original/60.html'
+    # dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/ifeng/original/other_neg_524.html'
+    # dir = '/mnt/UbutunShare/graduate/DataSet/PageClassification/Test1/yule/yule (55).html'
+    # dir = '/mnt/UbutunShare/graduate/DataSet/1.txt'
+    # dir = 'classifier/sample-data/1.html'
+    # dir = '/mnt/UbutunShare/Work/CETD_DATA/Test/original/0.htm'
+    # dir = '/mnt/UbutunShare/Work/CETD_DATA/wiki/original/23.htm'
+    # dir = '/mnt/UbutunShare/Work/CETD_DATA/Final/original/60.html'
+    dir='f00017.html'
     from util import FileHelper
     content = FileHelper.readUTF8File(dir)
     doc = HtmlHelper.create_doc(content, 'utf-8')
@@ -830,6 +863,8 @@ if __name__ == '__main__':
     # for c in article.splitlines():
     #     print c.encode('utf-8')
     print article.encode('utf-8')
+    # dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/auto/'
+    # create_train(dir, 'neg_anchor.txt')
 
 
 

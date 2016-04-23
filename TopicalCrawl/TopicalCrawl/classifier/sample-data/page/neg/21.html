@@ -1,0 +1,99 @@
+http://blog.sina.com.cn/changweibo.html
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>长微博_长微博工具_长微博生成器：新浪长微博官方网站</title>
+<meta name="keywords" content="长微博 长微博工具 长微博生成器 新浪长微博" />
+<meta name="description" content="还在为微博的140字烦恼？你out啦~快来试试新浪博客的长微博工具吧！把你想说的话，想分享的照片合成一条微博发布。" />
+<link href="http://simg.sinajs.cn/blog7style/css/common/common.css" rel="stylesheet" type="text/css" />
+<link href="http://simg.sinajs.cn/blog7style/css/special/long.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!--长微博入口-->
+<div class="longbox">
+	<div id="rightBar" class="release" style="visibility:hidden;right:0;"><a hidefocus="true" href="http://control.blog.sina.com.cn/admin/article/changWeiBo.php"><img src="http://simg.sinajs.cn/blog7style/images/special/long/btn_release.gif" width="74" height="172" alt="发布长微博" /></a></div>
+    <div class="longtop">
+    	<div class="btn_detail"><a class="moto" href="http://blog.sina.cn/dpool/blog/ArtPub.php"><img alt="手机发布长微博" src="http://simg.sinajs.cn/blog7style/images/special/long/moto_cwb.jpg"></a><a href="http://blog.sina.com.cn/s/blog_496b2a650100yud4.html" target="_blank"><img src="http://simg.sinajs.cn/blog7style/images/special/long/btn_detail.jpg" alt="了解详情" /></a></div>
+    </div>
+    <div class="longenter">
+    	<div class="btn_release"><a href="http://control.blog.sina.com.cn/admin/article/changWeiBo.php" hidefocus="true"><img src="http://simg.sinajs.cn/blog7style/images/special/long/btn_release.jpg" width="257" height="69" alt="发布长微博" /></a></div>
+  </div>
+    <div class="infoeara">
+    	<p><img src="http://simg.sinajs.cn/blog7style/images/special/long/long_03.jpg" alt="" /></p>
+        <p><img src="http://simg.sinajs.cn/blog7style/images/special/long/long_04.jpg" alt="" /></p>
+        <p><img src="http://simg.sinajs.cn/blog7style/images/special/long/long_05.jpg" alt="" /></p>
+        <p><img src="http://simg.sinajs.cn/blog7style/images/special/long/long_06.jpg" alt="" /></p></div>
+</div>
+<!--/长微博入口-->
+<!--标准尾开始 -->
+    <div class="sinablogfooter"> 
+      
+      <p><a href="http://blog.sina.com.cn/admin/advice/advice_list.php" target="_blank">新浪BLOG意见反馈留言板</a>　<a href="javascript:;" onclick="window.open ('http://control.blog.sina.com.cn/admin/advice/impeach.php?url=http%3A//blog.sina.com.cn/s/blog_4cf7b4ec0100eudp.html%3Ftj%3D1', '','height=495, width=510, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');">不良信息反馈</a>　电话：95105670 提示音后按2键（按当地市话标准计费）　欢迎批评指正</p>
+   
+      <p><a href="http://corp.sina.com.cn/chn/" target="_blank">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/" target="_blank">About Sina</a> | <a href="http://ads.sina.com.cn/" target="_blank">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html" target="_blank">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html" target="_blank">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml" target="_blank">网站律师</a> | <a href="http://english.sina.com" target="_blank">SINA English</a> | <a href="http://members.sina.com.cn/apply/" target="_blank">会员注册</a> | <a href="http://blog.sina.com.cn/lm/help/2009/index.html" target="_blank">产品答疑</a> </p>
+      <p class="copyright"> Copyright &copy; 1996 - 2016 SINA Corporation,  All Rights Reserved</p>
+      <p>新浪公司 <a href="http://www.sina.com.cn/intro/copyright.shtml" target="_blank">版权所有</a></p>
+    
+    
+  	</div>
+  	<!--标准结束开始 -->
+<script type="text/javascript">
+function init(){
+  var ua = navigator.userAgent.toLowerCase();
+  var bar = document.getElementById("rightBar");
+  var scrollTop = document.body.scrollTop+document.documentElement.scrollTop;
+
+	var winHeight = getWinHeight();
+  var top = (winHeight-172)/2;
+  updatePos(bar, top);
+  if (window.attachEvent)
+  {
+    window.attachEvent('onscroll', function(){
+      updatePos(bar, getWinHeight());
+    }, false);
+  }
+  else
+  {
+    window.addEventListener('scroll', function(){
+      updatePos(bar, getWinHeight());
+    },false);
+  }
+  
+}
+function getWinHeight(){
+  var docElemProp = document.documentElement[ "clientHeight"],
+      body = document.body;
+  return document.compatMode === "CSS1Compat" && docElemProp || body && body[ "clientHeight" ] || docElemProp;
+}
+function updatePos(el, winHeight){
+  var scrollTop = document.body.scrollTop+document.documentElement.scrollTop;
+
+  if (scrollTop < 260)
+  {
+    el.style.visibility = "hidden";
+    return;
+  }
+  el.style.visibility = "visible";
+  el.style.top = (scrollTop + (winHeight-172)/2) + 'px';
+}
+init();
+</script>
+
+</body><!-- SUDA_CODE_START --> 
+
+ <script type="text/javascript" src="http://www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script> 
+
+ <script type="text/javascript" > 
+
+try{
+
+     _S_pSt(""); 
+
+}catch(e){
+
+} 
+</script> 
+<!-- SUDA_CODE_END -->
+</html>

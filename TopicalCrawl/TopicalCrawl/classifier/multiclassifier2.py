@@ -317,15 +317,15 @@ def dowork(para):
 
 
 if __name__ == '__main__':
-    number='9'
+    number='6'
     d='./sample-data/train-%s-zh.txt' % number
     t='./sample-data/test-%s-zh.txt' % number
-    # t = './sample-data/test-6-zh.txt'
-    from pure_url_classify import url_tokenize
-    mc=MultiClassifier ( 'test-%s-topic' % number, "12", custom_tokenize=url_tokenize )
+
+    # from pure_url_classify import url_tokenize
+    # mc=MultiClassifier ( 'test-%s-topic' % number, "12", custom_tokenize=url_tokenize )
     # d = './sample-data/train-jc.txt'
     # t = './sample-data/test-jc.txt'
-    # mc = MultiClassifier('test-8-topic', custom_tokenize=zh_tokenize)
+    mc = MultiClassifier('test-6M-topic', custom_tokenize=zh_tokenize, grams="12")
     import time
 
     start=time.time ( )
@@ -337,13 +337,42 @@ if __name__ == '__main__':
     # print mc.models[0].get_params()
     # print mc.models[0].densify()
 
-    test_result=mc.test ( t )
+    # test_result=mc.test ( t )
     # cost=time.time ( ) - start
     # print 'cost time:', cost
     # print test_result.accuracy_labels
     # print test_result.recall_labels
     # print test_result.accuracy_score
     # test_result.show_result ( )
+
+    t = '/mnt/UbutunShare/graduate/DataSet/Big/C000014.txt'
+    # with open(t) as f1:
+    #     with open('result.txt', 'w') as f2:
+    #         for line in f1.readlines():
+    #             pred, prob = mc.predict(line)
+    #             print pred, prob
+    #             f2.write('%s\t%s\n' %(str(pred), str(prob)))
+    with open('result.txt') as f2:
+        content = f2.read()
+        lines = content.splitlines()
+
+    index=0
+    with open('train.txt', 'w') as f1:
+        with open(t) as f3:
+            for line in f3.readlines():
+                tmp=lines[index]
+                index += 1
+                tmp = tmp.split('\t')
+                pred, prob = tmp[0], float(tmp[1])
+                print pred, prob
+                if prob>0.8:
+                    print pred
+                    if pred=='0':
+                        f1.write('0\t%s' %line)
+                    else:
+                        f1.write('1\t%s' %line)
+
+
     # print mc.params[ 'class2id' ]
 #     print mc.predict('藏头密码：73胜勇士全解读')
 #     print mc.predict('金州勇士，73胜9负NBA历史上的常规赛最佳战绩。')

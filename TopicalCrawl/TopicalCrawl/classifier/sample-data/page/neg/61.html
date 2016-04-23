@@ -1,0 +1,1893 @@
+http://yule.sohu.com/20140508/n399247959.shtml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script type="text/javascript">
+  var pvinsight_page_ancestors = '204635152;252415530;252415716;399247959';
+</script>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<title>最燃新剧抢滩美剧夏季档 好莱坞巨星齐归小荧幕-搜狐娱乐</title>
+<meta name="keywords" content="冰血暴 低俗怪谈">
+<meta name="description" content="搜狐娱乐讯（文/莺歌）2014年，一场美剧下架危机让潜水已久的美剧迷们纷纷浮出了水面，大家纷纷用放倒头像、给美剧配音、写讽刺段子或感人肺腑文章等方式来表达对美剧">
+<link rel="canonical" href="http://yule.sohu.com/20140508/n399247959.shtml"/>
+<meta name="robots" content="all">
+<!-- 购买url变量获取 -->
+<script type="text/javascript">
+ var shoppingCnf = {url:''};
+</script>
+<!-- 购买url变量获取end -->
+<script type="text/javascript">
+  var category =  '204635152;252415530;252415716;399247959';  var videoNum = 1;  var relate_from_sohu = false;
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<script src="http://www.sohu.com/sohuflash_1.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://js.sohu.com/library/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://news.sohu.com/upload/article/2012/js/tongji_v2013110101.js"></script>
+
+<script type="text/javascript">
+jQuery(function(jq){
+	//标签
+	function changeTab(lis, divs, nums, nowCls){
+		lis.each(function(i){
+			var els = jq(this);
+			els.mouseenter(function(){
+				lis.removeClass(nowCls);
+				divs.stop().hide();
+				jq(this).addClass(nowCls);
+				divs.eq(i).show();
+			});
+		}).eq(nums).mouseenter();
+	}
+	
+	var divA = jq("#kind-video"); //视频菜单
+	changeTab(divA.find(".video-menu li"), divA.find(".video-cont"), videoNum, "video-menu-now");
+	
+	jq(".fontsize").hover(function(){
+		jq(".fontsize-layer").show();
+		},function(){
+		jq(".fontsize-layer").hide();
+	});
+	
+        jq(".print").hover(function(){
+                   jq(".print-layer").show();
+                   },function(){
+                   jq(".print-layer").hide();
+         });
+
+	var phoneNumInput = jq(".rightbar-wrapper .phoneNews .rssArea .Ftxt"),
+		phoneNumBtn = jq(".rightbar-wrapper .phoneNews .rssArea .Fbtn");
+	phoneNumInput.hover(function(){  // xlx
+		jq(this).parent().addClass("current");
+	},function(){
+		jq(this).parent().removeClass("current");
+	});
+	phoneNumInput.focus(function(){
+		var _this = $(this);
+		var val = _this.val();
+		if(val == '输入手机号码'||val == '手机号码输入错误！'||val == '此号码发送次数过多！'||val == '失败！'){
+			_this.val("");
+			_this.parent().removeClass("error");
+		}
+	}).blur(function(){
+		var _this = $(this);
+		if(_this.val() == ''){
+			_this.val('输入手机号码');
+			_this.parent().removeClass("error");
+		}
+	});
+	
+	jq(".rightbar-wrapper .phoneNews .Fbtn").click(function(){// 订阅按钮点击
+		var _mobile = phoneNumInput.val();	
+		if(!(/^1[3458]\d{9}$/.test(_mobile))){
+			phoneNumInput.val("手机号码输入错误！");
+			phoneNumInput.parent().addClass("current error");
+		}else{
+			var formData = {
+					"number" : _mobile
+					};
+			var submitUrl = "http://api.k.sohu.com/api/client/sendmsg.go?callback=?";
+			$.ajax({
+				url: submitUrl,
+				data: formData,
+				dataType:"jsonp",
+				success: function(data){
+					var _code = data.data;				
+					var _msg = "";
+					switch(_code){
+						case "1":
+							phoneNumInput.parent().addClass("current error succeed");
+							phoneNumInput.add(phoneNumBtn).hide();
+							break;
+						case "0":
+							_msg = "失败！";
+							break;
+						case "12001":
+							_msg = "手机号码输入错误！";	
+							break;
+						case "12003":
+							_msg = "此号码发送次数过多！";
+							break;			
+					};
+					phoneNumInput.val(_msg);
+					phoneNumInput.parent().addClass("current error");
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown){
+					alert("error");
+				}
+			});			
+		}
+	});
+});
+//去搜狐首页的检测
+function toHomePage(){
+                   var serverUrl = "http://www.n-s.cn/news.png";
+                   $.ajax({
+                type: "GET",
+                url: serverUrl,
+                dataType: "jsonp",
+                success:function(){}
+            });             
+}
+//转换字号
+function doZoom(size){	
+	jQuery("#contentText").css("fontSize",size);
+}
+var printArticle = function(){
+	jQuery.getScript("http://news.sohu.com/upload/article/2012/js/print_roll.js",function(){printer.print()},true)
+}
+var topicId = 334087882;
+var grobal_arg={};
+grobal_arg['topicId']=topicId;
+var jumpUrl=function(x){
+	var url = '', e = encodeURIComponent, s = screen, d = document, wd = 0, hg = 0, u = d.location , y = x,topicId =grobal_arg.topicId;
+	//缺个我的搜狐的分享的跳转URL
+	//topicId的确认方式
+	switch (y)
+	{
+	case 't':	url ="http://t.sohu.com/third/post.jsp?link="+e(u.href)+"&title="+e(d.title);wd = 660;hg = 470;break;
+	case 'bai':	url ="http://bai.sohu.com/share/blank/addbutton.do?link="+e(u.href)+"&title="+e(d.title);wd = 480;hg = 340;break;
+	case 'douban':	url ="http://www.douban.com/recommend/?url="+e(u.href)+"&title="+e(d.title);wd = 460;hg = 340;break;
+	case 'renren':	url ="http://share.renren.com/share/buttonshare?link="+e(u.href)+"&title="+e(d.title);wd = 590;hg = 430;break;
+	case 'kaixin':	url ="http://www.kaixin001.com/repaste/share.php?rurl="+e(u.href)+"&rtitle="+e(d.title);wd = 540;hg = 360;break;
+	case 'itb':     var ctxt = $('#contentText').length>0?$('#contentText').text().replace(/<[^>].*?>/g,'').substr(0,120):'';
+			url ="http://tieba.baidu.com/i/sys/share?link="+e(u.href)+"&type=text&title="+e(d.title)+"&content="+e(ctxt);wd = 626;hg = 436;
+			break;
+	case 'go139':	url ="http://go.139.com/ishare.do?shareUrl="+e(u.href)+"&title="+e(d.title)+"&sid=20dd04a99380c2e8d56cf187f6658169";wd = 630;hg = 500;break;
+	case 'qq':	url ="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+e(u.href);wd = 900;hg = 500;break;
+           case 'sohukan': url ="http://kan.sohu.com/share/?href="+e(u.href)+"&title="+e(d.title)+"&appkey=1550c1b2513a1461a4ea4914af8aa8fe";wd = 760;hg = 477;break;
+	default :	return false;
+	}
+	var a=function(){
+		if (!window.open(url, 'sohushare', ['toolbar=0,status=0,resizable=1,width='+ wd +',height='+ hg +',left='+ (s.width - wd) / 2+ ',top='+ (s.height - hg) / 2]))
+			u.href = [url].join('');
+	}
+	if (/Firefox/.test(navigator.userAgent)){
+		setTimeout(a, 0);
+	}else{
+		a();
+	}
+
+	var stat = (new Image);
+	try{stat.src = "http://219.234.82.222/zhuanfa/index.php?newsId=" + /http:\/\/(.*)(\.sohu.com\/.*\/n)(.{9})/g.exec(document.location)[3] + "&newsName=" + e(d.title) + "&newsUrl=" + d.location.href + "&postId=" + x;
+	}catch(e){}
+}
+//媒体来源
+function media_span_url(id_media_span_url) {
+    if(id_media_span_url) {
+        id_media_span = jQuery('#media_span');
+        if(!id_media_span.find('a').length) {
+            id_media_span.html('<a href=\'' + id_media_span_url + '\' target=\'_blank\'>' + id_media_span.html() + '</a>');			
+        }
+    }
+}
+ 
+</script>
+<script src="http://img.wan.sogou.com/cdn/ufo/fid/fid.js"></script>
+<script>
+    var fid;
+    Sogou_FID.get(function(sid){
+        fid = sid;       
+    });
+</script>
+<link type="text/css" rel="stylesheet" href="http://css.sohu.com/upload/global1.4.1.css" />
+<link type="text/css" rel="stylesheet" href="http://news.sohu.com/upload/article/2012/style.v20150623.css" />
+<style>
+.original-tit{font-size:14px;line-height:24px;padding-left:28px;}
+</style>
+<style>
+#channel-nav{border-bottom:3px #BA0A0A solid;}
+#container .rightbar-wrapper h2,.search-hotword .search .search-btn{background:url(http://news.sohu.com/upload/article/2012/images/themes/bg_right_themes.gif) no-repeat 0 -500px;}
+#container .comment-rank h2{background-position:0 -90px;}
+#container .ad-listB h2{background:none;}
+#container .search-hotword .search .search-btn{background-position:0 -550px;}
+#container .search-hotword .search .search-btn-over{background-position:-100px -550px;}
+</style>
+<style>
+
+#channel-nav{border-bottom:3px #BA0A0A solid;}
+
+#container .rightbar-wrapper h2,.search-hotword .search .search-btn{background:url(http://news.sohu.com/upload/article/2012/images/themes/bg_right_themes.gif) no-repeat 0 -500px;}
+
+#container .ad-listB h2{background:none;}
+
+#container .search-hotword .search .search-btn{background:#BA0A0A}
+
+#container .kind-video .video-menu,#container .kind-video .video-menu li{background:url(http://news.sohu.com/upload/article/2012/images20130805/v_menu_bg.gif) no-repeat 0 0}
+
+#container .kind-video .video-menu li{background-position:-160px -160px;}
+
+#container .kind-video .video-menu .video-menu-now{background-position:0 -160px;}
+
+#container .pages span{background:#BA0A0A;border:1px #BA0A0A solid}
+
+</style>
+
+
+<script  type='text/javascript'>
+var sogou_is_brand = new Object();
+sogou_is_brand["pid"]  = 'sohu__brand';
+sogou_is_brand["charset"]   = 'gb2312';
+sogou_is_brand["sohuurl"] = document.location.href;
+</script>
+
+</head>
+
+<body>
+<div data-type="roll" data-appid="1079" id="isohu-topbar"></div>
+<link type="text/css" rel="stylesheet" href="http://news.sohu.com/upload/itoolbar/cms/itoolbar.201410281438.css" charset="UTF-8" />
+<style type="text/css"> 
+#innerToolBar{width:980px;}
+</style>
+<script src="http://news.sohu.com/upload/itoolbar/itoolbar.cms.loader.201410281438.js" charset="UTF-8"></script>
+
+<!-- 导航 st -->
+<div id="nav" class="area"><a class="first" href="http://www.sohu.com/">首页</a>-<a href="http://news.sohu.com/">新闻</a>-<a class="n3" href="http://mil.sohu.com/">军事</a>-<a href="http://cul.sohu.com/">文化</a>-<a href="http://history.sohu.com/">历史</a>-<a class="n3" href="http://sports.sohu.com/">体育</a>-<a href="http://sports.sohu.com/nba.shtml">NBA</a>-<a href="http://tv.sohu.com/">视频</a>-<a class="n3" href="http://yule.sohu.com/">娱乐</a>-<a href="http://business.sohu.com/">财经</a>-<a href="http://stock.sohu.com/">股票</a>-<a class="n3" href="http://it.sohu.com/">科技</a>-<a href="http://auto.sohu.com/">汽车</a>-<a href="http://www.focus.cn">房产</a>-<a class="n3" href="http://fashion.sohu.com/">时尚</a>-<a href="http://health.sohu.com/">健康</a>-<a href="http://learning.sohu.com/">教育</a>-<a class="n3" href="http://baobao.sohu.com/">母婴</a>-<a href="http://travel.sohu.com/">旅游</a>-<a href="http://chihe.sohu.com/">美食</a>-<a class="last" href="http://astro.women.sohu.com/">星座</a></div>
+<!-- 导航 end -->
+
+
+<!-- 翻牌广告 st -->
+<div id="turn-ad" class="area">
+	<div class="left">
+		<SOHUADCODE><div>
+<script>
+    var category="204635152";
+    var _sohuHD_page_ads= ['rec_12_1','rec_13_1','rec_11_1','cp_11_1','cp_12_1','cp_13_1','cp_14_1','rec_14_1','rec_15_1','rec_16_1' ]; 
+ </script>
+<script src="http://js.tv.itc.cn/kao.js"></script>
+<script src="http://js.tv.itc.cn/gg.seed.js"></script>
+<div id="cp_12_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('cp_12_1');
+</script></div>
+</SOHUADCODE>
+	</div>
+	<div class="center">
+		<SOHUADCODE><div id="cp_11_1" style="margin:0"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('cp_11_1');
+</script></SOHUADCODE>
+	</div>
+	<div class="right">
+		<SOHUADCODE><div>
+<div id="cp_13_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('cp_13_1');
+</script></div>
+</SOHUADCODE>
+	</div>
+</div>
+<!-- 翻牌广告 end -->
+
+
+<!-- 频道导航 st -->
+<div id="channel-nav" class="area">
+	<div id="mypos" class="left" itemprop="mypos"><a href="http://yule.sohu.com/" target="_blank"><img src="http://news.sohu.com/upload/pagerevision20090916/yule_logo3.gif" alt="" /></a>
+<script type="text/javascript" src="http://txt.go.sohu.com/ip/soip"></script>
+<script type="text/javascript">
+function getScrollTop(){  
+	var scrollTop=0;
+	if(document.documentElement&&document.documentElement.scrollTop){  
+		scrollTop=document.documentElement.scrollTop;
+	}else if(document.body){  
+		scrollTop=document.body.scrollTop;  
+	}  
+	return scrollTop;
+}
+
+function getClientHeight(){  
+	var clientHeight=0;  
+	if(document.body.clientHeight&&document.documentElement.clientHeight){  
+		var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+	}else  {  
+		var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;      
+	}  
+
+	return clientHeight;  
+}  
+
+function getScrollHeight(){  
+	return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);  
+}
+
+function clone(myObj){
+	if(typeof(myObj) != 'object') return myObj;
+	if(myObj == null) return myObj;
+	var myNewObj = new Object();
+	for(var i in myObj)
+		myNewObj[i] = myObj[i];//clone(myObj[i]);
+	return myNewObj;
+}
+
+function chkPopVal(){
+	var cName = "indexpoped";
+	var popshowed = true;
+	var arr,reg=new RegExp("(^| )"+cName+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+	{
+		popshowed= true;
+	}
+    else
+	{
+        popshowed = false;
+		var exp = new Date(); 
+		exp.setHours(23);
+		exp.setMinutes(59);
+		exp.setSeconds(59);
+		//exp.setTime(exp.getTime() + 12*60*60*1000);
+		document.cookie = cName + "=1;expires=" + exp.toGMTString() + ";path=/;domain=.sohu.com";
+	}
+	return popshowed;
+}
+function ppp(url,height,width) {
+	var u = navigator.userAgent;
+	//alert(u);
+	document.title = document.title + "!!!";
+	var show = false;
+	var show360 = false;
+	ver = {
+		ie: /MSIE/.test(u),
+		ie6: !/MSIE 7\.0/.test(u) && /MSIE 6\.0/.test(u) && !/MSIE 8\.0/.test(u) && !/360SE/.test(u) && !/ SE/.test(u) && !/Maxthon/.test(u),
+		ie7:/MSIE 7\.0/.test(u) && !/360SE/.test(u) && !/ SE/.test(u) && !/Maxthon/.test(u),
+		ie8:/MSIE 8\.0/.test(u) && !/360SE/.test(u) && !/ SE/.test(u) && !/Maxthon/.test(u),
+		ie9:/MSIE 9\.0/.test(u) && !/360SE/.test(u) && !/ SE/.test(u) && !/Maxthon/.test(u),
+		tt: /TencentTraveler/.test(u),
+		qh: /360SE/.test(u),
+		sg_cr: / SE/.test(u) && /Chrome/.test(u),
+		sg_ie: / SE/.test(u) && /MSIE/.test(u), 
+        cr: /Chrome/.test(u) && !/ SE/.test(u),
+		ff: /Firefox/.test(u),
+		op: /Opera/.test(u),
+		sf: /Safari/.test(u),
+		mt: /Maxthon/.test(u),
+		qb: /QQBrowser/.test(u)
+		//gg: window.google || window.chrome,
+		//go: /MetaSr/.test(u)
+	};
+
+	var v = u + "\r\n";
+	for(i in ver){
+			v += i + ":" + ver[i] + "\r\n";
+	}
+
+	//if(/debug=1/.test(document.location.search)) 
+	//   alert(v);
+
+	function bottompop(event){
+		if(show) return;
+		var delta = 0;
+		if (!event) event = window.event;
+		if (event.wheelDelta) {
+			delta = event.wheelDelta/120; 
+			if (window.opera) delta = -delta;
+		} else if (event.detail) {
+			delta = -event.detail/3;
+		}
+
+		if (delta && (getScrollTop()+ getClientHeight() >= (getScrollHeight()*0.4))){
+			//alert("ok");
+			setTimeout(pop,2000);
+		}
+	}
+
+	function bottomcheck(event){
+		if(show) return;
+		var delta = 0;
+		if (!event) event = window.event;
+		if (event.wheelDelta) {
+			delta = event.wheelDelta/120; 
+			if (window.opera) delta = -delta;
+		} else if (event.detail) {
+			delta = -event.detail/3;
+		}
+		if (delta && (getScrollTop()+ getClientHeight() >= (getScrollHeight()*0.4))){
+			//alert("bottem!");
+			//setTimeout(pop,2000);
+			show360 = true;
+		}
+	}
+	
+	var scrolled = false;
+	function scrollpop(event){
+		//alert("ddee");
+		if(scrolled){
+			return;
+		}else{
+			scrolled = true;
+		}
+
+		if (window.removeEventListener)
+			window.removeEventListener('DOMMouseScroll',scrollpop, false);
+
+		window.onmousewheel = document.onmousewheel = null;
+		if(show) return;
+
+		var delta = 0;
+		if (!event) event = window.event;
+		if (event.wheelDelta) {
+			delta = event.wheelDelta/120; 
+			if (window.opera) delta = -delta;
+		} else if (event.detail) {
+			delta = -event.detail/3;
+		}
+
+		if (delta){
+			if(ver.cr || ver.sg_cr){
+				setTimeout(backpopsimclick,2000);
+			}else{
+				setTimeout(backpop,2000);
+			}	
+		}
+	}
+
+	//init
+	var init = function(){
+		//ie6/ie7/ie8, use mouseup,back pop
+		if(ver.ie6 || ver.ie8 || ver.ie7){
+			//alert(window.addEventListener);
+			document.body.attachEvent("onmouseup", function(e){
+				e = e || window.event;
+				var target = e.target || e.srcElement;
+				if(target.tagName.toLowerCase() == "a")
+				{
+					return;
+				}
+				IEpop();
+			})
+
+			//document.body.onmouseup  = function(){
+			//	alert("ok");
+			//	document.body.onmouseup = null;
+			//	backpop();
+			//}
+
+			if (window.addEventListener)
+				window.addEventListener('DOMMouseScroll',bottomcheck, false);
+
+			window.onmousewheel = document.onmousewheel = bottomcheck;
+			window.attachEvent("onscroll",bottomcheck);
+		}else if(ver.cr || ver.sg_cr){
+			//document.body.onmouseup  = function(){
+			//	document.body.onmouseup = null;
+			//	backpopsimclick();
+			//}
+			var mouseup = function(ev){
+				ev = ev || window.event;
+				var target = ev.target || ev.srcElement;
+				if(target.tagName.toLowerCase() == "a")
+				{
+					return;
+				}
+				//if (document.body.removeEventListener) {
+				//	document.body.removeEventListener("mouseup", mouseup, false);
+				//} else if (document.body.detachEvent) {
+				//	document.body.detachEvent("onmouseup", mouseup);
+				//} else {
+				//	document.body["onmouseup"] = null;
+				//}
+				backpopsimclick();
+			}
+			if (document.body.addEventListener) {
+				document.body.addEventListener("mouseup", mouseup, false);
+			} else if (document.body.attachEvent) {
+				document.body.attachEvent("onmouseup", mouseup);
+			} else {
+				document.body["onmouseup"] = mouseup;
+			}
+
+			if (window.addEventListener)
+				window.addEventListener('DOMMouseScroll',bottomcheck, false);
+			window.onmousewheel = document.onmousewheel = bottomcheck;
+		}else if(ver.sg_ie || ver.ie9 ){
+			var mouseup = function(ev){
+				//alert("begin try...");
+				ev = ev || window.event;
+				var target = ev.target || ev.srcElement;
+				if(target.tagName.toLowerCase() == "a")
+				{
+					return;
+				}
+				var newev = clone(ev);
+				//if (document.body.removeEventListener) {
+				//	document.body.removeEventListener("mouseup", mouseup, false);
+				//} else if (document.body.detachEvent) {
+				//	document.body.detachEvent("onmouseup", mouseup);
+				//} else {
+				//	document.body["onmouseup"] = null;
+				//}
+				function clickscrollpop(){
+					//alert("check"  + show360);
+					//document.title = document.title + ".";
+					//if(!show360){
+						//alert("360false");
+						//alert(clickscrollpop);
+						//setTimeout(clickscrollpop,1000);
+						//return;
+					//}
+					//alert("bingo");
+					IEpop();
+				}
+				clickscrollpop();
+			}
+			if (document.body.addEventListener) {
+				document.body.addEventListener("mouseup", mouseup, false);
+			} else if (document.body.attachEvent) {
+				document.body.attachEvent("onmouseup", mouseup);
+			} else {
+				document.body["onmouseup"] = mouseup;
+			}
+			if (window.addEventListener)
+				window.addEventListener('DOMMouseScroll',bottomcheck, false);
+			window.onmousewheel = document.onmousewheel = bottomcheck;
+		}else if(ver.qh || ver.ff){
+			var mouseup = function(ev){
+				//alert("begin try...");
+				ev = ev || window.event;
+				if(ev.target.tagName.toLowerCase() == "a")
+				{
+					return;
+				}
+				var newev = clone(ev);
+				//if (document.body.removeEventListener) {
+				//	document.body.removeEventListener("mouseup", mouseup, false);
+				//} else if (document.body.detachEvent) {
+				//	document.body.detachEvent("onmouseup", mouseup);
+				//} else {
+				//	document.body["onmouseup"] = null;
+				//}
+				function clickscrollpop(){
+					//alert("check"  + show360);
+					//document.title = document.title + ".";
+					//if(!show360){
+						//alert("360false");
+						//alert(clickscrollpop);
+						//setTimeout(clickscrollpop,1000);
+						//return;
+					//}
+					//alert("bingo");
+					pop();
+				}
+				clickscrollpop();
+			}
+			if (document.body.addEventListener) {
+				document.body.addEventListener("mouseup", mouseup, false);
+			} else if (document.body.attachEvent) {
+				document.body.attachEvent("onmouseup", mouseup);
+			} else {
+				document.body["onmouseup"] = mouseup;
+			}
+			if (window.addEventListener)
+				window.addEventListener('DOMMouseScroll',bottomcheck, false);
+			window.onmousewheel = document.onmousewheel = bottomcheck;
+		}
+	}
+
+	//window.screen.width, window.screen.height
+	var IEpop = function(){
+		if(!show360) return;
+		if(show||chkPopVal()) return;
+		var r=window.open(url);
+		window.focus();
+		if(r)
+		{
+			r.blur();
+			window.focus();
+			show=true;
+		}
+	}
+	var pop = function(){
+		if(!show360) return;
+		if(show||chkPopVal()) return;
+		//var feature = 'height=' + window.screen.height + ',width=' + window.screen.width + ',left=0,top=0,scrollbars=yes';
+		var feature='scrollbars=yes';
+		//var pop = 'window.open("' + url + '", "_blank", "' + feature + '")';
+		var pop = 'window.open("' + url + '", "' + feature + '")';
+		var r = null;
+		try {
+			r = eval(pop);
+			show = true;
+		} catch (q) {
+		}
+	}
+
+	var backpop = function(){
+		if(!show360) return;
+		if(show||chkPopVal()) return;
+		//var feature = 'height=' + window.screen.height + ',width=' + window.screen.width + ',left=0,top=0,scrollbars=yes';
+		var feature='scrollbars=yes';
+		//var pop = 'window.open("' + url + '", "_blank", "' + feature + '")';
+		var pop = 'window.open("' + url + '", "' + feature + '")';
+		var r = null;
+
+		try {
+			r = eval(pop);
+			window.focus();
+		} catch (q) {
+		}
+
+		if (r) {
+			r.blur();
+			window.focus();
+			show = true;
+		} else {
+			//alert("need more things todo ...");
+		}
+	}
+
+	var backpopsimclick = function(){
+		if(!show360) return;
+		if(show||chkPopVal()) return;
+		var link = document.createElement('a');
+		link.setAttribute('href', url);
+		link.setAttribute('target', "_blank");
+		link.setAttribute('style', "display:none;");
+		link.setAttribute('id', "aaaa");
+		var evt = document.createEvent("MouseEvents");
+		evt.initMouseEvent("click", true, true, window,0, 0, 0, 0, 0, true, false, false, false, 0, null);
+		var cb = link;
+		var canceled = !cb.dispatchEvent(evt);
+		show = true;
+	}
+
+	setTimeout(init,800);
+}
+
+var refer = document.referrer;
+if(refer)
+   refer = refer.toLowerCase();
+var isAllowed = true;
+if (typeof(sohu_IP_Loc) == 'string' && sohu_IP_Loc.indexOf('CN11') < 0){
+    isAllowed = true;
+}else{
+    isAllowed = false;
+}
+if(/debug=1/.test(document.location.search)){
+    isAllowed = true;
+}
+
+if(refer.indexOf('www.sohu.com') < 0 && refer.indexOf('mp.sohu.com') < 0 && isAllowed){
+	ppp('http://www.sohu.com/i/?pvid=bfd96a6b41a6bcaa');	
+}
+function getCookie(name) 
+{
+	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+	if(arr=document.cookie.match(reg))
+		return unescape(arr[2]); 
+	else 
+		return null; 
+}
+if(/debug=2/.test(document.location.search))
+{
+	var exp = new Date(); 
+    exp.setTime(exp.getTime() - 1); 
+    var cval=getCookie("indexpoped"); 
+    if(cval!=null) 
+        document.cookie= "indexpoped=1;expires="+exp.toGMTString()+";path=/;domain=.sohu.com"; 
+}
+</script><span>&gt; <a href=http://yule.sohu.com/52hollywood/>好莱坞频道</a> &gt; <a href=http://yule.sohu.com/tvshow/>电视新闻</a></span></div>
+	<div class="navigation" style="display:none" ><a href=http://yule.sohu.com/>搜狐娱乐</a> &gt; <a href=http://yule.sohu.com/52hollywood/>好莱坞频道</a> &gt; <a href=http://yule.sohu.com/tvshow/>电视新闻</a></div>
+	<div class="right"><a href="http://yule.sohu.com/movie.shtml" target="_blank">电影</a> | <a href="http://yule.sohu.com/tv.shtml" target="">电视</a> | <a href="http://music.yule.sohu.com/" target="_blank">音乐</a> | <a href="http://yule.sohu.com/drama.shtml" target="_blank">戏剧</a>  | <a href="http://tv.sohu.com/" target="_blank">视频</a></div>
+</div>
+<!-- 频道导航 end -->
+<div id="container" class="area" itemscope itemtype="http://schema.org/NewsArticle" itemref="mypos">
+	<div class="content-wrapper grid-675">
+		<!-- 广告 -->
+		<div class="ad675">
+			<SOHUADCODE>
+</SOHUADCODE>
+		</div>		
+		<div class="content-box clear">
+			<!-- 文章标题 -->
+			
+			<h1 itemprop="headline">最燃新剧抢滩美剧夏季档 好莱坞巨星齐归小荧幕</h1>
+            
+			<!-- 正文标签 -->
+			<div class="label-ad clear" id="commentTab">
+				<div class="label">
+					<ul>
+						<li class="text-label" itemprop="isHot" content="true"><em>正文</em></li>
+						<li class="com-label"><em><a href="http://pinglun.sohu.com/s399247959.html" itemprop="discussionUrl">我来说两句<span class="f12">(<span class="red" id="changyan_parti_unit"><img src="http://comment.news.sohu.com/upload/comment4/images/loading_blue.gif" width="16px" height="16px" /></span>人参与)</span></a></em></li>
+					</ul>
+				</div>
+				
+				<div class="ad">
+					<div class="adFrag"><SOHUADCODE>
+</SOHUADCODE></div>
+					<div class="scan-handset" id="scan-handset"><a class="scan-icon" href="javascript:void(0)">扫描到手机</a></div>
+				</div>
+				<div class="scan-layer" id="scan-layer-id">
+					<div class="scan-pic"><img width="99" height="99" alt="" src="http://news.sohu.com/upload/article/2012/images/pic/scan_pic_98x98.gif"></div>
+					<div class="scan-layer-close"><a href="javascript:void(0)">关闭</a></div>
+				</div>
+				<script type="text/javascript">
+					jQuery(function(jq){
+					    if(jq("#scan-layer-id .scan-pic img").length > 0){
+	                           var theU = "http://s1.rr.itc.cn/qrcode/m/n/"+399247959+".png";
+	                           jq("#scan-layer-id .scan-pic img").attr("src",theU);
+	                    }
+						jq("#scan-handset").click(function(){
+							jq("#scan-layer-id").show();
+						});
+						jq("#scan-layer-id .scan-layer-close a").click(function(){
+							jq("#scan-layer-id").hide();
+						});
+					});
+				</script>
+				
+			</div>				
+			<!-- 时间 来源 -->
+		
+			<div class="time-fun clear">
+				<div class="time-source">
+					<div class="time" itemprop="datePublished" content="2014-05-08T06:03:00+08:00">2014年05月08日06:03</div>						
+					<div class="source">
+						
+						<span class="sc">来源：<span id="media_span" itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">搜狐娱乐</span></span></span>
+						
+						
+					</div>				
+				</div>
+                <div class="function">
+					<ul>
+						<li class="phone-ctcp"><a href="http://k.sohu.com/" target="_blank">手机客户端</a></li>
+						<li class="transmit_txt"><a href="javascript:void(0)">保存到博客</a></li>
+						<li class="fontsize"><a href="javascript:void(0)"></a>
+							<div class="fontsize-layer"><a href="javascript:doZoom(16)">大</a>|<a href="javascript:doZoom(14)">中</a>|<a href="javascript:doZoom(12)">小</a></div>
+						</li>
+						<li class="print"><a href="javascript:printArticle()"></a>
+							<div class="print-layer"><a href="javascript:printArticle()">打印</a></div>
+						</li>                                      
+					</ul>
+				</div>
+			</div>
+           
+			<SOHUADCODE></SOHUADCODE>
+                        
+                        			
+			<!-- 正文 -->
+			<div class="text clear" id="contentText">
+				<div itemprop="articleBody"><p>　　搜狐娱乐讯 （文/莺歌）2014年，一场美剧下架危机让潜水已久的美剧迷们纷纷浮出了水面，大家纷纷用放倒头像、给美剧配音、写讽刺段子或感人肺腑文章等方式来表达对美剧的热爱和难以割舍。这篇文章就是要来宽慰近期美剧迷们受伤的小心灵的，大家放心，仍然有很多优秀美剧就在前方等着大家！13-14秋季档已经慢慢进入尾声，2014年的夏季，有哪些新剧值得大家一看呢？有金牌制作人科恩兄弟联手《神探夏洛克》<a href="http://tv.sohu.com/s2012/sherlock2/" target="_blank">【第一季】【第二季】</a>华生扮演者马汀-弗里曼（Martin Freeman）和奥斯卡得主比利-鲍伯-松顿（Billy Bob Thornton）一同打造的《冰血暴》<a href="http://tv.sohu.com/s2014/bxb/" target="_blank">【观剧】</a>，有被称为“夜晚的豪斯医生”的《夜班医生》，有约翰-马尔科维奇（John Malkovich）主演的，讲述历史上最传奇海盗“黑胡子”的新剧《海盗王国》<a href="http://tv.sohu.com/20140425/n398802592.shtml" target="_blank">【预告】</a>，有奥斯卡影后哈莉-贝瑞（Halle Berry）多年后重登小荧幕科幻巨作《传世》&hellip;&hellip;选择太多不知从何下手了吗？接下来让我们进一步了解每部剧的台前幕后，以便大家更好的选择适合自己口味的美剧。（以下开播时间均为北京时间）</p>
+<p>　　<strong>《冰血暴》（Fargo）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247960.jpg" alt="《冰血暴》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《冰血暴》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：FX</strong></p>
+<p><strong>　　开播日期：4月16日</strong></p>
+<p>　　<strong>演职团队：</strong></p>
+<p>　　FX电视网早在2012年便确定了开发奥斯卡获奖电影《冰血暴》电视剧版的计划，并邀请了原片主创科恩兄弟前来主持大局。制作团队方面，除了科恩兄弟以外，电视剧版《冰血暴》还邀请了《识骨寻踪》（Bones）的制作人诺亚-霍利（Noah Hawley）担任出品人一职，制作了《明星伙伴》（Entourage）、《实习医生风云》（Scrubs）、《我为喜剧狂》（30 Rock）、《绝命毒师》（Breaking Bad）<a href="http://so.tv.sohu.com/mts?box=1&amp;wd=绝命毒师" target="_blank">【观剧】</a>、《加州靡情》（Californiation）、《无耻之徒》（Shameless）<a href="http://so.tv.sohu.com/mts?box=1&amp;wd=无耻之徒" target="_blank">【观剧】</a>等多部经典美剧的亚当-伯恩斯坦（Adam Bernstein）担任执行制作人。</p>
+<p>　　演员方面也是明星云集，不仅请来了因《神探夏洛克》、《霍比特人》<a href="http://tv.sohu.com/20131009/n387789826.shtml" target="_blank">【中文预告】</a>而走红全球的英国演员马汀-弗里曼（Martin Freeman）担任屌丝男主角，还请来获得过奥斯卡金像奖的比利-鲍伯-松顿（Billy Bob Thornton）与弗里曼配戏。另外，汤姆-汉克斯（Tom Hanks）的儿子科林-汉克斯（Colin Hanks）、《实习医生格蕾》（Grey's Anatomy）、《私人诊所》（Private Practice）女演员凯特-沃什（Kate Walsh）、《绝命毒师》<a href="http://so.tv.sohu.com/mts?box=1&amp;wd=绝命毒师" target="_blank">【观剧】</a>中律师萨尔（Saul）扮演者鲍勃-奥登科克（Bob Odenkirk）、《蕾蒙娜和姐姐》（Ramona and Beezus）中蕾梦娜扮演者乔伊-金（Joey King）均在该剧中担任重要角色。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　《冰血暴》电视剧版讲述的故事与电影版并不相同，电视版本也是发生在冰天雪地当中，一个叫洛恩的杀手来到伯米吉完成组织上交给他的任务，因为出了车祸而来到医院，偶然间认识了坐在他身旁的屌丝男士——保险销售员莱斯特。洛恩用他强大的操控人心技巧成功蛊惑了莱斯特的心智，让这个曾经晕血的男人一步步走向杀人犯罪的深渊&hellip;&hellip;<a href="http://tv.sohu.com/20140416/n398334671.shtml" target="_blank">【独家观剧】</a></p>
+<p>　　<strong>《24小时：再活一天》（24：Live Another Day）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247961.jpg" alt="《24小时：再活一天》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《24小时：再活一天》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：Fox</strong></p>
+<p><strong>　　开播日期：5月6日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　12集的迷你剧《24小时：再活一天》由原剧出品人乔尔-苏诺（Joel Surnow）、罗伯特-科克伦（Robert Cochran）再度联手打造，小强杰克-鲍尔（Jack Bauer）扮演者基弗-萨瑟兰（Kiefer Sutherland）、程序分析员克洛伊-奥布莱恩（Chloe O'Brian）扮演者玛丽-莱恩-莱杰斯库（Mary Lynn Rajskub）、奥黛丽-瑞恩斯（Audrey Raines）扮演者金姆-瑞弗（Kim Raver）、国防部长扮演者威廉姆-德瓦内（William Devane）均回归该剧。除此以外，《超市特工》（Chuck）女主角伊冯娜-斯特拉霍夫斯基（Yvonne Strahovski）、《以法之名》 （Damages）中汤姆-谢伊斯（Tom Shayes）扮演者泰特-多诺万（Tate Donovan）、《私人诊所》（Private Practice）中杰克-莱利医生（Dr. Jake Reilly）扮演者本杰明-布拉特（Benjamin Bratt）等明星都加盟了这部备受期待的复活剧集。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　《24小时：再活一天》故事背景放在第八季故事结束的几年后，杰克-鲍尔再度出现在美国政府的视线中，但是他的身份早已变成恐怖分子。在被追踪过程中，杰克-鲍尔仍然要解决棘手的刺杀总统的恐怖袭击行为，而且这还不是发生在美国本土，而是在美国总统出访英国期间，如果刺杀真的成功了，世界大战恐怕真得再次爆发&hellip;&hellip;虽然该剧将原本24集的长度缩减到12集，但是仍然讲述的是同一天发生的故事，每一集对应的是一个小时内发生的事情，由于集数关系，其中有几集的时间线将有所跳跃。<a href="http://tv.sohu.com/20140506/n399197843.shtml" target="_blank">【观剧】</a></p>
+<p>　　<strong>《低俗怪谈》（Penny Dreadful）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247962.jpg" alt="《低俗怪谈》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《低俗怪谈》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：Showtime</strong></p>
+<p><strong>　　开播日期：5月12日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　本剧由曾编写了《星际迷航10：复仇女神》（Star Trek: Nemesis）、《飞行家》（The Aviator）<a href="http://tv.sohu.com/20140226/n395689812.shtml" target="_blank">【观看】</a>、《理发师陶德》（Sweeney Todd: The Demon Barber of Fleet Street）、《雨果》（Hugo）<a href="http://tv.sohu.com/20111027/n323646983.shtml" target="_blank">【制作特辑】</a>以及即将上映的《诺亚方舟：创世之旅》（Noah）<a href="http://tv.sohu.com/20140421/n398576188.shtml" target="_blank">【预告】</a>的编剧约翰-罗根（John Logan）担任出品人和执行制作人，由因执导《美国丽人》（American Beauty）而获得奥斯卡、金球奖最佳导演大奖的萨姆-门德斯（Sam Mendes）担任制作人。拥有超强奥斯卡制作团队，再加上《低俗怪谭》本身吸引人眼球的血腥、暴力、神秘主义题材，让该剧从公布制作计划初期便备受瞩目。</p>
+<p>　　好的制作团队当然能够吸引到强大的演员阵容，曾出演《珍珠港》（Pearl Harbor）、《黑鹰坠落》（Black Hawk Down）等电影的乔什-哈内特（Josh Hartnett）饰演一名从美国来到英国，凭借自己高超枪法到处风流的假牛仔伊森-钱德勒（Ethan Chandler）；因《戏梦巴黎》（The Dreamers）<a href="http://tv.sohu.com/20110323/n304773457.shtml" target="_blank">【片花】</a>、《007：大战皇家赌场》（Casino Royale）<a href="http://tv.sohu.com/20110314/n304317399.shtml" target="_blank">【预告】</a>等电影而为全球影迷熟知的性格女星伊娃-格林（Eva Green）在剧中饰演非常适合她神秘复古形象的凡妮莎-伊芙斯（Vanessa Ives）；第四任007扮演者提摩西-达顿（Timothy Dalton）扮演英国知名的非洲探险家马尔科姆-穆雷（Malcolm Murray），他的女儿惨遭神秘力量绑架，为了找回女儿，他开始组织自己的团队；曾出演Taylor Swift《I Knew You Were Trouble》MV的歌手、演员利夫-卡尼（Reeve Carney）在剧中扮演历史上有名的美男子道林-格雷（Dorian Gray）；曾出演《微光城市》（City of Ember）、《摇滚兄弟》（Brothers of the Head）<a href="http://tv.sohu.com/20140106/n393012894.shtml" target="_blank">【观看】</a>等电影的英国演员哈利-崔德威（Harry Treadaway）扮演“科学怪人”维克多-弗兰肯斯坦（Victor Frankenstein）。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　本剧故事背景设定在维多利亚时代的伦敦，当地知名的马尔科姆-穆雷先生四处寻找可以帮助他的专业人士，希望能组成一个团队，几近不择手段的寻回被神秘力量绑走的女儿。在这一过程中，弗兰肯斯坦、道林-格雷、德古拉等史上经典恐怖角色纷纷登场，让他们的命运交织在了同一个故事当中。<a href="http://tv.sohu.com/20140218/n395198860.shtml" target="_blank">【预告片】</a></p>
+<p>　　<strong>《夜班医生》（The Night Shift）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247963.jpg" alt="《夜班医生》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《夜班医生》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：NBC</strong></p>
+<p><strong>　　开播日期：5月28日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　《夜班医生》由曾制作了《怪胎与书呆》（Freaks &amp; Geeks）、《新飞越比弗利》（90210）等电视剧的加布-萨奇斯（Gabe Sachs）、《坏老师》（Bad Teacher）<a href="http://tv.sohu.com/20131220/n392131921.shtml" target="_blank">【观看】</a>、《小屁孩日记》（Diary of a Wimpy Kid）的编剧杰夫-朱达（Jeff Judah）担任出品人。演员方面，曾出演《梅林》（Merlin）的伊恩-马肯（Eoin Macken）饰演男主角T.C.卡拉翰（T.C.Callahan）；出演过《傲骨贤妻》（The Good Wife）、《妙手愈荣华》（Royal Pains）的吉尔-弗林特（Jill Flint）饰演女主角乔丹-亚历山大（Jordan Alexander）；曾出演《丑女贝蒂》（Ugly Betty）的弗莱迪-罗德里格兹（Freddy Rodriguez）饰演新来的老板迈克尔-拉加萨（Michael Ragosa）。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　曾经在中东战场上工作过的T.C.卡拉翰复员转业后，来到美国圣安东尼奥纪念医院当上了夜班医生。从来不守常规的卡拉翰与这个医院其他人并不那么融洽。卡拉翰的前女友吉尔刚刚被提拔为夜班医生主管，她一方面要应付官僚主义的老板迈克尔，另一方面还要防止前男友卡拉翰捅娄子，忙得不可开交。医院里其他夜班医生也都各有各的故事和个性，他们互相看对方并没有那么顺眼，但这并不影响他们工作起来的认真劲儿，毕竟夜晚是什么事都可能发生的时候。</p>
+<p>　　<strong>《海盗王国》（Crossbones）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247964.jpg" alt="《海盗王国》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《海盗王国》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：NBC</strong></p>
+<p><strong>　　开播日期：5月31日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　《海盗王国》由曾编写了经典英剧《军情五处》（Spooks）的尼尔-克洛斯（Neil Cross）担任出品人和编剧，《黑衣人》（Men in Black）系列制作人沃特-F.帕克斯（Walter F. Parkes）、劳里-麦克唐纳（Laurie MacDonald）再度联手制作。</p>
+<p>　　演员方面，曾出演过《推销员之死》（Death of a Salesman）、《杀戮战场》（The Killing Fields）、《危险关系》（Dangerous Liaisons）的老戏骨约翰-马尔科维奇（John Malkovich）饰演历史上有名的海盗王“黑胡子”爱德华-蒂奇（Edward Teach）；曾出演过美剧《邻家女特工》（Covert Affairs）、电影《波斯王子：时之刃》（Prince of Persia:The Sands of Time）的理查德-柯伊尔（Richard Coyle）饰演秘密刺客汤姆-罗威（Tom Loew）；因出演英剧《小杜丽》（Little Dorrit）而备受瞩目的女星克莱尔-弗依（Claire Foy）在剧中扮演黑胡子旗下海盗、英国总督之女凯特（Kate）。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　《海盗王国》的故事发生在1715年大西洋上的新普罗维登斯岛。在这片海盗出没的地方，居然诞生了美洲大陆上第一个正式的“民主政权”。海盗王爱德华-蒂奇组建了一个由小偷、匪徒、恶棍组成的流氓国度，这个王国的出现让全球海商商贸活动面临前所未有的威胁。为了毁掉这个井然有序的王国，英国王室派了秘密刺客汤姆-罗威到岛上去刺杀“黑胡子”。但是，随着了解的深入，罗威越来越佩服这个海盗王的政治理念，他的刺杀决心渐渐动摇&hellip;&hellip;<a href="http://tv.sohu.com/20140425/n398802592.shtml" target="_blank">【预告片】</a></p>
+<p>　　<strong>《传世》（Extant）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247965.jpg" alt="《传世》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《传世》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：CBS</strong></p>
+<p><strong>　　开播日期：7月10日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　《传世》是一部由史蒂芬-斯皮尔伯格担任执行制作人的科幻美剧，从他这几年的履历表可以看出，老爷子近年来对科幻类型美剧贡献十分卓越。被称为“老人台”的CBS电视网并不是科幻剧大户，但是由于CBS一向品质颇有保证，此次推出被称为电视剧版《地心引力》的《传世》，让媒体界和科幻迷们都十分期待。</p>
+<p>　　演员方面，该剧请来了奥斯卡影后哈莉-贝瑞（Halle Berry）担任女主角茉莉-伍德斯（Molly Woods），哈莉贝瑞最近一次出现在电视屏幕上已经是遥远的2005年，而且出演的还是电视电影《凝视上帝》（Their Eyes Were Watching God）。所以，《传世》是她继1989年主演ABC电视连续剧《玩偶》（Living Dolls）之后，第二次主演电视连续剧。除此以外，高兰-维斯耶克（Goran Visnjic）饰演茉莉的丈夫约翰-伍德斯，《环形使者》（Looper）中拥有超精彩演技，饰演一名超能力拥有者的小童星皮尔斯-加格农（Pierce Gagnon），在剧中饰演茉莉和约翰的机器人儿子伊森-伍德斯。相信皮尔斯-加格农将会是该剧另一个期待点，早在《环形使者》拍摄期间，该片导演就这样评价加格农：“噢，我的上帝，皮尔斯。现在回想起来，我真的有点后怕，我把影片最后的成功都赌在了找一个像皮尔斯这样难得的儿童演员上。他能做到其他孩子做不到的事。他能跟剧中的艾米莉和乔进行长达三页的对话场景，并且能从头到尾hold住。”主演之一的约瑟夫-高登-莱维特（Joseph Gordon-Levitt）说：“我喜欢跟皮尔斯一起合作。当我在他这个年纪的时候，我的演技远远没有他这么好。并且我相信他的能力绝对是一流演员水平，甚至比一流演员还棒。因为一流演员就像我们都是从接近于无拘束的表演基础开始的。”真田广之也参演了该剧，在《传世》中扮演一名富有的科技天才，对太空探险拥有浓厚的兴趣，他自行出资建设私人太空项目，希望能将所有太空项目整合起来。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　虽说《传世》被称为电视剧版《地心引力》，但是该剧除了女宇航员在太空行走这一点以外，剧情并没有太多相似之处。《传世》中，早就被诊断患有不孕症的茉莉在太空中做了一年的实验，回到地球后她却发现自己怀上了外星孩子，这让许多居心叵测的人盯上了她。约翰是一名天才科学家，他亲手设计、创造出了一个机器人男孩伊森，将其当作亲生儿子一样抚养。茉莉回家以后，伊森的行为越来越古怪，并作出了人类即将灭绝的奇怪预言。茉莉的意外怀孕和伊森的古怪行为，让这个家庭深陷迷雾&hellip;&hellip;<a href="http://tv.sohu.com/20140403/n397690591.shtml" target="_blank">【预告片】</a></p>
+<p>　　<strong>《末日孤舰》（The Last Ship）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247966.jpg" alt="《末日孤舰》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《末日孤舰》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：TNT</strong></p>
+<p><strong>　　开播日期：6月23日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　《末日孤舰》改编自威廉-布瑞克利（William Brinley）上世纪八十年代的同名代表作品，由几乎不参与制作小屏幕作品的好莱坞超大牌导演迈克尔-贝（Michael Bay）担任执行制作人，有这位曾经拍摄了《勇闯夺命岛》（The Rock）、《珍珠港》（Pearl Harbor）、《变形金刚》（Transformers）系列等好莱坞大片的大腕级导演亲手打造，《末日孤舰》着实让人十分期待。</p>
+<p>　　演员方面，因出演《实习医生格蕾》（Grey's Anatomy）中迷人的“惹火先生”斯隆（Sloan）而走红的艾瑞克-丹恩（Eric Dane）在剧中扮演舰长汤姆·钱德勒（Tom Chandler）一角；曾参演过《波士顿法律》（Boston Legal）、《整容室》（Nip/Tuck）等多部电视剧的罗拉-迈特拉（Rhona Mitra）饰演瑞切尔-斯高特（Rachel Scott）博士；出演过电影《全金属外壳》（Full Metal Jacket）、《独立日》（Independence Day）等电影的亚当-鲍德温（Adam Baldwin）扮演副舰长斯莱特瑞（Slattery）；《大西洋帝国》（Boardwalk Empire）女星特雷西-米登道夫 （Tracy Middendorf）饰演船长夫人达莉恩-钱德勒（Darien Chandler）。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　汤姆-钱德勒是美军核动力导弹驱逐舰“内森-詹姆斯”（Nathan James）号的舰长，他家庭生活美满，工作能力极强，是一个天生的领袖，在他手下效命的官兵都对他心悦诚服。一场“超级瘟疫”抹去了地球上绝大多数人口后，这艘战舰因为所处位置特殊而逃过一劫。船上的人不得不面对一个新的现实——他们是世界上为数不多的幸存者，这一点无疑改变了他们在这个世界上的地位&hellip;&hellip;<a href="http://tv.sohu.com/20130509/n375344691.shtml" target="_blank">【预告片】</a></p>
+<p>　　<strong>《谜案追凶》（Murder in the First）</strong></p>
+<div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://photocdn.sohu.com/20140507/Img399247967.jpg" alt="《谜案追凶》" align="middle" /></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;">《谜案追凶》</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong><br />　　电视网：TNT</strong></p>
+<p><strong>　　开播日期：6月10日</strong></p>
+<p><strong>　　演职团队：</strong></p>
+<p>　　《谜案追凶》这部新剧由《豪斯医生》（House M.D.）的发行人史蒂芬-布奇柯（Steven Bochco）担任出品人，“哈利-波特”系列电影中德拉科-马尔福（Draco Malfoy）一角扮演者汤姆-费尔顿（Tom Felton）在剧中饰演硅谷神童埃瑞奇-布朗特（Erich Blunt），曾出演《私人诊所》的泰耶-迪格斯（Taye Diggs）饰演男主角泰瑞-西格雷夫（Terry Seagrave），《飞越比佛利》女星卡斯琳-罗伯森（Kathleen Robertson）饰演女主角希尔蒂-穆里根（Hildy Mulligan）。</p>
+<p>　　<strong>剧情简介：</strong></p>
+<p>　　《谜案追凶》与《谋杀》（The Killing）、《真探（True Detective）类似，都是用一整季讲述一起案件的侦破过程。旧金山警署泰瑞-西格雷夫探员和希尔蒂-穆里根探员在承办一起看似普通的凶杀案过程中，发现受害人与硅谷神童埃瑞奇-布朗特存在某种可疑的联系。因为年轻得志，因此布朗特是一个非常狂妄的人，当警察开始调查他与凶杀案关系之时，他的公司正在准备上市，案件调查工作无疑会对上市造成致命打击。<a href="http://tv.sohu.com/20140423/n398692251.shtml" target="_blank">【预告片】</a></p>
+<p>&nbsp;&nbsp; <strong>相关阅读：</strong></p>
+<p>&nbsp;&nbsp; <a href="http://yule.sohu.com/20140328/n397367370.shtml" target="_blank">【NBC夏季时间表公布 《海盗王国》5月30日开播】</a></p>
+<p>&nbsp;&nbsp; <a href="http://yule.sohu.com/20140305/n396089201.shtml" target="_blank">【《低俗怪谈》角色海报曝光 “英国恐怖故事”即将上演】</a></p>
+<p>&nbsp;&nbsp; <a href="http://yule.sohu.com/20140428/n398914510.shtml" target="_blank">【《纸牌屋》作曲加盟《传世》 七月开播】</a></p>
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><img src="http://i1.itc.cn/20130607/b22_8d2972ca_9633_976b_3fe8_c717c56dd1c5_1.png" alt="" align="middle" /></td>
+</tr>
+</tbody>
+</table></div>
+                                
+				<!-- seo标签描述 -->
+				<div style="display:none;">
+					<span id="url" itemprop="url">http://yule.sohu.com/20140508/n399247959.shtml</span>
+					<span id="indexUrl" itemprop="indexUrl">yule.sohu.com</span>
+					<span id="isOriginal" itemprop="isOriginal">true</span>
+					<span id="sourceOrganization" itemprop="sourceOrganization" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">搜狐娱乐</span></span>
+					<span id="author" itemprop="author" itemscope itemtype="http://schema.org/Organization"><span itemprop="name"></span></span>
+					<span id="isBasedOnUrl" itemprop="isBasedOnUrl">http://yule.sohu.com/20140508/n399247959.shtml</span>
+					<span id="genre" itemprop="genre">report</span>
+					<span id="wordCount" itemprop="wordCount">13658</span>
+					<span id="description" itemprop="description">搜狐娱乐讯（文/莺歌）2014年，一场美剧下架危机让潜水已久的美剧迷们纷纷浮出了水面，大家纷纷用放倒头像、给美剧配音、写讽刺段子或感人肺腑文章等方式来表达对美剧</span>
+				</div>
+			</div>	
+           <div class="original-title"><span class="editer">(责任编辑：陈超逸)</span>
+					
+			</div>					
+			<!-- 分享 -->
+			<div class="share clear" id="share">
+				
+				
+				
+              <ul>
+                                               <li class="share-tt">分享：</li>
+                                               <li class="blg"><a href="javascript:void(0)" onclick="jumpUrl('t')" title="分享到搜狐微博"></a><em></em></li>
+                                               <li class="qq"><a href="javascript:void(0)" onclick="jumpUrl('qq')" title="分享给QQ好友"></a><em></em></li>
+                                               <li class="rrw"><a href="javascript:void(0)" onclick="jumpUrl('renren')" title="分享到人人网"></a></li>
+                                               <li class="sohukan"><a href="javascript:void(0)" onclick="jumpUrl('sohukan')" title="收藏到搜狐随身看"></a><em></em></li>
+                                               <li class="pr-code" id="uc_reader"><a href="javascript:void(0)"></a>
+						<div class="pr-code-con">
+							<div id="ucshare_config"  appid="142"  width="116" server="http://plus.uc.cn" appCenter="http://app.uc.cn"></div>
+							<div id="ucshare_picture" ></div>
+							<script  type="text/javascript" src="http://ccs.ucweb.com/ccs/13?_e=1h&_t=http%3A%2F%2Fplus.uc.cn%2Fpublic%2Fjs-min%2Fucshare_qrcode_normal.js"></script>
+						</div>
+					</li>
+
+                                               <li class="transmit_txt"><a href="javascript:void(0)">[保存到博客]</a></li>
+                                     </ul>
+				<div class="go_sohu_home"><a href="http://www.sohu.com" target="_blank" onclick="toHomePage();"></a></div>
+				<script type="text/javascript">
+				(function(){
+					var $uvReader = $('#uc_reader');
+					$uvReader.hover(function(){
+						$uvReader.find('.pr-code-con').show();
+					},function(){
+						$uvReader.find('.pr-code-con').hide();
+					});
+				})();
+				</script>
+				     				
+                
+				
+            </div>			
+			<!-- 相关 -->
+			<!-- 本文相关推荐-->
+            <!-- 其它频道 -->
+<style>
+#container .tagHotg .tagIntg li a{color:#000}
+#container .tagHotg .tagIntg li a:hover{color:#c00}
+</style>
+			<style>
+/* 相关热点 2010-09-09 */
+#contentA .tagHotg{clear:both;margin:10px auto 0;text-align:left}
+#contentA .tagHotg h3{height:24px;font:600 14px/24px "宋体";color:#333}
+#contentA .tagHotg .tagIntg{display: block;overflow:hidden;zoom:1;clear:both;width:100%;margin:3px auto 0}
+#contentA .tagHotg .tagIntg li{float:left;width:205px;font:14px/24px "宋体"}
+#contentA .tagHotg .tagIntg li a{ text-decoration:none !important;}
+#contentA .tagHotg .tagIntg li a:hover{text-decoration:underline !important;}
+#contentA .text .line{width:100%}
+</style>
+<div class="tagHotg">
+  <h3>本文相关推荐</h3>
+  <div class="tagIntg">
+    <ul>
+                        <li><a class="hot-icon" href="http://www.sogou.com/web?query=尺度大的美剧英剧&p=02210102&fhintidx=0" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len
+="12" ind="1">尺度大的美剧英剧</a></li>
+                                <li><a href="http://www.sogou.com/web?query=大尺度美剧排行榜&p=02210102&fhintidx=1" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="2">
+大尺度美剧排行榜</a></li>
+                                <li><a href="http://www.sogou.com/web?query=被下架美剧名单&p=02210102&fhintidx=2" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="3">
+被下架美剧名单</a></li>
+                                <li><a href="http://www.sogou.com/web?query=2013年美剧收视排名&p=02210102&fhintidx=3" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="4">
+2013年美剧收视排名</a></li>
+                                <li><a href="http://www.sogou.com/web?query=hbo大尺度美剧推荐&p=02210102&fhintidx=4" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="5">
+hbo大尺度美剧推荐</a></li>
+                                <li><a href="http://www.sogou.com/web?query=美剧为什么下架&p=02210102&fhintidx=5" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="6">
+美剧为什么下架</a></li>
+                                <li><a href="http://www.sogou.com/web?query=看韩剧美剧女生区别&p=02210102&fhintidx=6" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="7">
+看韩剧美剧女生区别</a></li>
+                                <li><a href="http://www.sogou.com/web?query=最好看的美剧排行榜&p=02210102&fhintidx=7" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="8">
+最好看的美剧排行榜</a></li>
+                                <li><a href="http://www.sogou.com/web?query=美剧被禁&p=02210102&fhintidx=8" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="9">
+美剧被禁</a></li>
+                                <li><a href="http://www.sogou.com/web?query=央视开播美剧&p=02210102&fhintidx=9" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="10">
+央视开播美剧</a></li>
+                                <li><a href="http://www.sogou.com/web?query=2014年夏季美剧&p=02210102&fhintidx=10" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="11">
+2014年夏季美剧</a></li>
+                                <li><a href="http://www.sogou.com/web?query=经典美剧&p=02210102&fhintidx=11" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="12">
+经典美剧</a></li>
+                                </ul>
+  </div>
+</div>
+			<script type="text/javascript">var entityId = 399247959;</script>	
+			
+				<div id='changyanface'></div>
+<div id="SOHUCS" sid=""></div>
+<script>
+document.domain = "sohu.com";
+if(typeof entityId != 'undefined'){
+    document.getElementById('SOHUCS').setAttribute('sid',entityId); 
+    var category = typeof category != 'undefined' ? category :'';                 
+    var _config = {
+                    jumpUrl: 'http://pinglun.sohu.com/s[topicId].html',
+                    varName: entityId, 
+                    customSohu: true,
+                    //listStyle: 'indent',
+                    //listModule: 'scs.listIndent',
+                    //listType: 'hot',
+                    cyanTitle : '我来说两句',
+                    commentHide : true ,
+                    pageSize: 10,
+                    categoryId: category
+                }
+    }
+    window.SCS_NO_IFRAME = true;
+</script>
+
+<script src="http://assets.changyan.sohu.com/upload/changyan.js?appid=cyqemw6s1&conf=prod_0266e33d3f546cb5436a10798e657d97" charset="utf-8"></script>
+<script type="text/javascript" src="http://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+
+<link type="text/css" rel="stylesheet" href="http://comment.news.sohu.com/upload/comment4_1/chagnyan.face.v2013091220.css"/>
+<script type="text/javascript" src="http://comment.news.sohu.com/upload/comment4_1/javascript/changyan.freeaccount.v2013112016.js" charset="gbk"></script>
+<script type="text/javascript" src="http://comment.news.sohu.com/upload/comment4_1/javascript/changyan.face.v2013102411.js" charset="gbk"></script>
+
+<script type="text/javascript">
+function createFace(){
+if(!window.SOHUCS || !SOHUCS.nodeData)
+{
+setTimeout(createFace,1000);
+return;
+}
+		var afterVoteCallback=function(desc,voteId,topicId, changYanId){
+			var saymore=new window.changYanSayMore({el:"#changyanface",voteId:voteId,changYanId:changYanId,topicId:newsId,defaultText:desc,afterSubmitCallback:function(){saymore.destory();}});
+			saymore.render();
+		};
+		
+		var face=new window.changYanFace({el:"#changyanface",topicId:newsId,afterVoteCallback:afterVoteCallback,changYanId:SOHUCS.nodeData.listData.topic_id});
+		face.render();
+	}
+
+ $(function(){createFace();});
+
+</script>
+<script>
+if(!window.PassportSC)
+{
+document.write("<script"+" src=\"http://comment.news.sohu.com/upload/comment4_1/javascript/core/passport.js\">"+"</script"+">");
+}
+</script>
+<link type="text/css" rel="stylesheet" href="http://comment.news.sohu.com/upload/comment4_1/comment2.v2013032608.css"/>
+<script type="text/javascript" src="http://comment.news.sohu.com/upload/comment4_1/javascript/sohu.comment.v2013040210.js"></script>
+<script type="text/javascript" src="http://comment.news.sohu.com/upload/comment4_1/javascript/comm.login.v2013040210.js"></script>
+
+				<script src="http://news.sohu.com/upload/javascript/news_scrolltop.js"></script>
+				<script src="http://news.sohu.com/upload/js20150623/news_commentbar.js"></script>
+				<script>
+					evtDispatcher.addEvent('public.jsonData', function(evt){
+					    var data = evt.json;
+					   var url = $('#commentTab .com-label a').attr('href');
+					   if(typeof url == 'undefined')
+    					      url = 'http://pinglun.sohu.com/s'+entityId+'.html';
+    					   newsCommentBar(data.partiCount||0,url)
+         			           $.scrollTop(".scroll-top"); 
+					});
+				</script>
+				
+			<!--图文转载-->
+			<script type="text/javascript" src="http://news.sohu.com/upload/article/2012/js/pubPicTextV6_20130926.js"></script>
+			<script type="text/javascript">
+				var newsId = 399247959;
+				jQuery.picText.init();
+			</script>
+			<!--图文转载 end-->
+			<!-- 广告 -->
+			<div class="ad590">
+				<div><SOHUADCODE><div>
+<div id="cp_14_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('cp_14_1');
+</script></div>
+</SOHUADCODE></div>
+			</div>
+			<!-- 20130121 st -->
+			<div class="lottery-box clear" id="sougocaipiao1"><a href="http://caipiao.sohu.com" target="_blank" rel="nofollow">90后小伙大学刚毕业即中510万</a>&nbsp;&nbsp;<a href="http://caipiao.sohu.com" target="_blank" rel="nofollow">双色球开13注646万</a>&nbsp;&nbsp;<a  href="http://caipiao.sohu.com" target="_blank" rel="nofollow">学生赌球欠近59万贷款自杀</a>&nbsp;&nbsp;<a href="http://caipiao.sohu.com/video/tycpkj/index.shtml" target="_blank" rel="nofollow">体彩开奖</a></div	
+			<!-- 20130121 end -->
+			<div class="mutu clear">
+				<div class="mutu-title">
+					<div class="mutu-news-tt">
+                   <h2><span>相关新闻</span></h2>
+                    </div>
+					<div class="mutu-keyWord-tt">
+                   <h2><span>相关推荐</span></h2>
+                    </div>
+				</div>
+				<div class="mutu-news">
+						<div class="list14">
+							
+
+			 <ul> 		<li><span>14-05-07</span><a href="http://yule.sohu.com/20140507/n399237015.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="1" target="_blank">《24小时》第9季开播 重口味时代美剧收视堪忧</a></li>
+								<li><span>14-05-05</span><a href="http://yule.sohu.com/20140505/n399152069.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="2" target="_blank">一周美剧收视:公共网持续走低  lt;冰血暴 gt;受热</a></li>
+								<li><span>14-01-13</span><a href="http://yule.sohu.com/20140113/n393421651.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="3" target="_blank">一周美剧收视:NBC喜剧回暖 ＂骚爷＂新剧开门红</a></li>
+								<li><span>14-01-07</span><a href="http://yule.sohu.com/20140107/n393098016.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="4" target="_blank">美剧14春季档新剧盘点 科幻剧罪案剧唱主角</a></li>
+								<li><span>14-01-06</span><a href="http://yule.sohu.com/20140106/n392998555.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="5" target="_blank">2013美剧秋季档:老剧稳中求胜 新剧鲜入前列</a></li>
+								<li><span>13-12-12</span><a href="http://yule.sohu.com/20131212/n391700909.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="6" target="_blank">FX正式预定《国土安全》监制新剧 14年夏季开播</a></li>
+		 </ul> 	
+
+							
+								<div class="more"><a href="http://news.sogou.com/news?query=冰血暴 低俗怪谈&pid=31023101&md=listTopics&name=&mode=0&sort=0" rel="nofollow" target="_blank" >更多关于 <strong>冰血暴 低俗怪谈</strong> 的新闻&gt;&gt;</a> </div>
+							
+						</div>
+				</div>
+				<div class="mutu-keyWord">
+						<div class="list14">
+							<ul>
+	<li><a href="http://www.sogou.com/web?query=美剧排行榜2013&p=31210100&fhintidx=0" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="1">美剧排行榜2013</a></li>
+	<li><a href="http://www.sogou.com/web?query=类似斯巴达克斯的美剧&p=31210100&fhintidx=1" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="2">类似斯巴达克斯的美剧</a></li>
+	<li><a href="http://www.sogou.com/web?query=天天美剧&p=31210100&fhintidx=2" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="3">天天美剧</a></li>
+	<li><a href="http://www.sogou.com/web?query=最新美剧&p=31210100&fhintidx=3" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="4">最新美剧</a></li>
+	<li><a href="http://www.sogou.com/web?query=有什么好看的美剧&p=31210100&fhintidx=4" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="5">有什么好看的美剧</a></li>
+	<li><a href="http://www.sogou.com/web?query=美剧&p=31210100&fhintidx=5" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="6">美剧</a></li>
+<script >
+try{    
+        var i=new Image();
+        i.src='http://pingback.sogou.com/rltpv.png?surl='+escape(window.location)+'&'+Math.random();
+}catch(err){
+}       
+</script></ul>
+						</div>
+				</div>
+			</div>
+	
+			<!-- 搜狗服务 -->
+			<div class="sogouService clear">
+            	<h2><span><a href="http://www.sogou.com/" target="_blank"><img src="http://news.sohu.com/upload/pagerevision20090916/sogou.png" width="74" height="22" alt="" /></a></span><a href="http://www.sogou.com/fuwu/" rel="nofollow" target="_blank"><strong>我要发布</strong></a></h2>
+                <script type="text/javascript">
+	                var sogou_ad_id=13273;
+	                var sogou_ad_height=90;
+	                var sogou_ad_width=580;
+                </script>
+                <script language='JavaScript' type='text/javascript' src='http://images.sohu.com/cs/jsfile/js/c.js'></script>
+            </div>
+		</div>
+	</div>	
+	<div class="rightbar-wrapper grid-300">
+		<!-- 搜索 热词 -->
+		<div class="search-hotword clear">
+			<div class="search">
+				<form action="http://news.sogou.com/news" method="get" target="_blank" id="searchform" name="searchform" onsubmit="return CheckKeyWord();" autocomplete="off"> 
+					<input type="text" name="query" id="query" class="search-in" value="冰血暴 低俗怪谈" />
+					<input type="hidden" name="t" id="t" value="news" />
+					<input type="submit" class="search-btn" value="搜狗搜索" onmouseover="this.className='search-btn search-btn-over'" onmouseout="this.className='search-btn'" />
+				</form>
+			</div>
+			<div class="hotword">热词：
+<a href="http://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E7%9D%A1%E7%A5%9E%E5%B0%91%E5%A5%B3" target="_blank" rel="nofollow">睡神少女</a>
+<a href="http://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E4%B8%96%E7%95%8C%E7%9D%A1%E7%9C%A0%E6%97%A5" target="_blank" rel="nofollow">世界睡眠日</a>
+<a href="http://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E5%BE%81%E8%82%A5%E8%83%96%E7%A8%8E" target="_blank" rel="nofollow">征肥胖税</a>
+<a href="http://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E6%9B%9D%E9%9A%86%E8%AF%97%E7%B3%97%E4%BA%8B" target="_blank" rel="nofollow">曝隆诗糗事</a></div>
+		</div>
+        <script type="text/javascript">
+        function CheckKeyWord(){
+                 var sf = document.searchform;
+                 with(sf){
+          //if (query.value == "冰血暴 低俗怪谈") {
+          //                query.value = "";
+          //                setTimeout("query.value='冰血暴 低俗怪谈'", 1000);
+          //       }
+        }
+                 return true;
+        }
+        
+        // 改变提交的查询动作
+        function CheckFormAction(v){
+                 var sf = document.searchform;
+                 with(sf){
+          if (v=='web') {
+                          action = "http://www.sogou.com/web";
+            p.value = "02240100";                                 
+                 } else {
+                          p.value = "02240101";
+                          action = "http://news.sogou.com/news";
+                 }
+        }
+                 return true;
+        }
+
+        jQuery(function(jq){
+                 var searchValue = jq(".search-in").val();
+                 jq(".search-in").focus(function(){
+                          jq(this).val("").css("color","#333");
+                          jq(".search").addClass("search-act");
+                 }).blur(function(){
+                          if(jq(this).val() == ""){
+                                    jq(this).val(searchValue).css("color","#666");
+                                    jq(".search").removeClass("search-act");
+                          } 
+                 })
+        });
+        </script>
+		
+		<!-- 广告 -->
+		<SOHUADCODE><div style=" margin-bottom: 10px">
+<div id="rec_11_1"></div></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('rec_11_1');
+</script></SOHUADCODE>		
+		<!-- 手机看新闻 -->
+		<script src="http://a1.itc.cn/pv/js/pvcode.1312101227.js"></script>
+<div class="phone_rss">
+   <a href="http://k.sohu.com" onclick="_pv.send('5af69b5503b22dd5')" target="_blank"><img src="http://i2.itc.cn/20160321/a75_63bd55bd_9898_939a_1566_b00ec21b459e_1.jpg" width="300" height="92"></a></div>
+<div class="blank5B"></div>		
+		<!-- 相关微博 -->
+		
+		<!-- 广告 -->
+		<SOHUADCODE><div style=" margin-bottom: 10px">
+
+<div id="rec_12_1"></div></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('rec_12_1');
+</script></SOHUADCODE>		
+		<!-- 广告列表 a -->
+		<SOHUADCODE></SOHUADCODE>		
+		<!-- 相关图片 -->
+		<div class="mutu-pic clear">
+			<h2><span>今日娱点</span></h2>
+			<div class="pic-group">
+				<ul>
+
+<li><a href="http://pic.yule.sohu.com/group-719960.shtml" target="_blank"><img src="http://i0.itc.cn/20160321/34c2_cb55ca44_ba00_2905_4c62_2516f8904e41_1.jpg
+" alt="吴奇隆刘诗诗甜蜜热吻" width="125" height="85" border="0" /></a><span><a target="_blank" href="http://pic.yule.sohu.com/group-719960.shtml" target="_blank">吴奇隆刘诗诗甜蜜热吻</a></span></li>
+
+
+
+<li><a href="http://pic.yule.sohu.com/group-720159.shtml" target="_blank"><img src="http://i1.itc.cn/20160321/34c2_914af07e_7b85_18c1_0a11_311f4959272d_1.jpg
+" alt="孙俪采摘草莓呆萌可爱" width="125" height="85" border="0" /></a><span><a target="_blank" href="http://pic.yule.sohu.com/group-720159.shtml" target="_blank">孙俪采摘草莓呆萌可爱</a></span></li>
+
+
+
+<li><a href="http://pic.yule.sohu.com/group-720144.shtml" target="_blank"><img src="http://i3.itc.cn/20160321/34c2_6deaac66_251d_5111_5af2_d72990670c50_1.jpg
+" alt="范冰冰满面笑容劲酷范" width="125" height="85" border="0" /></a><span><a target="_blank" href="http://pic.yule.sohu.com/group-720144.shtml" target="_blank">范冰冰满面笑容劲酷范</a></span></li>
+
+
+<li><a href="http://pic.yule.sohu.com/group-720147.shtml" target="_blank"><img src="http://i2.itc.cn/20160321/34c2_255fe545_9154_d6bf_7bbe_d16007f8a2c1_1.jpg
+" alt="江疏影红唇花裙似少女" width="125" height="85" border="0" /></a><span><a target="_blank" href="http://pic.yule.sohu.com/group-720147.shtml" target="_blank">江疏影红唇花裙似少女</a></span></li>					
+
+
+				
+				</ul>
+			</div>
+		</div>		
+		<!-- 广告列表 b -->
+		<SOHUADCODE><div>
+<div id="rec_15_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('rec_15_1');
+</script></div>
+</SOHUADCODE>		
+		<div class="rightbar-foot"></div>		
+		<SOHUADCODE>
+</SOHUADCODE>		
+		<!-- 影视视频 -->
+		<div class="kind-video clear" id="kind-video">
+			<div class="video-menu">
+				<ul>
+					
+					<li>热点视频</li>
+					
+					<li>影视剧</li>
+					<li>综艺</li>
+					<li class="video-menu-end">原创</li>
+				</ul>
+			</div>
+			<div class="video-cont hot-video clear">
+				<div class="pic-group">
+<ul> 
+                           <li><a href="http://tv.sohu.com/20150316/n409834355.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i1.itc.cn/20150316/303f_ff71c405_7624_4b35_7515_8f742c0878c2_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150316/n409834355.shtml?pvid=6de360dfc764657c" target="_blank">看黄片副局长已被停职</a></span></li>
+
+                           <li><a href="http://tv.sohu.com/20150316/n409838033.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i2.itc.cn/20150316/303f_1048f05b_2acf_5848_8111_7d6a3be8aa7e_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150316/n409838033.shtml?pvid=6de360dfc764657c" target="_blank">小学开课教掼蛋合适吗</a></span></li>
+
+                          <li><a href="http://tv.sohu.com/20150316/n409835383.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i0.itc.cn/20150316/303f_dfeaa20e_f90e_86d2_8e12_a8cbc16cd4cf_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150316/n409835383.shtml?pvid=6de360dfc764657c" target="_blank">空姐招聘现场美腿抢镜</a></span></li>
+
+                          <li><a href="http://tv.sohu.com/20150315/n409813255.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i2.itc.cn/20150316/303f_52294433_eedd_318a_6784_819b76093f98_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150315/n409813255.shtml?pvid=6de360dfc764657c" target="_blank">准妈妈堕胎捐骨髓救妹</a></span></li>
+
+                          <li><a href="http://tv.sohu.com/20150315/n409803867.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i2.itc.cn/20150316/303f_dbaae501_7d45_0fa4_1aeb_358073975ece_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150315/n409803867.shtml?pvid=6de360dfc764657c" target="_blank">辣条生产场地环境肮脏</a></span></li>
+
+                          <li><a href="http://tv.sohu.com/20150316/n409834326.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i3.itc.cn/20150316/303f_652310c6_5c2d_ccc8_06d0_fae2b0438be5_1.jpg" width="130"height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150316/n409834326.shtml?pvid=6de360dfc764657c" target="_blank">百岁老太高空跳伞庆生</a></span></li> 
+                         
+                        <li><a href="http://tv.sohu.com/20150312/n409662402.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i1.itc.cn/20150312/3498_64839fc8_0c6a_8d85_3e9d_c1d582a97827_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150312/n409662402.shtml?pvid=6de360dfc764657c" target="_blank"><屌丝男士4>爆笑开机</a></span></li>
+
+                        <li><a href="http://tv.sohu.com/20150315/n409812870.shtml?pvid=6de360dfc764657c" target="_blank"><img src="http://i1.itc.cn/20150316/303f_dfe82e52_0c81_9775_86d5_9452f74be014_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/20150315/n409812870.shtml?pvid=6de360dfc764657c" target="_blank">刘欢回应二当冠军导师</a></span></li>
+
+                        <li><a href="http://tv.sohu.com/s2014/sdxlyz/?pvid=6de360dfc764657c" target="_blank"><img src="http://i1.itc.cn/20150311/3498_8dbb8eae_37e2_23bc_cd70_8acb874f9e62_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/s2014/sdxlyz/?pvid=6de360dfc764657c" target="_blank">神雕侠侣-大结局</a></span></li>                        
+
+                        <li><a href="http://tv.sohu.com/s2014/jxyhlmx/?pvid=6de360dfc764657c" target="_blank"><img src="http://i3.itc.cn/20150316/303f_0e8725c6_0849_7024_bbf9_185f922431f7_1.jpg" width="130" height="75" alt="" /></a><span><a href="http://tv.sohu.com/s2014/jxyhlmx/?pvid=6de360dfc764657c" target="_blank">同步热播-锦绣缘</a></span></li>
+      
+                   </ul></div>
+			</div>
+			<div class="video-cont tv-mv clear">
+				<script src=" http://tv.sohu.com/upload/static/plugin/count.js"></script>
+
+
+                                 <div class="video-box clear">
+					<div class="video-pic"><a href="http://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank"><img src="http://i2.itc.cn/20150312/340a_3666a831_f282_da5d_9ac1_745d79f5bd33_1.jpg"  width="125" height="85" alt="锦绣缘" /></a><em class="floor"><a href="http://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank">同步热播-锦绣缘</a></h4>
+						<h5>主演：黄晓明/陈乔恩/乔任梁/谢君豪/吕佳容/戚迹</h5>
+						
+					</div>
+				</div>
+				
+				
+				<div class="broken-line"></div>
+
+								<div class="video-box clear">
+					<div class="video-pic"><a href="http://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank"><img src="http://i0.itc.cn/20150312/340a_e6c94874_1d62_3a17_7b87_41130e0ecdb2_1.jpg"    width="125" height="85" alt="神雕侠侣" /></a><em class="floor"><a href="http://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank">大结局-神雕侠侣</a></h4>
+						<h5>主演：陈晓/陈妍希/张馨予/杨明娜/毛晓彤/孙耀琦</h5>
+						
+					</div>	</div>
+				
+				<div class="broken-line"></div>
+
+				<div class="video-box clear">
+					<div class="video-pic"><a href="http://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank"><img src="http://i1.itc.cn/20150312/340a_5683baff_f82b_50ce_e3b4_15003d8f17e8_1.jpg"    width="125" height="85" alt="封神英雄榜" /></a><em class="floor"><a href="http://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank">同步热播-封神英雄榜</a></h4>
+						<h5>主演：陈键锋/李依晓/张迪/郑亦桐/张明明/何彦霓</h5>		
+</div> </div>
+<div class="broken-line"></div>
+
+<div class="video-box clear">
+					<div class="video-pic"><a href="http://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank"> <img src="http://i0.itc.cn/20150312/340a_0cbbceec_8372_e2f3_6d53_b326179090ac_1.jpg"   width="125" height="85" alt="六颗子弹" /></a><em class="floor"><a href="http://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank">六颗子弹</a></h4>
+						<h5>主演：尚格·云顿/乔·弗拉尼甘/Bianca Bree</h5>
+						
+					</div>
+								</div>
+				<div class="broken-line"></div>
+<div class="video-box clear">
+					<div class="video-pic"><a href="http://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank"><img src="http://i1.itc.cn/20150225/332e_b88fc379_0036_cfb4_d7eb_0d2882d2da71_1.jpg" width="125" height="85" alt="龙虎少年队2" /></a><em class="floor"><a href="http://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank">龙虎少年队2</a></h4>
+						<h5>主演：艾斯·库珀/ 查宁·塔图姆/ 乔纳·希尔</h5>
+						
+					</div>
+				</div>
+			</div>
+			<div class="video-cont zy clear">
+				<div class="video-box clear">
+					<div class="video-pic"><a href="http://tv.sohu.com/20150327/n410395671.shtml" target="_blank"><img 
+
+src="http://i3.itc.cn/20150327/302c_bdac395e_b317_62e9_89d2_1ee2cca62d91_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="http://tv.sohu.com/20150327/n410395671.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20150327/n410395671.shtml" target="_blank">《奔跑吧兄弟》
+
+</a></h4>
+						<h5>baby14岁写真曝光</h5>
+						
+                                        </div>    
+		</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+
+                                <div class="video-pic"><a href="http://tv.sohu.com/20150327/n410389926.shtml" target="_blank"><img 
+
+src="http://i0.itc.cn/20150327/302c_3a252901_b387_56f1_0dca_abbed524b034_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="http://tv.sohu.com/20150327/n410389926.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20150327/n410389926.shtml" target="_blank">《我看你有戏》
+
+</a></h4>
+						<h5>李冰冰向成龙撒娇争宠</h5>
+					</div>
+
+</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+									
+                   <div class="video-pic"><a href="http://tv.sohu.com/20150326/n410381650.shtml" target="_blank"><img 
+
+src="http://i0.itc.cn/20150327/302c_bd547e5d_20cd_3d1c_f94b_7571fa2ae7b7_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="http://tv.sohu.com/20150326/n410381650.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20150326/n410381650.shtml" target="_blank">《明星同乐会》
+
+</a></h4>
+						<h5>李湘遭闺蜜曝光旧爱</h5>
+					</div>
+				
+				</div>
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+									
+                   <div class="video-pic"><a href="http://tv.sohu.com/20150330/n410557508.shtml" target="_blank"><img 
+
+src="http://i3.itc.cn/20150331/2ed3_2d8cfcb5_fe51_6b90_760a_bcccd53ab45f_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="http://tv.sohu.com/20150330/n410557508.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20150330/n410557508.shtml" target="_blank">《非你莫属》
+
+</a></h4>
+						<h5>美女模特教老板走秀</h5>
+					</div>
+		</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+
+                  <div class="video-pic"><a href="http://tv.sohu.com/20150331/n410558103.shtml" target="_blank"><img 
+
+src="http://i1.itc.cn/20150331/2ed3_22a28787_35e5_2577_3d10_ca4d5b761a71_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="http://tv.sohu.com/20150331/n410558103.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="http://tv.sohu.com/20150331/n410558103.shtml" target="_blank">《一站到底》
+
+</a></h4>
+						<h5>曝搬砖男神奇葩择偶观</h5>	
+						
+	    </div>
+		</div>
+             
+<div class="broken-line"></div>
+			</div>
+			<div class="video-cont ych clear">
+				<div class="video-box clear">
+<div class="video-pic"><a href="http://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="http://i0.itc.cn/20150327/3324_d560f802_49ac_3757_a5a8_70d7cc8926eb_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="http://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="http://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank">搜狐视频娱乐播报</a></h4>
+<h5>柳岩被迫成赚钱工具</h5>
+</div>
+
+
+
+</div>				
+<div class="broken-line"></div>               
+<div class="video-box clear">
+<div class="video-pic"><a href="http://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="http://i3.itc.cn/20150327/3324_d615c64a_2c91_beaa_99eb_94fe42750228_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="http://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="http://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank">大鹏嘚吧嘚</a></h4>
+<h5>大屁小P虐心恋</h5>
+</div>
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="http://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="http://i3.itc.cn/20141008/3324_7ea48c51_92e4_34c0_b159_49b270c3102e_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="http://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="http://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank">匆匆那年第16集</a></h4>
+<h5>匆匆那年大结局</h5>
+</div>
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="http://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="http://i1.itc.cn/20140919/3324_fd4e5c62_d401_93b9_3ede_04a060be2fdc_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="http://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="http://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank">隐秘而伟大第二季</a></h4>
+<h5>乔杉遭粉丝骚扰</h5>
+</div>
+
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="http://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="http://i1.itc.cn/20150313/3324_19604b98_5c63_aa71_9451_fefab7835efb_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="http://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="http://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank">The Kelly Show</a></h4>
+<h5>男闺蜜的尴尬初夜</h5>
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="rightbar-foot"></div>		
+		<!-- 广告 -->
+		<SOHUADCODE><div id="rec_13_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('rec_13_1');
+</script></SOHUADCODE>		
+		<!-- 中视网盟 -->
+		<SOHUADCODE><div>
+<div id="rec_16_1"></div>
+<script type="text/javascript">
+       _sohuHD.AD.init('rec_16_1');
+</script></div>
+</SOHUADCODE>
+		<!-- 彩票 st -->
+		
+		<!-- 彩票 end -->		
+		<!-- 我来说两句排行榜 -->
+		
+
+<div class="comment-rank clear">
+    <h2>
+        <span>我来说两句排行榜</span>
+    </h2>
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441245857.html" target="_blank">6755</a>
+        </dt>
+        <dd>
+            <a href="http://cbachina.sports.sohu.com/20160320/n441245857.shtml" target="_blank">哈达迪22+16哈德森39+10 四川总分4-1辽宁夺冠</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441245857.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s9000720045.html" target="_blank">1730</a>
+        </dt>
+        <dd>
+            <a href="http://pic.news.sohu.com/group-720045.shtml" target="_blank">钢铁全行业亏损 武钢待分流员工穿工作服求职</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s9000720045.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441294579.html" target="_blank">1734</a>
+        </dt>
+        <dd>
+            <a href="http://auto.sohu.com/20160321/n441294579.shtml" target="_blank">东莞“撞翻变道车”车主:撞他是在维护路权</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441294579.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441329121.html" target="_blank">1326</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/20160321/n441329121.shtml" target="_blank">偷走老人17000元救命钱的姑娘又下手了！(图)</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441329121.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441259434.html" target="_blank">1260</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/20160320/n441259434.shtml" target="_blank">周口被顶替者王娜娜：刚知真相时 不敢打扰她生活</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441259434.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441278275.html" target="_blank">990</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/20160321/n441278275.shtml" target="_blank">武大校史专家批东京赏樱广告：商贾不知亡国恨-搜狐新闻</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441278275.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441273518.html" target="_blank">1012</a>
+        </dt>
+        <dd>
+            <a href="http://quan.sohu.com/pinglun/cyqemw6s1/441273518" target="_blank">男子抱小孩斑马线闯红灯 被出租车撞飞(图)</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441273518.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441259446.html" target="_blank">877</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/s2016/dianji-1840/index.shtml" target="_blank">点击今日第1840期：中国游客的吃相与素质-搜狐新闻</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441259446.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441316251.html" target="_blank">506</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/20160321/n441316251.shtml" target="_blank">蔡英文接受台媒专访：期待大陆再展现一些善意</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441316251.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    <div class="broken-line"></div>
+    
+    
+    <dl>
+        <dt>
+            <a href="http://pinglun.sohu.com/s441228884.html" target="_blank">1598</a>
+        </dt>
+        <dd>
+            <a href="http://news.sohu.com/20160320/n441228884.shtml" target="_blank">光明网评“女生被顶替上大学结论”：缺细节，没诚意-搜狐新闻</a>
+            [<em class="red"><a href="http://pinglun.sohu.com/s441228884.html" target="_blank">评</a></em>]
+        </dd>
+    </dl>
+    
+    
+</div>
+		<div class="rightbar-foot"></div>		
+		<div class="leisure clear">
+<h2><span>社区热帖推荐</span></h2>
+<div class="pic-text">
+<div><a href="http://hd.club.chihe.sohu.com/bt0000/photo/3ngv2jwk7h9" target="_blank"><img src="http://i0.itc.cn/20151130/2db9_d30b22a0_c6e4_e2ea_d074_8010725ebfbf_1.jpg" width="125" height="85" alt="" /></a></div>
+<h4><a href="http://hd.club.chihe.sohu.com/bt0000/photo/3ngv2jwk7h9" target="_blank">扒一扒“网红”圈的台前幕后</a></h4>
+<p>揭秘网红生活真相……[<a href="http://hd.club.chihe.sohu.com/bt0000/photo/3ngv2jwk7h9" target="_blank">详细</a>]</p>
+</div>   
+
+<div class="broken-line"></div><div class="list12">
+<ul>
+<li><a href="http://club.baobao.sohu.com/mom_daugh/thread/3nq4xibfv8z" target="_blank">养了别人的孩子20年 突然知道是自己的</a></li>
+<li><a href="http://hd.club.chihe.sohu.com/bt0000/photo/3mpbuny2bcc" target="_blank">穿这么少？妹子来个华丽的转身给我看看呗</a></li>
+<li><a href="http://women.club.sohu.com/andun/thread/3nkrgjrahw0" target="_blank">亲人之间借钱需要给利息吗 说几个亲身经历</a></li>
+<li><a href="http://hd.club.chihe.sohu.com/bt0000/photo/3nlb9g69bdc" target="_blank">街拍黎巴嫩性感美女 探访最开放的中东国家</a></li>
+<li><a href="http://cul.club.sohu.com/xuanhuan/thread/3mdzdsg23b2" target="_blank">毛骨悚然！想讲一个关于算命的离奇故事</a></li>
+
+
+</ul></div></div>
+<div class="rightbar-foot"></div>		
+		<!-- 广告 -->
+		<SOHUADCODE>
+</SOHUADCODE>		
+		<div class="rightbar-head"></div>				
+		<!-- 信息 -->
+		<div class="sohu-info clear" >
+			<div class="contact-icon"></div>
+			<div class="contact-txt">
+				<p>客服热线：86-10-58511234</p>
+				<p>客服邮箱：<a href="mailto:kf@vip.sohu.com" target="_blank">kf@vip.sohu.com</a></p>
+			</div>
+		</div>		
+	</div>
+	<div class="content-footer"></div>
+</div>
+
+<script type="text/javascript" src="http://stock.sohu.com/upload/stock/business_news_1.1.3.js"></script>
+<script type="text/javascript" src="http://stock.sohu.com/upload/stock/related_stock_1.0.1.js"></script>
+<script type="text/javascript" src="http://getip.js.sohu.com/ip/"></script>
+<script type="text/javascript"> 
+if (new_ip == null) var new_ip=2130706433;
+var dns_requrl="\<script type=\"text/javascript\" src=\"http://" + new_ip +".sohuns.com/ip/\"\>\</script\>";
+document.write(dns_requrl);
+</script>
+
+<!-- 标准尾 start -->
+<div collection="Y">
+<div class="clear"></div>
+	<div id="foot" class="Area area">
+		<a href="javascript:void(0)" onClick=this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sohu.com');return false;>设置首页</a>
+		- <a href=http://pinyin.sogou.com/ target=_blank rel="nofollow">搜狗输入法</a>
+		- <a href=http://pay.sohu.com/ target=_blank rel="nofollow">支付中心</a>
+		- <a href=http://hr.sohu.com target=_blank rel="nofollow">搜狐招聘</a>
+		- <a href=http://ad.sohu.com/ target=_blank rel="nofollow">广告服务</a>
+		- <a href=http://sohucallcenter.blog.sohu.com/ target=_blan rel="nofollow"k>客服中心</a>
+		- <a href=http://corp.sohu.com/s2006/contactus/ target=_blank rel="nofollow">联系方式</a>
+		- <a href=http://www.sohu.com/about/privacy.html target=_blank rel="nofollow">保护隐私权</a>
+		- <a href=http://investors.sohu.com/ target=_blank rel="nofollow">About SOHU</a>
+		- <a href=http://corp.sohu.com/indexcn.shtml target=_blank rel="nofollow">公司介绍</a>
+		- <a href=http://sitemap.sohu.com/ target=_blank>网站地图</a>
+		- <a href=http://roll.sohu.com/ target=_blank>全部新闻</a>
+		- <a href=http://blog.sohu.com/roll target=_blank>全部博文</a>
+		<br />Copyright <span class="fontArial">&copy;</span> 2016 Sohu.com Inc. All Rights Reserved. 搜狐公司 <span class="unline"><a href="http://corp.sohu.com/s2007/copyright/" target="_blank" rel="nofollow">版权所有</a></span>
+		<br />搜狐不良信息举报邮箱：<a href="mailto:jubao@contact.sohu.com">jubao@contact.sohu.com</a>
+	</div>
+	<SCRIPT language=JavaScript src="http://a1.itc.cn/pv/js/spv.1309051632.js"></SCRIPT>
+	<script language="javascript" src="http://js.sohu.com/wrating20120726.js"></script>
+	<script language="javascript"> 
+		var  _wratingId = null;
+		try{
+		_wratingId = _getAcc();
+		}catch(e){}
+		if(_wratingId !=null){
+		document.write('<scr'+'ipt type="text/javascript" src="http://sohu.wrating.com/a1.js"></scr'+'ipt>');
+		}
+		</script>
+		<script language="javascript"> 
+		if(_wratingId !=null){
+		document.write('<scr'+'ipt type="text/javascript">');
+		document.write('var vjAcc="'+_wratingId+'";');
+		document.write('var wrUrl="http://sohu.wrating.com/";');
+		document.write('try{vjTrack();}catch(e){}');
+		document.write('</scr'+'ipt>');
+		}
+	</script>
+	<!--SOHU:DIV_FOOT-->
+</div>
+<!-- 标准尾 end -->
+
+<script type="text/javascript">
+<!--
+	function sogouRelateNews(itm){
+		var i=new Image();
+        var len=itm.getAttribute("len");   var  ind= itm.getAttribute("ind");
+        len=(len==null)?"":len;   ind=(ind==null)?"":ind;
+        if(len == "" || ind == "" ) {
+           i.src='http://pingback.sogou.com/rltnews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+        } else {
+           i.src='http://pingback.sogou.com/rltnews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+        }
+	    return true;
+	}
+
+	function sogouRelateWeb(itm){
+		var i=new Image();
+        var len=itm.getAttribute("len");  var  ind= itm.getAttribute("ind");
+        len=(len==null)?"":len; ind=(ind==null)?"":ind;
+        if(len == "" || ind == "" ) {
+	 	     i.src='http://pingback.sogou.com/rltweb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+        } else {
+		     i.src='http://pingback.sogou.com/rltweb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+        }
+		return true;
+	}
+
+	function sogouRelateSaybar(itm){
+		var i=new Image();
+		i.src='http://pingback.sogou.com/rltsb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+
+	function sogouRelateBlog(itm){
+		var i=new Image();
+		i.src='http://pingback.sogou.com/rltblog.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+	
+	function sogouHotSaybar(itm){
+		var i=new Image();
+		i.src='http://pingback.sogou.com/rlthotsb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+
+    function sogouRelateVideoNews(itm){
+      var i=new Image();
+      var len=itm.getAttribute("len");  var  ind= itm.getAttribute("ind");
+      len=(len==null)?"":len;    ind=(ind==null)?"":ind;
+      if(len == "" || ind == "" ) {
+        i.src='http://pingback.sogou.com/rltvideonews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+      } else {
+        i.src='http://pingback.sogou.com/rltvideonews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+      }
+	  return true;
+    }
+
+
+//-->
+</script>
+<SOHUADCODE>																																																																																																																																																																								<Script language="Javascript">var cWidth=980;</script>
+<Script language="Javascript" src="http://images.sohu.com/bill/s2012/gates/all/adm2012.js"></Script>
+<script src='http://images.sohu.com/bill/s2010/gates/sohucstech/javascript/fee536c7fe4a22ae3a78f10f5630fa3b.js' type='text/javascript'></script>
+<!—不能删除 投飞行广告时也必须带上—>
+<script type="text/javascript">
+if(typeof(document.pv)=='undefined') document.pv = new Array();var _a=new Image();
+_a.src='http://xls.go.sohu.com/201012/ee970cf0f5c53c86014a16fd32d9629a.php?5';
+document.pv.push(_a);
+imp(urlpath,163);
+if(PVUV_CheckArticle("ent11",24,1)){imp(urlpath,164);}
+if(PVUV_CheckArticle("ent12",24*365,1)){imp(urlpath,165);}
+
+</script>
+<!—不能删除—>
+
+<!--<Script language="Javascript">
+AD = new ADM("FLOAT", 2);
+    AD.src = "http://images.sohu.com/bill/s2009/shanbai/baojie/6yue/1001000602.swf";
+    AD.href="http://goto.sogou.com/200905/256711c20f526ea88028870e1a36e2cc.php";
+    AD.tag="http://images.sohu.com/bill/s2009/shanbai/baojie/6yue/201000602.swf";
+    AddSchedule(AD);
+</script>-->
+<Script language="Javascript">if(jQuery){jQuery.getScript("http://images.sohu.com/bill/s2012/gates/all/map.2013040302.js");}</script>
+<Script language="Javascript" src="http://images.sohu.com/bill/s2013/gates/js/fad_v9.js"></Script>
+<Script language="Javascript" src="http://images.sohu.com/bill/default/auto/pop.1.4.js?t=168"></Script></SOHUADCODE>
+<SOHUADCODE></SOHUADCODE>
+<script type='text/javascript'>	
+	function q(s) {return s.replace(/%/g,"%25").replace(/&/g,"%26").replace(/#/g,"%23");}	
+	var sogou_is_brand_url = "http://cpc.brand.sogou.com/brand_ad_new";	
+	var brand_cnt = 0;	
+	for(var p in sogou_is_brand)	
+	{	           if(typeof(sogou_is_brand[p]) == "string")
+	               sogou_is_brand_url += (brand_cnt++ ? "&" : "?") + q(p) + "=" + q(sogou_is_brand[p]);	
+	}	
+	if (brand_cnt>3)	
+	{	
+	         var test= document.createElement('SCRIPT');	
+	         test.src=sogou_is_brand_url;	
+	         document.getElementsByTagName('head')[0].appendChild(test);	
+	}	
+</script>
+<div style="display:none" id="sohu-dt0220mine-tag">yule</div><script src='http://news.sohu.com/upload/pop/mytag.min.js' type='text/javascript'></script>
+
+
+
+</body>
+</html>

@@ -5,21 +5,23 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-from htmlParse import *
 
-
+from parse import *
 
 
 
 
 
 class TopicalcrawlPipeline(object):
-    def process_item(self, item, spider):
-        response = item['response']
-        count = item['count']
-        if response.meta.has_key('supervisior'):
-            supervisior6, supervisior7 = response.meta.get('supervisior')
+    def process_item(self, response_item, spider):
+        response = response_item['response']
+        count = response_item['count']
+        graph = response_item['graph']
+        level0 = response_item['level0']
+        level1 = response_item['level1']
+        url_relevance = response_item['url_relevance']
+        classifiers = response_item['classifiers']
 
-            save_response('Test7', response, count, supervisior6, supervisior7)
+        parse_page(response_item, count)
 
-            return item
+        return response_item

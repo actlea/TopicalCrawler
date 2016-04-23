@@ -14,7 +14,7 @@ import os
 from api import *
 from base import *
 from util import  EncodeHelper
-from multiclassifier import BiClassifier, MultiClassifier
+from biclassifier import BiClassifier
 
 
 TAG_RE = re.compile(r'<[^>]+>')
@@ -87,49 +87,6 @@ def get_rawpage(page):
     return raw_page
 
 
-def create_train(dir, label, out_file, mode='w'):
-
-    with open(out_file, mode) as fw:
-        for f in os.listdir(dir):
-
-            path = dir + f
-            try:
-                url, page = read_page(path)
-            except :
-                print f
-                continue
-
-            raw_page = get_rawpage(page)
-            if raw_page is None: return None
-
-            fw.write('%s\t%s\t%s\n' %(label, url, raw_page))
-
-
-def create_train2(dir1, dir2, label, out_file, mode='w'):
-    from htmlParse import get_document
-    url_dic={}
-    with open(dir1) as fr:
-        content = fr.read()
-        lines = content.splitlines()
-        for line in lines:
-            line = line.strip()
-            index, url = line.split(' ')
-            url_dic[index]=url
-    with open(out_file,mode) as fw:
-        for f in os.listdir(dir2):
-            try:
-                index = str(int(f[1:]))
-            except ValueError:
-                continue
-            with open(dir2+f) as f2:
-                content = f2.read()
-            raw_page = get_rawpage(content)
-
-            url = url_dic[index]
-            fw.write('%s\t%s\t%s\n' % (label, url, raw_page))
-
-
-
 def stripNonAlphaNum(text):
     text = text.decode('utf-8')
     text=re.sub ( r'[^a-zA-Z0-9]', ' ', text )
@@ -143,43 +100,7 @@ if __name__=='__main__':
     name = 'junshi/'
     names = ['finance/', 'junshi/', 'yule/', 'sport/']
 
-    # for name in names:
-    #     path = test_dir + name
-    #     create_train(path, '1', 'sample-data/train-2-zh.txt', 'a')
-    test_dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/sina/original/'
-    test_dir = '/mnt/UbutunShare/graduate/DataSet/scrapy_dataset/other_neg/original/'
-    path = test_dir
-    out_file = 'sample-data/train-2-zh.txt'
-    # create_train(path, '1', 'sample-data/train-2-zh.txt', 'a')
 
-    # samples = read_text_src(out_file)
-    # lines = [x for x in samples if len(x) > 2]
-    # X1 = [line[1] for line in lines]    #url
-    # X2 = [line[2] for line in lines]    #page
-    # Y = [line[0] for line in lines]
 
-    # test_bi_classifier(X1, X2, Y)
 
-    #==================================
-    dir1 = '/home/actlea/Documents/larbin/bin/Debug/save/d00000/index'
-    dir2 = '/home/actlea/Documents/larbin/bin/Debug/save/d00000/'
-    out_file = 'sample-data/train-3-zh.txt'
-    # create_train2(dir1, dir2, '0', out_file, 'w')
-    dir3 = '/home/actlea/Documents/larbin/bin/Debug/save/'
-    names = ['d00000/', 'd00001/', 'd00002/', 'd00003/']
-    for name in names:
-        print name
-        path = dir3 + name+'index'
-        with open(path) as fr:
-            for line in fr.readlines():
-                line = line.strip()
-                url = stripNonAlphaNum(line)
-                toks = url.split(' ')
-                flag=False
-                for i in ['sport', 'sports', 'lesports']:
-                    if i in toks:
-                        flag=True
-                        break
-                if not flag:
-                    print line
 
